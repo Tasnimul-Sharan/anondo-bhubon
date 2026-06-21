@@ -74,7 +74,6 @@ export default function GalleryPageSection() {
             <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
               <span className="flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg">
                 <FiEye className="text-lg" />
-                View Image
               </span>
             </span>
           </button>

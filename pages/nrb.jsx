@@ -1,10 +1,10 @@
 "use client";
 
 import AdvancedSEO from "@/components/AdvancedSEO";
+import HeroSection from "@/components/HeroSection";
 import BuyingProcessSection from "@/components/NRB/BuyingProcessSection";
 import DocumentsSection from "@/components/NRB/DocumentsSection";
 import FAQSection from "@/components/NRB/FAQSection";
-import HeroSection from "@/components/HeroSection";
 import LeadCaptureCard from "@/components/NRB/LeadCaptureCard";
 import NRBHeroSection from "@/components/NRB/NRBHeroSection";
 import NRBSupportSection from "@/components/NRB/NRBSupportSection";
@@ -31,7 +31,7 @@ const seo = {
   breadcrumb: [{ name: "NRB", path: "/nrb" }],
   jsonLd: {
     "@type": "Service",
-    "@id": "https://www.anondobhubon.com/nrb#service",
+    "@id": "https://www.anondobhubon.com/nrb",
     name: "NRB Property Support",
     provider: {
       "@id": "https://www.anondobhubon.com/#organization",
@@ -47,8 +47,8 @@ export default function NRBPage() {
       <AdvancedSEO {...seo} />
       <HeroSection
         hero={{
-          title: "NRB - Non-Resident Bangladeshi",
-          backgroundImage: finalRenderAssets.billboard,
+          title: "NRB - Non-Resident Bangladeshi Support",
+          backgroundImage: finalRenderAssets.premiumBlock,
         }}
       />
       <NRBHeroSection />

@@ -1,66 +1,62 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Lenis from "lenis";
-import "lenis/dist/lenis.css";
+import { useEffect } from "react";
 
 export const useLenis = () => {
-  const lenisRef = useRef(null);
-  const rafRef = useRef(null);
-
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    let lenis = null;
+    let rafId;
+    let cancelled = false;
 
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const startLenis = async () => {
+      const Lenis = (await import("lenis")).default;
 
-    if (reducedMotion.matches) return;
+      if (cancelled) return;
 
-    const lenis = new Lenis({
-      duration: 1.05,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lenis = new Lenis({
+        lerp: 0.08,
+        smoothWheel: true,
+        syncTouch: false,
+        touchMultiplier: 1.5,
+        anchors: true,
+      });
 
-      smoothWheel: true,
-      syncTouch: false,
+      const raf = (time) => {
+        if (!lenis) return;
 
-      wheelMultiplier: 0.9,
-      touchMultiplier: 1.1,
+        lenis.raf(time);
+        rafId = requestAnimationFrame(raf);
+      };
 
-      infinite: false,
+      rafId = requestAnimationFrame(raf);
+    };
 
-      // Important:
-      // input/select/textarea ekhane prevent korben na
-      prevent: (node) => {
-        return node.closest("iframe") || node.closest("[data-lenis-prevent]");
-      },
+    const startOnIntent = () => {
+      startLenis();
+    };
+
+    window.addEventListener("wheel", startOnIntent, {
+      once: true,
+      passive: true,
     });
 
-    lenisRef.current = lenis;
+    window.addEventListener("touchstart", startOnIntent, {
+      once: true,
+      passive: true,
+    });
 
-    const raf = (time) => {
-      lenis.raf(time);
-      rafRef.current = requestAnimationFrame(raf);
-    };
-
-    rafRef.current = requestAnimationFrame(raf);
-
-    const handleResize = () => {
-      lenis.resize();
-    };
-
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("keydown", startOnIntent, {
+      once: true,
+    });
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      cancelled = true;
 
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
+      if (rafId !== undefined) {
+        cancelAnimationFrame(rafId);
       }
 
-      lenis.destroy();
-      lenisRef.current = null;
-      rafRef.current = null;
+      lenis?.destroy();
     };
   }, []);
-
-  return lenisRef;
 };

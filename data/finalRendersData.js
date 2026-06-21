@@ -22,8 +22,8 @@ export const finalRenderAssets = {
   university: "/FINAL RENDERS/UNIVERSITY 4.png",
   masterplan: "/FINAL RENDERS/Masterplan/FULL TOP MAP V2.jpg",
   masterplanSide: "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
-  premiumBlock: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.png",
-  exclusiveBlock: "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.png",
+  premiumBlock: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
+  exclusiveBlock: "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
   billboard: "/FINAL RENDERS/Billboards/7RX AI UPSCALED.jpeg",
 };
 
@@ -105,54 +105,54 @@ export const finalRenderImages = [
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK B.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK B.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK C.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK C.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK D.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK D.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 BLOCK D.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 BLOCK D.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER P.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER P.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER.png",
+    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER.jpg",
     "Masterplan",
   ),
-  finalRender("/FINAL RENDERS/Masterplan/FOREST WALK 2.png", "Masterplan"),
-  finalRender("/FINAL RENDERS/Masterplan/FOREST WALK TOP.png", "Masterplan"),
+  finalRender("/FINAL RENDERS/Masterplan/FOREST WALK 2.jpg", "Masterplan"),
+  finalRender("/FINAL RENDERS/Masterplan/FOREST WALK TOP.jpg", "Masterplan"),
   finalRender(
     "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
     "Masterplan",
   ),
   finalRender("/FINAL RENDERS/Masterplan/FULL TOP MAP V2.jpg", "Masterplan"),
   finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.png",
+    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.png",
+    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK C.png",
+    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK C.jpg",
     "Masterplan",
   ),
   finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.png",
+    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
     "Masterplan",
   ),
   finalRender("/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg", "Masterplan"),

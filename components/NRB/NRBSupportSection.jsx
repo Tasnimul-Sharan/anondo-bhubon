@@ -2,20 +2,47 @@
 
 import { useState } from "react";
 import {
-  FaWhatsapp,
-  FaVideo,
-  FaFileAlt,
-  FaUsers,
   FaCheckCircle,
+  FaFileAlt,
   FaGlobeAsia,
+  FaUsers,
+  FaVideo,
+  FaWhatsapp,
 } from "react-icons/fa";
 
+const WHATSAPP_NUMBER = "8801313775333";
+
+const supports = [
+  {
+    icon: <FaWhatsapp />,
+    title: "WhatsApp Desk",
+    desc: "Quick project communication for buyers living outside Bangladesh.",
+  },
+  {
+    icon: <FaVideo />,
+    title: "Video Consultation",
+    desc: "Advisor-led call for project, document, and booking process review.",
+  },
+  {
+    icon: <FaFileAlt />,
+    title: "Document Assistance",
+    desc: "Guidance for identity, Power of Attorney, and registration preparation.",
+  },
+  {
+    icon: <FaUsers />,
+    title: "Family Coordination",
+    desc: "Support for site visits and communication with local family members.",
+  },
+];
+
+const benefits = [
+  "Remote consultation",
+  "Step-by-step process guidance",
+  "Document preparation support",
+  "Family site visit coordination",
+];
+
 export default function NRBSupportSection() {
-  const WHATSAPP_NUMBER = "8801318252050";
-
-  // Replace this with your real Zoom booking page link
-  const ZOOM_BOOKING_URL = "https://scheduler.zoom.us/YOUR_BOOKING_PAGE_LINK";
-
   const [formData, setFormData] = useState({
     name: "",
     whatsapp: "",
@@ -23,138 +50,94 @@ export default function NRBSupportSection() {
     time: "",
   });
 
-  const supports = [
-    {
-      icon: <FaWhatsapp />,
-      title: "WhatsApp Support",
-      desc: "Instant communication from anywhere in the world.",
-    },
-    {
-      icon: <FaVideo />,
-      title: "Zoom Video Consultation",
-      desc: "Discuss project details through a scheduled video meeting.",
-    },
-    {
-      icon: <FaFileAlt />,
-      title: "Document Assistance",
-      desc: "Guidance for legal documents, verification, and processing.",
-    },
-    {
-      icon: <FaUsers />,
-      title: "Family Coordination",
-      desc: "We coordinate with your family members in Bangladesh.",
-    },
-  ];
-
-  const benefits = [
-    "Remote consultation for overseas buyers",
-    "Step-by-step land purchase guidance",
-    "Legal and documentation support",
-    "Family site visit coordination",
-  ];
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleBooking = (e) => {
-    e.preventDefault();
+  const handleBooking = (event) => {
+    event.preventDefault();
 
-    const message = `
-Hello Anondo Cityscapers,
+    const message = `Hello Anondo Bhubon,
 
-I would like to book a Zoom video call for NRB buyer support.
+I would like to request an NRB buyer consultation.
 
 Name: ${formData.name}
 WhatsApp Number: ${formData.whatsapp}
 Preferred Date: ${formData.date}
 Preferred Time: ${formData.time}
 
-Please confirm my Zoom consultation schedule.
-    `;
+Please confirm my consultation schedule.`;
 
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-      message,
-    )}`;
-
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
   };
 
   return (
-    <section className="bg-primary/5 py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Header */}
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
-            Global Buyer Support
+    <section id="nrb-support" className="bg-off_white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 grid gap-6 lg:grid-cols-[0.44fr_0.56fr] lg:items-end">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-secondary">
+              Global Buyer Support
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Complete support for NRB buyers.
+            </h2>
+          </div>
+          <p className="max-w-3xl text-base leading-8 text-primary/75">
+            From the first call to document preparation, our support desk helps
+            overseas buyers stay informed, organized, and connected with local
+            representatives.
           </p>
-
-          <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
-            Complete Support for NRB Buyers
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
-            From consultation to registration — our team helps overseas buyers
-            complete the process smoothly through WhatsApp, Zoom, documentation
-            support, and family coordination.
-          </p>
-
-          <div className="mx-auto mt-6 h-[3px] w-24 rounded-full bg-primary" />
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[0.58fr_0.42fr] lg:items-start">
-          {/* Left Content */}
-          <div>
+        <div className="grid gap-8 lg:grid-cols-[0.62fr_0.38fr] lg:items-start">
+          <div className="min-w-0">
             <div className="grid gap-5 sm:grid-cols-2">
-              {supports.map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg"
+              {supports.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-lg border border-border_color bg-white p-6 shadow-soft transition duration-300 hover:border-primary/30 hover:shadow-lift"
                 >
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-xl text-secondary">
                     {item.icon}
                   </div>
-
-                  <h4 className="text-lg font-bold text-gray-900">
+                  <h3 className="mt-5 text-xl font-bold tracking-tight text-primary">
                     {item.title}
-                  </h4>
-
-                  <p className="mt-2 text-sm leading-7 text-gray-600">
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-primary/75">
                     {item.desc}
                   </p>
-                </div>
+                </article>
               ))}
             </div>
 
-            <div className="mt-8 rounded-3xl border border-primary/10 bg-white p-7 shadow-sm">
+            <div className="mt-6 rounded-lg border border-border_color bg-primary p-6 text-white shadow-soft sm:p-8">
               <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white text-xl text-primary">
                   <FaGlobeAsia />
                 </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold tracking-[-0.02em] text-gray-900">
-                    Buy Land from Abroad with Confidence
+                <div className="min-w-0">
+                  <h3 className="text-2xl font-bold tracking-tight">
+                    Buy from abroad with a clear support path.
                   </h3>
-
-                  <p className="mt-3 text-sm leading-8 text-gray-600">
-                    Our NRB support team assists you with project information,
-                    payment guidance, document preparation, and communication
-                    with your local representative in Bangladesh.
+                  <p className="mt-3 text-sm leading-7 text-white/82">
+                    Our team assists with project information, payment
+                    references, document preparation, and communication with
+                    your local representative in Bangladesh.
                   </p>
 
                   <div className="mt-6 grid gap-3 sm:grid-cols-2">
                     {benefits.map((item) => (
                       <div
                         key={item}
-                        className="flex items-start gap-3 text-sm font-medium text-gray-700"
+                        className="flex gap-3 text-sm font-semibold leading-6"
                       >
-                        <FaCheckCircle className="mt-1 shrink-0 text-primary" />
+                        <FaCheckCircle className="mt-1 shrink-0 text-secondary" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -164,52 +147,19 @@ Please confirm my Zoom consultation schedule.
             </div>
           </div>
 
-          {/* Right Booking Card */}
-          <div className="rounded-3xl border border-primary/10 bg-white p-6 shadow-xl sm:p-8">
-            <span className="mb-5 inline-flex rounded-full bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
-              NRB Dedicated Support
-            </span>
-
-            <h3 className="text-2xl font-bold tracking-[-0.02em] text-gray-900 md:text-3xl">
-              Talk to Our Expert
+          <aside className="min-w-0 rounded-lg border border-border_color bg-white p-6 shadow-soft sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-secondary">
+              Dedicated Support
+            </p>
+            <h3 className="mt-3 text-2xl font-bold tracking-tight text-primary">
+              Request a consultation.
             </h3>
-
-            <p className="mt-3 text-sm leading-7 text-gray-600">
-              Book a Zoom consultation or contact us directly through WhatsApp
-              for project and investment guidance.
+            <p className="mt-3 text-sm leading-7 text-primary/75">
+              Pick a preferred date and time. Your request will open in
+              WhatsApp for advisor confirmation.
             </p>
 
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-                  "Hello Anondo Cityscapers, I would like to inquire about your NRB buyer support.",
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-green-500 px-5 py-4 text-sm font-bold text-white transition hover:bg-green-600"
-              >
-                <FaWhatsapp />
-                WhatsApp
-              </a>
-
-              <a
-                href={ZOOM_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-4 text-sm font-bold text-white transition hover:bg-primary/90"
-              >
-                <FaVideo />
-                Schedule Zoom
-              </a>
-            </div>
-
-            <div className="my-7 flex items-center gap-3">
-              <div className="h-px flex-1 bg-gray-200" />
-              <span className="text-sm text-gray-400">or request schedule</span>
-              <div className="h-px flex-1 bg-gray-200" />
-            </div>
-
-            <form onSubmit={handleBooking} className="space-y-4">
+            <form onSubmit={handleBooking} className="mt-6 space-y-4">
               <InputField
                 type="text"
                 name="name"
@@ -218,7 +168,6 @@ Please confirm my Zoom consultation schedule.
                 placeholder="Your Name"
                 required
               />
-
               <InputField
                 type="tel"
                 name="whatsapp"
@@ -236,7 +185,6 @@ Please confirm my Zoom consultation schedule.
                   onChange={handleChange}
                   required
                 />
-
                 <InputField
                   type="time"
                   name="time"
@@ -248,17 +196,25 @@ Please confirm my Zoom consultation schedule.
 
               <button
                 type="submit"
-                className="w-full rounded-2xl bg-gray-900 px-5 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition hover:bg-primary"
+                className="inline-flex w-full items-center justify-center gap-3 rounded-lg bg-primary px-5 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition hover:bg-secondary"
               >
-                Confirm Zoom Booking
+                <FaVideo />
+                Confirm Request
               </button>
             </form>
 
-            <p className="mt-5 text-center text-xs leading-6 text-gray-500">
-              After submission, your booking request will open in WhatsApp for
-              confirmation.
-            </p>
-          </div>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                "Hello Anondo Bhubon, I would like to inquire about NRB buyer support.",
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-lg border border-border_color bg-off_white px-5 py-4 text-sm font-bold uppercase tracking-[0.14em] text-primary transition hover:border-primary hover:bg-white"
+            >
+              <FaWhatsapp className="text-secondary" />
+              WhatsApp Now
+            </a>
+          </aside>
         </div>
       </div>
     </section>
@@ -274,7 +230,7 @@ function InputField({ type, name, value, onChange, placeholder, required }) {
       onChange={onChange}
       placeholder={placeholder}
       required={required}
-      className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 text-sm text-gray-900 outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
+      className="w-full rounded-lg border border-border_color bg-off_white px-4 py-4 text-sm font-semibold text-primary outline-none transition placeholder:text-primary/45 focus:border-primary focus:bg-white focus:ring-4 focus:ring-secondary/15"
     />
   );
 }

@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa6";
 import { FiArrowRight, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const CAREER_EMAIL = "career@anondohousing.com";
+const CAREER_EMAIL = "anondobhuban@gmail.com";
 
 const jobs = [
   {

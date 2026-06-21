@@ -2,187 +2,164 @@
 
 import { useState } from "react";
 import {
-  FaPlus,
-  FaMinus,
-  FaQuestionCircle,
   FaCheckCircle,
+  FaMinus,
+  FaPlus,
+  FaQuestionCircle,
 } from "react-icons/fa";
 
 const faqs = [
   {
-    q: "Can I buy land from abroad?",
-    a: "Yes, the entire process can be completed remotely through online consultation and legal support.",
-  },
-  {
-    q: "Is registration possible without visiting Bangladesh?",
-    a: "Yes, you can complete registration using Power of Attorney without physically visiting.",
-  },
-  {
-    q: "Is the land legally safe?",
-    a: "All plots are verified with complete documentation and ready for immediate registration.",
-  },
-  {
-    q: "How do I make payment from abroad?",
-    a: "We support international bank transfer and guided payment assistance for NRB buyers.",
+    q: "Can I start the process from abroad?",
+    a: "Yes. You can request project information, advisor consultation, document guidance, and family coordination while living outside Bangladesh.",
   },
   {
     q: "Can my family visit the site on my behalf?",
-    a: "Yes, your family members in Bangladesh can visit and coordinate with our team.",
+    a: "Yes. Your family members or trusted representative can coordinate a site visit with our team in Bangladesh.",
   },
   {
-    q: "How long does the registration process take?",
-    a: "Registration can be completed within a very short time after document verification.",
+    q: "Do I need Power of Attorney?",
+    a: "Power of Attorney may be required if someone else signs or completes documentation on your behalf. Our team can guide you on preparation steps.",
   },
+  {
+    q: "How do I make payment from abroad?",
+    a: "Payment should follow official company guidance, approved bank details, and proper reference information. Always preserve receipts and written confirmations.",
+  },
+  {
+    q: "What documents should I prepare first?",
+    a: "Common documents include passport copy, recent photographs, NID if available, and Power of Attorney if a representative is acting for you.",
+  },
+  {
+    q: "Will I receive advisor support after inquiry?",
+    a: "Yes. The NRB support desk can help with consultation, project information, document preparation, and follow-up communication.",
+  },
+];
+
+const supportPoints = [
+  "Remote consultation",
+  "Document guidance",
+  "Family site visit support",
+  "Payment reference assistance",
 ];
 
 export default function FAQSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="bg-primary/5 py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        {/* Header */}
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
-            Frequently Asked Questions
-          </p>
-
-          <h2 className="text-4xl font-bold tracking-[-0.03em] text-gray-900 md:text-5xl">
-            Questions Before Investing?
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
-            Everything you need to know before investing from abroad. Find quick
-            answers about land purchase, registration, payment, and legal
-            support.
-          </p>
-
-          <div className="mx-auto mt-6 h-[3px] w-24 rounded-full bg-primary" />
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-[0.38fr_0.62fr] lg:items-start">
-          {/* Left Info Card */}
-          <div className="rounded-3xl border border-primary/10 bg-white p-7 shadow-sm sm:p-8">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl text-white">
+    <section className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr] lg:items-start">
+          <aside className="min-w-0 rounded-lg border border-border_color bg-off_white p-6 shadow-soft lg:sticky lg:top-28 sm:p-8">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-xl text-white">
               <FaQuestionCircle />
             </div>
-
-            <h3 className="mt-6 text-2xl font-bold tracking-[-0.02em] text-gray-900">
-              NRB Buyer Support
-            </h3>
-
-            <p className="mt-4 text-sm leading-8 text-gray-600">
-              Our team assists overseas buyers with consultation, documentation,
-              legal guidance, payment support, and site visit coordination.
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.22em] text-secondary">
+              NRB FAQ
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-primary">
+              Questions before moving forward?
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-primary/75">
+              Quick answers about remote inquiry, documents, family
+              coordination, payment references, and advisor support.
             </p>
 
-            <div className="mt-7 space-y-4 border-t border-primary/10 pt-6">
-              <SupportPoint text="Remote consultation available" />
-              <SupportPoint text="Legal documentation guidance" />
-              <SupportPoint text="Family site visit coordination" />
-              <SupportPoint text="International payment assistance" />
-            </div>
-          </div>
-
-          {/* FAQ Accordion */}
-          <div className="space-y-4">
-            {faqs.map((faq, i) => {
-              const isOpen = active === i;
-
-              return (
+            <div className="mt-6 space-y-3">
+              {supportPoints.map((item) => (
                 <div
-                  key={i}
-                  className={`overflow-hidden rounded-3xl border bg-white shadow-sm transition-all duration-300 ${
-                    isOpen
-                      ? "border-primary/30 shadow-sm"
-                      : "border-primary/10 hover:border-primary/30"
-                  }`}
+                  key={item}
+                  className="flex gap-3 rounded-lg border border-border_color bg-white p-4 text-sm font-semibold leading-6 text-primary"
                 >
-                  {/* Question */}
-                  <button
-                    type="button"
-                    onClick={() => setActive(isOpen ? null : i)}
-                    className="flex w-full items-center justify-between gap-5 p-5 text-left sm:p-6"
-                    aria-expanded={isOpen}
-                  >
-                    <div className="flex items-start gap-4">
-                      <span
-                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-bold transition ${
-                          isOpen
-                            ? "bg-primary text-white"
-                            : "bg-primary/10 text-primary"
-                        }`}
-                      >
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
+                  <FaCheckCircle className="mt-1 shrink-0 text-secondary" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </aside>
 
-                      <h3
-                        className={`pt-1 text-base font-bold leading-7 transition sm:text-lg ${
-                          isOpen ? "text-primary" : "text-gray-900"
-                        }`}
-                      >
-                        {faq.q}
-                      </h3>
-                    </div>
+          <div className="min-w-0">
+            <div className="mb-6 rounded-lg border border-border_color bg-primary p-6 text-white shadow-soft sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-secondary">
+                Frequently Asked Questions
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+                Answers for overseas buyers.
+              </h2>
+              <p className="mt-4 max-w-3xl text-base leading-8 text-white/82">
+                If you need more detail, request a consultation and our advisor
+                will explain the next step based on your situation.
+              </p>
+            </div>
 
-                    <span
-                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition ${
-                        isOpen
-                          ? "bg-primary text-white"
-                          : "bg-gray-100 text-gray-500"
-                      }`}
-                    >
-                      {isOpen ? <FaMinus /> : <FaPlus />}
-                    </span>
-                  </button>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = active === index;
 
-                  {/* Answer */}
-                  <div
-                    className={`grid transition-all duration-300 ${
+                return (
+                  <article
+                    key={faq.q}
+                    className={`overflow-hidden rounded-lg border bg-white shadow-soft transition duration-300 ${
                       isOpen
-                        ? "grid-rows-[1fr] opacity-100"
-                        : "grid-rows-[0fr] opacity-0"
+                        ? "border-primary/30"
+                        : "border-border_color hover:border-primary/30"
                     }`}
                   >
-                    <div className="overflow-hidden">
-                      <div className="px-5 pb-6 sm:px-6">
-                        <div className="border-t border-primary/10 pt-5 pl-0 sm:pl-13">
-                          <p className="text-sm leading-8 text-gray-600 sm:text-base">
-                            {faq.a}
-                          </p>
+                    <button
+                      type="button"
+                      onClick={() => setActive(isOpen ? null : index)}
+                      className="flex w-full items-start justify-between gap-5 p-5 text-left sm:p-6"
+                      aria-expanded={isOpen}
+                    >
+                      <span className="flex gap-4">
+                        <span
+                          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold transition ${
+                            isOpen
+                              ? "bg-primary text-white"
+                              : "bg-off_white text-primary"
+                          }`}
+                        >
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span className="pt-1 text-base font-bold leading-7 text-primary sm:text-lg">
+                          {faq.q}
+                        </span>
+                      </span>
+
+                      <span
+                        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg transition ${
+                          isOpen
+                            ? "bg-secondary text-white"
+                            : "bg-off_white text-primary"
+                        }`}
+                      >
+                        {isOpen ? <FaMinus /> : <FaPlus />}
+                      </span>
+                    </button>
+
+                    <div
+                      className={`grid transition-all duration-300 ${
+                        isOpen
+                          ? "grid-rows-[1fr] opacity-100"
+                          : "grid-rows-[0fr] opacity-0"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <div className="px-5 pb-6 sm:px-6">
+                          <div className="border-t border-border_color pt-5 sm:ml-14">
+                            <p className="text-sm leading-8 text-primary/75">
+                              {faq.a}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Bottom Note */}
-        <div className="mt-10 rounded-3xl border border-primary/10 bg-white p-6 shadow-sm">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-xl text-primary">
-              <FaCheckCircle />
+                  </article>
+                );
+              })}
             </div>
-
-            <p className="text-sm leading-7 text-gray-600">
-              Need more details? Contact our team for project information,
-              appointment scheduling, and documentation support.
-            </p>
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function SupportPoint({ text }) {
-  return (
-    <div className="flex items-center gap-3 text-sm font-medium text-gray-700">
-      <FaCheckCircle className="shrink-0 text-primary" />
-      <span>{text}</span>
-    </div>
   );
 }

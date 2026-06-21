@@ -1,16 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { FaUser, FaPhoneAlt, FaEnvelope, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPaperPlane, FaPhoneAlt, FaUser } from "react-icons/fa";
 
 export default function LeadForm() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     if (loading) return;
 
     setLoading(true);
@@ -18,9 +17,9 @@ export default function LeadForm() {
     setSuccess(false);
 
     const formData = {
-      name: e.target.name.value,
-      phone: e.target.phone.value,
-      email: e.target.email.value,
+      name: event.target.name.value,
+      phone: event.target.phone.value,
+      email: event.target.email.value,
     };
 
     try {
@@ -38,16 +37,13 @@ export default function LeadForm() {
 
       setSuccess(true);
       setMessage("Your request has been submitted successfully.");
-      e.target.reset();
+      event.target.reset();
     } catch (err) {
       setSuccess(false);
-      setMessage("Something went wrong. Please try again.");
+      setMessage("Something went wrong. Please contact us on WhatsApp.");
     } finally {
       setLoading(false);
-
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
+      setTimeout(() => setMessage(""), 5000);
     }
   };
 
@@ -83,23 +79,23 @@ export default function LeadForm() {
       <button
         type="submit"
         disabled={loading}
-        className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-primary px-5 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-70"
+        className="group flex w-full items-center justify-center gap-3 rounded-lg bg-primary px-5 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {loading ? "Submitting..." : "Book Site Visit"}
+        {loading ? "Submitting..." : "Request Support"}
         <FaPaperPlane className="transition-transform duration-300 group-hover:translate-x-1" />
       </button>
 
-      {message && (
+      {message ? (
         <div
-          className={`rounded-2xl border px-5 py-4 text-center text-sm font-medium ${
+          className={`rounded-lg border px-5 py-4 text-center text-sm font-semibold ${
             success
-              ? "border-green-200 bg-green-50 text-green-700"
-              : "border-red-200 bg-red-50 text-red-700"
+              ? "border-secondary/30 bg-secondary/10 text-primary"
+              : "border-primary/20 bg-off_white text-primary"
           }`}
         >
           {message}
         </div>
-      )}
+      ) : null}
     </form>
   );
 }
@@ -107,12 +103,12 @@ export default function LeadForm() {
 function InputField({ icon, label, type, name, placeholder, required }) {
   return (
     <div>
-      <label className="mb-2 block text-sm font-semibold text-gray-800">
+      <label className="mb-2 block text-sm font-bold text-primary">
         {label}
       </label>
 
       <div className="relative">
-        <span className="absolute left-4 top-1/2 -translate-y-1/2 text-primary">
+        <span className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary">
           {icon}
         </span>
 
@@ -121,7 +117,7 @@ function InputField({ icon, label, type, name, placeholder, required }) {
           name={name}
           placeholder={placeholder}
           required={required}
-          className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 pl-12 text-sm text-gray-900 outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
+          className="w-full rounded-lg border border-border_color bg-off_white px-5 py-4 pl-12 text-sm font-semibold text-primary outline-none transition placeholder:text-primary/45 focus:border-primary focus:bg-white focus:ring-4 focus:ring-secondary/15"
         />
       </div>
     </div>
