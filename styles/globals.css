@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+body {
+  margin: 0;
+  background: #f9f9f9;
+  color: #2c3a83;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(244, 130, 32, 0.24);
+}
+
+@layer components {
+  .site-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-secondary;
+  }
+
+  .section-title {
+    @apply mt-3 max-w-3xl  text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl;
+  }
+
+  .section-copy {
+    @apply mt-5 max-w-3xl text-base leading-8;
+  }
+
+  .panel {
+    @apply rounded-lg border border-white/70 bg-white/90 shadow-soft backdrop-blur;
+  }
+
+  .dark-panel {
+    @apply rounded-lg border border-white/10 bg-primary/90 text-white shadow-lift backdrop-blur;
+  }
+
+  .image-frame {
+    @apply relative overflow-hidden rounded-lg bg-slate-100 shadow-soft;
+  }
+
+  .image-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.22),
+      transparent 36%,
+      rgba(44, 58, 131, 0.08)
+    );
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-white/75 transition hover:text-white;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-secondary px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-secondary/25 transition hover:-translate-y-0.5 hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-primary;
+  }
+
+  .button-ghost {
+    @apply inline-flex items-center justify-center rounded-md border border-primary/20 bg-white px-5 py-3 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+}
