@@ -23,7 +23,7 @@ const menuItems = [
   { name: "About Us", path: "/about" },
   { name: "Masterplan", path: "/masterplan" },
 
-  { name: "Blogs", path: "/blogs" },
+  // { name: "Blogs", path: "/blogs" },
   { name: "NRB", path: "/nrb" },
   {
     name: "Corporate",
@@ -292,7 +292,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ========== MOBILE MENU ========== */}
       <div
         ref={menuRef}
         className="fixed left-0 top-0 z-40 flex max-w-full flex-col overflow-y-auto overflow-x-hidden bg-white px-8 py-12 shadow-xl lg:hidden"
@@ -309,7 +308,6 @@ export default function Navbar() {
                 {item.name}
               </Link>
 
-              {/* Mobile dropdown */}
               {item.submenu && (
                 <ul className="ml-4 mt-2 text-base text-primary/70">
                   {item.submenu.map((sub, j) => (
@@ -346,7 +344,9 @@ export default function Navbar() {
             </div>
             <div className="flex items-start gap-3">
               <FiMail className="mt-1 shrink-0 text-primary" />
-              <span className="min-w-0 break-all">anondohousings@gmail.com</span>
+              <span className="min-w-0 break-all">
+                anondohousings@gmail.com
+              </span>
             </div>
             <div className="flex items-start gap-3">
               <FiClock className="mt-1 shrink-0 text-primary" />
@@ -356,26 +356,15 @@ export default function Navbar() {
 
           {/* Social Icons */}
           <div className="flex justify-center gap-5 text-xl pt-4">
-            <Link href="https://facebook.com/AnondoHousing" target="_blank">
+            <Link href="https://www.facebook.com/anondobhuban" target="_blank">
               <FaFacebookF className="text-primary/70 transition hover:text-secondary" />
             </Link>
 
             <Link
-              href="https://linkedin.com/company/anondo-housing-society"
+              href="https://www.linkedin.com/company/anondo-bhubon/"
               target="_blank"
             >
               <FaLinkedinIn className="text-primary/70 transition hover:text-secondary" />
-            </Link>
-
-            <Link href="https://instagram.com/aphs_bd/" target="_blank">
-              <FaInstagram className="text-primary/70 transition hover:text-secondary" />
-            </Link>
-
-            <Link
-              href="https://youtube.com/@AnondoHousingSocietyOfficial"
-              target="_blank"
-            >
-              <FaYoutube className="text-primary/70 transition hover:text-secondary" />
             </Link>
           </div>
 

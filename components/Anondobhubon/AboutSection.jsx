@@ -74,16 +74,16 @@ export default function AboutSection() {
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="border border-[#E5E7EB] bg-white p-3">
                 <FramedImage
-                  src={finalRenderAssets.lakeAlternate}
-                  alt="Lake infrastructure inside Anondo Bhubon"
+                  src={finalRenderAssets.courtyardPremiumPlus}
+                  alt="Courtyard green residential living at Anondo Bhubon"
                   className="aspect-[4/5]"
                 />
               </div>
 
               <div className="border border-[#E5E7EB] bg-white p-3 sm:translate-y-8">
                 <FramedImage
-                  src="/FINAL RENDERS/SECTOR CENTRAL AMENITIES 4.png"
-                  alt="Community park and pool landscape"
+                  src={finalRenderAssets.riverPremiumPlus}
+                  alt="River view residential landscape at Anondo Bhubon"
                   className="aspect-[4/5]"
                 />
               </div>

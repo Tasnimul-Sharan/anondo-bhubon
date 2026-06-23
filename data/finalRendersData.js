@@ -9,6 +9,8 @@ const finalRender = (src, label) => ({
 
 export const finalRenderAssets = {
   hero: "/FINAL RENDERS/DOWNTOWN CBD (3).jpg",
+  courtyardPremiumPlus: "/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg",
+  riverPremiumPlus: "/FINAL RENDERS/River view PREMIUM PLUS.jpg",
   lake: "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",
   lakeAlternate: "/FINAL RENDERS/BLOCK COMMUNITY LAKE 3.png",
   riverside: "/FINAL RENDERS/RIVER SIDE 1.png",
@@ -25,9 +27,23 @@ export const finalRenderAssets = {
   premiumBlock: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
   exclusiveBlock: "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
   billboard: "/FINAL RENDERS/Billboards/7RX AI UPSCALED.jpeg",
+  location: "/FINAL RENDERS/River view PREMIUM PLUS 2.jpg",
 };
 
+export const newPremiumPlusRenders = [
+  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg", "Courtyard"),
+  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 2.jpg", "Courtyard"),
+  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 7x.jpg", "Courtyard"),
+  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS4.jpg", "Courtyard"),
+  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS5.jpg", "Courtyard"),
+  finalRender("/FINAL RENDERS/River view PREMIUM PLUS.jpg", "River View"),
+  finalRender("/FINAL RENDERS/River view PREMIUM PLUS 2.jpg", "River View"),
+  finalRender("/FINAL RENDERS/stadium PREMIUM PLUS_1.jpg", "Stadium"),
+  finalRender("/FINAL RENDERS/stadium PREMIUM PLUS2.jpg", "Stadium"),
+];
+
 export const finalRenderImages = [
+  ...newPremiumPlusRenders,
   finalRender("/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png", "Lake"),
   finalRender("/FINAL RENDERS/BLOCK COMMUNITY LAKE 3.png", "Lake"),
   finalRender("/FINAL RENDERS/DOWNTOWN CBD (1).jpg", "Downtown"),

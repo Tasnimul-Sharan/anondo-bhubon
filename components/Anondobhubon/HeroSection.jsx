@@ -44,18 +44,20 @@ export default function HeroSection() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
-              className="inline-flex items-center justify-center gap-3 bg-[#F48220] px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-white hover:text-[#2C3A83]"
-              href="#contact"
+              className="inline-flex items-center justify-center gap-3 bg-secondary px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:bg-white hover:text-primary"
+              href="/Anondo%20Bhubon%20brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FiDownload className="text-base" />
               Download Brochure
             </a>
 
             <a
-              className="inline-flex items-center justify-center gap-3 border border-white/25 bg-white/10 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white backdrop-blur transition duration-300 hover:bg-white hover:text-[#2C3A83]"
-              href="#pricing"
+              className="inline-flex items-center justify-center gap-3 border border-white/25 bg-white/10 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white backdrop-blur transition duration-300 hover:bg-white hover:text-primary"
+              href="/contact"
             >
-              View Pricing
+              Contact Us
               <FiArrowRight className="text-base" />
             </a>
           </div>
