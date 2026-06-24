@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { FiMaximize2, FiX } from "react-icons/fi";
 
 const masterplanImages = [
-  "/FINAL RENDERS/Masterplan/FULL TOP MAP V2.jpg",
+  "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
   "/FINAL RENDERS/Masterplan/Block 1 PREMIUM PLUS.jpg",
   "/FINAL RENDERS/Masterplan/Block 2 PREMIUM PLUS.jpg",
   "/FINAL RENDERS/Masterplan/Block 3 PREMIUM PLUS.jpg",
@@ -13,7 +13,6 @@ const masterplanImages = [
   "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
   "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.jpg",
   "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.jpg",
-  "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
   "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK C.jpg",
   "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
   "/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg",

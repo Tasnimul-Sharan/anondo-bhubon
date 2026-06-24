@@ -58,7 +58,7 @@ export const planItems = [
 export const residences = [
   {
     title: "Luxury Villas",
-    image: finalRenderAssets.exclusiveBlock,
+    image: "/villa/luxury-villas.jpg",
     audience:
       "Executives, NRBs, expats, diplomats, and families seeking privacy.",
     features: [
@@ -69,7 +69,7 @@ export const residences = [
   },
   {
     title: "Mid-Rise Apartments",
-    image: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.jpg",
+    image: "/villa/mid-rise-apartments.jpg",
     audience:
       "Professionals and growing families who want urban comfort beside open green space.",
     features: [
@@ -80,7 +80,7 @@ export const residences = [
   },
   // {
   //   title: "Condominiums",
-  //   image: "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER.jpg",
+  //   image: "/villa/condominiums.jpg",
   //   audience:
   //     "Young professionals, NGO staff, government officials, and compact modern households.",
   //   features: [

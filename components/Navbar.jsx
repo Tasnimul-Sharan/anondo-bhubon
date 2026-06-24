@@ -136,27 +136,30 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4 text-xl">
-            <Link href="https://facebook.com/AnondoHousing" target="_blank">
+            <Link
+              href="https://www.linkedin.com/company/anondo-bhubon/"
+              target="_blank"
+            >
               <FaFacebookF className="hover:text-off_white transition-all transform duration-500 cursor-pointer" />
             </Link>
 
             <Link
-              href="https://linkedin.com/company/anondo-housing-society"
+              href="https://www.linkedin.com/company/anondo-bhubon/"
               target="_blank"
             >
               <FaLinkedinIn className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
             </Link>
 
-            <Link href="https://instagram.com/aphs_bd/" target="_blank">
+            {/* <Link href="https://instagram.com/aphs_bd/" target="_blank">
               <FaInstagram className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
-            </Link>
+            </Link> */}
 
-            <Link
+            {/* <Link
               href="https://youtube.com/@AnondoHousingSocietyOfficial"
               target="_blank"
             >
               <FaYoutube className="hover:text-primary transition-all transform duration-500 cursor-pointer" />
-            </Link>
+            </Link> */}
 
             <select
               className="ml-3 rounded border border-border_color bg-white px-2 py-1 text-base text-primary"

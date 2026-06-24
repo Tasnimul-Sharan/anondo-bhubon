@@ -7,42 +7,45 @@ import {
   FaEnvelope,
   FaPaperPlane,
   FaCheckCircle,
+  FaClock,
 } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
+
+const WEB3FORMS_ACCESS_KEY = "bb771512-cc14-49a0-8b55-1c41f949153b";
+
+const phoneNumbers = [
+  "01331115500",
+  "01331115511",
+  "01313775333",
+  "01313775334",
+  "01313775335",
+];
+
+const contactCards = [
+  {
+    icon: <FaMapMarkerAlt />,
+    title: "Corporate Office",
+    text: "Printers Building, 11-14th Floor, Rajuk Avenue, Motijheel, Dhaka",
+    href: null,
+  },
+  {
+    icon: <FaPhoneAlt />,
+    title: "Support Team",
+    text: "01331115500, 01331115511, 01313775333, 01313775334, 01313775335",
+    href: "tel:01331115500",
+  },
+  {
+    icon: <FaEnvelope />,
+    title: "Email Support",
+    text: "info@anondocityscapers.com",
+    href: "mailto:info@anondocityscapers.com",
+  },
+];
 
 export default function ContactPageSection() {
   const [result, setResult] = useState("");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
-
-  const contactCards = [
-    {
-      icon: <FaMapMarkerAlt />,
-      title: "Office Address",
-      text: "Printers Building, 11–14th Floor, Rajuk Avenue, Motijheel, Dhaka",
-      href: null,
-    },
-    {
-      icon: <FaPhoneAlt />,
-      title: "Phone Number",
-      text: "01331115500, 01331115511, 01313775333, 01313775334, 01313775335",
-      href: "tel:01331115500",
-    },
-    {
-      icon: <FaEnvelope />,
-      title: "Email Address",
-      text: "info@anondocityscapers.com",
-      href: "mailto:info@anondocityscapers.com",
-    },
-  ];
-
-  const phoneNumbers = [
-    "01331115500",
-    "01331115511",
-    "01313775333",
-    "01313775334",
-    "01313775335",
-  ];
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -55,8 +58,6 @@ export default function ContactPageSection() {
 
     const formData = new FormData(event.target);
 
-    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY);
-
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -67,15 +68,21 @@ export default function ContactPageSection() {
 
       if (res.success) {
         setSuccess(true);
-        setResult("Message sent successfully!");
+        setResult(
+          "Thank you for reaching out. Our team has received your message and will contact you shortly.",
+        );
         event.target.reset();
       } else {
         setSuccess(false);
-        setResult("Something went wrong. Please try again.");
+        setResult(
+          "We could not submit your message at the moment. Please try again shortly.",
+        );
       }
     } catch (error) {
       setSuccess(false);
-      setResult("Something went wrong. Please try again.");
+      setResult(
+        "We could not submit your message at the moment. Please try again shortly.",
+      );
     } finally {
       setLoading(false);
       setTimeout(() => setResult(""), 5000);
@@ -83,164 +90,191 @@ export default function ContactPageSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-off_white py-20 sm:py-24">
-      {/* Decorative Background */}
-      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
-      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-secondary/10 blur-3xl" />
+    <section className="bg-off_white py-20 sm:py-24">
+      <div className="site-shell">
+        <div className="grid gap-8 lg:grid-cols-[0.92fr_0.58fr] lg:items-end">
+          <div>
+            <div className="mb-5 flex items-center gap-4">
+              <span className="h-[2px] w-11 bg-secondary" />
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-primary">
+                Contact Desk
+              </p>
+            </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="mx-auto mb-14 max-w-4xl text-center">
-          <div className="mb-5 flex items-center justify-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary">
-              Contact Us
+            <h2 className="max-w-4xl text-4xl font-bold leading-[1.08] tracking-[-0.02em] text-primary sm:text-5xl lg:text-6xl">
+              Speak with an Anondo Bhubon Support Team.
+            </h2>
+
+            <p className="mt-5 max-w-2xl text-base leading-8 text-primary/75">
+              Request brochure support, pricing guidance, site visit
+              coordination, residence availability, or investment information
+              from our customer Support Teamy team.
             </p>
-            <span className="h-[2px] w-12 bg-primary" />
           </div>
 
-          <h2 className="text-4xl font-bold tracking-[-0.03em] text-soft_black sm:text-5xl lg:text-6xl">
-            Get In Touch With Us
-          </h2>
+          <div className="border border-border_color bg-white p-6 shadow-soft">
+            <div className="flex items-start gap-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-secondary text-lg text-white">
+                <FaClock />
+              </span>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-600">
-            We are here to answer your questions, guide your property journey,
-            and help you connect with the right team.
-          </p>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+                  Office Hours
+                </p>
+                <p className="mt-2 text-lg font-bold text-primary">
+                  Sat - Thu, 10 AM - 6 PM
+                </p>
+                <p className="mt-2 text-sm leading-6 text-primary/65">
+                  Our team usually responds within one business day.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Contact Cards */}
-        <div className="mb-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
           {contactCards.map((card) => (
-            <div
-              key={card.title}
-              className="group rounded-[1.75rem] border border-border_color bg-white p-7 shadow-soft transition-all duration-500 hover:-translate-y-2 hover:shadow-lift"
-            >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-2xl text-primary transition-all duration-500 group-hover:bg-primary group-hover:text-white">
-                {card.icon}
-              </div>
-
-              <h3 className="text-xl font-bold text-soft_black">
-                {card.title}
-              </h3>
-
-              {card.href ? (
-                <a
-                  href={card.href}
-                  className="mt-3 block text-sm leading-7 text-gray-600 transition hover:text-primary"
-                >
-                  {card.text}
-                </a>
-              ) : (
-                <p className="mt-3 text-sm leading-7 text-gray-600">
-                  {card.text}
-                </p>
-              )}
-            </div>
+            <ContactCard key={card.title} {...card} />
           ))}
         </div>
 
-        {/* Main Contact Area */}
-        <div className="grid overflow-hidden rounded-[2rem] border border-border_color bg-white shadow-lift lg:grid-cols-[0.9fr_1.1fr]">
-          {/* Left Info Panel */}
-          <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary p-8 text-white sm:p-10 lg:p-12">
-            <div className="absolute -right-16 -top-16 h-52 w-52 rounded-full bg-white/10" />
-            <div className="absolute -bottom-20 -left-20 h-60 w-60 rounded-full bg-white/10" />
-
-            <div className="relative">
-              <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/70">
-                Need Assistance?
+        <div className="mt-12 grid overflow-hidden border border-border_color bg-white shadow-lift lg:grid-cols-[0.42fr_0.58fr]">
+          <aside className="relative bg-primary p-7 text-white sm:p-9 lg:p-11">
+            <div className="border-l-2 border-secondary pl-5">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/70">
+                Support Team Support
               </p>
 
-              <h3 className="mt-4 text-3xl font-bold leading-tight tracking-[-0.03em] sm:text-4xl">
-                Let’s talk about your query today.
+              <h3 className="mt-4 text-3xl font-bold leading-tight tracking-[-0.02em] text-white sm:text-4xl">
+                Tell us what you want to explore.
               </h3>
 
               <p className="mt-5 text-sm leading-8 text-white/75">
-                Share your message with us. Our team will contact you as soon as
-                possible with the right information and support.
+                Share your inquiry and the right member of our team will follow
+                up with relevant project information, visit details, and next
+                steps.
               </p>
+            </div>
 
-              <div className="mt-10 space-y-4">
-                <div className="rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
-                  <h4 className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-white">
-                    <FaPhoneAlt />
-                    Call Us
-                  </h4>
+            <div className="mt-9 border border-white/15 bg-white/10 p-5">
+              <h4 className="mb-4 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.18em] text-white">
+                <FaPhoneAlt />
+                Call Directly
+              </h4>
 
-                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-                    {phoneNumbers.map((num) => (
-                      <a
-                        key={num}
-                        href={`tel:${num}`}
-                        className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/85 transition hover:bg-white hover:text-primary"
-                      >
-                        {num}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-
-                <a
-                  href="mailto:info@anondocityscapers.com"
-                  className="flex items-center justify-between rounded-2xl border border-white/15 bg-white/10 p-5 text-sm text-white/85 backdrop-blur transition hover:bg-white hover:text-primary"
-                >
-                  <span className="flex items-center gap-3">
-                    <FaEnvelope />
-                    info@anondocityscapers.com
-                  </span>
-                  <FiArrowRight />
-                </a>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                {phoneNumbers.map((num) => (
+                  <a
+                    key={num}
+                    href={`tel:${num}`}
+                    className="border border-white/15 px-4 py-3 text-sm font-semibold text-white/85 transition hover:border-white hover:bg-white hover:text-primary"
+                  >
+                    {num}
+                  </a>
+                ))}
               </div>
             </div>
-          </div>
 
-          {/* Form Panel */}
-          <div className="p-6 sm:p-8 lg:p-12">
+            <a
+              href="mailto:info@anondobhubon.com"
+              className="mt-5 flex items-center justify-between border border-white/15 bg-white/10 p-5 text-sm font-semibold text-white/85 transition hover:border-white hover:bg-white hover:text-primary"
+            >
+              <span className="flex min-w-0 items-center gap-3">
+                <FaEnvelope className="shrink-0" />
+                <span className="break-all">info@anondobhubon.com</span>
+              </span>
+              <FiArrowRight className="shrink-0" />
+            </a>
+          </aside>
+
+          <div className="p-6 sm:p-8 lg:p-11">
             <div className="mb-8">
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-primary">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-secondary">
                 Send Message
               </p>
-              <h3 className="mt-3 text-3xl font-bold tracking-[-0.03em] text-soft_black">
+              <h3 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-primary">
                 Write to us directly
               </h3>
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-primary/65">
+                Fill out the form below and we will route your request to the
+                right Support Team.
+              </p>
             </div>
 
-            <form onSubmit={onSubmit} className="space-y-5">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              onSubmit={onSubmit}
+              className="space-y-5"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value={WEB3FORMS_ACCESS_KEY}
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Anondo Bhubon Website"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                className="hidden"
+                tabIndex="-1"
+                autoComplete="off"
+              />
+
               <div className="grid gap-5 md:grid-cols-2">
                 <InputField
+                  label="Full Name"
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Your full name"
                   required
                 />
 
                 <InputField
+                  label="Email Address"
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder="you@example.com"
                   required
                 />
               </div>
 
-              <InputField
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
+              <div className="grid gap-5 md:grid-cols-2">
+                <InputField
+                  label="Phone Number"
+                  type="tel"
+                  name="phone"
+                  placeholder="01XXXXXXXXX"
+                />
 
-              <textarea
-                name="message"
-                placeholder="Write your message..."
-                className="h-40 w-full resize-none rounded-2xl border border-border_color bg-gray-50 px-5 py-4 text-sm text-soft_black outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
-                required
-              />
+                <InputField
+                  label="Subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Pricing, brochure, site visit..."
+                  required
+                />
+              </div>
+
+              <label className="block">
+                <span className="text-sm font-bold text-primary">Message</span>
+                <textarea
+                  name="message"
+                  placeholder="Write your message..."
+                  className="mt-2 h-40 w-full resize-none border border-border_color bg-off_white px-5 py-4 text-sm text-primary outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
+                  required
+                />
+              </label>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-primary px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-secondary hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-70"
+                className="group flex w-full items-center justify-center gap-3 bg-primary px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:bg-secondary hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {loading ? "Sending..." : "Send Message"}
                 <FaPaperPlane className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -248,42 +282,57 @@ export default function ContactPageSection() {
 
               {result && (
                 <div
-                  className={`flex items-center justify-center gap-2 rounded-2xl px-5 py-4 text-center text-sm font-semibold ${
+                  className={`flex items-center justify-center gap-2 border px-5 py-4 text-center text-sm font-semibold ${
                     success
-                      ? "border border-green-200 bg-green-50 text-green-700"
-                      : "border border-red-200 bg-red-50 text-red-700"
+                      ? "border-secondary/30 bg-secondary/10 text-primary"
+                      : "border-primary/25 bg-primary/5 text-primary"
                   }`}
                 >
-                  {success && <FaCheckCircle />}
+                  {success && <FaCheckCircle className="shrink-0" />}
                   {result}
                 </div>
               )}
             </form>
           </div>
         </div>
-
-        {/* Map */}
-        {/* <div className="mt-12 overflow-hidden rounded-[2rem] border border-border_color bg-white p-3 shadow-soft">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4812.923042245769!2d90.41187546190507!3d23.729719178595598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85855d36dcd%3A0xc01cee8905afc935!2sPrinter&#39;s%20Building!5e1!3m2!1sen!2sbd!4v1775975838729!5m2!1sen!2sbd"
-            className="h-[420px] w-full rounded-[1.5rem] border-0 md:h-[520px]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div> */}
       </div>
     </section>
   );
 }
 
-function InputField({ type, name, placeholder, required }) {
+function ContactCard({ icon, title, text, href }) {
+  const content = (
+    <article className="group h-full border border-border_color bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lift">
+      <div className="flex h-12 w-12 items-center justify-center bg-primary text-xl text-white transition duration-300 group-hover:bg-secondary">
+        {icon}
+      </div>
+
+      <h3 className="mt-6 text-xl font-bold text-primary">{title}</h3>
+
+      <p className="mt-3 text-sm leading-7 text-primary/70">{text}</p>
+    </article>
+  );
+
+  return href ? (
+    <a href={href} className="block h-full">
+      {content}
+    </a>
+  ) : (
+    content
+  );
+}
+
+function InputField({ label, type, name, placeholder, required }) {
   return (
-    <input
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      className="w-full rounded-2xl border border-border_color bg-gray-50 px-5 py-4 text-sm text-soft_black outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
-      required={required}
-    />
+    <label className="block">
+      <span className="text-sm font-bold text-primary">{label}</span>
+      <input
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        className="mt-2 w-full border border-border_color bg-off_white px-5 py-4 text-sm text-primary outline-none transition placeholder:text-primary/45 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
+        required={required}
+      />
+    </label>
   );
 }

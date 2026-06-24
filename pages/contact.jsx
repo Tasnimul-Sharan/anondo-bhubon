@@ -33,7 +33,7 @@ const seo = {
 
 export default function ContactPage() {
   return (
-    <div className="w-full relative">
+    <div className="relative w-full bg-off_white">
       <AdvancedSEO {...seo} />
       <HeroSection
         hero={{

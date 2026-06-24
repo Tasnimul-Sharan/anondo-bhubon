@@ -39,13 +39,15 @@ export default function ResidencesSection() {
               className="group overflow-hidden border border-[#E5E7EB] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#F3F4F8]">
+              <div className="relative overflow-hidden bg-[#F3F4F8]">
                 <Image
                   src={home.image}
                   alt={home.title}
-                  fill
+                  width={1200}
+                  height={1200}
                   className="object-cover transition duration-700 group-hover:scale-[1.04]"
-                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  // sizes="(min-width: 1024px) 33vw, 100vw"
+                  priority
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1F2937]/55 via-transparent to-transparent" />

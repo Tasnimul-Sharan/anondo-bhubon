@@ -22,7 +22,7 @@ export const finalRenderAssets = {
   school: "/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png",
   stadium: "/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png",
   university: "/FINAL RENDERS/UNIVERSITY 4.png",
-  masterplan: "/FINAL RENDERS/Masterplan/FULL TOP MAP V2.jpg",
+  masterplan: "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
   masterplanSide: "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
   premiumBlock: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
   exclusiveBlock: "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
