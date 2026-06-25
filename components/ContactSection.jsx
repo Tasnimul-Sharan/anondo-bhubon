@@ -12,6 +12,8 @@ import {
   FaBuilding,
 } from "react-icons/fa";
 
+const WEB3FORMS_ACCESS_KEY = "bb771512-cc14-49a0-8b55-1c41f949153b";
+
 export default function ContactSection() {
   const [result, setResult] = useState("");
   const [success, setSuccess] = useState(false);
@@ -27,7 +29,6 @@ export default function ContactSection() {
     setSuccess(false);
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "bddcb629-55c2-476e-b590-2d44e089d506");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -39,15 +40,21 @@ export default function ContactSection() {
 
       if (res.success) {
         setSuccess(true);
-        setResult("Request submitted! Our agent will contact you shortly.");
+        setResult(
+          "Thank you for reaching out. Our team has received your message and will contact you shortly.",
+        );
         event.target.reset();
       } else {
         setSuccess(false);
-        setResult("Failed to send. Please try again.");
+        setResult(
+          "We could not submit your message at the moment. Please try again shortly.",
+        );
       }
     } catch (error) {
       setSuccess(false);
-      setResult("Failed to send. Please try again.");
+      setResult(
+        "We could not submit your message at the moment. Please try again shortly.",
+      );
     } finally {
       setLoading(false);
       setTimeout(() => setResult(""), 5000);
@@ -56,14 +63,12 @@ export default function ContactSection() {
 
   return (
     <section className="relative bg-primary/5 py-20 sm:py-24">
-      {/* Soft Background */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-primary/5 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-primary">
             Contact Us
@@ -82,7 +87,6 @@ export default function ContactSection() {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[0.42fr_0.58fr] lg:items-start">
-          {/* Left Contact Card */}
           <div className="overflow-hidden rounded-[2rem] border border-primary/10 bg-white shadow-sm">
             <div className="bg-primary p-8 text-white sm:p-10">
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-2xl backdrop-blur">
@@ -135,9 +139,29 @@ export default function ContactSection() {
 
           {/* Right Form */}
           <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
             onSubmit={onSubmit}
             className="rounded-[2rem] border border-primary/10 bg-white p-6 shadow-sm sm:p-8 lg:p-10"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value={WEB3FORMS_ACCESS_KEY}
+            />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Anondo Bhubon Website"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="hidden"
+              tabIndex="-1"
+              autoComplete="off"
+            />
+
             <div className="mb-8">
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-primary">
                 Property Request
@@ -174,6 +198,7 @@ export default function ContactSection() {
                 type="email"
                 name="email"
                 placeholder="Email Address"
+                required
               />
 
               <div className="grid gap-5 md:grid-cols-2">
@@ -198,6 +223,7 @@ export default function ContactSection() {
                 name="message"
                 placeholder="Additional Details..."
                 className="h-32 w-full resize-none rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 text-sm text-gray-900 outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10"
+                required
               />
 
               <button

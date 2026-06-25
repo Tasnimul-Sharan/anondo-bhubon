@@ -1,7 +1,59 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import { FaCheckCircle, FaPaperPlane } from "react-icons/fa";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
+const WEB3FORMS_ACCESS_KEY = "bb771512-cc14-49a0-8b55-1c41f949153b";
+
 export default function ContactSection() {
+  const [result, setResult] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    if (loading) return;
+
+    setLoading(true);
+    setResult("");
+    setSuccess(false);
+
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const res = await response.json();
+
+      if (res.success) {
+        setSuccess(true);
+        setResult(
+          "Thank you for reaching out. Our team has received your message and will contact you shortly.",
+        );
+        event.target.reset();
+      } else {
+        setSuccess(false);
+        setResult(
+          "We could not submit your message at the moment. Please try again shortly.",
+        );
+      }
+    } catch (error) {
+      setSuccess(false);
+      setResult(
+        "We could not submit your message at the moment. Please try again shortly.",
+      );
+    } finally {
+      setLoading(false);
+      setTimeout(() => setResult(""), 5000);
+    }
+  };
+
   return (
     <section
       id="contact"
@@ -74,7 +126,35 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <form className="border border-white/15 bg-white p-6 text-[#1F2937] shadow-xl sm:p-8">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            onSubmit={onSubmit}
+            className="border border-white/15 bg-white p-6 text-[#1F2937] shadow-xl sm:p-8"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value={WEB3FORMS_ACCESS_KEY}
+            />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Anondo Bhubon Homepage"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New project inquiry from Anondo Bhubon homepage"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="hidden"
+              tabIndex="-1"
+              autoComplete="off"
+            />
+
             <div className="mb-7 border-b border-[#5F6AA2]/20 pb-5">
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#F48220]">
                 Contact Form
@@ -96,15 +176,29 @@ export default function ContactSection() {
                 <input
                   className="mt-2 h-12 w-full border border-[#5F6AA2]/25 bg-white px-4 text-sm font-medium text-[#1F2937] outline-none transition focus:border-[#2C3A83] focus:ring-2 focus:ring-[#2C3A83]/10"
                   name="name"
+                  type="text"
                   placeholder="Your name"
+                  required
                 />
               </label>
 
               <label className="text-sm font-bold text-[#2C3A83]">
+                Email
+                <input
+                  className="mt-2 h-12 w-full border border-[#5F6AA2]/25 bg-white px-4 text-sm font-medium text-[#1F2937] outline-none transition focus:border-[#2C3A83] focus:ring-2 focus:ring-[#2C3A83]/10"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </label>
+
+              <label className="text-sm font-bold text-[#2C3A83] sm:col-span-2">
                 Phone
                 <input
                   className="mt-2 h-12 w-full border border-[#5F6AA2]/25 bg-white px-4 text-sm font-medium text-[#1F2937] outline-none transition focus:border-[#2C3A83] focus:ring-2 focus:ring-[#2C3A83]/10"
                   name="phone"
+                  type="tel"
                   placeholder="+8801318252050"
                 />
               </label>
@@ -132,16 +226,32 @@ export default function ContactSection() {
                   className="mt-2 min-h-32 w-full border border-[#5F6AA2]/25 bg-white px-4 py-3 text-sm font-medium text-[#1F2937] outline-none transition focus:border-[#2C3A83] focus:ring-2 focus:ring-[#2C3A83]/10"
                   name="message"
                   placeholder="Tell us what you would like to explore"
+                  required
                 />
               </label>
             </div>
 
             <button
-              className="mt-6 w-full bg-[#F48220] px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:bg-[#2C3A83]"
               type="submit"
+              disabled={loading}
+              className="group mt-6 flex w-full items-center justify-center gap-3 bg-primary px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:bg-secondary hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-70"
             >
-              Get in Touch
+              {loading ? "Sending..." : "Send Message"}
+              <FaPaperPlane className="transition-transform duration-300 group-hover:translate-x-1" />
             </button>
+
+            {result && (
+              <div
+                className={`mt-5 flex items-center justify-center gap-2 border px-5 py-4 text-center text-sm font-semibold ${
+                  success
+                    ? "border-secondary/30 bg-secondary/10 text-primary"
+                    : "border-primary/25 bg-primary/5 text-primary"
+                }`}
+              >
+                {success && <FaCheckCircle className="shrink-0" />}
+                {result}
+              </div>
+            )}
           </form>
         </div>
       </div>
