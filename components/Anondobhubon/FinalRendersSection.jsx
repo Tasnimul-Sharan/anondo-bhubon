@@ -38,7 +38,7 @@ export default function FinalRendersSection() {
               <span className="h-[2px] w-12 bg-secondary" />
 
               <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary/75">
-                Final Renders
+                Township Visual Gallery
               </p>
             </div>
 

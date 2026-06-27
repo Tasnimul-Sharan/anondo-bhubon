@@ -4,29 +4,33 @@ import { useEffect } from "react";
 
 export const useLenis = () => {
   useEffect(() => {
-    let lenis = null;
+    let lenis;
     let rafId;
     let cancelled = false;
+    let started = false;
 
     const startLenis = async () => {
+      if (started) return;
+      started = true;
+
       const Lenis = (await import("lenis")).default;
 
       if (cancelled) return;
 
       lenis = new Lenis({
-        lerp: 0.08,
+        duration: 1.2,
+        easing: (t) => 1 - Math.pow(1 - t, 3),
         smoothWheel: true,
+        gestureOrientation: "vertical",
         syncTouch: false,
         touchMultiplier: 1.5,
         anchors: true,
       });
 
-      const raf = (time) => {
-        if (!lenis) return;
-
+      function raf(time) {
         lenis.raf(time);
         rafId = requestAnimationFrame(raf);
-      };
+      }
 
       rafId = requestAnimationFrame(raf);
     };
@@ -39,24 +43,26 @@ export const useLenis = () => {
       once: true,
       passive: true,
     });
-
     window.addEventListener("touchstart", startOnIntent, {
       once: true,
       passive: true,
     });
-
-    window.addEventListener("keydown", startOnIntent, {
-      once: true,
-    });
+    window.addEventListener("keydown", startOnIntent, { once: true });
 
     return () => {
       cancelled = true;
 
-      if (rafId !== undefined) {
+      window.removeEventListener("wheel", startOnIntent);
+      window.removeEventListener("touchstart", startOnIntent);
+      window.removeEventListener("keydown", startOnIntent);
+
+      if (rafId) {
         cancelAnimationFrame(rafId);
       }
 
-      lenis?.destroy();
+      if (lenis) {
+        lenis.destroy();
+      }
     };
   }, []);
 };
