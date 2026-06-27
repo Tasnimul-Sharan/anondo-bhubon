@@ -78,7 +78,7 @@ export default function FinalRendersSection() {
               >
                 <button
                   type="button"
-                  onClick={() => setActiveImage(image)}
+                  onClick={() => setActiveImage({ ...image, index })}
                   className="block w-full text-left"
                   aria-label={`View ${image.title}`}
                 >
@@ -128,7 +128,7 @@ export default function FinalRendersSection() {
 
       {activeImage && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-primary/95 p-4 sm:p-6"
+          className="fixed inset-0 z-[9999] flex items-start justify-center overflow-y-auto bg-white/90 px-4 pb-4 pt-16 backdrop-blur-md sm:px-6 sm:pb-6 sm:pt-16"
           role="dialog"
           aria-modal="true"
           aria-label={activeImage.title}
@@ -142,12 +142,12 @@ export default function FinalRendersSection() {
               type="button"
               onClick={() => setActiveImage(null)}
               aria-label="Close image preview"
-              className="absolute -right-1 -top-14 z-10 flex h-11 w-11 items-center justify-center bg-white text-xl text-primary shadow-lg transition hover:bg-secondary hover:text-white sm:right-0"
+              className="absolute -right-1 -top-12 z-10 flex h-11 w-11 items-center justify-center border border-border_color bg-white text-xl text-primary shadow-sm transition hover:bg-secondary hover:text-white sm:right-0"
             >
               <FiX />
             </button>
 
-            <div className="relative h-[72vh] overflow-hidden border border-white/20 bg-white/5 shadow-[0_30px_90px_rgba(44,58,131,0.35)] sm:h-[78vh]">
+            <div className="relative h-[72vh] overflow-hidden border border-border_color bg-white shadow-[0_30px_90px_rgba(44,58,131,0.18)] sm:h-[78vh]">
               <Image
                 src={activeImage.src}
                 alt={activeImage.title}
@@ -158,17 +158,29 @@ export default function FinalRendersSection() {
               />
             </div>
 
-            <div className="mt-4 flex flex-col gap-2 text-white sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-secondary">
-                  {activeImage.label}
-                </p>
-                <h3 className="mt-1 text-xl font-bold leading-tight sm:text-2xl">
-                  {activeImage.title}
-                </h3>
+            <div className="mt-4 overflow-hidden border border-primary/15 bg-primary text-white shadow-[0_18px_50px_rgba(44,58,131,0.16)] sm:flex sm:items-stretch sm:justify-between">
+              <div className="flex min-w-0 items-start gap-4 p-4 sm:p-5">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-secondary text-sm font-bold text-white">
+                  {String(activeImage.index + 1).padStart(2, "0")}
+                </span>
+
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="inline-flex bg-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-secondary">
+                      Gallery Preview
+                    </p>
+                    <p className="inline-flex border border-white/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white/70">
+                      {activeImage.label}
+                    </p>
+                  </div>
+
+                  <h3 className="mt-2 break-words text-xl font-bold leading-tight tracking-[-0.01em] text-white sm:text-2xl">
+                    {activeImage.title}
+                  </h3>
+                </div>
               </div>
 
-              <p className="text-xs font-medium uppercase tracking-[0.18em] text-white/70">
+              <p className="border-t border-white/15 px-4 py-4 text-xs font-bold uppercase tracking-[0.18em] text-white/60 sm:flex sm:items-center sm:border-l sm:border-t-0 sm:px-5">
                 Click outside or press Esc to close
               </p>
             </div>
