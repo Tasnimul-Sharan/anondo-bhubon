@@ -67,11 +67,11 @@ export default function FAQSection() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-10 lg:grid-cols-[0.36fr_0.64fr] lg:items-start">
           <aside className="rounded-lg border border-primary/10 bg-primary p-8 text-white shadow-lift lg:sticky lg:top-24">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white/10 text-xl text-secondary">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white/10 text-xl text-white/80">
               <FaQuestionCircle />
             </div>
 
-            <p className="mt-8 text-xs font-bold uppercase tracking-[0.28em] text-secondary">
+            <p className="mt-8 text-xs font-bold uppercase tracking-[0.28em] text-white/80">
               FAQ
             </p>
 
@@ -102,7 +102,7 @@ export default function FAQSection() {
                   key={faq.q}
                   className={`overflow-hidden rounded-lg border bg-white shadow-soft transition duration-300 ${
                     isOpen
-                      ? "border-secondary/50"
+                      ? "border-primary/50"
                       : "border-border_color hover:border-primary/30"
                   }`}
                 >
@@ -135,7 +135,7 @@ export default function FAQSection() {
                     <span
                       className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg transition ${
                         isOpen
-                          ? "bg-secondary text-white"
+                          ? "bg-primary text-white"
                           : "bg-primary/5 text-primary/60"
                       }`}
                     >

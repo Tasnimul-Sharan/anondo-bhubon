@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -42,8 +43,55 @@ const socialLinks = [
   },
 ];
 
+const WEB3FORMS_ACCESS_KEY = "bb771512-cc14-49a0-8b55-1c41f949153b";
+
 export default function Footer() {
   const year = new Date().getFullYear();
+  const [result, setResult] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    if (loading) return;
+
+    setLoading(true);
+    setResult("");
+    setSuccess(false);
+
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const res = await response.json();
+
+      if (res.success) {
+        setSuccess(true);
+        setResult(
+          "Thank you for subscribing. We will send Anondo Bhubon updates to your email.",
+        );
+        event.target.reset();
+      } else {
+        setSuccess(false);
+        setResult(
+          "We could not submit your email at the moment. Please try again shortly.",
+        );
+      }
+    } catch (error) {
+      setSuccess(false);
+      setResult(
+        "We could not submit your email at the moment. Please try again shortly.",
+      );
+    } finally {
+      setLoading(false);
+      setTimeout(() => setResult(""), 5000);
+    }
+  };
 
   return (
     <footer className="overflow-hidden bg-primary text-white">
@@ -59,7 +107,40 @@ export default function Footer() {
             </h2>
           </div>
 
-          <div className="min-w-0 rounded-lg border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            onSubmit={onSubmit}
+            className="min-w-0 rounded-lg border border-white/15 bg-white/10 p-5 backdrop-blur"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value={WEB3FORMS_ACCESS_KEY}
+            />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Anondo Bhubon Footer Updates"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Anondo Bhubon footer subscription"
+            />
+            <input
+              type="hidden"
+              name="message"
+              value="Please send brochure updates, site visit information, availability notes, and advisor support."
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="hidden"
+              tabIndex="-1"
+              autoComplete="off"
+            />
+
             <p className="text-sm font-medium leading-7 text-white/75">
               Get brochure updates, site visit information, availability notes,
               and advisor support for the Anondo Bhubon township.
@@ -68,18 +149,32 @@ export default function Footer() {
             <div className="mt-5 flex overflow-hidden rounded-lg border border-white/20 bg-white">
               <input
                 type="email"
+                name="email"
                 placeholder="email@example.com"
+                required
                 className="min-w-0 flex-1 bg-white px-4 py-3 text-sm font-medium text-primary outline-none placeholder:text-primary/45"
               />
               <button
-                type="button"
+                type="submit"
+                disabled={loading}
                 aria-label="Subscribe to updates"
-                className="flex w-14 items-center justify-center bg-secondary text-lg text-white transition hover:bg-secondary/90"
+                className="flex w-14 items-center justify-center bg-secondary text-lg text-white transition hover:bg-secondary/90 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 <HiOutlineMail />
               </button>
             </div>
-          </div>
+
+            {result && (
+              <p
+                className={`mt-3 text-sm font-semibold leading-6 ${
+                  success ? "text-white" : "text-secondary"
+                }`}
+                role="status"
+              >
+                {result}
+              </p>
+            )}
+          </form>
         </div>
 
         <div className="grid gap-10 py-12 lg:grid-cols-[1.1fr_0.85fr_0.85fr_1.05fr]">

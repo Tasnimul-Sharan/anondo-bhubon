@@ -139,8 +139,8 @@ export default function ContactSection() {
 
           {/* Right Form */}
           <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
+            // action="https://api.web3forms.com/submit"
+            // method="POST"
             onSubmit={onSubmit}
             className="rounded-[2rem] border border-primary/10 bg-white p-6 shadow-sm sm:p-8 lg:p-10"
           >

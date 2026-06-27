@@ -63,7 +63,7 @@ export default function HowToBecomeOwner() {
           {steps.map((step, index) => (
             <article
               key={step.title}
-              className="group relative rounded-lg border border-border_color bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-secondary/50"
+              className="group relative rounded-lg border border-border_color bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-primary/50"
             >
               <div className="flex items-center justify-between">
                 <span className=" text-4xl font-semibold leading-none text-primary/10">
