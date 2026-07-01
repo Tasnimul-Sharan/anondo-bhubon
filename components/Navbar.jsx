@@ -163,7 +163,7 @@ export default function Navbar() {
               width={180}
               height={120}
               sizes="180px"
-              className="h-20 w-auto object-contain"
+              className="h-32 w-full object-cover"
             />
           </Link>
 
