@@ -103,7 +103,7 @@ export default function BenefitsSection() {
         <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:44px_44px] opacity-20" />
       </div>
 
-      <div className="site-shell relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="mb-14 grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
@@ -115,7 +115,7 @@ export default function BenefitsSection() {
               </p>
             </div>
 
-            <h2 className="mt-6 max-w-4xl text-4xl font-bold leading-[1.06] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+            <h2 className="mt-6 max-w-4xl text-4xl font-bold leading-[1.06] tracking-[-0.04em] text-white md:text-5xl">
               Designed for sustainability, security and long-term value.
             </h2>
           </div>

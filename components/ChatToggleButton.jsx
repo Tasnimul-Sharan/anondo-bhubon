@@ -8,6 +8,8 @@ export function ChatToggleButton({ open, toggle }) {
   return (
     <motion.button
       onClick={toggle}
+      aria-label={open ? "Close chat" : "Open chat"}
+      aria-expanded={open}
       className="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center shadow-lg"
     >
       <AnimatePresence mode="wait" initial={false}>

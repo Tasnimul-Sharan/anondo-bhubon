@@ -40,17 +40,17 @@ export const planItems = [
   },
   {
     title: "Green Strategies",
-    image: "/FINAL RENDERS/Masterplan/FOREST WALK TOP.jpg",
+    image: "/road/green-strategies.jpg",
     text: "Green corridors, water bodies, and pedestrian landscapes establish the ecological identity of the township.",
   },
   {
     title: "Road Network Plan",
-    image: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
+    image: "/road/road-network-plan.jpg",
     text: "Hierarchical mobility routes are designed for local loops, emergency access, and future transit integration.",
   },
   {
     title: "Pedestrian Network Plan",
-    image: "/FINAL RENDERS/Masterplan/FOREST WALK 2.jpg",
+    image: "/road/pedestrian-network-plan.jpg",
     text: "Walkable links, shaded promenades, and calm internal routes make the township feel human-scaled.",
   },
 ];
@@ -104,7 +104,7 @@ export const infrastructure = [
   },
   {
     title: "Road Architecture",
-    image: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.jpg",
+    image: "/road/road.jpg",
     text: "Generous streets, pedestrian bands, cycling paths, and water-sensitive infrastructure shape calm daily movement.",
   },
 ];

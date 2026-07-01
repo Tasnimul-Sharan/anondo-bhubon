@@ -8,7 +8,7 @@ const finalRender = (src, label) => ({
 });
 
 export const finalRenderAssets = {
-  hero: "/FINAL RENDERS/DOWNTOWN CBD (3).jpg",
+  hero: "/forest-walkway.png",
   courtyardPremiumPlus: "/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg",
   riverPremiumPlus: "/FINAL RENDERS/River view PREMIUM PLUS.jpg",
   lake: "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",

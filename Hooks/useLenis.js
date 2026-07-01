@@ -4,6 +4,13 @@ import { useEffect } from "react";
 
 export const useLenis = () => {
   useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const coarsePointer = window.matchMedia("(pointer: coarse)");
+
+    if (reducedMotion.matches || coarsePointer.matches || window.innerWidth < 768) {
+      return;
+    }
+
     let lenis;
     let rafId;
     let cancelled = false;

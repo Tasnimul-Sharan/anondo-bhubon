@@ -1,9 +1,6 @@
-import ChatBot from "./ChatBot";
-import WhatsAppChat from "./ChatBot";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import StickyCTA from "./NRB/StickyCTA";
-// import Navbar from "./Navbar";
 import ScrollToTopButton from "./ScrollToTopButton";
 export default function Layout({ children, footerData, navbarData }) {
   return (

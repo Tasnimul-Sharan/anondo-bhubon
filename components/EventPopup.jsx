@@ -29,6 +29,7 @@ export default function EventPopup() {
         {/* Close Button */}
         <button
           onClick={() => setShow(false)}
+          aria-label="Close event popup"
           className="absolute -top-3 -right-3 bg-white rounded-full p-2 shadow-md hover:scale-110 transition"
         >
           <FaTimes className="text-gray-700 text-lg" />
