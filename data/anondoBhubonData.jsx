@@ -78,17 +78,17 @@ export const residences = [
       "Courtyards, parks, schools, and clinics nearby",
     ],
   },
-  // {
-  //   title: "Condominiums",
-  //   image: "/villa/condominiums.jpg",
-  //   audience:
-  //     "Young professionals, NGO staff, government officials, and compact modern households.",
-  //   features: [
-  //     "1-3 bedroom suites",
-  //     "Rooftop lounges and coworking",
-  //     "Mixed-use podiums and transit links",
-  //   ],
-  // },
+  {
+    title: "Condominiums",
+    image: "/villa/condominiums.jpg",
+    audience:
+      "Young professionals, NGO staff, government officials, and compact modern households.",
+    features: [
+      "1-3 bedroom suites",
+      "Rooftop lounges and coworking",
+      "Mixed-use podiums and transit links",
+    ],
+  },
 ];
 
 export const infrastructure = [
@@ -112,34 +112,76 @@ export const infrastructure = [
 export const amenities = [
   {
     title: "Residential Clubhouse",
-    image: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 1.png",
+    image: "/bhubon-old/RESIDENTIAL CLUBHOUSE.jpg",
+    description:
+      "A premium social hub designed for residents to connect, relax, host gatherings and enjoy community lifestyle facilities.",
   },
-  { title: "Communal Park", image: finalRenderAssets.lakeAlternate },
+  {
+    title: "Communal Park",
+    image: "/bhubon-old/COMMUNAL PARK.jpg",
+    description:
+      "Open green space planned for everyday recreation, family time, walking, seating and neighborhood interaction.",
+  },
   {
     title: "Parking Courts",
-    image: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 2.png",
+    image: "/bhubon-old/PARKING COURTS.jpg",
+    description:
+      "Organized parking courts designed to support smooth mobility, safer access and a cleaner residential environment.",
   },
-  { title: "Sports Facilities", image: finalRenderAssets.stadium },
   {
-    title: "Courts and Fields",
-    image: "/FINAL RENDERS/SECTOR CENTRAL STADIUM 2.png",
+    title: "Sports Facilities",
+    image: finalRenderAssets.stadium,
+    description:
+      "Active lifestyle zones with sports and fitness-focused amenities for residents of all age groups.",
+  },
+  {
+    title: "Community Lake",
+    image: finalRenderAssets.lakeAlternate,
+    description:
+      "A serene water body designed for relaxation, wildlife observation, and community gatherings.",
   },
   {
     title: "Kid's Playground",
-    image: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 3.png",
+    image: "/bhubon-old/KID'S PLAYGROUND.jpg",
+    description:
+      "Safe, colorful and family-friendly play areas designed for children's recreation and social development.",
   },
   {
     title: "Communal Kitchen",
-    image: "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1.jpg",
+    image: "/bhubon-old/COMMUNAL KITCHEN.jpg",
+    description:
+      "Shared community kitchen facilities planned for gatherings, events and collective neighborhood activities.",
   },
-  { title: "Riverside Park", image: finalRenderAssets.riverside },
-  { title: "Meditation Area", image: finalRenderAssets.forestWalkAlternate },
-  { title: "Meditation Space", image: finalRenderAssets.forestWalk },
+  {
+    title: "Riverside Park",
+    image: finalRenderAssets.riverside,
+    description:
+      "A calm riverside destination with walking edges, seating zones and scenic open-air recreation.",
+  },
+  {
+    title: "Meditation Area",
+    image: "/bhubon-old/MEDITATION AREA.jpg",
+    description:
+      "Quiet wellness pockets designed for mindfulness, relaxation and a balanced daily lifestyle.",
+  },
+  {
+    title: "Meditation Space",
+    image: "/bhubon-old/MEDITATION SPACE.jpg",
+    description:
+      "A peaceful green environment for personal wellness, breathing space and mental refreshment.",
+  },
   {
     title: "Relaxation Zone",
-    image: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 7.png",
+    image: "/bhubon-old/RELAXATION ZONE.jpg",
+    description:
+      "Comfortable outdoor leisure areas designed for residents to unwind within nature-led surroundings.",
   },
-  { title: "IT and Cyber Hub", image: finalRenderAssets.megaMall },
+  {
+    title: "IT and Cyber Hub",
+    image: finalRenderAssets.megaMall,
+    description:
+      "A future-ready business and technology zone supporting work, innovation, connectivity and digital lifestyle.",
+  },
 ];
 
 export const benefits = [

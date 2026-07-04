@@ -1,46 +1,6 @@
 import Image from "next/image";
 import { amenities } from "@/data/anondoBhubonData";
 
-const amenityDescriptions = {
-  "SECTOR CENTRAL AMENITIES 1":
-    "A premium social hub designed for residents to connect, relax, host gatherings and enjoy community lifestyle facilities.",
-  "BLOCK COMMUNITY LAKE 3":
-    "Open green space planned for everyday recreation, family time, walking, seating and neighborhood interaction.",
-  "SECTOR CENTRAL AMENITIES 2":
-    "Organized parking courts designed to support smooth mobility, safer access and a cleaner residential environment.",
-  "SECTOR CENTRAL STADIUM 1":
-    "Active lifestyle zones with sports and fitness-focused amenities for residents of all age groups.",
-  "SECTOR CENTRAL STADIUM 2":
-    "Dedicated outdoor courts and play fields that encourage health, recreation and community engagement.",
-  "SECTOR CENTRAL AMENITIES 3":
-    "Safe, colorful and family-friendly play areas designed for children's recreation and social development.",
-  "PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1":
-    "Shared community kitchen facilities planned for gatherings, events and collective neighborhood activities.",
-  "RIVER SIDE 1":
-    "A calm riverside destination with walking edges, seating zones and scenic open-air recreation.",
-  "PREMIUM 1 SECTOR- FOREST WALK 2":
-    "Quiet wellness pockets designed for mindfulness, relaxation and a balanced daily lifestyle.",
-  "PREMIUM 1 SECTOR- FOREST WALK 1":
-    "A peaceful green environment for personal wellness, breathing space and mental refreshment.",
-  "SECTOR CENTRAL AMENITIES 7":
-    "Comfortable outdoor leisure areas designed for residents to unwind within nature-led surroundings.",
-  "MEGA MALL 6":
-    "A future-ready business and technology zone supporting work, innovation, connectivity and digital lifestyle.",
-};
-
-function getImageTitle(imagePath) {
-  return (imagePath.split("/").pop() || "Amenity")
-    .replace(/\.(png|jpe?g|webp)$/i, "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function toSentenceCase(value) {
-  return value
-    .toLowerCase()
-    .replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
-}
-
 export default function AmenitiesSection() {
   return (
     <section
@@ -77,18 +37,15 @@ export default function AmenitiesSection() {
 
         <div className="grid gap-6 md:grid-cols-2">
           {amenities.map((item, index) => {
-            const imageTitle = getImageTitle(item.image);
-            const displayTitle = toSentenceCase(imageTitle);
-
             return (
               <article
-                key={`${imageTitle}-${item.image}`}
+                key={`${item.title}-${item.image}`}
                 className="group flex h-full flex-col overflow-hidden border border-[#5F6AA2]/20 bg-white shadow-sm transition duration-500 hover:-translate-y-1 hover:border-[#2C3A83]/35 hover:shadow-[0_24px_70px_rgba(31,41,55,0.14)]"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-[#5F6AA2]/10">
                   <Image
                     src={item.image}
-                    alt={displayTitle}
+                    alt={item.title}
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
                     className="object-cover transition duration-700 group-hover:scale-[1.06]"
@@ -109,11 +66,11 @@ export default function AmenitiesSection() {
 
                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                   <h3 className="mt-3 text-2xl font-bold leading-tight tracking-[-0.02em] text-gray-700 sm:text-3xl">
-                    {displayTitle}
+                    {item.title}
                   </h3>
 
                   <p className="mt-4 text-sm font-medium leading-7 text-[#1F2937]/75">
-                    {amenityDescriptions[imageTitle] ||
+                    {item.description ||
                       "A planned township facility designed to support comfort, convenience and community lifestyle."}
                   </p>
 
