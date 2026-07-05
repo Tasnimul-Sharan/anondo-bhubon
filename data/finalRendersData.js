@@ -34,14 +34,14 @@ export const finalRenderAssets = {
 
 export const newPremiumPlusRenders = [
   finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg", "Courtyard"),
-  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 2.jpg", "Courtyard"),
+  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 2.jpg", "Courtyard"),
   finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 7x.jpg", "Courtyard"),
   finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS4.jpg", "Courtyard"),
   finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS5.jpg", "Courtyard"),
   finalRender("/FINAL RENDERS/River view PREMIUM PLUS.jpg", "River View"),
   finalRender("/FINAL RENDERS/River view PREMIUM PLUS 2.jpg", "River View"),
   finalRender("/FINAL RENDERS/stadium PREMIUM PLUS_1.jpg", "Stadium"),
-  finalRender("/FINAL RENDERS/stadium PREMIUM PLUS2.jpg", "Stadium"),
+  // finalRender("/FINAL RENDERS/stadium PREMIUM PLUS2.jpg", "Stadium"),
 ];
 
 export const finalRenderImages = [
@@ -63,18 +63,12 @@ export const finalRenderImages = [
     "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL AMENITIES 1.png",
     "Amenities",
   ),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL AMENITIES 2.png",
-    "Amenities",
-  ),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 1.png",
-    "Mosque",
-  ),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 2.png",
-    "Mosque",
-  ),
+  // finalRender(
+  //   "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL AMENITIES 2.png",
+  //   "Amenities",
+  // ),
+  finalRender("/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 1.png", "Mosque"),
+  finalRender("/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 2.png", "Mosque"),
   finalRender(
     "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1.jpg",
     "Community Farming",
@@ -103,14 +97,8 @@ export const finalRenderImages = [
   finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 5.png", "Amenities"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 6.jpg", "Amenities"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 7.png", "Amenities"),
-  finalRender(
-    "/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png",
-    "Education",
-  ),
-  finalRender(
-    "/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 2.png",
-    "Education",
-  ),
+  finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png", "Education"),
+  finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 2.png", "Education"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png", "Sports"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL STADIUM 2.png", "Sports"),
   finalRender("/FINAL RENDERS/UNIVERSITY 1.png", "Education"),
@@ -146,10 +134,7 @@ export const finalRenderImages = [
     "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER P.jpg",
     "Masterplan",
   ),
-  finalRender(
-    "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER.jpg",
-    "Masterplan",
-  ),
+  finalRender("/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER.jpg", "Masterplan"),
   finalRender("/FINAL RENDERS/Masterplan/FOREST WALK 2.jpg", "Masterplan"),
   finalRender("/FINAL RENDERS/Masterplan/FOREST WALK TOP.jpg", "Masterplan"),
   finalRender(
@@ -157,18 +142,9 @@ export const finalRenderImages = [
     "Masterplan",
   ),
   finalRender("/FINAL RENDERS/Masterplan/FULL TOP MAP V2.jpg", "Masterplan"),
-  finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.jpg",
-    "Masterplan",
-  ),
-  finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.jpg",
-    "Masterplan",
-  ),
-  finalRender(
-    "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK C.jpg",
-    "Masterplan",
-  ),
+  finalRender("/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.jpg", "Masterplan"),
+  finalRender("/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.jpg", "Masterplan"),
+  finalRender("/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK C.jpg", "Masterplan"),
   finalRender(
     "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
     "Masterplan",
