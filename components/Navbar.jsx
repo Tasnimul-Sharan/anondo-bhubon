@@ -11,6 +11,7 @@ const menuItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Masterplan", path: "/masterplan" },
+  { name: "Amenities", path: "/lifestyle-amenities" },
   { name: "NRB", path: "/nrb" },
   {
     name: "Corporate",
@@ -167,7 +168,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <ul className="relative hidden gap-8 font-semibold lg:flex">
+          <ul className="relative hidden gap-6 font-semibold xl:gap-8 lg:flex">
             {menuItems.map((item) => (
               <li key={item.name} className="group relative">
                 <Link href={item.path} className="transition hover:text-primary">

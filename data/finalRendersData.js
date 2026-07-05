@@ -16,18 +16,20 @@ export const finalRenderAssets = {
   riverside: "/FINAL RENDERS/RIVER SIDE 1.png",
   forestWalk: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.png",
   forestWalkAlternate: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
-  megaMall: "/FINAL RENDERS/MEGA MALL 6.png",
+  megaMall: "/FINAL RENDERS/MEGA MALL.jpg",
+  shopping: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 3.png",
   amenities: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 5.png",
   mosque: "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 1.png",
   school: "/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png",
   stadium: "/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png",
-  university: "/FINAL RENDERS/UNIVERSITY 4.png",
+  university: "/FINAL RENDERS/UNIVERSITY 3.png",
   masterplan: "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
   masterplanSide: "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
   premiumBlock: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
   exclusiveBlock: "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
   billboard: "/FINAL RENDERS/Billboards/7RX AI UPSCALED.jpeg",
   location: "/FINAL RENDERS/River view PREMIUM PLUS 2.jpg",
+  farming: "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1.jpg",
 };
 
 export const newPremiumPlusRenders = [

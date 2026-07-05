@@ -19,7 +19,7 @@ const quickLinks = [
 const projectLinks = [
   { name: "Master Plan", href: "/masterplan" },
   { name: "Residences", href: "/#residences" },
-  { name: "Amenities", href: "/#amenities" },
+  { name: "Lifestyle Amenities", href: "/lifestyle-amenities" },
   { name: "Location Advantage", href: "/#location" },
   { name: "NRB Support", href: "/nrb" },
 ];

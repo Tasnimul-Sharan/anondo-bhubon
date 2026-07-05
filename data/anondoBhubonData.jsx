@@ -142,7 +142,7 @@ export const amenities = [
   },
   {
     title: "Kid's Playground",
-    image: "/bhubon-old/KID'S PLAYGROUND.jpg",
+    image: "/bhubon-old/KID’S PLAYGROUND.jpg",
     description:
       "Safe, colorful and family-friendly play areas designed for children's recreation and social development.",
   },
@@ -157,6 +157,12 @@ export const amenities = [
     image: finalRenderAssets.riverside,
     description:
       "A calm riverside destination with walking edges, seating zones and scenic open-air recreation.",
+  },
+  {
+    title: "Community Farming Space",
+    image: finalRenderAssets.farming,
+    description:
+      "A dedicated area for community gardening, farming, and sustainable food production.",
   },
   {
     title: "Meditation Area",
@@ -177,10 +183,28 @@ export const amenities = [
       "Comfortable outdoor leisure areas designed for residents to unwind within nature-led surroundings.",
   },
   {
-    title: "IT and Cyber Hub",
+    title: "Anondo Bhubon Mega Mall",
     image: finalRenderAssets.megaMall,
     description:
-      "A future-ready business and technology zone supporting work, innovation, connectivity and digital lifestyle.",
+      "A large-scale retail and entertainment destination offering shopping, dining, and leisure experiences for residents and visitors.",
+  },
+  {
+    title: "Anondo Bhubon Corner Mall",
+    image: finalRenderAssets.shopping,
+    description:
+      "A large-scale retail and entertainment destination offering shopping, dining, and leisure experiences for residents and visitors.",
+  },
+  {
+    title: "Anondo Bhubon High School",
+    image: finalRenderAssets.school,
+    description:
+      "A modern educational institution providing quality learning experiences for children and young adults within the community.",
+  },
+  {
+    title: "Anondo Bhubon University",
+    image: finalRenderAssets.university,
+    description:
+      "A higher education facility offering advanced learning, research opportunities, and professional development within the township.",
   },
 ];
 
