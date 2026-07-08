@@ -35,16 +35,29 @@ export const finalRenderAssets = {
 export const newPremiumPlusRenders = [
   finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg", "Courtyard"),
   // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 2.jpg", "Courtyard"),
-  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 7x.jpg", "Courtyard"),
+  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 7x.jpg", "Courtyard"),
   // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS4.jpg", "Courtyard"),
-  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS5.jpg", "Courtyard"),
+  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS5.jpg", "Courtyard"),
   finalRender("/FINAL RENDERS/River view PREMIUM PLUS.jpg", "River View"),
-  finalRender("/FINAL RENDERS/River view PREMIUM PLUS 2.jpg", "River View"),
   finalRender("/FINAL RENDERS/stadium PREMIUM PLUS_1.jpg", "Stadium"),
   // finalRender("/FINAL RENDERS/stadium PREMIUM PLUS2.jpg", "Stadium"),
 ];
 
 export const finalRenderImages = [
+  finalRender(
+    "/anondo bhubon site/anondo bhubon site office.jpg",
+    "Site Office",
+  ),
+  finalRender("/anondo bhubon site/anondo bhubon site 1.jpg", "Site View"),
+  finalRender("/anondo bhubon site/anondo bhubon site 2.jpg", "Site View"),
+  finalRender("/anondo bhubon site/anondo bhubon site 3.jpg", "Site View"),
+  finalRender("/anondo bhubon site/anondo bhubon site 4.jpg", "Site View"),
+  finalRender("/anondo bhubon site/anondo bhubon site 5.jpg", "Site View"),
+  finalRender(
+    "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
+    "Masterplan",
+  ),
+  finalRender("/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg", "Masterplan"),
   ...newPremiumPlusRenders,
   finalRender("/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png", "Lake"),
   finalRender("/FINAL RENDERS/BLOCK COMMUNITY LAKE 3.png", "Lake"),
@@ -52,6 +65,7 @@ export const finalRenderImages = [
   finalRender("/FINAL RENDERS/DOWNTOWN CBD (1).png", "Downtown"),
   finalRender("/FINAL RENDERS/DOWNTOWN CBD (3).jpg", "Downtown"),
   finalRender("/FINAL RENDERS/DOWNTOWN CBD UPSCALED.png", "Downtown"),
+  finalRender("/FINAL RENDERS/River view PREMIUM PLUS 2.jpg", "River View"),
   finalRender("/FINAL RENDERS/LOCAL BLOCK MOSQUE 4.png", "Mosque"),
   // finalRender("/FINAL RENDERS/LOCAL BLOCK SMALL MOSQUE 2.jpg", "Mosque"),
   finalRender("/FINAL RENDERS/MEGA MALL 1.png", "Commercial"),
@@ -85,31 +99,27 @@ export const finalRenderImages = [
     "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.png",
     "Forest Walk",
   ),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
-    "Forest Walk",
-  ),
+  // finalRender(
+  //   "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
+  //   "Forest Walk",
+  // ),
   // finalRender("/FINAL RENDERS/RIVER SIDE 1.png", "Riverside"),
   // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 1.png", "Amenities"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 2.png", "Amenities"),
+  // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 2.png", "Amenities"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 3.png", "Amenities"),
   // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 4.png", "Amenities"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 5.png", "Amenities"),
   // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 6.jpg", "Amenities"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 7.png", "Amenities"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png", "Education"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 2.png", "Education"),
+  // finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 2.png", "Education"),
   // finalRender("/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png", "Sports"),
   finalRender("/FINAL RENDERS/SECTOR CENTRAL STADIUM 2.png", "Sports"),
   // finalRender("/FINAL RENDERS/UNIVERSITY 1.png", "Education"),
   finalRender("/FINAL RENDERS/UNIVERSITY 2.png", "Education"),
-  finalRender("/FINAL RENDERS/UNIVERSITY 3.png", "Education"),
+  // finalRender("/FINAL RENDERS/UNIVERSITY 3.png", "Education"),
   // finalRender("/FINAL RENDERS/UNIVERSITY 4.png", "Education"),
   finalRender("/FINAL RENDERS/UNIVERSITY LIBRARY.png", "Education"),
-  finalRender(
-    "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
-    "Masterplan",
-  ),
   // finalRender(
   //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
   //   "Masterplan",
@@ -149,33 +159,8 @@ export const finalRenderImages = [
   //   "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
   //   "Masterplan",
   // ),
-  finalRender("/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg", "Masterplan"),
   // finalRender("/FINAL RENDERS/Billboards/1RX AI UPSCALED.png", "Billboard"),
   finalRender("/FINAL RENDERS/Billboards/6RX AI UPSCALED.png", "Billboard"),
-  finalRender(
-    "/anondo bhubon site/anondo bhubon site office.jpg",
-    "Site Office",
-  ),
-  finalRender(
-    "/anondo bhubon site/anondo bhubon site 1.jpg",
-    "Site View",
-  ),
-  finalRender(
-    "/anondo bhubon site/anondo bhubon site 2.jpg",
-    "Site View",
-  ),
-  finalRender(
-    "/anondo bhubon site/anondo bhubon site 3.jpg",
-    "Site View",
-  ),
-  finalRender(
-    "/anondo bhubon site/anondo bhubon site 4.jpg",
-    "Site View",
-  ),
-  finalRender(
-    "/anondo bhubon site/anondo bhubon site 5.jpg",
-    "Site View",
-  ),
   // finalRender("/FINAL RENDERS/Billboards/7RX AI UPSCALED.jpeg", "Billboard"),
 ];
 
