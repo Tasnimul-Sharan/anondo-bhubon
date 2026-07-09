@@ -80,49 +80,6 @@ export default function MasterplanSection() {
               </p>
             </div>
           </article>
-
-          {/* Planning Intelligence */}
-          {/* <aside className="border border-[#E5E7EB] bg-[#F8F9FC] p-6 sm:p-7">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#F48220]">
-              Planning Intelligence
-            </p>
-
-            <h3 className="mt-3 text-2xl font-bold leading-tight tracking-[-0.02em] text-gray-900 sm:text-3xl">
-              A complete township logic built around land use, movement, and
-              green-blue infrastructure.
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-[#1F2937]/70">
-              Residential zones, civic anchors, water bodies, road networks,
-              pedestrian corridors, and ecological buffers are planned as one
-              connected development framework.
-            </p>
-
-            <div className="mt-7 grid gap-3">
-              {planningStats.map((item) => (
-                <div
-                  key={item.label}
-                  className="flex items-center justify-between border border-[#E5E7EB] bg-white p-4"
-                >
-                  <p className="text-sm font-medium leading-6 text-[#1F2937]/65">
-                    {item.label}
-                  </p>
-
-                  <p className="text-3xl font-bold tracking-[-0.03em] text-gray-900">
-                    {item.value}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 border-l-2 border-[#F48220] bg-white px-5 py-4">
-              <p className="text-sm font-semibold leading-7 text-[#1F2937]/75">
-                Designed for long-term value through controlled density,
-                environmental balance, future mobility, and planned civic
-                access.
-              </p>
-            </div>
-          </aside> */}
         </div>
 
         {/* Other Plans */}
