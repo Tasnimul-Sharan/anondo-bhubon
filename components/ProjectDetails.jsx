@@ -60,8 +60,7 @@ export default function ProjectDetails({ project }) {
     "A thoughtfully planned real estate project designed for modern lifestyle, long-term value, and sustainable community living.";
 
   const galleryImages = getGalleryImages(project, projectData);
-  const heroImage =
-    galleryImages[0]?.src || finalRenderAssets.hero;
+  const heroImage = galleryImages[0]?.src || finalRenderAssets.hero;
   const showcaseImages = galleryImages.slice(1, 5);
   const allGalleryImages = galleryImages.slice(0, 12);
 

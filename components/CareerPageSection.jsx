@@ -114,9 +114,9 @@ export default function CareerPageSection() {
             </h1>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-primary/75">
-              Build your career with a township-focused team working across
-              real estate development, customer advisory, sales, marketing,
-              planning coordination, and long-term community value.
+              Build your career with a township-focused team working across real
+              estate development, customer advisory, sales, marketing, planning
+              coordination, and long-term community value.
             </p>
           </div>
 
@@ -199,9 +199,7 @@ export default function CareerPageSection() {
 
                 <select
                   value={selectedLocation}
-                  onChange={(event) =>
-                    handleLocationFilter(event.target.value)
-                  }
+                  onChange={(event) => handleLocationFilter(event.target.value)}
                   className="h-14 rounded-lg border border-border_color bg-off_white px-4 text-sm font-semibold text-primary outline-none transition focus:border-primary focus:bg-white focus:ring-4 focus:ring-secondary/15"
                 >
                   {locations.map((location) => (
@@ -252,7 +250,10 @@ export default function CareerPageSection() {
                         </h3>
 
                         <div className="mt-5 grid gap-3 text-sm font-semibold text-primary/75 sm:grid-cols-3">
-                          <JobMeta icon={<FaLocationDot />} text={job.location} />
+                          <JobMeta
+                            icon={<FaLocationDot />}
+                            text={job.location}
+                          />
                           <JobMeta icon={<FaClock />} text={job.experience} />
                           <JobMeta icon={<FaBriefcase />} text={job.deadline} />
                         </div>

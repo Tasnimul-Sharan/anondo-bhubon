@@ -63,18 +63,14 @@ function getCardLayout(image, index) {
   const isTwoColumn = index > 5 && !isFullWidth;
 
   return {
-    cardClass: isFullWidth
-      ? "md:col-span-2"
-      : isTwoColumn
-        ? ""
-        : "",
+    cardClass: isFullWidth ? "md:col-span-2" : isTwoColumn ? "" : "",
     aspectClass: isFullWidth
       ? "aspect-[16/7]"
       : isTwoColumn
         ? "aspect-[16/10]"
         : "aspect-[4/3]",
     sizes: isFullWidth
-        ? "(max-width: 768px) 100vw, 1400px"
+      ? "(max-width: 768px) 100vw, 1400px"
       : isTwoColumn
         ? "(max-width: 768px) 100vw, 50vw"
         : "(max-width: 768px) 100vw, 50vw",

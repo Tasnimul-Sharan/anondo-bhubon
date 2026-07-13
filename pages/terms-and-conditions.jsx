@@ -19,9 +19,7 @@ const seo = {
   image: finalRenderAssets.amenities,
   imageAlt: "Anondo Bhubon terms and conditions",
   pageType: "WebPage",
-  breadcrumb: [
-    { name: "Terms and Conditions", path: "/terms-and-conditions" },
-  ],
+  breadcrumb: [{ name: "Terms and Conditions", path: "/terms-and-conditions" }],
 };
 
 export default function TermsAndConditionPage() {

@@ -315,7 +315,7 @@ export const blogDetailsData = {
       blogPost: {
         title: "Why Invest in Purbachal Right Now?",
         description:
-        "Purbachal is rapidly transforming into the most promising real estate hub in Bangladesh, backed by massive government projects and infrastructure development.",
+          "Purbachal is rapidly transforming into the most promising real estate hub in Bangladesh, backed by massive government projects and infrastructure development.",
         image: finalRenderAssets.masterplanSide,
         date: "05 January, 2026",
         author: "Admin",
@@ -325,18 +325,18 @@ export const blogDetailsData = {
         {
           title: "Rapid Infrastructure Growth",
           content:
-          "Purbachal is witnessing significant development including 300 ft expressway, metro rail connectivity, and modern road networks. These projects are directly increasing land value and future demand.",
+            "Purbachal is witnessing significant development including 300 ft expressway, metro rail connectivity, and modern road networks. These projects are directly increasing land value and future demand.",
         },
         {
           title: "High Investment Return",
           content:
             "Land prices in Purbachal are still relatively affordable compared to future projections. Investors are already seeing strong appreciation within short time periods.",
-          },
-          {
-            title: "Why You Should Invest Now",
-            list: [
-              "Prices are still lower than upcoming market value",
-              "Strong government backing and planning",
+        },
+        {
+          title: "Why You Should Invest Now",
+          list: [
+            "Prices are still lower than upcoming market value",
+            "Strong government backing and planning",
             "High demand from both residential and commercial buyers",
             "Safe and secure investment opportunity",
           ],
@@ -344,13 +344,13 @@ export const blogDetailsData = {
       ],
       socialIcons: social(),
     },
-    
+
     {
       slug: "anondo-rosemont-estate",
       blogPost: {
         title: "Anondo Rosemont Estate",
         description:
-        "A premium luxury villa community designed to redefine elite living near Purbachal.",
+          "A premium luxury villa community designed to redefine elite living near Purbachal.",
         image: finalRenderAssets.exclusiveBlock,
         date: "07 January, 2026",
         author: "Admin",
@@ -360,7 +360,7 @@ export const blogDetailsData = {
         {
           title: "Project Overview",
           content:
-          "Anondo Rosemont Estate is a thoughtfully designed luxury villa project combining European architectural elegance with modern urban planning.",
+            "Anondo Rosemont Estate is a thoughtfully designed luxury villa project combining European architectural elegance with modern urban planning.",
         },
         {
           title: "World-Class Facilities",
@@ -375,18 +375,18 @@ export const blogDetailsData = {
         {
           title: "Why Choose This Project",
           content:
-          "This project offers a peaceful, secure, and high-standard lifestyle away from city congestion while still being well-connected to major urban areas.",
+            "This project offers a peaceful, secure, and high-standard lifestyle away from city congestion while still being well-connected to major urban areas.",
         },
       ],
       socialIcons: social(),
     },
-    
+
     {
       slug: "anondo-bhubon",
       blogPost: {
         title: "Anondo Bhubon",
         description:
-        "A next-generation smart eco-friendly township built for modern sustainable living.",
+          "A next-generation smart eco-friendly township built for modern sustainable living.",
         image: finalRenderAssets.hero,
         date: "10 January, 2026",
         author: "Admin",
@@ -396,7 +396,7 @@ export const blogDetailsData = {
         {
           title: "Smart Living Concept",
           content:
-          "Anondo Bhubon integrates smart technology, green infrastructure, and sustainable planning to create a future-ready living environment.",
+            "Anondo Bhubon integrates smart technology, green infrastructure, and sustainable planning to create a future-ready living environment.",
         },
         {
           title: "Unique Features",
@@ -410,7 +410,7 @@ export const blogDetailsData = {
         {
           title: "Lifestyle Benefits",
           content:
-          "Residents will enjoy a balanced lifestyle with nature, technology, and modern facilities combined in one integrated community.",
+            "Residents will enjoy a balanced lifestyle with nature, technology, and modern facilities combined in one integrated community.",
         },
       ],
       socialIcons: social(),

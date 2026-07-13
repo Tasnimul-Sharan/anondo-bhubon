@@ -94,7 +94,9 @@ export default function Navbar() {
     >
       <div
         className={`hidden overflow-hidden bg-primary text-white transition-all duration-500 lg:block ${
-          isScrolled ? "max-h-0 py-0 opacity-0" : "max-h-[80px] py-4 opacity-100"
+          isScrolled
+            ? "max-h-0 py-0 opacity-0"
+            : "max-h-[80px] py-4 opacity-100"
         }`}
       >
         <div className="custom-container mx-auto flex items-center justify-between gap-6 whitespace-nowrap text-base">
@@ -171,7 +173,10 @@ export default function Navbar() {
           <ul className="relative hidden gap-6 font-semibold xl:gap-8 lg:flex">
             {menuItems.map((item) => (
               <li key={item.name} className="group relative">
-                <Link href={item.path} className="transition hover:text-primary">
+                <Link
+                  href={item.path}
+                  className="transition hover:text-primary"
+                >
                   {item.name}
                 </Link>
 
@@ -212,7 +217,9 @@ export default function Navbar() {
             type="button"
             className="z-50 text-3xl text-primary lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
           >
@@ -277,15 +284,24 @@ export default function Navbar() {
         <div className="mt-12 space-y-5 border-t border-border_color pt-6 text-base font-medium">
           <div className="space-y-3 text-primary/80">
             <div className="flex items-start gap-3">
-              <FiPhoneCall className="mt-1 shrink-0 text-primary" aria-hidden="true" />
+              <FiPhoneCall
+                className="mt-1 shrink-0 text-primary"
+                aria-hidden="true"
+              />
               <span className="min-w-0 break-words">+880 1331-115500</span>
             </div>
             <div className="flex items-start gap-3">
-              <FiMail className="mt-1 shrink-0 text-primary" aria-hidden="true" />
+              <FiMail
+                className="mt-1 shrink-0 text-primary"
+                aria-hidden="true"
+              />
               <span className="min-w-0 break-all">info@anondobhubon.com</span>
             </div>
             <div className="flex items-start gap-3">
-              <FiClock className="mt-1 shrink-0 text-primary" aria-hidden="true" />
+              <FiClock
+                className="mt-1 shrink-0 text-primary"
+                aria-hidden="true"
+              />
               <span>Sat - Thu, 10 AM - 6 PM</span>
             </div>
           </div>

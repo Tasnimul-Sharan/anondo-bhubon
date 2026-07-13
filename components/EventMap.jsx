@@ -28,9 +28,9 @@ export default function OfficeMapSection() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-primary/70">
-              We are located at the heart of Dhaka's commercial district,
-              making project consultation, appointment coordination, and
-              customer support easy to access.
+              We are located at the heart of Dhaka's commercial district, making
+              project consultation, appointment coordination, and customer
+              support easy to access.
             </p>
           </div>
 

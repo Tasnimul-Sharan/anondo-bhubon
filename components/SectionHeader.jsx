@@ -14,9 +14,7 @@ export default function SectionHeader({ subtitle, title, details }) {
       )}
 
       {details && (
-        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-          {details}
-        </p>
+        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">{details}</p>
       )}
     </div>
   );

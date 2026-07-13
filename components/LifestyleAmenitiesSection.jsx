@@ -86,7 +86,6 @@
 //   );
 // }
 
-
 import Image from "next/image";
 import { amenities } from "@/data/anondoBhubonData";
 

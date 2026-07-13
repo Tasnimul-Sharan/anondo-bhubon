@@ -268,7 +268,7 @@ export default async function handler(req, res) {
             to: from,
             text: { body: `Got your message: "${message}"` },
           }),
-        }
+        },
       );
     }
 

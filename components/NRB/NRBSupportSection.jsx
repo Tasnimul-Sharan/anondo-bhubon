@@ -155,8 +155,8 @@ Please confirm my consultation schedule.`;
               Request a consultation.
             </h3>
             <p className="mt-3 text-sm leading-7 text-primary/75">
-              Pick a preferred date and time. Your request will open in
-              WhatsApp for advisor confirmation.
+              Pick a preferred date and time. Your request will open in WhatsApp
+              for advisor confirmation.
             </p>
 
             <form onSubmit={handleBooking} className="mt-6 space-y-4">

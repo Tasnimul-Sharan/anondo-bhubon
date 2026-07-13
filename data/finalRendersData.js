@@ -17,6 +17,7 @@ export const finalRenderAssets = {
   forestWalk: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.png",
   forestWalkAlternate: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
   megaMall: "/FINAL RENDERS/MEGA MALL.jpg",
+  megaMall_Hub: "/FINAL RENDERS/MEGA MALL 6.png",
   shopping: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 3.png",
   amenities: "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 5.png",
   mosque: "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 1.png",

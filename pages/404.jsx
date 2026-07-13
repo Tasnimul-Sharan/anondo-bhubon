@@ -15,7 +15,7 @@ export default function Custom404() {
     gsap.fromTo(
       containerRef.current,
       { opacity: 0, y: 32 },
-      { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" },
     );
 
     const underline = underlineRef.current;

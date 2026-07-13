@@ -46,7 +46,7 @@ export default function FAQ({ faqData }) {
           onComplete: () => {
             el.style.height = "auto";
           },
-        }
+        },
       );
     }
   };
@@ -85,11 +85,11 @@ export default function FAQ({ faqData }) {
         transition={{ duration: 0.5 }}
       >
         {/* {faqData.title} */}
-         <SectionHeader
-        subtitle="FAQs"
-        title={faqData.title}
-        details="Find answers to the most common questions about our services, operations, and commitment to safety."
-      />
+        <SectionHeader
+          subtitle="FAQs"
+          title={faqData.title}
+          details="Find answers to the most common questions about our services, operations, and commitment to safety."
+        />
       </motion.div>
 
       <div className="space-y-4">

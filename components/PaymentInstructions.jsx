@@ -46,8 +46,8 @@ export default function PaymentInstructions() {
           <p className="flex items-start gap-3 text-sm leading-7 text-primary/80">
             <FaInfoCircle className="mt-1 shrink-0 text-secondary" />
             <span>
-              During remittance, your full name, member number, and project
-              name must be clearly mentioned so the subscriber can be identified
+              During remittance, your full name, member number, and project name
+              must be clearly mentioned so the subscriber can be identified
               correctly.
             </span>
           </p>

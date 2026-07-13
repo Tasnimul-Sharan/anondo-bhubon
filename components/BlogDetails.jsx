@@ -542,10 +542,7 @@ export default function BlogDetails({ blogsData }) {
           {/* Main Article */}
           <article className="rounded-[30px] border border-gray-100 bg-white px-6 py-4 shadow-[0_22px_70px_rgba(15,23,42,0.06)] md:px-10 md:py-6">
             {sections.map((section, index) => (
-              <div
-                key={index}
-                className=" py-10 first:pt-6 last:pb-6"
-              >
+              <div key={index} className=" py-10 first:pt-6 last:pb-6">
                 <div className="mb-5 flex items-center gap-4">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white shadow-lg shadow-primary/25">
                     {String(index + 1).padStart(2, "0")}

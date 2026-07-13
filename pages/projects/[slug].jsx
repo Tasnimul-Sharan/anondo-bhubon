@@ -51,7 +51,8 @@ export default function ProjectDetailsPage() {
       ? project.description
       : projectData.description ||
         `${projectTitle} by ${SITE_NAME}. Explore project overview, master plan, amenities, location advantages, gallery, and investment opportunities.`;
-  const heroImage = project.banner || projectData.image || finalRenderAssets.hero;
+  const heroImage =
+    project.banner || projectData.image || finalRenderAssets.hero;
   const path = `/projects/${project.slug}`;
   const tags = [
     projectTitle,

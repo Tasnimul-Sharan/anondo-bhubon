@@ -128,7 +128,7 @@ export default function HelpSection() {
           onUpdate: function () {
             el.innerText = Math.floor(el.innerText);
           },
-        }
+        },
       );
     });
   }, []);

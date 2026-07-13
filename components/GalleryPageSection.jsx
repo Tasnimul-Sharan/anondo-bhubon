@@ -91,7 +91,10 @@ export default function GalleryPageSection() {
             description: image.label,
           }))}
           plugins={[Thumbnails, Captions, Zoom, Fullscreen, Slideshow]}
-          captions={{ titleTextAlign: "center", descriptionTextAlign: "center" }}
+          captions={{
+            titleTextAlign: "center",
+            descriptionTextAlign: "center",
+          }}
           thumbnails={{ position: "bottom", width: 100, height: 70 }}
         />
       )}
