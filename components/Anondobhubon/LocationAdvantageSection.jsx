@@ -236,7 +236,7 @@ export default function LocationAdvantageSection() {
                         : ""
                     }`}
                   >
-                    <div className="absolute right-0 top-0 h-1 w-12 bg-[#F48220] transition-all duration-300 group-hover:w-full" />
+                    {/* <div className="absolute right-0 top-0 h-1 w-12 bg-[#F48220] transition-all duration-300 group-hover:w-full" /> */}
 
                     <span className="flex h-11 w-11 items-center justify-center bg-[#EEF0F8] text-sm text-[#2C3A83] transition duration-300 group-hover:bg-[#202D72] group-hover:text-white">
                       <Icon />
