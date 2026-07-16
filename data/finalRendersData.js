@@ -14,7 +14,7 @@ export const finalRenderAssets = {
   lake: "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",
   lakeAlternate: "/FINAL RENDERS/BLOCK COMMUNITY LAKE 3.png",
   riverside: "/FINAL RENDERS/RIVER SIDE 1.png",
-  forestWalk: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.png",
+  forestWalk: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
   forestWalkAlternate: "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
   megaMall: "/FINAL RENDERS/MEGA MALL.jpg",
   megaMall_Hub: "/FINAL RENDERS/MEGA MALL 6.png",
@@ -31,6 +31,7 @@ export const finalRenderAssets = {
   billboard: "/FINAL RENDERS/Billboards/7RX AI UPSCALED.jpeg",
   location: "/FINAL RENDERS/River view PREMIUM PLUS 2.jpg",
   farming: "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1.jpg",
+  farming2: "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 3.png",
 };
 
 export const newPremiumPlusRenders = [
@@ -97,7 +98,7 @@ export const finalRenderImages = [
   //   "Community Farming",
   // ),
   finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.png",
+    "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
     "Forest Walk",
   ),
   // finalRender(

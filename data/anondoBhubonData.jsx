@@ -153,10 +153,10 @@ export const amenities = [
       "Shared community kitchen facilities planned for gatherings, events and collective neighborhood activities.",
   },
   {
-    title: "Riverside Park",
-    image: finalRenderAssets.riverside,
+    title: "Community Farming Space",
+    image: finalRenderAssets.farming2,
     description:
-      "A calm riverside destination with walking edges, seating zones and scenic open-air recreation.",
+      "A dedicated area for community gardening, farming, and sustainable food production.",
   },
   {
     title: "Community Farming Space",
