@@ -37,6 +37,10 @@ const menuItems = [
     path: "/nrb",
   },
   {
+    name: "Notice",
+    path: "/notice",
+  },
+  {
     name: "Corporate",
     submenu: [
       {
