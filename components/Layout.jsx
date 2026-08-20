@@ -8,9 +8,6 @@ export default function Layout({ children, footerData, navbarData }) {
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
-      {/* <div className="fixed bottom-0 right-0 p-4 z-50">
-        <ChatBot />
-      </div> */}
       <ScrollToTopButton />
       <StickyCTA />
     </div>
