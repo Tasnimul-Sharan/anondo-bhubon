@@ -79,7 +79,7 @@ export default function HeroSection() {
                 className="group inline-flex items-center justify-center gap-3 bg-[#F48220] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.15em] text-white shadow-[0_16px_40px_rgba(244,130,32,0.22)] transition duration-300 hover:bg-white hover:text-[#2C3A83] sm:text-sm"
               >
                 <FiDownload className="text-base" />
-                <span>Download Brochure</span>
+                <span>Download Leaflet</span>
               </a>
 
               <a

@@ -304,7 +304,7 @@ export default function Navbar() {
 
               <span className="h-6 w-px bg-white/15" />
 
-              <label className="relative flex items-center">
+              {/* <label className="relative flex items-center">
                 <FiGlobe className="pointer-events-none absolute left-3.5 text-base text-[#F7A55A]" />
 
                 <select
@@ -336,7 +336,7 @@ export default function Navbar() {
                 </select>
 
                 <FiChevronDown className="pointer-events-none absolute right-3 text-sm text-white/60" />
-              </label>
+              </label> */}
             </div>
           </div>
         </div>
@@ -685,7 +685,7 @@ export default function Navbar() {
                   )}
                 </div>
 
-                <label className="relative flex items-center">
+                {/* <label className="relative flex items-center">
                   <FiGlobe className="pointer-events-none absolute left-3 text-sm text-[#F48220]" />
 
                   <select
@@ -702,7 +702,7 @@ export default function Navbar() {
                   </select>
 
                   <FiChevronDown className="pointer-events-none absolute right-2.5 text-xs text-[#202D72]/50" />
-                </label>
+                </label> */}
               </div>
             </div>
           </div>
