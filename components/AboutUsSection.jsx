@@ -34,7 +34,7 @@ export default function AboutUsSection() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-secondary">
+            <p className="text-sm font-bold uppercase tracking-[0.26em] text-secondary">
               About Anondo Bhubon
             </p>
 

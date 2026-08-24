@@ -57,7 +57,7 @@ export default function BenefitsSection() {
             <div className="flex items-center gap-4">
               <span className="h-px w-12 bg-[#F48220]" />
 
-              <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#F48220]">
+              <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
                 Core Features and Benefits
               </p>
             </div>

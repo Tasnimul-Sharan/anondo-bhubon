@@ -149,7 +149,7 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 <span className="h-px w-10 bg-[#F48220]" />
 
-                <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#F7A55A]">
+                <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#F7A55A]">
                   Begin Your Ownership Journey
                 </p>
               </div>

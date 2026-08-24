@@ -68,7 +68,7 @@ export default function AboutSection() {
             <div className="mb-5 flex items-center gap-4">
               <span className="h-px w-12 bg-[#F48220]" />
 
-              <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#F48220]">
+              <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
                 About Anondo Bhubon
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function AboutSection() {
               <div className="absolute bottom-0 left-0 top-0 w-1 bg-[#F48220]" />
 
               <div className="pl-3">
-                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
+                <p className="inline-flex bg-[#F48220]/10 px-3 py-1.5 text-sm font-bold uppercase tracking-[0.2em] text-[#F48220]">
                   Our Vision
                 </p>
 
@@ -204,7 +204,7 @@ export default function AboutSection() {
             <div className="mt-7 overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_16px_50px_rgba(27,35,75,0.08)] sm:mt-12">
               <div className="flex flex-col gap-5 border-b border-[#2C3A83]/10 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
+                  <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#F48220]">
                     Location Advantage
                   </p>
 
