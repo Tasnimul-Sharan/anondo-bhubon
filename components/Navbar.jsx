@@ -709,7 +709,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Hidden Google Translate Element */}
       <div
         id="google_translate_element"
         className="hidden"
