@@ -17,8 +17,8 @@ export const noticeData = [
   },
   {
     id: 2,
-    title: "Environmental Impact Assessment (EIA) ToR Approval Notice",
-    slug: "eia-tor-approval-notice",
+    title: "Environmental Impact Assessment (EIA) For Approval Notice",
+    slug: "eia-for-approval-notice",
     date: "02 December, 2025",
     isoDate: "2025-12-02",
     author: "Anondo Bhubon",

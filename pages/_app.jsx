@@ -19,17 +19,21 @@ const notoSansBengali = Noto_Sans_Bengali({
   variable: "--font-noto-bengali",
 });
 
-function MyApp({ Component, pageProps }) {
+function PublicLayout({ children }) {
   useLenis();
+  return <Layout>{children}<Analytics /></Layout>;
+}
 
+function MyApp({ Component, pageProps }) {
   return (
     <div
       className={`${poppins.variable} ${notoSansBengali.variable} site-font-root`}
     >
-      <Layout>
+      {Component.portalPage ? (
         <Component {...pageProps} />
-        <Analytics />
-      </Layout>
+      ) : (
+        <PublicLayout><Component {...pageProps} /></PublicLayout>
+      )}
     </div>
   );
 }

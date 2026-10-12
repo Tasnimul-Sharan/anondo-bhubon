@@ -11,6 +11,7 @@ import {
   FiGlobe,
   FiMail,
   FiPhoneCall,
+  FiUser,
 } from "react-icons/fi";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -43,6 +44,10 @@ const menuItems = [
   {
     name: "Corporate",
     submenu: [
+      {
+        name: "Client Login",
+        path: "/login",
+      },
       {
         name: "Career Opportunities",
         path: "/career-opportunities",
@@ -285,6 +290,9 @@ export default function Navbar() {
 
             {/* Social and Language */}
             <div className="flex items-center gap-4">
+              <Link href="/login" className="flex items-center gap-2 text-sm font-semibold text-white hover:underline">
+                <FiUser aria-hidden="true" /> Client Login
+              </Link>
               <div className="flex items-center gap-2.5">
                 {socialLinks.map(
                   ({ icon: Icon, href, label }) => (

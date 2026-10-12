@@ -6,10 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:portal": "node --test tests/portal-rls.test.mjs tests/portal-validation.test.mjs",
+    "test:portal:browser": "node tests/portal-browser.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.116.0",
     "@vercel/analytics": "^1.6.1",
+    "cloudinary": "^2.11.0",
     "file-saver": "^2.0.5",
     "framer-motion": "^12.19.1",
     "gsap": "^3.12.5",
@@ -27,10 +31,13 @@
     "react-slick": "^0.30.3",
     "react-visibility-sensor": "^5.1.1",
     "slick-carousel": "^1.8.1",
-    "yet-another-react-lightbox": "^1.14.0"
+    "yet-another-react-lightbox": "^1.14.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.64.0",
     "eslint": "^9.17.0",
     "eslint-config-next": "^15.1.7",
     "postcss": "^8",

@@ -19,6 +19,7 @@ const quickLinks = [
   { name: "Notice", href: "/notice" },
   { name: "Gallery", href: "/gallery" },
   { name: "Contact", href: "/contact" },
+  { name: "Client Login", href: "/login" },
 ];
 
 const projectLinks = [
