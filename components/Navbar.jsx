@@ -38,8 +38,8 @@ const menuItems = [
     path: "/nrb",
   },
   {
-    name: "Notice",
-    path: "/notice",
+    name: "Certification",
+    path: "/certification",
   },
   {
     name: "Corporate",

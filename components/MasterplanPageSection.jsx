@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { FiMaximize2, FiX } from "react-icons/fi";
 
 const masterplanImages = [
-  "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
+  "/FINAL RENDERS/Masterplan/Bhubon Full Masterplan.jpg",
   // "/FINAL RENDERS/Masterplan/Block 1 PREMIUM PLUS.jpg",
   // "/FINAL RENDERS/Masterplan/Block 2 PREMIUM PLUS.jpg",
   // "/FINAL RENDERS/Masterplan/Block 3 PREMIUM PLUS.jpg",

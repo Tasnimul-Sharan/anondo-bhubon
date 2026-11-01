@@ -3,18 +3,18 @@ import Link from "next/link";
 import { FaRegFileAlt } from "react-icons/fa";
 import { FiArrowLeft, FiCalendar, FiExternalLink, FiUser } from "react-icons/fi";
 
-export default function NoticeDetailsSection({ notice }) {
+export default function CertificationDetailsSection({ notice }) {
   return (
     <section className="relative overflow-hidden bg-off_white py-20 sm:py-24">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
         <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-4xl">
             <Link
-              href="/notice"
+              href="/certification"
               className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-primary transition hover:text-secondary"
             >
               <FiArrowLeft />
-              Back to Notices
+              Back to Certification
             </Link>
 
             <div className="mt-6 w-fit bg-secondary/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-secondary">
@@ -52,7 +52,7 @@ export default function NoticeDetailsSection({ notice }) {
               <div className="flex flex-col gap-4 border-b border-border_color p-5 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.22em] text-secondary">
-                    Notice Preview
+                    Certification Preview
                   </p>
                   <h3 className="mt-1 text-xl font-bold text-primary">
                     Page {String(index + 1).padStart(2, "0")}

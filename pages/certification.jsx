@@ -1,52 +1,52 @@
 import AdvancedSEO from "@/components/AdvancedSEO";
 import HeroSection from "@/components/HeroSection";
-import NoticePageSection from "@/components/NoticePageSection";
+import CertificationPageSection from "@/components/CertificationPageSection";
 import { noticeData } from "@/data/noticeData";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Notice | Anondo Bhubon Official Documents and Updates",
+  title: "Certification | Anondo Bhubon Certificates and Official Documents",
   description:
-    "Read official Anondo Bhubon notices, project documents, certificates, environmental approval documents, and important stakeholder updates.",
+    "Explore Anondo Bhubon certificates and official project documents, including the Non-Encumbrance Certificate and environmental approval documentation.",
   keywords: [
-    "Anondo Bhubon notice",
+    "Anondo Bhubon certification",
     "Anondo Bhubon official documents",
     "Anondo Bhubon NEC certificate",
-    "Anondo Bhubon EIA notice",
-    "Purbachal township notice",
-    "Anondo Bhubon updates",
+    "Anondo Bhubon EIA documentation",
+    "Purbachal township certificates",
+    "Anondo Bhubon project documents",
   ],
-  path: "/notice",
+  path: "/certification",
   image: noticeData[0]?.image || finalRenderAssets.masterplan,
-  imageAlt: "Anondo Bhubon official notice documents",
+  imageAlt: "Anondo Bhubon certificates and official documents",
   pageType: "CollectionPage",
-  breadcrumb: [{ name: "Notice", path: "/notice" }],
+  breadcrumb: [{ name: "Certification", path: "/certification" }],
   jsonLd: {
     "@type": "ItemList",
-    "@id": "https://www.anondobhubon.com/notice#notices",
-    name: "Anondo Bhubon Official Notices",
+    "@id": "https://www.anondobhubon.com/certification#certifications",
+    name: "Anondo Bhubon Certification",
     itemListElement: noticeData.map((notice, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: notice.title,
       description: notice.description,
-      url: `https://www.anondobhubon.com/notice/${notice.slug}`,
+      url: `https://www.anondobhubon.com/certification/${notice.slug}`,
       image: `https://www.anondobhubon.com${notice.image}`,
     })),
   },
 };
 
-export default function NoticePage() {
+export default function CertificationPage() {
   return (
     <div className="w-full relative">
       <AdvancedSEO {...seo} />
       <HeroSection
         hero={{
-          title: "Notice",
+          title: "Certification",
           backgroundImage: finalRenderAssets.masterplan,
         }}
       />
-      <NoticePageSection />
+      <CertificationPageSection />
     </div>
   );
 }

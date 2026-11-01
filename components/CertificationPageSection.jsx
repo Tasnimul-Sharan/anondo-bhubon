@@ -4,7 +4,7 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { FiArrowRight, FiCalendar, FiUser } from "react-icons/fi";
 import { getSortedNotices } from "@/data/noticeData";
 
-export default function NoticePageSection() {
+export default function CertificationPageSection() {
   const notices = getSortedNotices();
 
   return (
@@ -18,18 +18,18 @@ export default function NoticePageSection() {
             <div className="flex items-center gap-4">
               <span className="h-[2px] w-12 bg-secondary" />
               <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary/70">
-                Official Notice Board
+                Certification
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-bold leading-[1.08] tracking-[-0.03em] text-primary sm:text-5xl">
-              Project documents and public notices.
+              Certificates and official project documents.
             </h2>
           </div>
 
           <p className="max-w-3xl text-base font-medium leading-8 text-primary/70 lg:justify-self-end">
-            Find official notices, certificates, approval documents, and project
-            announcements published for Anondo Bhubon stakeholders.
+            Explore certificates and approval documents published for Anondo
+            Bhubon stakeholders and project transparency.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function NoticePageSection() {
           {notices.map((notice, index) => (
             <Link
               key={notice.slug}
-              href={`/notice/${notice.slug}`}
+              href={`/certification/${notice.slug}`}
               className="group flex h-full flex-col overflow-hidden border border-border_color bg-white shadow-sm transition duration-500 hover:-translate-y-1 hover:border-primary/35 hover:shadow-[0_24px_70px_rgba(44,58,131,0.14)]"
             >
               <div className="relative flex min-h-[420px] items-center justify-center overflow-hidden bg-primary/5 p-4 sm:min-h-[520px]">
@@ -84,7 +84,7 @@ export default function NoticePageSection() {
                   <div className="flex items-center justify-between border-t border-border_color pt-5">
                     <span className="inline-flex items-center gap-2 text-sm font-bold text-primary">
                       <FaRegFileAlt className="text-secondary" />
-                      View Notice
+                      View Certification
                     </span>
 
                     <span className="flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">

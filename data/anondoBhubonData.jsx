@@ -38,21 +38,21 @@ export const planItems = [
     image: "/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg",
     text: "Balanced density, open-space buffers, neighborhood amenities, and flexible residential typologies.",
   },
-  {
-    title: "Green Strategies",
-    image: "/road/green-strategies.jpg",
-    text: "Green corridors, water bodies, and pedestrian landscapes establish the ecological identity of the township.",
-  },
-  {
-    title: "Road Network Plan",
-    image: "/road/road-network-plan.jpg",
-    text: "Hierarchical mobility routes are designed for local loops, emergency access, and future transit integration.",
-  },
-  {
-    title: "Pedestrian Network Plan",
-    image: "/road/pedestrian-network-plan.jpg",
-    text: "Walkable links, shaded promenades, and calm internal routes make the township feel human-scaled.",
-  },
+  // {
+  //   title: "Green Strategies",
+  //   image: "/road/green-strategies.jpg",
+  //   text: "Green corridors, water bodies, and pedestrian landscapes establish the ecological identity of the township.",
+  // },
+  // {
+  //   title: "Road Network Plan",
+  //   image: "/road/road-network-plan.jpg",
+  //   text: "Hierarchical mobility routes are designed for local loops, emergency access, and future transit integration.",
+  // },
+  // {
+  //   title: "Pedestrian Network Plan",
+  //   image: "/road/pedestrian-network-plan.jpg",
+  //   text: "Walkable links, shaded promenades, and calm internal routes make the township feel human-scaled.",
+  // },
 ];
 
 export const residences = [
@@ -146,12 +146,12 @@ export const amenities = [
     description:
       "Safe, colorful and family-friendly play areas designed for children's recreation and social development.",
   },
-  {
-    title: "Communal Kitchen",
-    image: "/bhubon-old/COMMUNAL KITCHEN.jpg",
-    description:
-      "Shared community kitchen facilities planned for gatherings, events and collective neighborhood activities.",
-  },
+  // {
+  //   title: "Communal Kitchen",
+  //   image: "/bhubon-old/COMMUNAL KITCHEN.jpg",
+  //   description:
+  //     "Shared community kitchen facilities planned for gatherings, events and collective neighborhood activities.",
+  // },
   {
     title: "Community Farming Space",
     image: finalRenderAssets.farming2,
@@ -170,24 +170,24 @@ export const amenities = [
     description:
       "Quiet wellness pockets designed for mindfulness, relaxation and a balanced daily lifestyle.",
   },
-  {
-    title: "Meditation Space",
-    image: "/bhubon-old/MEDITATION SPACE.jpg",
-    description:
-      "A peaceful green environment for personal wellness, breathing space and mental refreshment.",
-  },
-  {
-    title: "Relaxation Zone",
-    image: "/bhubon-old/RELAXATION ZONE.jpg",
-    description:
-      "Comfortable outdoor leisure areas designed for residents to unwind within nature-led surroundings.",
-  },
-  {
-    title: "Anondo Bhubon Mega Mall",
-    image: finalRenderAssets.megaMall,
-    description:
-      "A large-scale retail and entertainment destination offering shopping, dining, and leisure experiences for residents and visitors.",
-  },
+  // {
+  //   title: "Meditation Space",
+  //   image: "/bhubon-old/MEDITATION SPACE.jpg",
+  //   description:
+  //     "A peaceful green environment for personal wellness, breathing space and mental refreshment.",
+  // },
+  // {
+  //   title: "Relaxation Zone",
+  //   image: "/bhubon-old/RELAXATION ZONE.jpg",
+  //   description:
+  //     "Comfortable outdoor leisure areas designed for residents to unwind within nature-led surroundings.",
+  // },
+  // {
+  //   title: "Anondo Bhubon Mega Mall",
+  //   image: finalRenderAssets.megaMall,
+  //   description:
+  //     "A large-scale retail and entertainment destination offering shopping, dining, and leisure experiences for residents and visitors.",
+  // },
   {
     title: "Anondo Bhubon Corner Mall",
     image: finalRenderAssets.shopping,

@@ -1,32 +1,32 @@
 import AdvancedSEO from "@/components/AdvancedSEO";
 import HeroSection from "@/components/HeroSection";
-import NoticeDetailsSection from "@/components/NoticeDetailsSection";
+import CertificationDetailsSection from "@/components/CertificationDetailsSection";
 import { getNoticeBySlug, noticeData } from "@/data/noticeData";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
-export default function NoticeDetailsPage({ notice }) {
+export default function CertificationDetailsPage({ notice }) {
   const seo = {
-    title: `${notice.title} | Anondo Bhubon Notice`,
+    title: `${notice.title} | Anondo Bhubon Certification`,
     description: notice.description,
     keywords: [
-      "Anondo Bhubon notice",
+      "Anondo Bhubon certification",
       notice.title,
       notice.category,
       "Anondo Bhubon official document",
-      "Purbachal township update",
+      "Purbachal township certification documents",
     ],
-    path: `/notice/${notice.slug}`,
+    path: `/certification/${notice.slug}`,
     image: notice.image,
-    imageAlt: `${notice.title} official notice document`,
+    imageAlt: `${notice.title} official document`,
     pageType: "Article",
     breadcrumb: [
-      { name: "Notice", path: "/notice" },
-      { name: notice.title, path: `/notice/${notice.slug}` },
+      { name: "Certification", path: "/certification" },
+      { name: notice.title, path: `/certification/${notice.slug}` },
     ],
     publishedTime: notice.isoDate,
     jsonLd: {
       "@type": "Article",
-      "@id": `https://www.anondobhubon.com/notice/${notice.slug}#article`,
+      "@id": `https://www.anondobhubon.com/certification/${notice.slug}#article`,
       headline: notice.title,
       description: notice.description,
       image: notice.images.map((image) => `https://www.anondobhubon.com${image}`),
@@ -40,7 +40,7 @@ export default function NoticeDetailsPage({ notice }) {
         "@id": "https://www.anondobhubon.com/#organization",
       },
       mainEntityOfPage: {
-        "@id": `https://www.anondobhubon.com/notice/${notice.slug}#webpage`,
+        "@id": `https://www.anondobhubon.com/certification/${notice.slug}#webpage`,
       },
     },
   };
@@ -50,11 +50,11 @@ export default function NoticeDetailsPage({ notice }) {
       <AdvancedSEO {...seo} />
       <HeroSection
         hero={{
-          title: notice.title,
+          title: "Certification Details",
           backgroundImage: finalRenderAssets.masterplan,
         }}
       />
-      <NoticeDetailsSection notice={notice} />
+      <CertificationDetailsSection notice={notice} />
     </div>
   );
 }

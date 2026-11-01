@@ -24,7 +24,7 @@ export const finalRenderAssets = {
   school: "/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png",
   stadium: "/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png",
   university: "/FINAL RENDERS/UNIVERSITY 3.png",
-  masterplan: "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
+  masterplan: "/FINAL RENDERS/Masterplan/Bhubon Full Masterplan.jpg",
   masterplanSide: "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
   premiumBlock: "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
   exclusiveBlock: "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
@@ -56,7 +56,7 @@ export const finalRenderImages = [
   finalRender("/anondo bhubon site/anondo bhubon site 4.jpg", "Site View"),
   finalRender("/anondo bhubon site/anondo bhubon site 5.jpg", "Site View"),
   finalRender(
-    "/FINAL RENDERS/Masterplan/bhubon leaflet inner bg new HR.jpg",
+    "/FINAL RENDERS/Masterplan/Bhubon Full Masterplan.jpg",
     "Masterplan",
   ),
   finalRender("/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg", "Masterplan"),
