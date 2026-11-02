@@ -22,50 +22,50 @@ const menuItems = [
     path: "/",
   },
   {
-    name: "About Us",
+    name: "Brand Story",
     path: "/about",
   },
   {
-    name: "Masterplan",
+    name: "Master Plan",
     path: "/masterplan",
   },
   {
-    name: "Amenities",
+    name: "Lifestyle",
     path: "/lifestyle-amenities",
   },
   {
-    name: "NRB",
+    name: "NRB Services",
     path: "/nrb",
   },
   {
-    name: "Certification",
+    name: "Certifications",
     path: "/certification",
   },
-  {
-    name: "Corporate",
-    submenu: [
-      {
-        name: "Client Login",
-        path: "/login",
-      },
-      {
-        name: "Career Opportunities",
-        path: "/career-opportunities",
-      },
-      {
-        name: "Payment Procedures",
-        path: "/payment-procedures",
-      },
-      {
-        name: "Terms and Conditions",
-        path: "/terms-and-conditions",
-      },
-      {
-        name: "Privacy Policy",
-        path: "/privacy-policy",
-      },
-    ],
-  },
+  // {
+  //   name: "Corporate",
+  //   submenu: [
+  //     {
+  //       name: "Client Portal",
+  //       path: "/login",
+  //     },
+  //     {
+  //       name: "Career Opportunities",
+  //       path: "/career-opportunities",
+  //     },
+  //     {
+  //       name: "Payment Procedures",
+  //       path: "/payment-procedures",
+  //     },
+  //     {
+  //       name: "Terms and Conditions",
+  //       path: "/terms-and-conditions",
+  //     },
+  //     {
+  //       name: "Privacy Policy",
+  //       path: "/privacy-policy",
+  //     },
+  //   ],
+  // },
   {
     name: "Gallery",
     path: "/gallery",
@@ -151,8 +151,7 @@ async function handleLanguageChange(event) {
   try {
     await loadGoogleTranslate();
 
-    const translateSelect =
-      document.querySelector(".goog-te-combo");
+    const translateSelect = document.querySelector(".goog-te-combo");
 
     if (!translateSelect) return;
 
@@ -164,17 +163,13 @@ async function handleLanguageChange(event) {
       }),
     );
   } catch (error) {
-    console.error(
-      "Google Translate could not be loaded:",
-      error,
-    );
+    console.error("Google Translate could not be loaded:", error);
   }
 }
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isCorporateOpen, setIsCorporateOpen] =
-    useState(false);
+  const [isCorporateOpen, setIsCorporateOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   /*
@@ -203,8 +198,7 @@ export default function Navbar() {
   useEffect(() => {
     if (!isMenuOpen) return;
 
-    const previousOverflow =
-      document.body.style.overflow;
+    const previousOverflow = document.body.style.overflow;
 
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -220,10 +214,7 @@ export default function Navbar() {
     return () => {
       document.body.style.overflow = previousOverflow;
 
-      window.removeEventListener(
-        "keydown",
-        handleKeyDown,
-      );
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, [isMenuOpen]);
 
@@ -241,7 +232,7 @@ export default function Navbar() {
       >
         {/* Desktop Top Bar */}
         <div
-          className={`relative hidden overflow-hidden bg-[#202D72] text-white transition-all duration-500 lg:block ${
+          className={`relative hidden overflow-hidden bg-[#202D72] text-white transition-all duration-500 xl:block ${
             isScrolled
               ? "max-h-0 py-0 opacity-0"
               : "max-h-[90px] py-3 opacity-100"
@@ -290,24 +281,25 @@ export default function Navbar() {
 
             {/* Social and Language */}
             <div className="flex items-center gap-4">
-              <Link href="/login" className="flex items-center gap-2 text-sm font-semibold text-white hover:underline">
-                <FiUser aria-hidden="true" /> Client Login
-              </Link>
+              {/* <Link
+                href="/login"
+                className="flex items-center gap-2 text-sm font-semibold text-white hover:underline"
+              >
+                <FiUser aria-hidden="true" /> Client Portal   
+              </Link> */}
               <div className="flex items-center gap-2.5">
-                {socialLinks.map(
-                  ({ icon: Icon, href, label }) => (
-                    <a
-                      key={label}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Anondo Bhubon ${label}`}
-                      className="flex h-9 w-9 items-center justify-center border border-white/15 bg-white/[0.05] text-sm text-white/80 transition duration-300 hover:-translate-y-0.5 hover:border-[#F48220] hover:bg-[#F48220] hover:text-white"
-                    >
-                      <Icon />
-                    </a>
-                  ),
-                )}
+                {socialLinks.map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Anondo Bhubon ${label}`}
+                    className="flex h-9 w-9 items-center justify-center border border-white/15 bg-white/[0.05] text-sm text-white/80 transition duration-300 hover:-translate-y-0.5 hover:border-[#F48220] hover:bg-[#F48220] hover:text-white"
+                  >
+                    <Icon />
+                  </a>
+                ))}
               </div>
 
               <span className="h-6 w-px bg-white/15" />
@@ -370,16 +362,10 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav
-              className="hidden lg:block"
-              aria-label="Primary navigation"
-            >
+            <nav className="hidden xl:block" aria-label="Primary navigation">
               <ul className="flex items-center gap-5 xl:gap-8">
                 {menuItems.map((item) => (
-                  <li
-                    key={item.name}
-                    className="group relative"
-                  >
+                  <li key={item.name} className="group relative">
                     {item.submenu ? (
                       <>
                         <button
@@ -401,22 +387,18 @@ export default function Navbar() {
                             </div>
 
                             <ul className="py-2">
-                              {item.submenu.map(
-                                (subItem) => (
-                                  <li key={subItem.name}>
-                                    <Link
-                                      href={subItem.path}
-                                      className="group/item flex items-center justify-between px-4 py-3 text-sm font-semibold text-[#202D72]/70 transition duration-300 hover:bg-[#F5F4F0] hover:text-[#202D72]"
-                                    >
-                                      <span>
-                                        {subItem.name}
-                                      </span>
+                              {item.submenu.map((subItem) => (
+                                <li key={subItem.name}>
+                                  <Link
+                                    href={subItem.path}
+                                    className="group/item flex items-center justify-between px-4 py-3 text-sm font-semibold text-[#202D72]/70 transition duration-300 hover:bg-[#F5F4F0] hover:text-[#202D72]"
+                                  >
+                                    <span>{subItem.name}</span>
 
-                                      <FiChevronRight className="-translate-x-1.5 text-sm text-[#F48220] opacity-0 transition duration-300 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
-                                    </Link>
-                                  </li>
-                                ),
-                              )}
+                                    <FiChevronRight className="-translate-x-1.5 text-sm text-[#F48220] opacity-0 transition duration-300 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
+                                  </Link>
+                                </li>
+                              ))}
                             </ul>
                           </div>
                         </div>
@@ -437,12 +419,12 @@ export default function Navbar() {
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden lg:block">
+            <div className="hidden xl:block">
               <Link
                 href="/contact"
                 className="group inline-flex items-center gap-3 bg-[#202D72] px-5 py-3.5 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-[0_12px_30px_rgba(32,45,114,0.18)] transition duration-300 hover:bg-[#F48220]"
               >
-                <span>Contact Us</span>
+                <span>Get in Touch</span>
 
                 <FiArrowUpRight className="text-base transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </Link>
@@ -457,19 +439,13 @@ export default function Navbar() {
                 });
               }}
               aria-label={
-                isMenuOpen
-                  ? "Close navigation menu"
-                  : "Open navigation menu"
+                isMenuOpen ? "Close navigation menu" : "Open navigation menu"
               }
               aria-expanded={isMenuOpen}
               aria-controls="mobile-navigation"
-              className="relative z-[80] flex h-11 w-11 items-center justify-center border border-[#2C3A83]/15 text-2xl text-[#202D72] transition hover:border-[#F48220] hover:bg-[#F48220] hover:text-white lg:hidden"
+              className="relative z-[80] flex h-11 w-11 items-center justify-center border border-[#2C3A83]/15 text-2xl text-[#202D72] transition hover:border-[#F48220] hover:bg-[#F48220] hover:text-white xl:hidden"
             >
-              {isMenuOpen ? (
-                <HiOutlineX />
-              ) : (
-                <HiOutlineMenu />
-              )}
+              {isMenuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
             </button>
           </div>
         </div>
@@ -479,7 +455,7 @@ export default function Navbar() {
       <div
         id="mobile-navigation"
         aria-hidden={!isMenuOpen}
-        className={`fixed inset-0 z-[70] bg-[#F7F5F0] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hidden ${
+        className={`fixed inset-0 z-[70] bg-[#F7F5F0] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] xl:hidden ${
           isMenuOpen
             ? "visible translate-x-0 opacity-100"
             : "invisible translate-x-full opacity-0"
@@ -541,21 +517,16 @@ export default function Navbar() {
                         <button
                           type="button"
                           onClick={() => {
-                            setIsCorporateOpen(
-                              (currentState) => {
-                                return !currentState;
-                              },
-                            );
+                            setIsCorporateOpen((currentState) => {
+                              return !currentState;
+                            });
                           }}
                           aria-expanded={isCorporateOpen}
                           className="flex w-full items-center justify-between py-5 text-left"
                         >
                           <span className="flex items-center gap-4">
                             <span className="text-[10px] font-bold tracking-[0.15em] text-[#F48220]">
-                              {String(index + 1).padStart(
-                                2,
-                                "0",
-                              )}
+                              {String(index + 1).padStart(2, "0")}
                             </span>
 
                             <span className="text-xl font-semibold tracking-[-0.02em] text-[#202D72]">
@@ -565,9 +536,7 @@ export default function Navbar() {
 
                           <FiChevronDown
                             className={`text-lg text-[#202D72] transition-transform duration-300 ${
-                              isCorporateOpen
-                                ? "rotate-180"
-                                : ""
+                              isCorporateOpen ? "rotate-180" : ""
                             }`}
                           />
                         </button>
@@ -580,25 +549,19 @@ export default function Navbar() {
                           }`}
                         >
                           <ul className="ml-10 border-l border-[#F48220]/30 pl-5">
-                            {item.submenu.map(
-                              (subItem) => (
-                                <li key={subItem.name}>
-                                  <Link
-                                    href={subItem.path}
-                                    onClick={
-                                      closeMobileMenu
-                                    }
-                                    className="flex items-center justify-between py-2.5 text-sm font-semibold text-[#202D72]/65 transition hover:text-[#F48220]"
-                                  >
-                                    <span>
-                                      {subItem.name}
-                                    </span>
+                            {item.submenu.map((subItem) => (
+                              <li key={subItem.name}>
+                                <Link
+                                  href={subItem.path}
+                                  onClick={closeMobileMenu}
+                                  className="flex items-center justify-between py-2.5 text-sm font-semibold text-[#202D72]/65 transition hover:text-[#F48220]"
+                                >
+                                  <span>{subItem.name}</span>
 
-                                    <FiChevronRight />
-                                  </Link>
-                                </li>
-                              ),
-                            )}
+                                  <FiChevronRight />
+                                </Link>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </>
@@ -610,10 +573,7 @@ export default function Navbar() {
                       >
                         <span className="flex items-center gap-4">
                           <span className="text-[10px] font-bold tracking-[0.15em] text-[#F48220]">
-                            {String(index + 1).padStart(
-                              2,
-                              "0",
-                            )}
+                            {String(index + 1).padStart(2, "0")}
                           </span>
 
                           <span className="text-xl font-semibold tracking-[-0.02em] text-[#202D72] transition group-hover:text-[#F48220]">
@@ -635,7 +595,7 @@ export default function Navbar() {
               onClick={closeMobileMenu}
               className="mt-8 flex items-center justify-between bg-[#202D72] px-5 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:bg-[#F48220]"
             >
-              <span>Request Consultation</span>
+              <span>Get in Touch</span>
 
               <FiArrowUpRight className="text-lg" />
             </Link>
@@ -662,9 +622,7 @@ export default function Navbar() {
                 >
                   <FiMail className="mt-0.5 shrink-0 text-[#F48220]" />
 
-                  <span className="break-all">
-                    info@anondobhubon.com
-                  </span>
+                  <span className="break-all">info@anondobhubon.com</span>
                 </a>
 
                 <div className="flex items-start gap-3 text-sm font-semibold text-[#202D72]/70">
@@ -677,20 +635,18 @@ export default function Navbar() {
               {/* Mobile Social and Language */}
               <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-[#2C3A83]/10 pt-5">
                 <div className="flex gap-2">
-                  {socialLinks.map(
-                    ({ icon: Icon, href, label }) => (
-                      <a
-                        key={label}
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Anondo Bhubon ${label}`}
-                        className="flex h-10 w-10 items-center justify-center border border-[#2C3A83]/10 text-sm text-[#202D72] transition hover:border-[#F48220] hover:bg-[#F48220] hover:text-white"
-                      >
-                        <Icon />
-                      </a>
-                    ),
-                  )}
+                  {socialLinks.map(({ icon: Icon, href, label }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Anondo Bhubon ${label}`}
+                      className="flex h-10 w-10 items-center justify-center border border-[#2C3A83]/10 text-sm text-[#202D72] transition hover:border-[#F48220] hover:bg-[#F48220] hover:text-white"
+                    >
+                      <Icon />
+                    </a>
+                  ))}
                 </div>
 
                 {/* <label className="relative flex items-center">
@@ -717,10 +673,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div
-        id="google_translate_element"
-        className="hidden"
-      />
+      <div id="google_translate_element" className="hidden" />
     </>
   );
 }

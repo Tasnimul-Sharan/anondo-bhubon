@@ -159,12 +159,6 @@ export const amenities = [
       "A dedicated area for community gardening, farming, and sustainable food production.",
   },
   {
-    title: "Community Farming Space",
-    image: finalRenderAssets.farming,
-    description:
-      "A dedicated area for community gardening, farming, and sustainable food production.",
-  },
-  {
     title: "Meditation Area",
     image: "/bhubon-old/MEDITATION AREA.jpg",
     description:

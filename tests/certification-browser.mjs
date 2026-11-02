@@ -15,13 +15,33 @@ const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
 const canonical = (path) => `https://www.anondobhubon.com${path}`;
+const navigationLinks = [
+  ["Home", "/"],
+  ["Brand Story", "/about"],
+  ["Master Plan", "/masterplan"],
+  ["Lifestyle", "/lifestyle-amenities"],
+  ["NRB Services", "/nrb"],
+  ["Certifications", "/certification"],
+  ["Gallery", "/gallery"],
+];
+
+async function checkNavigation(name) {
+  const navigation = page.getByRole("navigation", { name, exact: true });
+  await navigation.waitFor();
+  const links = navigation.getByRole("link");
+  assert.equal(await links.count(), navigationLinks.length);
+  for (const [index, [label, href]] of navigationLinks.entries()) {
+    assert.equal((await links.nth(index).textContent()).replace(/^\d+/, "").trim(), label);
+    assert.equal(await links.nth(index).getAttribute("href"), href);
+  }
+}
 
 async function noOverflow() {
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), "No horizontal page overflow");
 }
 
-async function screenshot(name) {
-  await page.screenshot({ path: fileURLToPath(new URL(name, output)), fullPage: true });
+async function screenshot(name, fullPage = true) {
+  await page.screenshot({ path: fileURLToPath(new URL(name, output)), fullPage, animations: "disabled" });
 }
 
 try {
@@ -42,13 +62,28 @@ try {
   assert.equal(new URL(page.url()).pathname, "/certification");
   assert.match(await page.title(), /^Certification \|/);
   assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), canonical("/certification"));
-  await page.getByRole("navigation", { name: "Primary navigation", exact: true }).getByRole("link", { name: "Certification", exact: true }).waitFor();
+  await checkNavigation("Primary navigation");
+  assert.equal(await page.locator("header").getByRole("link", { name: "Client Portal", exact: true }).getAttribute("href"), "/login");
+  assert.equal(await page.locator("header").getByRole("link", { name: "Get in Touch", exact: true }).getAttribute("href"), "/contact");
   assert.equal(await page.getByRole("link", { name: "Notice", exact: true }).count(), 0);
   const cards = page.getByRole("link").filter({ hasText: "View Certification" });
   assert.equal(await cards.count(), noticeData.length);
   await cards.first().locator("img").evaluate((image) => image.decode());
   await noOverflow();
   await screenshot("listing-desktop.png");
+
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await checkNavigation("Primary navigation");
+  await noOverflow();
+  await screenshot("navigation-desktop.png", false);
+  await page.setViewportSize({ width: 1024, height: 900 });
+  assert.equal(await page.getByRole("navigation", { name: "Primary navigation", exact: true }).isVisible(), false);
+  await page.getByRole("button", { name: "Open navigation menu", exact: true }).click();
+  await checkNavigation("Mobile navigation");
+  await noOverflow();
+  await screenshot("navigation-tablet.png", false);
+  await page.locator("#mobile-navigation").getByRole("button", { name: "Close navigation menu", exact: true }).click();
+  await page.setViewportSize({ width: 1440, height: 1000 });
 
   for (const item of noticeData) {
     await page.goto(`${base}/certification/${item.slug}`);
@@ -73,7 +108,10 @@ try {
   await noOverflow();
   await screenshot("listing-mobile.png");
   await page.getByRole("button", { name: "Open navigation menu", exact: true }).click();
-  await page.getByRole("navigation", { name: "Mobile navigation", exact: true }).getByRole("link", { name: /Certification/ }).click();
+  await checkNavigation("Mobile navigation");
+  assert.equal(await page.locator("#mobile-navigation").getByRole("link", { name: "Get in Touch", exact: true }).getAttribute("href"), "/contact");
+  await screenshot("navigation-mobile.png", false);
+  await page.getByRole("navigation", { name: "Mobile navigation", exact: true }).getByRole("link", { name: /Certifications/ }).click();
   await page.getByRole("button", { name: "Open navigation menu", exact: true }).waitFor();
   assert.deepEqual(errors, [], "No browser runtime errors");
   console.log("PASS: certification routes, legacy redirects, original documents, navigation, details, canonical URLs, breadcrumbs and desktop/mobile layouts.");
