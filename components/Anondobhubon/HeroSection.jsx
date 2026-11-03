@@ -73,13 +73,14 @@ export default function HeroSection() {
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://drive.google.com/file/d/1Yx0rMWT12k5Wi2pk5b60AWkAzNr3dGqP/view?usp=sharing"
+                href="/downloads/anondo-bhubon-brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Open brochure in a new tab"
                 className="group inline-flex items-center justify-center gap-3 bg-[#F48220] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.15em] text-white shadow-[0_16px_40px_rgba(244,130,32,0.22)] transition duration-300 hover:bg-white hover:text-[#2C3A83] sm:text-sm"
               >
-                <FiDownload className="text-base" />
-                <span>Download Leaflet</span>
+                <FiDownload aria-hidden="true" className="text-base" />
+                <span>Download Brochure</span>
               </a>
 
               <a

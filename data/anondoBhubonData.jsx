@@ -110,12 +110,12 @@ export const infrastructure = [
 ];
 
 export const amenities = [
-  {
-    title: "Residential Clubhouse",
-    image: "/bhubon-old/RESIDENTIAL CLUBHOUSE-1.jpg",
-    description:
-      "A premium social hub designed for residents to connect, relax, host gatherings and enjoy community lifestyle facilities.",
-  },
+  // {
+  //   title: "Residential Clubhouse",
+  //   image: "/bhubon-old/RESIDENTIAL CLUBHOUSE-1.jpg",
+  //   description:
+  //     "A premium social hub designed for residents to connect, relax, host gatherings and enjoy community lifestyle facilities.",
+  // },
   {
     title: "Communal Park",
     image: "/bhubon-old/COMMUNAL PARK.jpg",

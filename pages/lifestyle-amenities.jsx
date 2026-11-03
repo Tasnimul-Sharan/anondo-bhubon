@@ -12,7 +12,7 @@ const seo = {
     "Anondo Bhubon amenities",
     "Anondo Bhubon lifestyle facilities",
     "Purbachal township amenities",
-    "residential clubhouse Bangladesh",
+    // "residential clubhouse Bangladesh",
     "riverside park community",
     "township community facilities",
   ],
