@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -15,6 +15,7 @@ import {
 } from "react-icons/fi";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { masterplanPreviews } from "@/data/masterplanPreviewData";
 
 const menuItems = [
   {
@@ -22,12 +23,25 @@ const menuItems = [
     path: "/",
   },
   {
-    name: "Brand Story",
-    path: "/about",
+    id: "who-we-are",
+    name: "Who We Are",
+    submenu: [
+      // { name: "Our Company", path: "/about#our-company" },
+      { name: "Brand Story", path: "/brand-story" },
+      // { name: "Our Core Values", path: "/about#core-values" },
+      // { name: "Vision & Mission", path: "/about#vision-and-mission" },
+    ],
   },
   {
+    id: "master-plan",
     name: "Master Plan",
-    path: "/masterplan",
+    submenu: [
+      ...masterplanPreviews.map(({ slug, title }) => ({
+        name: title,
+        path: `/masterplan/${slug}`,
+      })),
+      { name: "Master Plan Overview", path: "/masterplan" },
+    ],
   },
   {
     name: "Lifestyle",
@@ -167,9 +181,106 @@ async function handleLanguageChange(event) {
   }
 }
 
+function DesktopDropdown({ item }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef(null);
+  const buttonRef = useRef(null);
+  const submenuRef = useRef(null);
+  const submenuId = `desktop-${item.id}`;
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const onPointerDown = (event) => {
+      if (!containerRef.current?.contains(event.target)) setIsOpen(false);
+    };
+
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, [isOpen]);
+
+  return (
+    <div
+      ref={containerRef}
+      onPointerEnter={(event) => {
+        if (event.pointerType === "mouse") setIsOpen(true);
+      }}
+      onPointerLeave={(event) => {
+        if (
+          event.pointerType === "mouse" &&
+          !event.currentTarget.contains(document.activeElement)
+        ) {
+          setIsOpen(false);
+        }
+      }}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setIsOpen(false);
+      }}
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          setIsOpen(false);
+          buttonRef.current?.focus();
+        }
+      }}
+    >
+      <button
+        ref={buttonRef}
+        type="button"
+        aria-expanded={isOpen}
+        aria-controls={submenuId}
+        onClick={() => setIsOpen((current) => !current)}
+        onKeyDown={(event) => {
+          if (event.key === "ArrowDown") {
+            event.preventDefault();
+            setIsOpen(true);
+            requestAnimationFrame(() => submenuRef.current?.querySelector("a")?.focus());
+          }
+        }}
+        className="flex items-center gap-1.5 whitespace-nowrap py-7 text-sm font-semibold text-primary transition-colors hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary 2xl:text-base"
+      >
+        <span>{item.name}</span>
+        <FiChevronDown
+          aria-hidden="true"
+          className={`text-xs transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+        />
+      </button>
+
+      <div
+        ref={submenuRef}
+        id={submenuId}
+        hidden={!isOpen}
+        className="absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 pt-2"
+      >
+        <ul className="border border-border_color border-t-2 border-t-secondary bg-white p-2 shadow-[0_24px_65px_rgba(44,58,131,0.16)]">
+          {item.submenu.map((subItem) => (
+            <li key={subItem.name}>
+              <Link
+                href={subItem.path}
+                onClick={(event) => {
+                  // Let Next handle the hash without a second Lenis anchor scroll.
+                  event.stopPropagation();
+                  setIsOpen(false);
+                }}
+                className="group/item flex items-center justify-between gap-4 px-4 py-3.5 text-sm font-semibold text-primary transition-colors hover:bg-off_white focus-visible:bg-off_white focus-visible:ring-2 focus-visible:ring-secondary"
+              >
+                <span>{subItem.name}</span>
+                <FiChevronRight
+                  aria-hidden="true"
+                  className="shrink-0 text-secondary transition-transform group-hover/item:translate-x-1"
+                />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isCorporateOpen, setIsCorporateOpen] = useState(false);
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
   /*
@@ -203,7 +314,7 @@ export default function Navbar() {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         setIsMenuOpen(false);
-        setIsCorporateOpen(false);
+        setOpenMobileSubmenu(null);
       }
     };
 
@@ -220,7 +331,7 @@ export default function Navbar() {
 
   const closeMobileMenu = () => {
     setIsMenuOpen(false);
-    setIsCorporateOpen(false);
+    setOpenMobileSubmenu(null);
   };
 
   return (
@@ -363,50 +474,15 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <nav className="hidden xl:block" aria-label="Primary navigation">
-              <ul className="flex items-center gap-5 xl:gap-8">
+              <ul className="flex items-center gap-4 2xl:gap-7">
                 {menuItems.map((item) => (
                   <li key={item.name} className="group relative">
                     {item.submenu ? (
-                      <>
-                        <button
-                          type="button"
-                          className="flex items-center gap-1.5 py-7 text-base font-semibold text-[#202D72] transition duration-300 hover:text-[#F48220]"
-                        >
-                          <span>{item.name}</span>
-
-                          <FiChevronDown className="text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180" />
-                        </button>
-
-                        {/* Corporate Dropdown */}
-                        <div className="invisible absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 translate-y-4 pt-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                          <div className="border border-[#2C3A83]/10 bg-white p-2 shadow-[0_24px_65px_rgba(27,35,75,0.16)]">
-                            <div className="border-b border-[#2C3A83]/10 px-4 py-3">
-                              <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
-                                Corporate Information
-                              </p>
-                            </div>
-
-                            <ul className="py-2">
-                              {item.submenu.map((subItem) => (
-                                <li key={subItem.name}>
-                                  <Link
-                                    href={subItem.path}
-                                    className="group/item flex items-center justify-between px-4 py-3 text-sm font-semibold text-[#202D72]/70 transition duration-300 hover:bg-[#F5F4F0] hover:text-[#202D72]"
-                                  >
-                                    <span>{subItem.name}</span>
-
-                                    <FiChevronRight className="-translate-x-1.5 text-sm text-[#F48220] opacity-0 transition duration-300 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      </>
+                      <DesktopDropdown item={item} />
                     ) : (
                       <Link
                         href={item.path}
-                        className="relative block py-7 text-base font-semibold text-[#202D72] transition duration-300 hover:text-[#F48220]"
+                        className="relative block whitespace-nowrap py-7 text-sm font-semibold text-[#202D72] transition duration-300 hover:text-[#F48220] 2xl:text-base"
                       >
                         {item.name}
 
@@ -517,12 +593,11 @@ export default function Navbar() {
                         <button
                           type="button"
                           onClick={() => {
-                            setIsCorporateOpen((currentState) => {
-                              return !currentState;
-                            });
+                            setOpenMobileSubmenu((current) => current === item.id ? null : item.id);
                           }}
-                          aria-expanded={isCorporateOpen}
-                          className="flex w-full items-center justify-between py-5 text-left"
+                          aria-expanded={openMobileSubmenu === item.id}
+                          aria-controls={`mobile-${item.id}`}
+                          className="flex w-full items-center justify-between py-5 text-left focus-visible:ring-2 focus-visible:ring-secondary"
                         >
                           <span className="flex items-center gap-4">
                             <span className="text-[10px] font-bold tracking-[0.15em] text-[#F48220]">
@@ -535,30 +610,32 @@ export default function Navbar() {
                           </span>
 
                           <FiChevronDown
+                            aria-hidden="true"
                             className={`text-lg text-[#202D72] transition-transform duration-300 ${
-                              isCorporateOpen ? "rotate-180" : ""
+                              openMobileSubmenu === item.id ? "rotate-180" : ""
                             }`}
                           />
                         </button>
 
                         <div
-                          className={`overflow-hidden transition-all duration-500 ${
-                            isCorporateOpen
-                              ? "max-h-80 pb-5 opacity-100"
-                              : "max-h-0 opacity-0"
-                          }`}
+                          id={`mobile-${item.id}`}
+                          hidden={openMobileSubmenu !== item.id}
+                          className="pb-5"
                         >
                           <ul className="ml-10 border-l border-[#F48220]/30 pl-5">
                             {item.submenu.map((subItem) => (
                               <li key={subItem.name}>
                                 <Link
                                   href={subItem.path}
-                                  onClick={closeMobileMenu}
-                                  className="flex items-center justify-between py-2.5 text-sm font-semibold text-[#202D72]/65 transition hover:text-[#F48220]"
+                                  onClick={(event) => {
+                                    event.stopPropagation();
+                                    closeMobileMenu();
+                                  }}
+                                  className="flex items-center justify-between py-2.5 text-sm font-semibold text-primary transition hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary"
                                 >
                                   <span>{subItem.name}</span>
 
-                                  <FiChevronRight />
+                                  <FiChevronRight aria-hidden="true" />
                                 </Link>
                               </li>
                             ))}

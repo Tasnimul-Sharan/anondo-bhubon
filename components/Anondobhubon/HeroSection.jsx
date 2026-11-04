@@ -73,7 +73,7 @@ export default function HeroSection() {
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
-                href="/downloads/anondo-bhubon-brochure.pdf"
+                href="/Anondo Bhubon brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Open brochure in a new tab"

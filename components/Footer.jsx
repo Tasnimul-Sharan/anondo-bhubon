@@ -4,11 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import {
-  FiArrowRight,
-  FiArrowUpRight,
-  FiPhoneCall,
-} from "react-icons/fi";
+import { FiArrowRight, FiArrowUpRight, FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { PiMapPinBold } from "react-icons/pi";
 
@@ -19,7 +15,7 @@ const quickLinks = [
   { name: "Certification", href: "/certification" },
   { name: "Gallery", href: "/gallery" },
   { name: "Contact", href: "/contact" },
-  { name: "Client Login", href: "/login" },
+  // { name: "Client Login", href: "/login" },
 ];
 
 const projectLinks = [
@@ -64,8 +60,7 @@ const socialLinks = [
   },
 ];
 
-const WEB3FORMS_ACCESS_KEY =
-  "bb771512-cc14-49a0-8b55-1c41f949153b";
+const WEB3FORMS_ACCESS_KEY = "bb771512-cc14-49a0-8b55-1c41f949153b";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -87,35 +82,26 @@ export default function Footer() {
     setSuccess(false);
 
     try {
-      const response = await fetch(
-        "https://api.web3forms.com/submit",
-        {
-          method: "POST",
-          body: formData,
-        },
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
       const data = await response.json();
 
       if (!response.ok || !data.success) {
-        throw new Error(
-          data.message || "Subscription failed.",
-        );
+        throw new Error(data.message || "Subscription failed.");
       }
 
       setSuccess(true);
-      setResult(
-        "Thank you. You are now subscribed to Anondo Bhubon updates.",
-      );
+      setResult("Thank you. You are now subscribed to Anondo Bhubon updates.");
 
       form.reset();
     } catch (error) {
       console.error("Footer subscription error:", error);
 
       setSuccess(false);
-      setResult(
-        "We could not submit your email right now. Please try again.",
-      );
+      setResult("We could not submit your email right now. Please try again.");
     } finally {
       setLoading(false);
 
@@ -156,8 +142,7 @@ export default function Footer() {
               </div>
 
               <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-[-0.025em] text-white sm:text-3xl lg:text-4xl">
-                Discover a distinguished address near
-                Purbachal.
+                Discover a distinguished address near Purbachal.
               </h2>
             </div>
 
@@ -193,17 +178,13 @@ export default function Footer() {
             </Link>
 
             <p className="mt-7 max-w-sm text-sm font-medium leading-7 text-white/62">
-              A future-focused township shaped around
-              green-blue infrastructure, secure community
-              living, wellness and long-term investment value.
+              A future-focused township shaped around green-blue infrastructure,
+              secure community living, wellness and long-term investment value.
             </p>
 
             <div className="mt-7 flex items-center gap-3">
               {socialLinks.map((item) => (
-                <SocialIcon
-                  key={item.label}
-                  {...item}
-                />
+                <SocialIcon key={item.label} {...item} />
               ))}
             </div>
 
@@ -223,16 +204,10 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <FooterColumn
-            title="Quick Links"
-            links={quickLinks}
-          />
+          <FooterColumn title="Quick Links" links={quickLinks} />
 
           {/* Project Links */}
-          <FooterColumn
-            title="Explore Project"
-            links={projectLinks}
-          />
+          <FooterColumn title="Explore Project" links={projectLinks} />
 
           {/* Contact and Newsletter */}
           <div className="min-w-0">
@@ -301,8 +276,8 @@ export default function Footer() {
               </p>
 
               <p className="mt-3 text-sm font-medium leading-6 text-white/62">
-                Receive brochure updates, availability
-                information and site-visit announcements.
+                Receive brochure updates, availability information and
+                site-visit announcements.
               </p>
 
               <div className="mt-5 flex border border-white/15 bg-white">
@@ -334,9 +309,7 @@ export default function Footer() {
                   aria-live="polite"
                   role="status"
                   className={`mt-3 text-xs font-semibold leading-5 ${
-                    success
-                      ? "text-emerald-300"
-                      : "text-[#F7A55A]"
+                    success ? "text-emerald-300" : "text-[#F7A55A]"
                   }`}
                 >
                   {result}
@@ -350,10 +323,8 @@ export default function Footer() {
         <div className="flex flex-col gap-5 border-t border-white/10 py-6 text-xs font-medium text-white/50 lg:flex-row lg:items-center lg:justify-between">
           <p>
             Copyright © {year}{" "}
-            <span className="font-semibold text-white/85">
-              Anondo Bhubon
-            </span>
-            . All rights reserved.
+            <span className="font-semibold text-white/85">Anondo Bhubon</span>.
+            All rights reserved.
           </p>
 
           <div className="flex flex-wrap gap-x-6 gap-y-3">
@@ -429,20 +400,13 @@ function ContactItem({ icon, text, href }) {
 
   if (href) {
     return (
-      <a
-        href={href}
-        className="group flex items-start gap-3"
-      >
+      <a href={href} className="group flex items-start gap-3">
         {content}
       </a>
     );
   }
 
-  return (
-    <div className="group flex items-start gap-3">
-      {content}
-    </div>
-  );
+  return <div className="group flex items-start gap-3">{content}</div>;
 }
 
 function SocialIcon({ icon: Icon, href, label }) {

@@ -1,0 +1,3985 @@
+{
+  "residential-development": {
+    "sourceFile": "RESIDENTIAL DEV. MASTERPLAN FOR PROSPECTUS.docx",
+    "sourceSha256": "bea25dc5a2cfb3c87b7596044a371386555fe3b622f4650c511eade3b415844f",
+    "image": "courtyardPremiumPlus",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Residential Development Master Plan",
+        "runs": [
+          {
+            "text": "Residential Development Master Plan",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "text": "Distinctive Communities. One Extraordinary Township.",
+        "runs": [
+          {
+            "text": "Distinctive Communities. One Extraordinary Township.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "text": "A Home for Every Aspiration. A Lifestyle for Every Generation.",
+        "runs": [
+          {
+            "text": "A Home for Every Aspiration. A Lifestyle for Every Generation.",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 4,
+          "kind": "paragraph",
+          "text": "A New Vision of Residential Living",
+          "runs": [
+            {
+              "text": "A New Vision of Residential Living",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, residential development is about much more than providing land or constructing buildings. It is about creating thoughtfully planned neighbourhoods where families can enjoy comfort, security, natural beauty and a genuine sense of community."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "Across approximately 3,783 bighas, our residential master plan brings together five distinct residential sectors, two villa communities and a modern condominium district.",
+            "runs": [
+              {
+                "text": "Across approximately "
+              },
+              {
+                "text": "3,783 bighas",
+                "bold": true
+              },
+              {
+                "text": ", our residential master plan brings together five distinct residential sectors, two villa communities and a modern condominium district."
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Each community has its own character and lifestyle positioning, yet all are connected to the wider 5,191.56-bigha integrated township, with access to its commercial centres, educational institutions, healthcare facilities, employment opportunities, sports and recreation.",
+            "runs": [
+              {
+                "text": "Each community has its own character and lifestyle positioning, yet all are connected to the wider "
+              },
+              {
+                "text": "5,191.56-bigha integrated township",
+                "bold": true
+              },
+              {
+                "text": ", with access to its commercial "
+              },
+              {
+                "text": "centres"
+              },
+              {
+                "text": ", educational institutions, healthcare facilities, employment opportunities, sports and recreation."
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "Our guiding principle is simple:"
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Different lifestyles. Different aspirations. One shared standard of responsible planning and environmental care.",
+            "runs": [
+              {
+                "text": "Different lifestyles. Different aspirations. One shared standard of responsible planning and environmental care.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 10,
+          "kind": "paragraph",
+          "text": "Five Distinct Residential Sectors",
+          "runs": [
+            {
+              "text": "Five Distinct Residential Sectors",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 11,
+            "kind": "subheading",
+            "text": "Premium Plus — Refined Living, Exceptional Surroundings",
+            "runs": [
+              {
+                "text": "Premium Plus — Refined Living, Exceptional Surroundings",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 12,
+            "kind": "allocation",
+            "text": "600 Bighas",
+            "runs": [
+              {
+                "text": "600 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "Premium Plus represents a distinguished residential environment for families seeking spacious, elegant and thoughtfully planned neighbourhoods."
+          },
+          {
+            "index": 14,
+            "kind": "paragraph",
+            "text": "With its established five-katha plot concept, landscaped streets, green spaces and community facilities, the sector is envisioned to offer a refined lifestyle combining privacy, comfort and accessibility."
+          },
+          {
+            "index": 15,
+            "kind": "paragraph",
+            "text": "Lifestyle identity: Prestige, privacy and refined family living.",
+            "runs": [
+              {
+                "text": "Lifestyle identity:",
+                "bold": true
+              },
+              {
+                "text": " Prestige, privacy and refined family living."
+              }
+            ]
+          },
+          {
+            "index": 16,
+            "kind": "subheading",
+            "text": "Premium — Comfort, Elegance and Community",
+            "runs": [
+              {
+                "text": "Premium — Comfort, Elegance and Community",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 17,
+            "kind": "allocation",
+            "text": "600 Bighas",
+            "runs": [
+              {
+                "text": "600 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 18,
+            "kind": "paragraph",
+            "text": "The Premium Sector is designed for families who value quality living, attractive surroundings and convenient access to essential amenities."
+          },
+          {
+            "index": 19,
+            "kind": "paragraph",
+            "text": "Well-organized residential blocks, landscaped roads, playgrounds, educational facilities and neighbourhood gathering spaces will create a balanced environment for family life."
+          },
+          {
+            "index": 20,
+            "kind": "paragraph",
+            "text": "Lifestyle identity: Quality, comfort and modern community living.",
+            "runs": [
+              {
+                "text": "Lifestyle identity:",
+                "bold": true
+              },
+              {
+                "text": " Quality, comfort and modern community living."
+              }
+            ]
+          },
+          {
+            "index": 21,
+            "kind": "subheading",
+            "text": "Executive — A Balanced Lifestyle for Modern Families",
+            "runs": [
+              {
+                "text": "Executive — A Balanced Lifestyle for Modern Families",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 22,
+            "kind": "allocation",
+            "text": "800 Bighas",
+            "runs": [
+              {
+                "text": "800 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 23,
+            "kind": "paragraph",
+            "text": "The Executive Sector is envisioned as a vibrant residential community for professionals, entrepreneurs and families seeking an organized, comfortable and well-connected environment."
+          },
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "Its planning combines residential convenience with access to education, recreation, commercial services and the wider township's employment and business districts."
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "Lifestyle identity: Professional aspirations, family well-being and everyday convenience.",
+            "runs": [
+              {
+                "text": "Lifestyle identity:",
+                "bold": true
+              },
+              {
+                "text": " Professional aspirations, family well-being and everyday convenience."
+              }
+            ]
+          },
+          {
+            "index": 26,
+            "kind": "subheading",
+            "text": "General — A Community Where Families Flourish",
+            "runs": [
+              {
+                "text": "General — A Community Where Families Flourish",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 27,
+            "kind": "allocation",
+            "text": "800 Bighas",
+            "runs": [
+              {
+                "text": "800 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "The General Sector is planned to offer organized residential neighbourhoods for a broad range of families."
+          },
+          {
+            "index": 29,
+            "kind": "paragraph",
+            "text": "With provisions for schools, playgrounds, community facilities, neighbourhood commerce and green spaces, it is designed to encourage healthy family life and strong community relationships."
+          },
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "Lifestyle identity: Accessible, family-oriented and community-centred living.",
+            "runs": [
+              {
+                "text": "Lifestyle identity:",
+                "bold": true
+              },
+              {
+                "text": " Accessible, family-oriented and community-"
+              },
+              {
+                "text": "centred"
+              },
+              {
+                "text": " living."
+              }
+            ]
+          },
+          {
+            "index": 31,
+            "kind": "subheading",
+            "text": "Economy — An Opportunity to Build a Better Future",
+            "runs": [
+              {
+                "text": "Economy — An Opportunity to Build a Better Future",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 32,
+            "kind": "allocation",
+            "text": "288 Bighas",
+            "runs": [
+              {
+                "text": "288 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 33,
+            "kind": "paragraph",
+            "text": "The Economy Sector reflects our commitment to creating more accessible residential opportunities within a modern integrated township."
+          },
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "Its planning emphasizes practical residential environments, essential community amenities, convenient connectivity and access to the township's broader services and economic opportunities."
+          },
+          {
+            "index": 35,
+            "kind": "paragraph",
+            "text": "Lifestyle identity: Practical, affordable-oriented and opportunity-driven living.",
+            "runs": [
+              {
+                "text": "Lifestyle identity:",
+                "bold": true
+              },
+              {
+                "text": " Practical, affordable-oriented and opportunity-driven living."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 36,
+          "kind": "paragraph",
+          "text": "Exclusive Villa Communities",
+          "runs": [
+            {
+              "text": "Exclusive Villa Communities",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 37,
+            "kind": "allocation",
+            "text": "400 Bighas — Two Distinct Villa Districts",
+            "runs": [
+              {
+                "text": "400 Bighas — Two Distinct Villa Districts",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 38,
+            "kind": "paragraph",
+            "text": "For families seeking greater privacy, spacious surroundings and a distinctive residential lifestyle, Anondo Bhubon includes two dedicated villa communities."
+          },
+          {
+            "index": 39,
+            "kind": "subheading",
+            "text": "Small Villa District — 300 Bighas",
+            "runs": [
+              {
+                "text": "Small Villa District — 300 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 40,
+            "kind": "paragraph",
+            "text": "A thoughtfully landscaped villa environment combining independent residential living, privacy and neighbourhood character."
+          },
+          {
+            "index": 41,
+            "kind": "subheading",
+            "text": "Large Villa District — 100 Bighas",
+            "runs": [
+              {
+                "text": "Large Villa District — 100 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 42,
+            "kind": "paragraph",
+            "text": "An exclusive residential setting envisioned for larger villa properties, spacious landscapes and a refined living experience."
+          },
+          {
+            "index": 43,
+            "kind": "paragraph",
+            "text": "Both villa communities will be integrated into the township's green environment and connected to its essential services, recreation and commercial facilities."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 44,
+          "kind": "paragraph",
+          "text": "Modern Condominium Living",
+          "runs": [
+            {
+              "text": "Modern Condominium Living",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 45,
+            "kind": "allocation",
+            "text": "295 Bighas — A Contemporary Vertical Community",
+            "runs": [
+              {
+                "text": "295 Bighas — A Contemporary Vertical Community",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 46,
+            "kind": "paragraph",
+            "text": "The Condominium District is envisioned as a modern residential destination featuring high-rise living within a landscaped community environment."
+          },
+          {
+            "index": 47,
+            "kind": "paragraph",
+            "text": "Its planning will integrate residential towers, green courtyards, pedestrian-friendly spaces, recreation, community facilities and convenient commercial amenities."
+          },
+          {
+            "index": 48,
+            "kind": "paragraph",
+            "text": "The objective is to combine the convenience of contemporary condominium living with the environmental quality and social character of a complete township."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 49,
+          "kind": "paragraph",
+          "text": "Neighbourhoods Designed Around Everyday Life",
+          "runs": [
+            {
+              "text": "Neighbourhoods",
+              "bold": true
+            },
+            {
+              "text": " Designed Around Everyday Life",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "Every residential community in Anondo Bhubon is being planned with consideration for the everyday needs of its residents."
+          },
+          {
+            "index": 51,
+            "kind": "paragraph",
+            "text": "The residential planning framework includes:"
+          },
+          {
+            "index": 52,
+            "kind": "list-item",
+            "text": "Education: Elementary school provisions within residential blocks and high school and college provisions within residential sectors.",
+            "runs": [
+              {
+                "text": "Education:",
+                "bold": true
+              },
+              {
+                "text": " Elementary school provisions within residential blocks and high school and college provisions within residential sectors."
+              }
+            ]
+          },
+          {
+            "index": 53,
+            "kind": "list-item",
+            "text": "Sports and recreation: Neighbourhood playgrounds, substantial school playing fields, parks and community recreation.",
+            "runs": [
+              {
+                "text": "Sports and recreation:",
+                "bold": true
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Neighbourhood"
+              },
+              {
+                "text": " playgrounds, substantial school playing fields, parks and community recreation."
+              }
+            ]
+          },
+          {
+            "index": 54,
+            "kind": "list-item",
+            "text": "Community life: Gathering spaces, neighbourhood facilities and opportunities for social interaction.",
+            "runs": [
+              {
+                "text": "Community life:",
+                "bold": true
+              },
+              {
+                "text": " Gathering spaces, "
+              },
+              {
+                "text": "neighbourhood"
+              },
+              {
+                "text": " facilities and opportunities for social interaction."
+              }
+            ]
+          },
+          {
+            "index": 55,
+            "kind": "list-item",
+            "text": "Convenience: Appropriate local commercial facilities and access to township-wide shopping, healthcare and other services.",
+            "runs": [
+              {
+                "text": "Convenience:",
+                "bold": true
+              },
+              {
+                "text": " Appropriate local commercial facilities and access to township-wide shopping, healthcare and other services."
+              }
+            ]
+          },
+          {
+            "index": 56,
+            "kind": "list-item",
+            "text": "Connectivity: Planned internal roads linked to the township's major avenues and arterial road network.",
+            "runs": [
+              {
+                "text": "Connectivity:",
+                "bold": true
+              },
+              {
+                "text": " Planned internal roads linked to the township's major avenues and arterial road network."
+              }
+            ]
+          },
+          {
+            "index": 57,
+            "kind": "list-item",
+            "text": "Green living: Landscaped streets, open spaces and connections to the township's wider forest walkway and green–blue infrastructure.",
+            "runs": [
+              {
+                "text": "Green living:",
+                "bold": true
+              },
+              {
+                "text": " Landscaped streets, open spaces and connections to the township's wider forest walkway and green–blue infrastructure."
+              }
+            ]
+          },
+          {
+            "index": 58,
+            "kind": "paragraph",
+            "text": "These amenities are incorporated into the respective sector land-use plans, supporting a coordinated and functional residential environment."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 59,
+          "kind": "paragraph",
+          "text": "Nature as Part of Everyday Living",
+          "runs": [
+            {
+              "text": "Nature as Part of Everyday Living",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 60,
+            "kind": "paragraph",
+            "text": "Greenery is not simply an attraction at Anondo Bhubon. It is part of our residential philosophy.",
+            "runs": [
+              {
+                "text": "Greenery is not simply an attraction at Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": ". It is part of our residential philosophy.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 61,
+            "kind": "paragraph",
+            "text": "Residential neighbourhoods will be connected to a wider environmental network of forest walkways, parks, landscaped avenues and planned waterways."
+          },
+          {
+            "index": 62,
+            "kind": "paragraph",
+            "text": "The proposed restoration of the Old Brahmaputra River and the township's green–blue infrastructure will help establish a distinctive natural identity for the entire development."
+          },
+          {
+            "index": 63,
+            "kind": "paragraph",
+            "text": "Our aspiration is to create neighbourhoods where families can enjoy fresh surroundings, shaded walking routes, open spaces and a closer relationship with nature."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 64,
+          "kind": "paragraph",
+          "text": "One Township. Endless Possibilities.",
+          "runs": [
+            {
+              "text": "One Township. Endless Possibilities.",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 65,
+            "kind": "paragraph",
+            "text": "The true distinction of Anondo Bhubon lies in the integration of residential life with economic opportunity and complete community facilities."
+          },
+          {
+            "index": 66,
+            "kind": "paragraph",
+            "text": "Residents will be connected to Anondo Digital Valley, commercial and business districts, environmentally compatible industries, educational institutions, hospitals, major sports complexes and the proposed landmark Mega Commercial Centre."
+          },
+          {
+            "index": 67,
+            "kind": "paragraph",
+            "text": "Children will have opportunities to learn and play. Professionals will have access to employment and enterprise. Families will enjoy community facilities and recreation. Senior citizens will benefit from a more complete and convenient living environment."
+          },
+          {
+            "index": 68,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we are not simply creating residential sectors. We are building communities where people can belong, grow and prosper.",
+            "runs": [
+              {
+                "text": "At Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": ", we are not simply creating residential sectors. We are building communities where people can belong, grow and prosper.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 70,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 71,
+        "kind": "paragraph",
+        "text": "A Home for Every Aspiration. A Future for Every Generation.",
+        "runs": [
+          {
+            "text": "A Home for Every Aspiration. A Future for Every Generation.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 72,
+        "kind": "paragraph",
+        "text": "Where Nature, Opportunity and Modern Living Come Together.",
+        "runs": [
+          {
+            "text": "Where Nature, Opportunity and Modern Living Come Together.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 73,
+        "kind": "paragraph",
+        "text": "Anondo Real Estate Group",
+        "runs": [
+          {
+            "text": "Anondo Real Estate Group",
+            "bold": true
+          }
+        ]
+      }
+    ]
+  },
+  "development-phasing": {
+    "sourceFile": "developing phasing.docx",
+    "sourceSha256": "7643971378f8e8d1de1af2ef34c2d3b6ac1d8c06dd3e0adb37ff29ce66b95768",
+    "image": "masterplanSide",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "text": "CHAPTER 8",
+        "runs": [
+          {
+            "text": "CHAPTER 8",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "title",
+        "text": "Development Phasing, Governance & Long-Term Township Management",
+        "runs": [
+          {
+            "text": "Development Phasing, Governance & Long-Term Township Management",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "text": "Responsible Planning. Disciplined Execution. Lasting Value.",
+        "runs": [
+          {
+            "text": "Responsible Planning. Disciplined Execution. Lasting Value.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "text": "Building Progressively. Managing Professionally. Creating a Legacy.",
+        "runs": [
+          {
+            "text": "Building Progressively. Managing Professionally. Creating a Legacy.",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 5,
+          "kind": "paragraph",
+          "text": "A Long-Term Vision with Responsible Implementation",
+          "runs": [
+            {
+              "text": "A Long-Term Vision with Responsible Implementation",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon is envisioned as a comprehensive integrated township designed to serve generations."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Its development represents a long-term commitment requiring coordinated planning, substantial infrastructure investment, professional expertise and responsible management."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "We believe that the successful development of a township of this magnitude must follow a carefully structured and progressive implementation strategy."
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Our philosophy is to develop responsibly, establish functional communities and expand infrastructure and facilities according to genuine demand.",
+            "runs": [
+              {
+                "text": "Our philosophy is to develop responsibly, establish functional communities and expand infrastructure and facilities according to genuine demand.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 10,
+          "kind": "paragraph",
+          "text": "1. Phased and Integrated Development",
+          "runs": [
+            {
+              "text": "1. Phased and Integrated Development",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon will be developed progressively through coordinated development phases."
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "Each phase will be guided by land readiness, planning requirements, regulatory approvals, infrastructure capacity, market demand and the long-term township master plan."
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "Priority will be given to creating functional residential and commercial environments supported by essential infrastructure and community services."
+          },
+          {
+            "index": 14,
+            "kind": "paragraph",
+            "text": "This approach will help ensure that development remains organized, financially responsible and consistent with the township's overall vision."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 15,
+          "kind": "paragraph",
+          "text": "2. Demand-Based Community Facilities",
+          "runs": [
+            {
+              "text": "2. Demand-Based Community Facilities",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 16,
+            "kind": "paragraph",
+            "text": "Educational institutions, healthcare facilities, sports complexes and other major community amenities will be developed according to population growth, service demand and operational requirements."
+          },
+          {
+            "index": 17,
+            "kind": "paragraph",
+            "text": "Land designated for these facilities will be preserved within the master plan, while their establishment and expansion will follow carefully assessed needs."
+          },
+          {
+            "index": 18,
+            "kind": "paragraph",
+            "text": "Schools and colleges will be introduced progressively, avoiding unnecessary duplication while maintaining appropriate access to education."
+          },
+          {
+            "index": 19,
+            "kind": "paragraph",
+            "text": "The two planned hospitals may offer complementary medical services, with their final capacities and specializations determined through healthcare planning."
+          },
+          {
+            "index": 20,
+            "kind": "paragraph",
+            "text": "Similarly, the two major sports complexes will be configured according to their respective sporting requirements, rather than predetermined equal land allocations."
+          },
+          {
+            "index": 21,
+            "kind": "paragraph",
+            "text": "Our objective is to provide the right facilities, at the right scale, at the right time.",
+            "runs": [
+              {
+                "text": "Our objective is to provide the right facilities, ",
+                "bold": true
+              },
+              {
+                "text": "at",
+                "bold": true
+              },
+              {
+                "text": " the right scale, at the right time.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 22,
+          "kind": "paragraph",
+          "text": "3. Coordinated Infrastructure Investment",
+          "runs": [
+            {
+              "text": "3. Coordinated Infrastructure Investment",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 23,
+            "kind": "paragraph",
+            "text": "Roads, electricity, water supply, drainage, sanitation, digital connectivity and other essential services will be developed in coordination with the growth of residential and economic districts."
+          },
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "Infrastructure capacity will be planned to accommodate both immediate requirements and reasonable future expansion."
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "This coordinated approach is intended to reduce unnecessary investment, avoid fragmented development and support long-term operational efficiency."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 26,
+          "kind": "paragraph",
+          "text": "4. Professional Planning and Quality Assurance",
+          "runs": [
+            {
+              "text": "4. Professional Planning and Quality Assurance",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 27,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon will pursue professional standards in planning, engineering, architectural design, construction and environmental management."
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "Appropriate technical consultants, specialist professionals and qualified contractors will be engaged according to project requirements."
+          },
+          {
+            "index": 29,
+            "kind": "paragraph",
+            "text": "Development activities will be guided by relevant regulatory requirements, engineering standards, quality-control procedures and environmental safeguards."
+          },
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "Quality, safety and responsible execution will remain fundamental development commitments.",
+            "runs": [
+              {
+                "text": "Quality, safety and responsible execution will remain fundamental development commitments.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 31,
+          "kind": "paragraph",
+          "text": "5. Environmental Stewardship Throughout Development",
+          "runs": [
+            {
+              "text": "5. Environmental Stewardship Throughout Development",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 32,
+            "kind": "paragraph",
+            "text": "Environmental sustainability will remain a central consideration during every development phase."
+          },
+          {
+            "index": 33,
+            "kind": "paragraph",
+            "text": "The proposed Old Brahmaputra restoration, waterways, forest walkways, parks and other ecological features will be planned in coordination with infrastructure and land development."
+          },
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "Appropriate environmental studies, mitigation measures and monitoring arrangements will guide implementation."
+          },
+          {
+            "index": 35,
+            "kind": "paragraph",
+            "text": "Our objective is to ensure that progressive urban development remains consistent with the township's long-term environmental identity."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 36,
+          "kind": "paragraph",
+          "text": "6. Professional Township Governance",
+          "runs": [
+            {
+              "text": "6. Professional Township Governance",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 37,
+            "kind": "paragraph",
+            "text": "The success of Anondo Bhubon will depend not only on construction but also on effective long-term administration."
+          },
+          {
+            "index": 38,
+            "kind": "paragraph",
+            "text": "A professional township management framework is envisioned to coordinate infrastructure operations, environmental maintenance, public spaces, security, community services and resident support."
+          },
+          {
+            "index": 39,
+            "kind": "paragraph",
+            "text": "Its responsibilities may include:"
+          },
+          {
+            "index": 40,
+            "kind": "list-item",
+            "text": "Maintenance of roads, drainage and public infrastructure."
+          },
+          {
+            "index": 41,
+            "kind": "list-item",
+            "text": "Management of parks, forest walkways, lakes and landscaped spaces."
+          },
+          {
+            "index": 42,
+            "kind": "list-item",
+            "text": "Coordination of utility services and operational maintenance."
+          },
+          {
+            "index": 43,
+            "kind": "list-item",
+            "text": "Security, emergency preparedness and community safety."
+          },
+          {
+            "index": 44,
+            "kind": "list-item",
+            "text": "Waste management and environmental monitoring."
+          },
+          {
+            "index": 45,
+            "kind": "list-item",
+            "text": "Community communication and resident services."
+          },
+          {
+            "index": 46,
+            "kind": "list-item",
+            "text": "Financial accountability and transparent service administration."
+          },
+          {
+            "index": 47,
+            "kind": "paragraph",
+            "text": "The final governance structure will be established in accordance with applicable laws, institutional arrangements and the township's operational requirements."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 48,
+          "kind": "paragraph",
+          "text": "7. Community Participation and Shared Responsibility",
+          "runs": [
+            {
+              "text": "7. Community Participation and Shared Responsibility",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 49,
+            "kind": "paragraph",
+            "text": "A successful township requires cooperation among developers, residents, businesses, institutions and service providers."
+          },
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon will encourage responsible community participation, mutual respect and a shared commitment to maintaining the township's environment and facilities."
+          },
+          {
+            "index": 51,
+            "kind": "paragraph",
+            "text": "We believe that a strong sense of community ownership will contribute to better maintenance, safer neighbourhoods and long-term social harmony."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 52,
+          "kind": "paragraph",
+          "text": "8. Long-Term Sustainability and Continuous Improvement",
+          "runs": [
+            {
+              "text": "8. Long-Term Sustainability and Continuous Improvement",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 53,
+            "kind": "paragraph",
+            "text": "Urban communities evolve over time."
+          },
+          {
+            "index": 54,
+            "kind": "paragraph",
+            "text": "Their infrastructure, technology, economic activities and social needs must also evolve."
+          },
+          {
+            "index": 55,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's management philosophy will therefore emphasize continuous improvement, periodic infrastructure assessment, environmental monitoring and responsible adaptation to changing needs."
+          },
+          {
+            "index": 56,
+            "kind": "paragraph",
+            "text": "The ultimate objective is to create a township that remains functional, attractive, economically vibrant and environmentally sustainable long after its initial development."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 57,
+          "kind": "paragraph",
+          "text": "Our Long-Term Commitment",
+          "runs": [
+            {
+              "text": "Our Long-Term Commitment",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 58,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon is not a short-term commercial undertaking. It is a commitment to responsible development and lasting community well-being.",
+            "runs": [
+              {
+                "text": "Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": " is not a short-term commercial undertaking. It is a commitment to responsible development and lasting community well-being.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 59,
+            "kind": "paragraph",
+            "text": "Our ambition is to establish a township where infrastructure remains dependable, the natural environment is protected, economic opportunities continue to grow and residents enjoy a high quality of life."
+          },
+          {
+            "index": 60,
+            "kind": "paragraph",
+            "text": "We believe the true success of Anondo Bhubon will be measured not merely by the completion of buildings and infrastructure, but by the strength, prosperity and sustainability of the community that emerges."
+          },
+          {
+            "index": 61,
+            "kind": "paragraph",
+            "text": "We are building not only for today's residents, but for the generations who will follow.",
+            "runs": [
+              {
+                "text": "We are building not only for today's residents, but for the generations who will follow.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 63,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 64,
+        "kind": "paragraph",
+        "text": "A Complete Township for Life, Enterprise and Future Generations.",
+        "runs": [
+          {
+            "text": "A Complete Township for Life, Enterprise and Future Generations.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 65,
+        "kind": "paragraph",
+        "text": "ANONDO REAL ESTATE GROUP",
+        "runs": [
+          {
+            "text": "ANONDO REAL ESTATE GROUP",
+            "bold": true
+          }
+        ]
+      }
+    ]
+  },
+  "transportation-utilities": {
+    "sourceFile": "transportation , utilities .docx",
+    "sourceSha256": "ae946207358ccb142c9a747199d067db8575dd0213097dccc19f765cebf4f05c",
+    "image": "masterplan",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "text": "CHAPTER 7",
+        "runs": [
+          {
+            "text": "CHAPTER 7",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "title",
+        "text": "Transportation, Utilities & Smart Township Infrastructure",
+        "runs": [
+          {
+            "text": "Transportation, Utilities & Smart Township Infrastructure",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "text": "Connecting Communities. Powering Progress. Enabling Modern Living.",
+        "runs": [
+          {
+            "text": "Connecting Communities. Powering Progress. Enabling Modern Living.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "text": "A Well-Connected Township. A Smarter Way of Life.",
+        "runs": [
+          {
+            "text": "A Well-Connected Township. A Smarter Way of Life.",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 5,
+          "kind": "paragraph",
+          "text": "Infrastructure — The Foundation of a Complete Township",
+          "runs": [
+            {
+              "text": "Infrastructure — The Foundation of a Complete Township",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe that modern infrastructure is the foundation of comfortable, efficient and sustainable urban living."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "A successful township requires more than attractive buildings and wide roads. It needs dependable utilities, efficient transportation, digital connectivity, effective drainage, public safety and professional infrastructure management."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "Our infrastructure master plan is therefore envisioned as an integrated network supporting residential communities, commercial districts, Anondo Digital Valley, industrial enterprises, educational institutions, healthcare facilities and recreational destinations."
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Our objective is to create a township where infrastructure supports everyday life efficiently, reliably and sustainably.",
+            "runs": [
+              {
+                "text": "Our objective is to create a township where infrastructure supports everyday life efficiently, reliably and sustainably.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 10,
+          "kind": "paragraph",
+          "text": "1. Integrated Road Network and Transportation",
+          "runs": [
+            {
+              "text": "1. Integrated Road Network and Transportation",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's transportation master plan is designed to establish convenient connectivity among all major development districts."
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "The revised master plan allocates approximately 255.56 bighas for three principal avenues, forming the primary transportation framework of the township.",
+            "runs": [
+              {
+                "text": "The revised master plan allocates approximately "
+              },
+              {
+                "text": "255.56 bighas for three principal avenues",
+                "bold": true
+              },
+              {
+                "text": ", forming the primary transportation framework of the township."
+              }
+            ]
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "These avenues will be supported by a hierarchy of arterial, collector and internal neighbourhood roads, including planned 120-foot, 80-foot and 60-foot road corridors, where appropriate to the approved road network.",
+            "runs": [
+              {
+                "text": "These avenues will be supported by a hierarchy of arterial, collector and internal "
+              },
+              {
+                "text": "neighbourhood"
+              },
+              {
+                "text": " roads, including planned "
+              },
+              {
+                "text": "120-foot, 80-foot and 60-foot road corridors",
+                "bold": true
+              },
+              {
+                "text": ", where appropriate to the approved road network."
+              }
+            ]
+          },
+          {
+            "index": 14,
+            "kind": "paragraph",
+            "text": "The transportation strategy will emphasize:"
+          },
+          {
+            "index": 15,
+            "kind": "list-item",
+            "text": "Convenient connectivity between residential, commercial and institutional districts."
+          },
+          {
+            "index": 16,
+            "kind": "list-item",
+            "text": "Organized vehicular circulation and appropriate traffic management."
+          },
+          {
+            "index": 17,
+            "kind": "list-item",
+            "text": "Pedestrian-friendly streets and safe neighbourhood access."
+          },
+          {
+            "index": 18,
+            "kind": "list-item",
+            "text": "Tree-lined avenues and landscaped road corridors."
+          },
+          {
+            "index": 19,
+            "kind": "list-item",
+            "text": "Dedicated access arrangements for emergency and essential services."
+          },
+          {
+            "index": 20,
+            "kind": "list-item",
+            "text": "Efficient connections with surrounding regional transportation networks."
+          },
+          {
+            "index": 21,
+            "kind": "paragraph",
+            "text": "The objective is to develop a coordinated road system that supports mobility while preserving the safety, comfort and environmental quality of residential communities."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 22,
+          "kind": "paragraph",
+          "text": "2. Public Transportation and Community Mobility",
+          "runs": [
+            {
+              "text": "2. Public Transportation and Community Mobility",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 23,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon envisions an organized public transportation system to support movement within the township and connections to surrounding destinations."
+          },
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "Two bus terminals, with a combined land allocation of approximately 12 bighas, are planned as important components of the transportation network.",
+            "runs": [
+              {
+                "text": "Two bus terminals",
+                "bold": true
+              },
+              {
+                "text": ", with a combined land allocation of approximately "
+              },
+              {
+                "text": "12 bighas",
+                "bold": true
+              },
+              {
+                "text": ", are planned as important components of the transportation network."
+              }
+            ]
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "Future services may include internal shuttle buses, scheduled transport routes and connections to major regional transportation facilities."
+          },
+          {
+            "index": 26,
+            "kind": "paragraph",
+            "text": "Pedestrian routes and forest walkways will complement motorized transportation by encouraging walking and improving access to neighbourhood amenities."
+          },
+          {
+            "index": 27,
+            "kind": "paragraph",
+            "text": "The planning framework will also consider appropriate facilities for cycling, electric vehicles and emerging mobility technologies."
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "Our ambition is to make movement within Anondo Bhubon convenient, organized and increasingly sustainable.",
+            "runs": [
+              {
+                "text": "Our ambition is to make movement within Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": " convenient, organized and increasingly sustainable.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 29,
+          "kind": "paragraph",
+          "text": "3. Reliable Electricity and Sustainable Energy",
+          "runs": [
+            {
+              "text": "3. Reliable Electricity and Sustainable Energy",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "Dependable electricity is essential for modern residential living, commercial activities, healthcare, education and technology-based enterprises."
+          },
+          {
+            "index": 31,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's electrical infrastructure will be planned according to projected demand, development phases and applicable utility requirements."
+          },
+          {
+            "index": 32,
+            "kind": "paragraph",
+            "text": "The long-term strategy will consider:"
+          },
+          {
+            "index": 33,
+            "kind": "list-item",
+            "text": "Adequate electricity distribution infrastructure."
+          },
+          {
+            "index": 34,
+            "kind": "list-item",
+            "text": "Appropriate substations and distribution networks."
+          },
+          {
+            "index": 35,
+            "kind": "list-item",
+            "text": "Reliable power arrangements for essential community services."
+          },
+          {
+            "index": 36,
+            "kind": "list-item",
+            "text": "Energy-efficient street lighting and public facilities."
+          },
+          {
+            "index": 37,
+            "kind": "list-item",
+            "text": "Renewable energy opportunities, including suitable rooftop solar installations."
+          },
+          {
+            "index": 38,
+            "kind": "list-item",
+            "text": "Energy-conscious building design and infrastructure management."
+          },
+          {
+            "index": 39,
+            "kind": "paragraph",
+            "text": "Particular attention will be given to the dependable power requirements of Anondo Digital Valley, healthcare institutions and suitable industrial enterprises."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 40,
+          "kind": "paragraph",
+          "text": "4. Water Supply, Drainage and Wastewater Management",
+          "runs": [
+            {
+              "text": "4. Water Supply, Drainage and Wastewater Management",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 41,
+            "kind": "paragraph",
+            "text": "Water infrastructure is a fundamental component of the township's environmental and public-health strategy."
+          },
+          {
+            "index": 42,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon will pursue an integrated approach to water supply, drainage, wastewater treatment and environmental protection."
+          },
+          {
+            "index": 43,
+            "kind": "paragraph",
+            "text": "The proposed framework includes dependable water distribution, appropriate storage and treatment facilities, stormwater drainage, wastewater collection and suitable treatment systems."
+          },
+          {
+            "index": 44,
+            "kind": "paragraph",
+            "text": "Rainwater harvesting, water conservation and treated-water reuse opportunities will be considered wherever technically and economically appropriate."
+          },
+          {
+            "index": 45,
+            "kind": "paragraph",
+            "text": "The drainage network will be coordinated with the township's planned waterways and green–blue infrastructure, while protecting natural water quality and addressing flood resilience."
+          },
+          {
+            "index": 46,
+            "kind": "paragraph",
+            "text": "Our objective is to use water responsibly, manage it efficiently and protect the natural environment.",
+            "runs": [
+              {
+                "text": "Our objective is to use water responsibly, manage it efficiently and protect the natural environment.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 47,
+          "kind": "paragraph",
+          "text": "5. Smart Digital Infrastructure",
+          "runs": [
+            {
+              "text": "5. Smart Digital Infrastructure",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 48,
+            "kind": "paragraph",
+            "text": "Digital connectivity will be an essential feature of Anondo Bhubon's modern township identity."
+          },
+          {
+            "index": 49,
+            "kind": "paragraph",
+            "text": "The infrastructure vision includes high-speed broadband connectivity, suitable fibre-optic networks and digital communication systems supporting residential, commercial and institutional activities."
+          },
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "Anondo Digital Valley will require particularly reliable connectivity and appropriate technology infrastructure to support software companies, freelancers, digital enterprises and innovation-driven businesses."
+          },
+          {
+            "index": 51,
+            "kind": "paragraph",
+            "text": "The township's long-term management systems may incorporate digital platforms for:"
+          },
+          {
+            "index": 52,
+            "kind": "list-item",
+            "text": "Utility monitoring and service management."
+          },
+          {
+            "index": 53,
+            "kind": "list-item",
+            "text": "Infrastructure maintenance and fault reporting."
+          },
+          {
+            "index": 54,
+            "kind": "list-item",
+            "text": "Security and emergency coordination."
+          },
+          {
+            "index": 55,
+            "kind": "list-item",
+            "text": "Traffic and transportation information."
+          },
+          {
+            "index": 56,
+            "kind": "list-item",
+            "text": "Community communication and resident services."
+          },
+          {
+            "index": 57,
+            "kind": "list-item",
+            "text": "Environmental monitoring and operational efficiency."
+          },
+          {
+            "index": 58,
+            "kind": "paragraph",
+            "text": "Our vision is to use technology not merely as a modern attraction, but as a practical tool for improving everyday life.",
+            "runs": [
+              {
+                "text": "Our vision is to use technology not merely as a modern attraction, but as a practical tool for improving everyday life.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 59,
+          "kind": "paragraph",
+          "text": "6. Public Safety and Emergency Infrastructure",
+          "runs": [
+            {
+              "text": "6. Public Safety and Emergency Infrastructure",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 60,
+            "kind": "paragraph",
+            "text": "Safety and security are essential to a well-functioning township."
+          },
+          {
+            "index": 61,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's infrastructure framework will incorporate appropriate provisions for police and security facilities, fire protection, emergency access and coordinated response arrangements."
+          },
+          {
+            "index": 62,
+            "kind": "paragraph",
+            "text": "Street lighting, road safety measures, emergency communication and suitable surveillance systems will contribute to the overall safety strategy."
+          },
+          {
+            "index": 63,
+            "kind": "paragraph",
+            "text": "The township will also consider disaster preparedness and emergency management in accordance with applicable standards and regulatory requirements."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 64,
+          "kind": "paragraph",
+          "text": "7. Sustainable Infrastructure and Environmental Responsibility",
+          "runs": [
+            {
+              "text": "7. Sustainable Infrastructure and Environmental Responsibility",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 65,
+            "kind": "paragraph",
+            "text": "Infrastructure development must remain consistent with Anondo Bhubon's environmental philosophy."
+          },
+          {
+            "index": 66,
+            "kind": "paragraph",
+            "text": "Our planning approach will emphasize efficient resource use, responsible waste management, green infrastructure and long-term environmental performance."
+          },
+          {
+            "index": 67,
+            "kind": "paragraph",
+            "text": "The integration of landscaped roads, waterways, drainage systems, forest walkways and neighbourhood green spaces will support a more comfortable and resilient urban environment."
+          },
+          {
+            "index": 68,
+            "kind": "paragraph",
+            "text": "Environmental responsibility will guide both infrastructure construction and subsequent operation."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 69,
+          "kind": "paragraph",
+          "text": "Our Infrastructure Commitment",
+          "runs": [
+            {
+              "text": "Our Infrastructure Commitment",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 70,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, infrastructure is not merely a network of roads, pipes, cables and buildings. It is the foundation of a safe, connected and fulfilling community.",
+            "runs": [
+              {
+                "text": "At Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": ", infrastructure is not merely a network of roads, pipes, cables and buildings. It is the foundation of a safe, connected and fulfilling community.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 71,
+            "kind": "paragraph",
+            "text": "Our ambition is to establish reliable, efficient and environmentally responsible infrastructure that supports modern living, economic productivity and long-term township sustainability."
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 72,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 73,
+        "kind": "paragraph",
+        "text": "Connected Communities. Sustainable Infrastructure. Better Living.",
+        "runs": [
+          {
+            "text": "Connected Communities. Sustainable Infrastructure. Better Living.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 74,
+        "kind": "paragraph",
+        "text": "Anondo Real Estate Group",
+        "runs": [
+          {
+            "text": "Anondo Real Estate Group",
+            "bold": true
+          }
+        ]
+      }
+    ]
+  },
+  "education-healthcare": {
+    "sourceFile": "education, healthcare etc.docx",
+    "sourceSha256": "222e9b9011aa2da1138e843fab6412834e88074905b031ba0909f73761b5897a",
+    "image": "school",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Education, Healthcare, Sports & Civic Infrastructure",
+        "runs": [
+          {
+            "text": "Education, Healthcare, Sports & Civic Infrastructure",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "text": "Nurturing People. Strengthening Communities. Enriching Lives.",
+        "runs": [
+          {
+            "text": "Nurturing People. Strengthening Communities. Enriching Lives.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "text": "A Complete Community for Every Stage of Life.",
+        "runs": [
+          {
+            "text": "A Complete Community for Every Stage of Life.",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 4,
+          "kind": "paragraph",
+          "text": "Building a Township Around People's Needs",
+          "runs": [
+            {
+              "text": "Building a Township Around People's Needs",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe that a truly successful township must provide more than comfortable homes, commercial opportunities and modern infrastructure."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "It must create an environment where children receive quality education, families have access to healthcare, young people develop their talents, citizens enjoy sports and recreation, and communities flourish in safety and harmony."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Our integrated master plan therefore incorporates a comprehensive network of educational institutions, healthcare facilities, sports complexes and essential civic services."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "Our ambition is to create a township where people can live, learn, work, play and grow—within one connected community.",
+            "runs": [
+              {
+                "text": "Our ambition is to create a township where people can live, learn, work, play and grow—within one connected community.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 10,
+          "kind": "paragraph",
+          "text": "1. Education — Building Knowledge, Skills and Future Generations",
+          "runs": [
+            {
+              "text": "1. Education — Building Knowledge, Skills and Future Generations",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 11,
+            "kind": "allocation",
+            "text": "From Elementary Education to University and Professional Development",
+            "runs": [
+              {
+                "text": "From Elementary Education to University and Professional Development",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "Education is one of the fundamental pillars of Anondo Bhubon's development philosophy."
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "We envision a township where educational opportunities are accessible throughout the community, supporting children, young people and professionals at different stages of their lives."
+          },
+          {
+            "index": 14,
+            "kind": "paragraph",
+            "text": "Our educational master plan follows a neighbourhood-based approach."
+          },
+          {
+            "index": 15,
+            "kind": "subheading",
+            "text": "Elementary Schools Within Residential Blocks",
+            "runs": [
+              {
+                "text": "Elementary Schools Within Residential Blocks",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 16,
+            "kind": "paragraph",
+            "text": "Each residential block is planned with provision for an elementary school, enabling children to receive their early education within their neighbourhood."
+          },
+          {
+            "index": 17,
+            "kind": "paragraph",
+            "text": "This approach is intended to reduce unnecessary travel, improve accessibility and strengthen the relationship between schools, families and communities."
+          },
+          {
+            "index": 18,
+            "kind": "subheading",
+            "text": "High Schools and Colleges Within Residential Sectors",
+            "runs": [
+              {
+                "text": "High Schools and Colleges Within Residential Sectors",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 19,
+            "kind": "paragraph",
+            "text": "Every principal residential sector is planned to accommodate a high school and college, together with a substantial football ground."
+          },
+          {
+            "index": 20,
+            "kind": "paragraph",
+            "text": "These institutions will support secondary and higher-secondary education while encouraging physical activity, teamwork and extracurricular development."
+          },
+          {
+            "index": 21,
+            "kind": "subheading",
+            "text": "Dedicated School and College Campus — 15 Bighas",
+            "runs": [
+              {
+                "text": "Dedicated School and College Campus — 15 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 22,
+            "kind": "paragraph",
+            "text": "An additional 15-bigha campus is reserved for a separate school and college, offering opportunities for a specialized or internationally oriented educational institution, subject to future demand and institutional planning."
+          },
+          {
+            "index": 23,
+            "kind": "subheading",
+            "text": "University — 50 Bighas",
+            "runs": [
+              {
+                "text": "University — 50 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "A dedicated 50-bigha university site forms an important part of our long-term educational vision."
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "The proposed university is intended to provide opportunities for higher education, research, innovation and professional development."
+          },
+          {
+            "index": 26,
+            "kind": "paragraph",
+            "text": "Its academic direction may incorporate emerging disciplines such as information technology, engineering, business, environmental studies and other fields aligned with the township's economic development."
+          },
+          {
+            "index": 27,
+            "kind": "subheading",
+            "text": "Technology and Professional Skills Development",
+            "runs": [
+              {
+                "text": "Technology and Professional Skills Development",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "Through Anondo Digital Valley and its proposed AI and Digital Technology Institute, we also envision opportunities for technical education, digital skills and entrepreneurship."
+          },
+          {
+            "index": 29,
+            "kind": "paragraph",
+            "text": "Our objective is to establish an educational environment that connects knowledge with employment, enterprise and innovation."
+          },
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, education will not simply prepare young people for examinations. It will help prepare them for life, careers and leadership.",
+            "runs": [
+              {
+                "text": "At Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": ", education will not simply prepare young people for examinations. It will help prepare them for life, careers and leadership.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 32,
+          "kind": "paragraph",
+          "text": "2. Healthcare — Caring for Every Generation",
+          "runs": [
+            {
+              "text": "2. Healthcare — Caring for Every Generation",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 33,
+            "kind": "allocation",
+            "text": "Two Planned Hospitals | 30 Bighas",
+            "runs": [
+              {
+                "text": "Two Planned Hospitals | 30 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "Access to dependable healthcare is essential to a secure and comfortable community."
+          },
+          {
+            "index": 35,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's revised master plan provides for two hospitals, each occupying approximately 15 bighas, strategically intended to serve different parts of the township and surrounding communities.",
+            "runs": [
+              {
+                "text": "Anondo "
+              },
+              {
+                "text": "Bhubon's"
+              },
+              {
+                "text": " revised master plan provides for "
+              },
+              {
+                "text": "two hospitals, each occupying approximately 15 bighas",
+                "bold": true
+              },
+              {
+                "text": ", strategically intended to serve different parts of the township and surrounding communities."
+              }
+            ]
+          },
+          {
+            "index": 36,
+            "kind": "paragraph",
+            "text": "The proposed healthcare network is envisioned to support a broad range of medical services, including general healthcare, diagnostic facilities, specialist consultations, emergency care and appropriate inpatient services."
+          },
+          {
+            "index": 37,
+            "kind": "paragraph",
+            "text": "The final clinical specialties, hospital capacities and operating arrangements will be determined through detailed healthcare planning and feasibility assessments."
+          },
+          {
+            "index": 38,
+            "kind": "paragraph",
+            "text": "Beyond medical treatment, we believe a healthy community requires opportunities for preventive healthcare, physical activity, recreation and environmental well-being."
+          },
+          {
+            "index": 39,
+            "kind": "paragraph",
+            "text": "The township's parks, forest walkways, sports facilities and pedestrian environments will complement its healthcare infrastructure by encouraging active and healthier lifestyles."
+          },
+          {
+            "index": 40,
+            "kind": "paragraph",
+            "text": "Our aspiration is to create a community where healthcare is accessible, well-being is valued and people of every generation can live with greater confidence and peace of mind.",
+            "runs": [
+              {
+                "text": "Our aspiration is to create a community where healthcare is accessible, well-being is valued and people of every generation can live with greater confidence and peace of mind.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 42,
+          "kind": "paragraph",
+          "text": "3. Sports and Recreation — Inspiring a Healthy and Active Nation",
+          "runs": [
+            {
+              "text": "3. Sports and Recreation — Inspiring a Healthy and Active Nation",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 43,
+            "kind": "allocation",
+            "text": "Two Major Sports Complexes | 70 Bighas",
+            "runs": [
+              {
+                "text": "Two Major Sports Complexes | 70 Bighas",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 44,
+            "kind": "paragraph",
+            "text": "Sports and recreation occupy a special place in the Anondo Bhubon development philosophy."
+          },
+          {
+            "index": 45,
+            "kind": "paragraph",
+            "text": "We believe sports promote discipline, teamwork, confidence, physical fitness and social harmony."
+          },
+          {
+            "index": 46,
+            "kind": "paragraph",
+            "text": "The revised master plan allocates 70 bighas for two major sports complexes, each planned on approximately 35 bighas.",
+            "runs": [
+              {
+                "text": "The revised master plan allocates "
+              },
+              {
+                "text": "70 bighas for two major sports ",
+                "bold": true
+              },
+              {
+                "text": "complexes",
+                "bold": true
+              },
+              {
+                "text": ","
+              },
+              {
+                "text": " each planned on approximately 35 bighas."
+              }
+            ]
+          },
+          {
+            "index": 47,
+            "kind": "paragraph",
+            "text": "Our long-term vision includes facilities for cricket, football and other indoor and outdoor sports, together with appropriate training and recreational amenities."
+          },
+          {
+            "index": 48,
+            "kind": "paragraph",
+            "text": "The ambition is to pursue international-standard sporting environments, with stadium configurations, capacities and supporting infrastructure determined through detailed feasibility and design."
+          },
+          {
+            "index": 49,
+            "kind": "subheading",
+            "text": "Sports Within Residential Communities",
+            "runs": [
+              {
+                "text": "Sports Within Residential Communities",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "In addition to the two major sports complexes, playgrounds and recreational facilities are incorporated throughout the residential sectors."
+          },
+          {
+            "index": 51,
+            "kind": "paragraph",
+            "text": "High schools and colleges within the sectors are planned with substantial football grounds, while neighbourhood playgrounds will provide opportunities for children and families to participate in everyday recreational activities."
+          },
+          {
+            "index": 52,
+            "kind": "paragraph",
+            "text": "These facilities will encourage participation in sports from an early age and may help identify and develop future sporting talent."
+          },
+          {
+            "index": 53,
+            "kind": "paragraph",
+            "text": "Our ambition extends beyond creating recreational spaces."
+          },
+          {
+            "index": 54,
+            "kind": "paragraph",
+            "text": "We want Anondo Bhubon to become a community that encourages healthy lifestyles, nurtures sporting excellence and inspires the next generation of athletes.",
+            "runs": [
+              {
+                "text": "We want Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": " to become a community that encourages healthy lifestyles, nurtures sporting excellence and inspires the next generation of athletes.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 56,
+          "kind": "paragraph",
+          "text": "4. Civic Infrastructure — Creating a Safe, Organized and Connected Community",
+          "runs": [
+            {
+              "text": "4. Civic Infrastructure — Creating a Safe, Organized and Connected Community",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 57,
+            "kind": "paragraph",
+            "text": "A complete township requires essential public services and civic institutions that support everyday life."
+          },
+          {
+            "index": 58,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's civic infrastructure framework is envisioned to incorporate appropriate facilities for:"
+          },
+          {
+            "index": 59,
+            "kind": "list-item",
+            "text": "Public Safety and Security: Police and security facilities, coordinated surveillance and community safety arrangements.",
+            "runs": [
+              {
+                "text": "Public Safety and Security:",
+                "bold": true
+              },
+              {
+                "text": " Police and security facilities, coordinated surveillance and community safety arrangements."
+              }
+            ]
+          },
+          {
+            "index": 60,
+            "kind": "list-item",
+            "text": "Fire and Emergency Response: Fire protection infrastructure, emergency access and facilities for emergency services.",
+            "runs": [
+              {
+                "text": "Fire and Emergency Response:",
+                "bold": true
+              },
+              {
+                "text": " Fire protection infrastructure, emergency access and facilities for emergency services."
+              }
+            ]
+          },
+          {
+            "index": 61,
+            "kind": "list-item",
+            "text": "Religious and Community Life: Mosques, prayer facilities and appropriate spaces for social and community activities.",
+            "runs": [
+              {
+                "text": "Religious and Community Life:",
+                "bold": true
+              },
+              {
+                "text": " Mosques, prayer facilities and appropriate spaces for social and community activities."
+              }
+            ]
+          },
+          {
+            "index": 62,
+            "kind": "list-item",
+            "text": "Community Services: Multipurpose community facilities, gathering spaces and services supporting residents of different ages.",
+            "runs": [
+              {
+                "text": "Community Services:",
+                "bold": true
+              },
+              {
+                "text": " Multipurpose community facilities, gathering spaces and services supporting residents of different ages."
+              }
+            ]
+          },
+          {
+            "index": 63,
+            "kind": "list-item",
+            "text": "Public Transportation: Two planned bus terminals, with a combined allocation of 12 bighas, supporting organized transportation and township connectivity.",
+            "runs": [
+              {
+                "text": "Public Transportation:",
+                "bold": true
+              },
+              {
+                "text": " Two planned bus terminals, with a combined allocation of 12 bighas, supporting organized transportation and township connectivity."
+              }
+            ]
+          },
+          {
+            "index": 64,
+            "kind": "list-item",
+            "text": "Essential Utilities: Water supply, electricity, drainage, sanitation, waste management and telecommunications.",
+            "runs": [
+              {
+                "text": "Essential Utilities:",
+                "bold": true
+              },
+              {
+                "text": " Water supply, electricity, drainage, sanitation, waste management and telecommunications."
+              }
+            ]
+          },
+          {
+            "index": 65,
+            "kind": "list-item",
+            "text": "Township Administration: Facilities and management systems to coordinate public services, infrastructure maintenance and community operations.",
+            "runs": [
+              {
+                "text": "Township Administration:",
+                "bold": true
+              },
+              {
+                "text": " Facilities and management systems to coordinate public services, infrastructure maintenance and community operations."
+              }
+            ]
+          },
+          {
+            "index": 66,
+            "kind": "paragraph",
+            "text": "These services will be integrated into the wider township development framework, with detailed locations, capacities and operating arrangements established through subsequent planning."
+          },
+          {
+            "index": 67,
+            "kind": "paragraph",
+            "text": "Our objective is to create an organized, secure and professionally managed community where essential services are dependable and everyday life becomes more convenient.",
+            "runs": [
+              {
+                "text": "Our objective is to create an organized, secure and professionally managed community where essential services are dependable and everyday life becomes more convenient.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 69,
+          "kind": "paragraph",
+          "text": "5. Community Life — A Place Where Everyone Belongs",
+          "runs": [
+            {
+              "text": "5. Community Life — A Place Where Everyone Belongs",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 70,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon is envisioned as a township that encourages meaningful relationships and a strong sense of belonging."
+          },
+          {
+            "index": 71,
+            "kind": "paragraph",
+            "text": "Neighbourhood parks, community gathering spaces, religious institutions, sports facilities, educational campuses and landscaped public environments will create opportunities for people to meet, interact and participate in community life."
+          },
+          {
+            "index": 72,
+            "kind": "paragraph",
+            "text": "Children will have places to learn and play."
+          },
+          {
+            "index": 73,
+            "kind": "paragraph",
+            "text": "Young people will have opportunities to develop their skills and talents."
+          },
+          {
+            "index": 74,
+            "kind": "paragraph",
+            "text": "Families will enjoy access to education, healthcare, shopping and recreation."
+          },
+          {
+            "index": 75,
+            "kind": "paragraph",
+            "text": "Senior citizens will benefit from peaceful surroundings, accessible community spaces and opportunities for social engagement."
+          },
+          {
+            "index": 76,
+            "kind": "paragraph",
+            "text": "Our aspiration is to create a community that values dignity, mutual respect, inclusiveness and social responsibility."
+          },
+          {
+            "index": 77,
+            "kind": "paragraph",
+            "text": "A township becomes truly successful not when its buildings are completed, but when its people develop a shared sense of belonging.",
+            "runs": [
+              {
+                "text": "A township becomes truly successful not when its buildings are completed, but when its people develop a shared sense of belonging.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 79,
+          "kind": "paragraph",
+          "text": "6. A Complete Lifestyle — Within One Integrated Township",
+          "runs": [
+            {
+              "text": "6. A Complete Lifestyle — Within One Integrated Township",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 80,
+            "kind": "paragraph",
+            "text": "The strength of Anondo Bhubon lies in the integration of its residential, educational, healthcare, recreational, commercial and civic facilities."
+          },
+          {
+            "index": 81,
+            "kind": "paragraph",
+            "text": "Schools and colleges will serve neighbourhood communities."
+          },
+          {
+            "index": 82,
+            "kind": "paragraph",
+            "text": "The university and Digital Valley will support education, research and professional opportunities."
+          },
+          {
+            "index": 83,
+            "kind": "paragraph",
+            "text": "Hospitals will provide essential healthcare services."
+          },
+          {
+            "index": 84,
+            "kind": "paragraph",
+            "text": "Sports complexes, playgrounds, parks and forest walkways will encourage healthy living."
+          },
+          {
+            "index": 85,
+            "kind": "paragraph",
+            "text": "Commercial centres and technology enterprises will create employment and business opportunities."
+          },
+          {
+            "index": 86,
+            "kind": "paragraph",
+            "text": "Civic institutions and professional township management will support security, convenience and long-term community well-being."
+          },
+          {
+            "index": 87,
+            "kind": "paragraph",
+            "text": "Together, these components are intended to create a balanced, functional and environmentally responsible urban environment."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 88,
+          "kind": "paragraph",
+          "text": "Our Commitment to Community Well-Being",
+          "runs": [
+            {
+              "text": "Our Commitment to Community Well-Being",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 89,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe that the true measure of development is the quality of life it creates for people.",
+            "runs": [
+              {
+                "text": "At Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": ", we believe that the true measure of development is the quality of life it creates for people.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 90,
+            "kind": "paragraph",
+            "text": "Our ambition is to establish a township where education empowers, healthcare protects, sports inspire and community institutions bring people together."
+          },
+          {
+            "index": 91,
+            "kind": "paragraph",
+            "text": "A place where children can grow with confidence, families can live with dignity and future generations can pursue their aspirations."
+          },
+          {
+            "index": 92,
+            "kind": "paragraph",
+            "text": "We are not merely developing a township. We are creating a complete community for life, learning, health and happiness.",
+            "runs": [
+              {
+                "text": "We are not merely developing a township. We are creating a complete community for life, learning, health and happiness.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 94,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 95,
+        "kind": "paragraph",
+        "text": "A Complete Township for Life, Enterprise and Future Generations.",
+        "runs": [
+          {
+            "text": "A Complete Township for Life, Enterprise and Future Generations.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 96,
+        "kind": "paragraph",
+        "text": "Where Nature, Opportunity and Modern Living Come Together.",
+        "runs": [
+          {
+            "text": "Where Nature, Opportunity and Modern Living Come Together.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 97,
+        "kind": "paragraph",
+        "text": "ANONDO REAL ESTATE GROUP",
+        "runs": [
+          {
+            "text": "ANONDO REAL ESTATE GROUP",
+            "bold": true
+          }
+        ]
+      }
+    ]
+  },
+  "commercial-development": {
+    "sourceFile": "Commercial.docx",
+    "sourceSha256": "dc33ed8cf27f3cd88ed85e7668aa5de524eaef718daa8f8ec96fddeac4d242f5",
+    "image": "megaMall",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "title",
+        "text": "Commercial, Digital Valley & Industrial Development",
+        "runs": [
+          {
+            "text": "Commercial, Digital Valley & Industrial Development",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "text": "Creating Opportunities. Empowering Enterprise. Building Prosperity.",
+        "runs": [
+          {
+            "text": "Creating Opportunities. Empowering Enterprise. Building Prosperity.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "text": "A Township Where People Live, Work, Innovate and Prosper.",
+        "runs": [
+          {
+            "text": "A Township Where People Live, Work, Innovate and Prosper.",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 3,
+          "kind": "paragraph",
+          "text": "An Economic Vision Beyond Residential Development",
+          "runs": [
+            {
+              "text": "An Economic Vision Beyond Residential Development",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe a truly complete township must offer more than comfortable homes and modern amenities. It must also create opportunities for employment, entrepreneurship, innovation and economic advancement."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "Our vision is to establish a vibrant economic ecosystem where businesses flourish, young professionals build careers, entrepreneurs develop new enterprises and investment generates lasting opportunities."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "The revised master plan allocates approximately 791 bighas to four complementary economic development districts: the General Commercial District, Anondo Digital Valley, the Mega Commercial Centre and the Industrial District.",
+            "runs": [
+              {
+                "text": "The revised master plan allocates approximately "
+              },
+              {
+                "text": "791 bighas",
+                "bold": true
+              },
+              {
+                "text": " to four complementary economic development districts: the General Commercial District, Anondo Digital Valley, the Mega Commercial Centre and the Industrial District."
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Together, these developments are envisioned to create a diversified economic foundation for Anondo Bhubon, connecting residential life with commerce, technology, enterprise and employment."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 8,
+          "kind": "paragraph",
+          "text": "1. General Commercial District",
+          "runs": [
+            {
+              "text": "1. General Commercial District",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 9,
+            "kind": "allocation",
+            "text": "296 Bighas | The Business and Commercial Heart of Anondo Bhubon",
+            "runs": [
+              {
+                "text": "296 Bighas | The Business and Commercial Heart of Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "The General Commercial District is envisioned as a dynamic centre of business, trade, professional services and commercial activity."
+          },
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "Planned to accommodate modern office buildings, corporate establishments, retail centres, financial institutions, hospitality facilities and supporting businesses, the district will serve both township residents and the wider regional economy."
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "Its strategic integration with residential communities, major transportation corridors and institutional facilities is intended to encourage commercial investment and generate employment."
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "Our ambition is to create a thriving business environment where established enterprises and emerging entrepreneurs can grow together.",
+            "runs": [
+              {
+                "text": "Our ambition is to create a thriving business environment where established enterprises and emerging entrepreneurs can grow together.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 14,
+          "kind": "paragraph",
+          "text": "2. Anondo Digital Valley",
+          "runs": [
+            {
+              "text": "2. Anondo Digital Valley",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 15,
+            "kind": "allocation",
+            "text": "230 Bighas | A Destination for Technology, Innovation and Digital Enterprise",
+            "runs": [
+              {
+                "text": "230 Bighas | A Destination for Technology, Innovation and Digital Enterprise",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 16,
+            "kind": "paragraph",
+            "text": "Anondo Digital Valley represents one of the most forward-looking components of the township."
+          },
+          {
+            "index": 17,
+            "kind": "paragraph",
+            "text": "It is envisioned as a dedicated ecosystem for software development, information technology, artificial intelligence, digital services, freelancers, startups and technology-driven enterprises."
+          },
+          {
+            "index": 18,
+            "kind": "paragraph",
+            "text": "The development concept includes flexible workspaces, startup offices, independent technology company premises, shared business facilities and reliable digital infrastructure."
+          },
+          {
+            "index": 19,
+            "kind": "paragraph",
+            "text": "An AI and Digital Technology Institute is also envisioned to support technical education, professional skills, research and entrepreneurship.",
+            "runs": [
+              {
+                "text": "An "
+              },
+              {
+                "text": "AI and Digital Technology Institute",
+                "bold": true
+              },
+              {
+                "text": " is also envisioned to support technical education, professional skills, research and entrepreneurship."
+              }
+            ]
+          },
+          {
+            "index": 20,
+            "kind": "paragraph",
+            "text": "Affordable workspace opportunities and supporting accommodation facilities are intended to help young professionals and emerging businesses establish themselves and grow."
+          },
+          {
+            "index": 21,
+            "kind": "paragraph",
+            "text": "Our aspiration is to create an environment where a freelancer can become an entrepreneur, a startup can become a successful company and local talent can compete in the global digital economy."
+          },
+          {
+            "index": 22,
+            "kind": "paragraph",
+            "text": "Anondo Digital Valley — Where Talent Meets Technology and Opportunity.",
+            "runs": [
+              {
+                "text": "Anondo Digital Valley — Where Talent Meets Technology and Opportunity.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 23,
+          "kind": "paragraph",
+          "text": "3. Mega Commercial Centre",
+          "runs": [
+            {
+              "text": "3. Mega Commercial Centre",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 24,
+            "kind": "allocation",
+            "text": "55 Bighas | A Landmark Destination for Commerce, Leisure and Community Life",
+            "runs": [
+              {
+                "text": "55 Bighas | A Landmark Destination for Commerce, Leisure and Community Life",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "The proposed Mega Commercial Centre is envisioned as a distinctive architectural and commercial landmark of Anondo Bhubon."
+          },
+          {
+            "index": 26,
+            "kind": "paragraph",
+            "text": "Planned within approximately 55 bighas, the development concept combines a major commercial building with landscaped public spaces, water features, pedestrian promenades, recreation and entertainment facilities."
+          },
+          {
+            "index": 27,
+            "kind": "paragraph",
+            "text": "With an initial conceptual building footprint of approximately 85,000 square feet, the centre is intended to accommodate shopping, dining, entertainment, business activities and family recreation."
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "Inspired by successful international commercial destinations, it will seek to establish an original architectural identity reflecting the aspirations and cultural character of Bangladesh."
+          },
+          {
+            "index": 29,
+            "kind": "paragraph",
+            "text": "More than a shopping destination, the Mega Commercial Centre is envisioned as a vibrant place for business, social interaction and leisure."
+          },
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "A Landmark for Business. A Destination for Everyone.",
+            "runs": [
+              {
+                "text": "A Landmark for Business. A Destination for Everyone.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 31,
+          "kind": "paragraph",
+          "text": "4. Industrial District",
+          "runs": [
+            {
+              "text": "4. Industrial District",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 32,
+            "kind": "allocation",
+            "text": "210 Bighas | Environmentally Responsible Industry and Future Technology",
+            "runs": [
+              {
+                "text": "210 Bighas | Environmentally Responsible Industry and Future Technology",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 33,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's Industrial District is planned to support economic diversification, productive investment and skilled employment."
+          },
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "The district will focus on suitable, environmentally compatible and technology-oriented industries, potentially including electronics, digital hardware, networking equipment, semiconductor design and related enterprises."
+          },
+          {
+            "index": 35,
+            "kind": "paragraph",
+            "text": "Its development will be guided by appropriate infrastructure planning, environmental safeguards, efficient transportation and responsible industrial management."
+          },
+          {
+            "index": 36,
+            "kind": "paragraph",
+            "text": "By encouraging suitable technology-based industries, Anondo Bhubon aspires to support innovation, strengthen local supply chains and contribute to Bangladesh's growing industrial and technological capabilities."
+          },
+          {
+            "index": 37,
+            "kind": "paragraph",
+            "text": "Our objective is to promote industrial progress without compromising the environmental quality and residential character of the township.",
+            "runs": [
+              {
+                "text": "Our objective is to promote industrial progress without compromising the environmental quality and residential character of the township.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 38,
+          "kind": "paragraph",
+          "text": "5. An Integrated Ecosystem of Employment and Entrepreneurship",
+          "runs": [
+            {
+              "text": "5. An Integrated Ecosystem of Employment and Entrepreneurship",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 39,
+            "kind": "paragraph",
+            "text": "The true strength of Anondo Bhubon's economic master plan lies in the relationship among its four development districts."
+          },
+          {
+            "index": 40,
+            "kind": "paragraph",
+            "text": "The General Commercial District will support trade, corporate activity and professional services."
+          },
+          {
+            "index": 41,
+            "kind": "paragraph",
+            "text": "Anondo Digital Valley will encourage innovation, technology entrepreneurship and digital employment."
+          },
+          {
+            "index": 42,
+            "kind": "paragraph",
+            "text": "The Industrial District will provide opportunities for productive enterprises, technical professions and industrial investment."
+          },
+          {
+            "index": 43,
+            "kind": "paragraph",
+            "text": "The Mega Commercial Centre will strengthen retail, hospitality, recreation and the township's commercial identity."
+          },
+          {
+            "index": 44,
+            "kind": "paragraph",
+            "text": "Together, these districts are intended to create opportunities for entrepreneurs, professionals, technicians, service providers, investors and the next generation of skilled workers."
+          },
+          {
+            "index": 45,
+            "kind": "paragraph",
+            "text": "Their integration with residential communities, education, healthcare, transportation and recreation will help establish a more complete and economically sustainable township."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 46,
+          "kind": "paragraph",
+          "text": "Our Commitment to Economic Opportunity",
+          "runs": [
+            {
+              "text": "Our Commitment to Economic Opportunity",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 47,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe economic development should contribute to human progress and community well-being."
+          },
+          {
+            "index": 48,
+            "kind": "paragraph",
+            "text": "Our ambition is to create an environment where investment generates enterprise, enterprise creates employment and employment strengthens families and communities."
+          },
+          {
+            "index": 49,
+            "kind": "paragraph",
+            "text": "We envision a township where young people can develop their talents, businesses can expand, technology can flourish and economic opportunity can become part of everyday life."
+          },
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon is not merely a place to own property. It is a place to build a future.",
+            "runs": [
+              {
+                "text": "Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": " is not merely a place to own property. It is a place to build a future.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 52,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON\nLive. Work. Innovate. Prosper.",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "Live. Work. Innovate. Prosper.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 53,
+        "kind": "paragraph",
+        "text": "*Anondo Real Estate Group",
+        "runs": [
+          {
+            "text": "*"
+          },
+          {
+            "text": "Anondo Real Estate Group",
+            "italic": true
+          }
+        ]
+      }
+    ]
+  },
+  "green-blue-master-plan": {
+    "sourceFile": "GREEN BLUE MASTER PLAN.docx",
+    "sourceSha256": "a189686151656294971ca59f7565d9cd91df5dbf01c55910c1a77da795c09ff5",
+    "image": "riverside",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "The Green–Blue Environmental Master Plan",
+        "runs": [
+          {
+            "text": "The Green–Blue Environmental Master Plan",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "text": "Restoring Nature. Creating a Healthier, Greener Tomorrow.",
+        "runs": [
+          {
+            "text": "Restoring Nature. Creating a Healthier, Greener Tomorrow.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "text": "Where Water Flows, Greenery Grows and Communities Thrive.",
+        "runs": [
+          {
+            "text": "Where Water Flows, Greenery Grows and Communities Thrive.",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 4,
+          "kind": "paragraph",
+          "text": "Our Environmental Vision",
+          "runs": [
+            {
+              "text": "Our Environmental Vision",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe that modern urban development and environmental sustainability must progress together."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "Our ambition is to create a township where natural waterways, extensive greenery, landscaped neighbourhoods and modern infrastructure coexist harmoniously—providing a healthier, more beautiful and sustainable living environment for generations."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Across approximately 5,191.56 bighas, the Green–Blue Environmental Master Plan forms the ecological foundation of the entire township.",
+            "runs": [
+              {
+                "text": "Across approximately "
+              },
+              {
+                "text": "5,191.56 bighas",
+                "bold": true
+              },
+              {
+                "text": ", the Green–Blue Environmental Master Plan forms the ecological foundation of the entire township."
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "The Blue Network represents rivers, lakes, canals and water-management systems. The Green Network connects forest walkways, parks, tree-lined avenues, neighbourhood gardens and natural landscapes.",
+            "runs": [
+              {
+                "text": "The "
+              },
+              {
+                "text": "Blue Network",
+                "italic": true
+              },
+              {
+                "text": " represents rivers, lakes, canals and water-management systems. The "
+              },
+              {
+                "text": "Green Network",
+                "italic": true
+              },
+              {
+                "text": " connects forest walkways, parks, tree-lined avenues, "
+              },
+              {
+                "text": "neighbourhood"
+              },
+              {
+                "text": " gardens and natural landscapes."
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Together, these networks are envisioned to create an interconnected environmental system supporting biodiversity, healthier lifestyles, climate resilience and community well-being."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 10,
+          "kind": "paragraph",
+          "text": "1. Reviving the Old Brahmaputra — Restoring Our Natural Heritage",
+          "runs": [
+            {
+              "text": "1. Reviving the Old Brahmaputra — Restoring Our Natural Heritage",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "One of the most significant environmental aspirations of Anondo Bhubon is the proposed restoration of the historic Old Brahmaputra River, with a vision to reconnect its watercourse to the Shitalakshya River.",
+            "runs": [
+              {
+                "text": "One of the most significant environmental aspirations of Anondo "
+              },
+              {
+                "text": "Bhubon"
+              },
+              {
+                "text": " is the proposed restoration of the historic "
+              },
+              {
+                "text": "Old Brahmaputra River",
+                "bold": true
+              },
+              {
+                "text": ", with a vision to reconnect its watercourse to the "
+              },
+              {
+                "text": "Shitalakshya"
+              },
+              {
+                "text": " River."
+              }
+            ]
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "Approximately 125 bighas have been allocated for the proposed river corridor.",
+            "runs": [
+              {
+                "text": "Approximately "
+              },
+              {
+                "text": "125 bighas",
+                "bold": true
+              },
+              {
+                "text": " have been allocated for the proposed river corridor."
+              }
+            ]
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "Beyond its scenic value, this initiative reflects our commitment to restoring natural heritage, improving ecological connectivity and creating a sustainable waterfront environment."
+          },
+          {
+            "index": 14,
+            "kind": "paragraph",
+            "text": "The proposed riverfront will offer opportunities for landscaped promenades, pedestrian pathways, recreation and peaceful interaction with nature."
+          },
+          {
+            "index": 15,
+            "kind": "paragraph",
+            "text": "The restoration programme will be guided by hydrological studies, environmental assessments and the necessary regulatory approvals."
+          },
+          {
+            "index": 16,
+            "kind": "paragraph",
+            "text": "Our ambition is not simply to create a waterfront, but to restore a living connection between people, water and nature.",
+            "runs": [
+              {
+                "text": "Our ambition is not simply to create a waterfront, but to restore a living connection between people, water and nature.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 17,
+          "kind": "paragraph",
+          "text": "2. Forest Walkways — Bringing Nature into Everyday Life",
+          "runs": [
+            {
+              "text": "2. Forest Walkways — Bringing Nature into Everyday Life",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 18,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon envisions a distinctive network of forest walkways connecting residential communities, parks, institutions and major township destinations."
+          },
+          {
+            "index": 19,
+            "kind": "paragraph",
+            "text": "Approximately 50 bighas are specifically allocated to these green corridors, complementing the landscaped open spaces and neighbourhood greenery provided throughout the residential sectors.",
+            "runs": [
+              {
+                "text": "Approximately "
+              },
+              {
+                "text": "50 bighas",
+                "bold": true
+              },
+              {
+                "text": " are specifically allocated to these green corridors, complementing the landscaped open spaces and "
+              },
+              {
+                "text": "neighbourhood"
+              },
+              {
+                "text": " greenery provided throughout the residential sectors."
+              }
+            ]
+          },
+          {
+            "index": 20,
+            "kind": "paragraph",
+            "text": "Designed with suitable native and climate-adapted vegetation, shaded pedestrian routes and natural landscaping, the forest walkways will encourage walking, relaxation and outdoor recreation."
+          },
+          {
+            "index": 21,
+            "kind": "paragraph",
+            "text": "They are also intended to support biodiversity, improve pedestrian comfort and reduce localized urban heat."
+          },
+          {
+            "index": 22,
+            "kind": "paragraph",
+            "text": "Our vision is that residents should experience the beauty and tranquillity of nature throughout their everyday journeys.",
+            "runs": [
+              {
+                "text": "Our vision is that residents should experience the beauty and ",
+                "bold": true
+              },
+              {
+                "text": "tranquillity",
+                "bold": true
+              },
+              {
+                "text": " of nature throughout their everyday journeys.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 23,
+          "kind": "paragraph",
+          "text": "3. Lakes, Canals and Integrated Waterways",
+          "runs": [
+            {
+              "text": "3. Lakes, Canals and Integrated Waterways",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "A dedicated 10-bigha lake, together with the proposed river corridor and interconnected water features, will form an important part of Anondo Bhubon's blue infrastructure.",
+            "runs": [
+              {
+                "text": "A dedicated "
+              },
+              {
+                "text": "10-bigha lake",
+                "bold": true
+              },
+              {
+                "text": ", together with the proposed river corridor and interconnected water features, will form an important part of Anondo "
+              },
+              {
+                "text": "Bhubon's"
+              },
+              {
+                "text": " blue infrastructure."
+              }
+            ]
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "The waterways will be planned to enhance natural beauty while supporting appropriate stormwater management, ecological health and recreational opportunities."
+          },
+          {
+            "index": 26,
+            "kind": "paragraph",
+            "text": "Landscaped waterfronts, pedestrian bridges, viewing areas and waterside gathering spaces may become distinctive features of the township."
+          },
+          {
+            "index": 27,
+            "kind": "paragraph",
+            "text": "Water circulation, water quality, drainage and flood resilience will remain essential considerations in the detailed engineering design."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 28,
+          "kind": "paragraph",
+          "text": "4. Green Neighbourhoods and Sustainable Landscapes",
+          "runs": [
+            {
+              "text": "4. Green ",
+              "bold": true
+            },
+            {
+              "text": "Neighbourhoods",
+              "bold": true
+            },
+            {
+              "text": " and Sustainable Landscapes",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 29,
+            "kind": "paragraph",
+            "text": "Environmental responsibility will extend into every residential, commercial and institutional district."
+          },
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "The master plan envisions tree-lined roads, neighbourhood parks, landscaped playgrounds, green community spaces and pedestrian-friendly environments."
+          },
+          {
+            "index": 31,
+            "kind": "paragraph",
+            "text": "The Premium Plus, Premium, Executive, General and Economy residential sectors, together with the villa and condominium districts, will incorporate their respective planned green and social spaces."
+          },
+          {
+            "index": 32,
+            "kind": "paragraph",
+            "text": "This distributed approach will help ensure that greenery is not confined to a few major parks but becomes an integral part of the township's residential character."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 33,
+          "kind": "paragraph",
+          "text": "5. Sustainable Infrastructure and Ecological Management",
+          "runs": [
+            {
+              "text": "5. Sustainable Infrastructure and Ecological Management",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's environmental commitment will be supported by a long-term sustainability framework encompassing:"
+          },
+          {
+            "index": 35,
+            "kind": "list-item",
+            "text": "Water conservation: Responsible water use, rainwater harvesting opportunities and efficient water-management systems.",
+            "runs": [
+              {
+                "text": "Water conservation:",
+                "bold": true
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Responsible"
+              },
+              {
+                "text": " water use, rainwater harvesting opportunities and efficient water-management systems."
+              }
+            ]
+          },
+          {
+            "index": 36,
+            "kind": "list-item",
+            "text": "Stormwater and flood management: Coordinated drainage, suitable retention facilities and climate-resilient infrastructure.",
+            "runs": [
+              {
+                "text": "Stormwater and flood management:",
+                "bold": true
+              },
+              {
+                "text": " Coordinated drainage, suitable retention facilities and climate-resilient infrastructure."
+              }
+            ]
+          },
+          {
+            "index": 37,
+            "kind": "list-item",
+            "text": "Wastewater treatment: Appropriate collection and treatment systems to protect public health and surrounding waterways.",
+            "runs": [
+              {
+                "text": "Wastewater treatment:",
+                "bold": true
+              },
+              {
+                "text": " Appropriate collection and treatment systems to protect public health and surrounding waterways."
+              }
+            ]
+          },
+          {
+            "index": 38,
+            "kind": "list-item",
+            "text": "Solid-waste management: Organized collection, segregation, recycling and environmentally responsible disposal.",
+            "runs": [
+              {
+                "text": "Solid-waste management:",
+                "bold": true
+              },
+              {
+                "text": " Organized collection, segregation, recycling and environmentally responsible disposal."
+              }
+            ]
+          },
+          {
+            "index": 39,
+            "kind": "list-item",
+            "text": "Energy efficiency: Energy-conscious building design, efficient lighting and opportunities for renewable energy.",
+            "runs": [
+              {
+                "text": "Energy efficiency:",
+                "bold": true
+              },
+              {
+                "text": " Energy-conscious building design, efficient lighting and opportunities for renewable energy."
+              }
+            ]
+          },
+          {
+            "index": 40,
+            "kind": "list-item",
+            "text": "Biodiversity protection: Appropriate native planting, habitat conservation and ecological landscape management.",
+            "runs": [
+              {
+                "text": "Biodiversity protection:",
+                "bold": true
+              },
+              {
+                "text": " Appropriate native planting, habitat conservation and ecological landscape management."
+              }
+            ]
+          },
+          {
+            "index": 41,
+            "kind": "list-item",
+            "text": "Environmental monitoring: Long-term attention to water quality, landscape health, waste management and environmental performance.",
+            "runs": [
+              {
+                "text": "Environmental monitoring:",
+                "bold": true
+              },
+              {
+                "text": " Long-term attention to water quality, landscape health, waste management and environmental performance."
+              }
+            ]
+          },
+          {
+            "index": 42,
+            "kind": "paragraph",
+            "text": "These measures will be progressively incorporated into detailed planning, engineering, development and township management."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 43,
+          "kind": "paragraph",
+          "text": "6. A Healthier Lifestyle for Future Generations",
+          "runs": [
+            {
+              "text": "6. A Healthier Lifestyle for Future Generations",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 44,
+            "kind": "paragraph",
+            "text": "The true value of Anondo Bhubon's Green–Blue Environmental Master Plan lies in the quality of life it seeks to create."
+          },
+          {
+            "index": 45,
+            "kind": "paragraph",
+            "text": "We envision children growing up near parks and playgrounds, families enjoying shaded walking routes, professionals finding peaceful natural surroundings and senior citizens having comfortable places for outdoor recreation."
+          },
+          {
+            "index": 46,
+            "kind": "paragraph",
+            "text": "The integration of greenery, waterways, public spaces and sustainable infrastructure will help create a township that is not only attractive but also healthier, more resilient and environmentally responsible."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 47,
+          "kind": "paragraph",
+          "text": "Our Environmental Commitment",
+          "runs": [
+            {
+              "text": "Our Environmental Commitment",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 48,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, nature is not an addition to development. Nature is the foundation of development.",
+            "runs": [
+              {
+                "text": "At Anondo ",
+                "bold": true
+              },
+              {
+                "text": "Bhubon",
+                "bold": true
+              },
+              {
+                "text": ", nature is not an addition to development. Nature is the foundation of development.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 49,
+            "kind": "paragraph",
+            "text": "Our aspiration is to demonstrate that a modern, economically vibrant township can be developed while respecting natural heritage, protecting ecological resources and improving community well-being."
+          },
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "We are committed to building a township where progress and nature coexist—and where future generations inherit an environment worthy of their aspirations."
+          },
+          {
+            "index": 51,
+            "kind": "paragraph",
+            "text": "ANONDO BHUBON\nWhere Nature, Opportunity and Modern Living Come Together.",
+            "runs": [
+              {
+                "text": "ANONDO BHUBON",
+                "bold": true
+              },
+              {
+                "text": "\n"
+              },
+              {
+                "text": "Where Nature, Opportunity and Modern Living Come Together.",
+                "italic": true
+              }
+            ]
+          },
+          {
+            "index": 52,
+            "kind": "paragraph",
+            "text": "Anondo Real Estate Group",
+            "runs": [
+              {
+                "text": "Anondo Real Estate Group",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 53,
+          "kind": "paragraph",
+          "text": "Environmental master plan at a glance",
+          "runs": [
+            {
+              "text": "Environmental master plan ",
+              "bold": true
+            },
+            {
+              "text": "at a glance",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 54,
+            "kind": "paragraph",
+            "text": "125",
+            "runs": [
+              {
+                "text": "125",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 55,
+            "kind": "paragraph",
+            "text": "Bighas — River Corridor"
+          },
+          {
+            "index": 56,
+            "kind": "paragraph",
+            "text": "50",
+            "runs": [
+              {
+                "text": "50",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 57,
+            "kind": "paragraph",
+            "text": "Bighas — Forest Walkways"
+          },
+          {
+            "index": 58,
+            "kind": "paragraph",
+            "text": "10",
+            "runs": [
+              {
+                "text": "10",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 59,
+            "kind": "paragraph",
+            "text": "Bighas — Lake"
+          },
+          {
+            "index": 60,
+            "kind": "paragraph",
+            "text": "These 185 bighas represent the separately designated river corridor, lake and forest walkways. They do not include the additional parks, landscaped roads, school playgrounds, residential open spaces and other greenery already incorporated into the individual sectors."
+          }
+        ],
+        "layout": "metrics"
+      },
+      {
+        "heading": {
+          "index": 61,
+          "kind": "paragraph",
+          "text": "Suggested visual placement",
+          "runs": [
+            {
+              "text": "Suggested visual placement",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 62,
+            "kind": "subheading",
+            "text": "Why Teesta master plan crucial for Bangladesh's interest"
+          },
+          {
+            "index": 63,
+            "kind": "paragraph",
+            "text": "Page 1 — The Green–Blue Vision"
+          },
+          {
+            "index": 64,
+            "kind": "paragraph",
+            "text": "A master-plan aerial perspective showing the proposed river corridor, lake, forest walkways and their relationship with the township."
+          },
+          {
+            "index": 65,
+            "kind": "subheading",
+            "text": "Bangkok set to welcome a colossal forest park in the city centre"
+          },
+          {
+            "index": 66,
+            "kind": "paragraph",
+            "text": "Page 2 — Forest Walkways and Waterfront Living"
+          },
+          {
+            "index": 67,
+            "kind": "paragraph",
+            "text": "Forest walkway perspectives, riverfront promenades, pedestrian bridges and waterside recreation."
+          },
+          {
+            "index": 68,
+            "kind": "subheading",
+            "text": "Sünger Şehir | KÜRE Ansiklopedi"
+          },
+          {
+            "index": 69,
+            "kind": "paragraph",
+            "text": "Page 3 — Sustainability and Ecological Management"
+          },
+          {
+            "index": 70,
+            "kind": "paragraph",
+            "text": "Illustrations of the lake, water-sensitive landscaping, neighbourhood greenery and environmental infrastructure."
+          }
+        ],
+        "notes": true
+      },
+      {
+        "heading": {
+          "index": 71,
+          "kind": "paragraph",
+          "text": "One important planning recommendation",
+          "runs": [
+            {
+              "text": "One important planning recommendation",
+              "bold": true
+            }
+          ]
+        },
+        "blocks": [
+          {
+            "index": 72,
+            "kind": "paragraph",
+            "text": "I recommend that the technical master plan establish measurable environmental performance standards for tree canopy, accessible green space, water quality, wastewater treatment, flood resilience and long-term maintenance. These should be finalized after appropriate engineering and environmental studies rather than presented as unverified commitments in the prospectus."
+          },
+          {
+            "index": 73,
+            "kind": "paragraph",
+            "text": "This chapter can serve as the environmental identity of Anondo Bhubon without making the brochure excessively lengthy."
+          }
+        ],
+        "notes": true
+      }
+    ],
+    "closing": []
+  }
+}
