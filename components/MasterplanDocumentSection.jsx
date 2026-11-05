@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, useReducedMotion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { ANIMATIONS_ENABLED, useNoMotion } from "@/Hooks/useNoMotion";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 // Visual only (no words): full-width image bands placed between chapters, per page.
@@ -67,7 +68,7 @@ function SourceText({ block, as: Tag = "p", className = "", ...props }) {
 
 // Motion owns text, rules, hero entrance, badges and the progress bar.
 function Reveal({ children, className = "", delay = 0, as = "div", ...rest }) {
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   const Tag = motion[as];
   return (
     <Tag
@@ -84,7 +85,7 @@ function Reveal({ children, className = "", delay = 0, as = "div", ...rest }) {
 }
 
 function Rule({ light = false }) {
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   return (
     <motion.span
       aria-hidden="true"
@@ -196,7 +197,7 @@ function DocumentBlocks({ blocks, nested = false }) {
 }
 
 function SectionHeading({ block }) {
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   const numbered = block.text.match(/^(\d+\.)(\s+)(.*)$/);
   const headingClass =
     "text-3xl font-semibold leading-[1.1] tracking-[-0.035em] text-[#17203A] sm:text-4xl lg:text-[2.35rem]";
@@ -263,7 +264,7 @@ function ImageBand({ item, flip }) {
 export default function MasterplanDocumentSection({ documentContent, slug }) {
   const { introduction, sections, closing } = documentContent;
   const articleRef = useRef(null);
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   const { scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 28, mass: 0.3 });
   const heroImage = finalRenderAssets[documentContent.image];
@@ -275,6 +276,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
 
   // GSAP owns images (clip-path reveal, parallax, outline), hero parallax and the staggered content.
   useEffect(() => {
+    if (!ANIMATIONS_ENABLED) return;
     let cancelled = false;
     let media;
 

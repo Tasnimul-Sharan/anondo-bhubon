@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, useReducedMotion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { ANIMATIONS_ENABLED, useNoMotion } from "@/Hooks/useNoMotion";
 import brandStory from "@/data/brandStoryData.json";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
@@ -23,7 +24,7 @@ const ease = [0.22, 1, 0.36, 1];
 
 // Motion owns text, rules, hero entrance and the progress bar.
 function Reveal({ children, className = "", delay = 0, as = "div", ...rest }) {
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   const Tag = motion[as];
   return (
     <Tag
@@ -40,7 +41,7 @@ function Reveal({ children, className = "", delay = 0, as = "div", ...rest }) {
 }
 
 function Rule({ light = false }) {
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   return (
     <motion.span
       aria-hidden="true"
@@ -54,7 +55,7 @@ function Rule({ light = false }) {
 }
 
 function ChapterParagraph({ text, kind }) {
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   if (kind === "quote") {
     return (
       <Reveal
@@ -86,13 +87,14 @@ function ChapterParagraph({ text, kind }) {
 export default function BrandStorySection() {
   const { introduction, sections, closing } = brandStory;
   const articleRef = useRef(null);
-  const reduce = useReducedMotion();
+  const reduce = useNoMotion();
   const { scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 28, mass: 0.3 });
   const [signatory, ...signatoryRoles] = closing[3].split("\n");
 
   // GSAP owns the images: clip-path reveal, parallax, offset frame and hero background.
   useEffect(() => {
+    if (!ANIMATIONS_ENABLED) return;
     let cancelled = false;
     let media;
 
