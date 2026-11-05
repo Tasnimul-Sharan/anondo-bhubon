@@ -1,6 +1,5 @@
 import AdvancedSEO from "@/components/AdvancedSEO";
 import BrandStorySection from "@/components/BrandStorySection";
-import HeroSection from "@/components/HeroSection";
 import brandStory from "@/data/brandStoryData.json";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
@@ -24,7 +23,6 @@ export default function BrandStoryPage() {
   return (
     <div className="relative w-full">
       <AdvancedSEO {...seo} />
-      <HeroSection hero={{ title: "Brand Story", backgroundImage: finalRenderAssets.lake }} />
       <BrandStorySection />
     </div>
   );

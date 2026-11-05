@@ -1,5 +1,4 @@
 import AdvancedSEO from "@/components/AdvancedSEO";
-import HeroSection from "@/components/HeroSection";
 import MasterplanDocumentSection from "@/components/MasterplanDocumentSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 import { masterplanPreviews } from "@/data/masterplanPreviewData";
@@ -22,10 +21,11 @@ export default function MasterplanPreviewPage({ preview, documentContent }) {
   return (
     <div className="relative w-full">
       <AdvancedSEO {...seo} />
-      <HeroSection
-        hero={{ title: preview.title, backgroundImage: image }}
+      <MasterplanDocumentSection
+        key={documentContent.sourceFile}
+        slug={preview.slug}
+        documentContent={documentContent}
       />
-      <MasterplanDocumentSection documentContent={documentContent} />
     </div>
   );
 }
