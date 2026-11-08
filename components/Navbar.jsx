@@ -15,6 +15,10 @@ import {
 } from "react-icons/fi";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import {
+  lifestyleOverview,
+  lifestylePreviews,
+} from "@/data/lifestylePreviewData";
 import { masterplanPreviews } from "@/data/masterplanPreviewData";
 
 const menuItems = [
@@ -44,8 +48,26 @@ const menuItems = [
     ],
   },
   {
+    id: "lifestyle",
     name: "Lifestyle",
-    path: "/lifestyle-amenities",
+    wide: true,
+    submenu: [
+      {
+        name: lifestyleOverview.title,
+        path: lifestyleOverview.path,
+        featured: "top",
+      },
+      ...lifestylePreviews.map(({ slug, number, title }) => ({
+        number,
+        name: title,
+        path: `/lifestyle/${slug}`,
+      })),
+      {
+        name: "Lifestyle Amenities",
+        path: "/lifestyle-amenities",
+        featured: "bottom",
+      },
+    ],
   },
   {
     name: "NRB Services",
@@ -250,29 +272,105 @@ function DesktopDropdown({ item }) {
         ref={submenuRef}
         id={submenuId}
         hidden={!isOpen}
-        className="absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 pt-2"
+        className={`absolute left-1/2 top-full z-50 -translate-x-1/2 pt-2 ${
+          item.wide ? "w-[660px] 2xl:w-[720px]" : "w-72"
+        }`}
       >
-        <ul className="border border-border_color border-t-2 border-t-secondary bg-white p-2 shadow-[0_24px_65px_rgba(44,58,131,0.16)]">
-          {item.submenu.map((subItem) => (
-            <li key={subItem.name}>
-              <Link
-                href={subItem.path}
-                onClick={(event) => {
-                  // Let Next handle the hash without a second Lenis anchor scroll.
-                  event.stopPropagation();
-                  setIsOpen(false);
-                }}
-                className="group/item flex items-center justify-between gap-4 px-4 py-3.5 text-sm font-semibold text-primary transition-colors hover:bg-off_white focus-visible:bg-off_white focus-visible:ring-2 focus-visible:ring-secondary"
-              >
-                <span>{subItem.name}</span>
-                <FiChevronRight
-                  aria-hidden="true"
-                  className="shrink-0 text-secondary transition-transform group-hover/item:translate-x-1"
-                />
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {item.wide ? (
+          <div className="max-h-[calc(100svh-150px)] overflow-y-auto border border-border_color border-t-2 border-t-secondary bg-white p-3 shadow-[0_24px_65px_rgba(44,58,131,0.16)]">
+            {item.submenu
+              .filter((subItem) => subItem.featured === "top")
+              .map((subItem) => (
+                <Link
+                  key={subItem.name}
+                  href={subItem.path}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    setIsOpen(false);
+                  }}
+                  className="group/item mb-2 flex items-center justify-between gap-4 border-b border-border_color bg-off_white/70 px-4 py-3 text-sm font-semibold text-primary transition-colors hover:bg-off_white hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary"
+                >
+                  <span>{subItem.name}</span>
+                  <FiChevronRight
+                    aria-hidden="true"
+                    className="shrink-0 text-secondary transition-transform group-hover/item:translate-x-1"
+                  />
+                </Link>
+              ))}
+
+            <ul className="grid grid-flow-col grid-rows-5 gap-x-2 gap-y-0.5">
+              {item.submenu
+                .filter((subItem) => !subItem.featured)
+                .map((subItem) => (
+                  <li key={subItem.name} className="min-w-0">
+                    <Link
+                      href={subItem.path}
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        setIsOpen(false);
+                      }}
+                      className="group/item flex h-full items-start justify-between gap-3 px-3.5 py-2.5 text-sm font-semibold leading-snug text-primary transition-colors hover:bg-off_white focus-visible:bg-off_white focus-visible:ring-2 focus-visible:ring-secondary"
+                    >
+                      <span className="flex min-w-0 items-start gap-2.5">
+                        {subItem.number && (
+                          <span className="mt-0.5 shrink-0 text-[11px] font-bold tabular-nums tracking-[0.12em] text-secondary">
+                            {subItem.number}
+                          </span>
+                        )}
+                        <span className="min-w-0">{subItem.name}</span>
+                      </span>
+                      <FiChevronRight
+                        aria-hidden="true"
+                        className="mt-0.5 shrink-0 text-secondary transition-transform group-hover/item:translate-x-1"
+                      />
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+
+            {item.submenu
+              .filter((subItem) => subItem.featured === "bottom")
+              .map((subItem) => (
+                <Link
+                  key={subItem.name}
+                  href={subItem.path}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    setIsOpen(false);
+                  }}
+                  className="group/item mt-2 flex items-center justify-between gap-4 border-t border-border_color px-4 pt-3 pb-1 text-sm font-semibold text-primary transition-colors hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary"
+                >
+                  <span>{subItem.name}</span>
+                  <FiChevronRight
+                    aria-hidden="true"
+                    className="shrink-0 text-secondary transition-transform group-hover/item:translate-x-1"
+                  />
+                </Link>
+              ))}
+          </div>
+        ) : (
+          <ul className="border border-border_color border-t-2 border-t-secondary bg-white p-2 shadow-[0_24px_65px_rgba(44,58,131,0.16)]">
+            {item.submenu.map((subItem) => (
+              <li key={subItem.name}>
+                <Link
+                  href={subItem.path}
+                  onClick={(event) => {
+                    // Let Next handle the hash without a second Lenis anchor scroll.
+                    event.stopPropagation();
+                    setIsOpen(false);
+                  }}
+                  className="group/item flex items-center justify-between gap-4 px-4 py-3.5 text-sm font-semibold text-primary transition-colors hover:bg-off_white focus-visible:bg-off_white focus-visible:ring-2 focus-visible:ring-secondary"
+                >
+                  <span>{subItem.name}</span>
+                  <FiChevronRight
+                    aria-hidden="true"
+                    className="shrink-0 text-secondary transition-transform group-hover/item:translate-x-1"
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
@@ -631,11 +729,18 @@ export default function Navbar() {
                                     event.stopPropagation();
                                     closeMobileMenu();
                                   }}
-                                  className="flex items-center justify-between py-2.5 text-sm font-semibold text-primary transition hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary"
+                                  className="flex items-start justify-between gap-3 py-2.5 text-sm font-semibold text-primary transition hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary"
                                 >
-                                  <span>{subItem.name}</span>
+                                  <span className="flex min-w-0 items-start gap-2.5">
+                                    {subItem.number && (
+                                      <span className="mt-0.5 shrink-0 text-[11px] font-bold tabular-nums tracking-[0.12em] text-secondary">
+                                        {subItem.number}
+                                      </span>
+                                    )}
+                                    <span className="min-w-0">{subItem.name}</span>
+                                  </span>
 
-                                  <FiChevronRight aria-hidden="true" />
+                                  <FiChevronRight aria-hidden="true" className="mt-0.5 shrink-0" />
                                 </Link>
                               </li>
                             ))}

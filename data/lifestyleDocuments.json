@@ -1,0 +1,1618 @@
+{
+  "philosophy": {
+    "heroImage": "/forest-walkway.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "A Lifestyle Inspired by Nature, Enriched by Community and Designed for Well-Being"
+      },
+      {
+        "index": 2,
+        "kind": "lead",
+        "text": "Where Healthy Living, Happiness and Sustainable Development Come Together"
+      },
+      {
+        "index": 3,
+        "kind": "lead",
+        "text": "A Better Environment. A Healthier Life. A Happier Community."
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 4,
+          "kind": "heading",
+          "text": "Our Lifestyle Philosophy: Healthy People in a Healthy Environment"
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we believe that the greatest wealth of human life is good health, and one of the greatest responsibilities of modern civilization is the protection of nature."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "A healthy individual needs clean air, a peaceful environment, physical activity, mental relaxation, nutritious food, social relationships and access to essential services. Similarly, a healthy environment requires trees, rivers, lakes, open spaces, biodiversity, responsible resource management and protection from unnecessary pollution."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "These two priorities are deeply connected."
+          },
+          {
+            "index": 8,
+            "kind": "emphasis",
+            "text": "A healthy environment nurtures healthy people, and healthy communities have a responsibility to protect the environment that sustains them."
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "This philosophy lies at the heart of Anondo Bhubon."
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "Our ambition is to create a township where the natural environment is not sacrificed for urban development, but becomes the foundation upon which the entire community is planned."
+          },
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "We envision a place where residents wake up to greenery, enjoy morning walks beneath trees, participate in sports, spend quality time with their families, develop meaningful social relationships and pursue their professional ambitions without unnecessarily compromising their physical or mental well-being."
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "We believe that a successful township should not merely provide a place to live. It should create opportunities to live well."
+          },
+          {
+            "index": 13,
+            "kind": "emphasis",
+            "text": "Anondo Bhubon is envisioned as a complete environment for healthy, active, peaceful and joyful living."
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 14,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 15,
+        "kind": "closing-title",
+        "text": "Healthy People. Healthy Nature. Happy Communities.",
+        "runs": [
+          {
+            "text": "Healthy People. Healthy Nature. Happy Communities.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "kind": "closing-italic",
+        "text": "A Greener Environment. A Healthier Lifestyle. A More Meaningful Future.",
+        "runs": [
+          {
+            "text": "A Greener Environment. A Healthier Lifestyle. A More Meaningful Future.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 17,
+        "kind": "closing-bold",
+        "text": "More Than a Plot. A Complete Future.",
+        "runs": [
+          {
+            "text": "More Than a Plot. A Complete Future.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "kind": "closing-org",
+        "text": "ANONDO REAL ESTATE GROUP",
+        "runs": [
+          {
+            "text": "ANONDO REAL ESTATE GROUP",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 19,
+        "kind": "closing-tagline",
+        "text": "Where Nature, Opportunity and Modern Living Come Together.",
+        "runs": [
+          {
+            "text": "Where Nature, Opportunity and Modern Living Come Together.",
+            "italic": true
+          }
+        ]
+      }
+    ]
+  },
+  "a-day-in-the-life": {
+    "heroImage": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "The Anondo Bhubon Lifestyle: A Day in the Life"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "Imagine Living Here",
+          "badge": "01"
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/BLOCK COMMUNITY LAKE 3.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "Imagine beginning your day with a peaceful morning walk along a shaded forest walkway."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "The surroundings are green. The air feels fresh. Nearby, residents are exercising, walking and enjoying the morning."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "After returning home, your children prepare for school within the neighbourhood, while other family members begin their daily activities."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "You may travel to your workplace in the commercial district or Digital Valley, or commute through the township's organized transportation network."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "During the day, children attend school, young people participate in training and professional activities, and families enjoy access to local shopping and essential services."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "In the afternoon, children gather at neighbourhood playgrounds. Young athletes practise football or cricket. Others visit the community gardens, take a walk or spend time beside a pond."
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Senior citizens meet friends in a shaded park or enjoy a peaceful community space."
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "As evening approaches, families may gather at a neighbourhood food court, visit a community centre, enjoy the lakeside landscape or participate in religious and social activities."
+          },
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "On weekends, residents may enjoy the larger parks, sports complexes, recreational destinations and commercial facilities."
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "Some may participate in community gardening. Others may attend a cultural programme, sporting event or family gathering."
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "These experiences describe the lifestyle Anondo Bhubon is being planned to make possible as its neighbourhoods and facilities are progressively developed."
+          },
+          {
+            "index": 14,
+            "kind": "emphasis",
+            "text": "A lifestyle where health, nature, family, community and opportunity are connected."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "our-commitment": {
+    "heroImage": "/FINAL RENDERS/RIVER SIDE 1.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Our Commitment: Healthy People, Healthy Nature, Happy Communities"
+      }
+    ],
+    "sections": [
+      {
+        "badge": "02",
+        "topBand": {
+          "src": "/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL AMENITIES 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 2,
+            "kind": "paragraph",
+            "text": "The vision of Anondo Bhubon is founded upon a simple but powerful belief:"
+          },
+          {
+            "index": 3,
+            "kind": "emphasis",
+            "text": "Human health is a fundamental priority, and environmental sustainability is an essential responsibility."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "We believe that a development cannot be considered truly successful if it creates impressive buildings but neglects the well-being of its residents or the health of the surrounding environment."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "Our commitment is therefore to pursue a different model of township development."
+          },
+          {
+            "index": 6,
+            "kind": "card-item",
+            "text": "A model where greenery is distributed throughout neighbourhoods."
+          },
+          {
+            "index": 7,
+            "kind": "card-item",
+            "text": "Where water bodies are protected and responsibly managed."
+          },
+          {
+            "index": 8,
+            "kind": "card-item",
+            "text": "Where children have opportunities to play."
+          },
+          {
+            "index": 9,
+            "kind": "card-item",
+            "text": "Where young people can learn, develop skills and pursue careers."
+          },
+          {
+            "index": 10,
+            "kind": "card-item",
+            "text": "Where families enjoy community life and convenient services."
+          },
+          {
+            "index": 11,
+            "kind": "card-item",
+            "text": "Where senior citizens can remain active, respected and socially connected."
+          },
+          {
+            "index": 12,
+            "kind": "card-item",
+            "text": "Where sports, recreation, meditation and relaxation contribute to everyday well-being."
+          },
+          {
+            "index": 13,
+            "kind": "card-item",
+            "text": "Where businesses create opportunities and economic progress supports community prosperity."
+          },
+          {
+            "index": 14,
+            "kind": "card-item",
+            "text": "And where the protection of nature remains a responsibility shared by the developer, institutions and residents."
+          },
+          {
+            "index": 15,
+            "kind": "paragraph",
+            "text": "This is the lifestyle philosophy of Anondo Bhubon."
+          },
+          {
+            "index": 16,
+            "kind": "emphasis",
+            "text": "It is a commitment to develop a township that serves not only the present generation but also those who will inherit it."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "healthy-lifestyle-for-every-generation": {
+    "heroImage": "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 2.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "A Healthy Lifestyle for Every Generation"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "Children, Young People, Families and Senior Citizens",
+          "badge": "03"
+        },
+        "topBand": {
+          "src": "/anondo-bhubon/ELEMENTARY SCHOOL 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon is envisioned as a community that recognizes the changing needs of people throughout their lives."
+          },
+          {
+            "index": 4,
+            "kind": "card-item",
+            "text": "For children, the township will provide planned neighbourhood schools, playgrounds, parks, sports facilities and opportunities to learn about nature.",
+            "runs": [
+              {
+                "text": "For children,",
+                "bold": true
+              },
+              {
+                "text": " the township will provide planned neighbourhood schools, playgrounds, parks, sports facilities and opportunities to learn about nature."
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "kind": "card-item",
+            "text": "For young people, educational institutions, sports complexes, professional training and technology-based opportunities are intended to support personal growth and career development.",
+            "runs": [
+              {
+                "text": "For young people,",
+                "bold": true
+              },
+              {
+                "text": " educational institutions, sports complexes, professional training and technology-based opportunities are intended to support personal growth and career development."
+              }
+            ]
+          },
+          {
+            "index": 6,
+            "kind": "card-item",
+            "text": "For working adults, convenient neighbourhood services, employment opportunities, fitness facilities and green surroundings can contribute to a more balanced lifestyle.",
+            "runs": [
+              {
+                "text": "For working adults,",
+                "bold": true
+              },
+              {
+                "text": " convenient neighbourhood services, employment opportunities, fitness facilities and green surroundings can contribute to a more balanced lifestyle."
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "kind": "card-item",
+            "text": "For families, community gathering spaces, healthcare access, religious institutions, shopping facilities and recreation will support everyday comfort and social relationships.",
+            "runs": [
+              {
+                "text": "For families,",
+                "bold": true
+              },
+              {
+                "text": " community gathering spaces, healthcare access, religious institutions, shopping facilities and recreation will support everyday comfort and social relationships."
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "kind": "card-item",
+            "text": "For senior citizens, shaded walkways, peaceful gardens, meditation spaces, community activities and accessible public environments will be important elements of the lifestyle concept.",
+            "runs": [
+              {
+                "text": "For senior citizens,",
+                "bold": true
+              },
+              {
+                "text": " shaded walkways, peaceful gardens, meditation spaces, community activities and accessible public environments will be important elements of the lifestyle concept."
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "The township's detailed planning will consider safe movement, suitable seating, pedestrian accessibility and opportunities for intergenerational interaction."
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "Our objective is to create an environment where people of different ages can remain active, connected and engaged in community life."
+          },
+          {
+            "index": 11,
+            "kind": "emphasis",
+            "text": "A truly successful township should be a good place to grow up, build a family and grow older with dignity."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "green-township-at-every-level": {
+    "heroImage": "/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "A Green Township at Every Level"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "Green Spaces Within Blocks, Sectors and the Wider Township",
+          "badge": "04"
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/Courtyard plot PREMIUM PLUS 2.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/Masterplan/FOREST WALK 2.jpg",
+          "ratio": 1.48,
+          "mobileRatio": 1.2,
+          "parallax": false
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "A defining characteristic of Anondo Bhubon's lifestyle concept is the distribution of green and recreational facilities throughout the community."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "At the residential block level, spaces are planned for neighbourhood parks, children's playgrounds, community gatherings and landscaped environments.",
+            "runs": [
+              {
+                "text": "At the "
+              },
+              {
+                "text": "residential block level,",
+                "bold": true
+              },
+              {
+                "text": " spaces are planned for neighbourhood parks, children's playgrounds, community gatherings and landscaped environments."
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "These facilities will offer convenient opportunities for everyday recreation and interaction among neighbours."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "At the sector level, larger parks, playgrounds, ponds, sports facilities and landscaped public spaces will serve broader residential communities.",
+            "runs": [
+              {
+                "text": "At the "
+              },
+              {
+                "text": "sector level,",
+                "bold": true
+              },
+              {
+                "text": " larger parks, playgrounds, ponds, sports facilities and landscaped public spaces will serve broader residential communities."
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "At the township level, major sports complexes, forest walkways, lakes, waterways and other recreational destinations will complement the neighbourhood facilities.",
+            "runs": [
+              {
+                "text": "At the "
+              },
+              {
+                "text": "township level,",
+                "bold": true
+              },
+              {
+                "text": " major sports complexes, forest walkways, lakes, waterways and other recreational destinations will complement the neighbourhood facilities."
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "This three-level arrangement is intended to provide convenient access to green and recreational environments while accommodating different activities and age groups."
+          },
+          {
+            "index": 9,
+            "kind": "card-item",
+            "text": "A child may enjoy a playground close to home."
+          },
+          {
+            "index": 10,
+            "kind": "card-item",
+            "text": "A family may visit a sector park during the evening."
+          },
+          {
+            "index": 11,
+            "kind": "card-item",
+            "text": "A young athlete may participate in organized sports at a major sports complex."
+          },
+          {
+            "index": 12,
+            "kind": "card-item",
+            "text": "A senior citizen may enjoy a quiet morning walk or spend time in a landscaped garden."
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "Each experience contributes to a healthier and more enjoyable lifestyle."
+          },
+          {
+            "index": 14,
+            "kind": "emphasis",
+            "text": "Our vision is to make green living a daily experience rather than an occasional privilege."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "living-and-working": {
+    "heroImage": "/FINAL RENDERS/DOWNTOWN CBD (1).jpg",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Living and Working Within the Same Township"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "A Better Balance Between Professional Life and Family Life",
+          "badge": "05"
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/MEGA MALL 6.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/DOWNTOWN CBD (3).jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "One of the greatest challenges of modern urban living is the distance between home and workplace."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "Long journeys can consume valuable time, create stress and reduce opportunities for family life, exercise and recreation."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon seeks to address this challenge through the integration of residential communities with commercial and employment-generating districts."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "The planned General Commercial District, Anondo Digital Valley, Mega Commercial Centre and environmentally compatible Industrial District are intended to create opportunities for employment, business and entrepreneurship."
+          },
+          {
+            "index": 7,
+            "kind": "card-item",
+            "text": "Professionals may find opportunities to work near their homes."
+          },
+          {
+            "index": 8,
+            "kind": "card-item",
+            "text": "Entrepreneurs may establish businesses within the township."
+          },
+          {
+            "index": 9,
+            "kind": "card-item",
+            "text": "Freelancers and technology professionals may benefit from digital infrastructure and shared workspaces."
+          },
+          {
+            "index": 10,
+            "kind": "card-item",
+            "text": "Students may have access to professional development opportunities connected with the township's economic activities."
+          },
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "Not every resident will necessarily work within Anondo Bhubon, but the master plan is designed to make this possibility available to more people."
+          },
+          {
+            "index": 12,
+            "kind": "emphasis",
+            "text": "Our ambition is to create a community where professional success and personal well-being can coexist."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "living-in-harmony-with-nature": {
+    "heroImage": "/forest-walkway.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Living in Harmony with Nature"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "Nature Is Not a Luxury. It Is a Necessity.",
+          "badge": "a."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/River view PREMIUM PLUS.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "The relationship between people and nature is fundamental to our development philosophy."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "Modern urbanization often replaces trees, water bodies and open spaces with buildings, roads and concrete structures. Although such development may create immediate economic value, the gradual loss of natural environments can adversely affect public health, ecological balance and the quality of everyday life."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, we aspire to follow a different path."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "Our integrated master plan gives particular importance to conserving and enhancing the natural environment through green corridors, forest walkways, landscaped avenues, parks, ponds, lakes and a proposed river restoration initiative."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Greenery will not be confined to a single central park. Instead, landscaped and recreational spaces are planned throughout residential blocks, sectors and major township destinations."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "This distributed approach is intended to make nature accessible in everyday life."
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Residents should not need to travel far to find a place to walk, sit beneath a tree, enjoy a garden or spend time outdoors."
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "The township's landscape philosophy will encourage suitable tree planting, ecological conservation, responsible water management and the preservation of natural features wherever feasible."
+          },
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "Our long-term objective is to establish a living environment where urban development and ecological responsibility complement one another."
+          },
+          {
+            "index": 12,
+            "kind": "emphasis",
+            "text": "We want future generations to inherit not only a modern township, but also a healthy and flourishing natural environment."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 13,
+          "kind": "heading",
+          "text": "Forest Walkways: A Journey Through Greenery",
+          "badge": "b."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 14,
+            "kind": "subheading",
+            "text": "Walk More. Breathe Better. Live Closer to Nature.",
+            "runs": [
+              {
+                "text": "Walk More. Breathe Better. Live Closer to Nature.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 15,
+            "kind": "paragraph",
+            "text": "Walking is one of the simplest and most accessible forms of physical activity."
+          },
+          {
+            "index": 16,
+            "kind": "paragraph",
+            "text": "It supports cardiovascular health, physical mobility and mental well-being while offering opportunities for relaxation and social interaction."
+          },
+          {
+            "index": 17,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's master plan allocates approximately 50 bighas for a network of forest walkways.",
+            "runs": [
+              {
+                "text": "Anondo Bhubon's master plan allocates approximately "
+              },
+              {
+                "text": "50 bighas",
+                "bold": true
+              },
+              {
+                "text": " for a network of forest walkways."
+              }
+            ]
+          },
+          {
+            "index": 18,
+            "kind": "paragraph",
+            "text": "These walkways are envisioned as landscaped green corridors connecting different parts of the township."
+          },
+          {
+            "index": 19,
+            "kind": "paragraph",
+            "text": "The proposed environment will incorporate suitable trees, shaded walking routes, resting places and landscaped surroundings."
+          },
+          {
+            "index": 20,
+            "kind": "paragraph",
+            "text": "Where practical, walking routes may connect with parks, residential neighbourhoods, community facilities and other public destinations."
+          },
+          {
+            "index": 21,
+            "kind": "paragraph",
+            "text": "The forest walkway network will be particularly valuable for people who prefer regular walking, gentle exercise and peaceful outdoor recreation."
+          },
+          {
+            "index": 22,
+            "kind": "paragraph",
+            "text": "It will also provide opportunities for families and friends to spend time together in natural surroundings."
+          },
+          {
+            "index": 23,
+            "kind": "paragraph",
+            "text": "For senior citizens, accessible and comfortable walking environments can become an important part of daily life."
+          },
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "For children, the walkways can create opportunities to experience nature and develop an appreciation for environmental conservation."
+          },
+          {
+            "index": 25,
+            "kind": "emphasis",
+            "text": "At Anondo Bhubon, a morning walk should become more than exercise. It should be an enjoyable encounter with nature."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 26,
+          "kind": "heading",
+          "text": "Water Bodies: Bringing Life, Beauty and Tranquillity to the Township",
+          "badge": "c."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/RIVER SIDE 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 27,
+            "kind": "subheading",
+            "text": "Ponds, Lakes and the Vision of a Revived River",
+            "runs": [
+              {
+                "text": "Ponds, Lakes and the Vision of a Revived River",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "Water is an essential element of a healthy natural environment."
+          },
+          {
+            "index": 29,
+            "kind": "paragraph",
+            "text": "Beyond its ecological importance, the presence of water can create attractive landscapes, peaceful surroundings and opportunities for recreation."
+          },
+          {
+            "index": 30,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's master plan incorporates ponds within residential blocks and sectors, lakes in two zones, and a major environmental initiative involving the historic Old Brahmaputra River."
+          },
+          {
+            "index": 31,
+            "kind": "paragraph",
+            "text": "These water bodies are envisioned as important components of the township's green–blue environmental network."
+          },
+          {
+            "index": 32,
+            "kind": "paragraph",
+            "text": "Neighbourhood ponds may become attractive community landmarks, surrounded by suitable landscaping and safe public spaces."
+          },
+          {
+            "index": 33,
+            "kind": "paragraph",
+            "text": "The planned lakes will offer opportunities for waterfront gardens, walking routes, relaxation and family recreation."
+          },
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "A particularly significant element is the proposed revival of the lost Old Brahmaputra River, with a vision of restoring its connection to the Shitalakshya River.",
+            "runs": [
+              {
+                "text": "A particularly significant element is the proposed "
+              },
+              {
+                "text": "revival of the lost Old Brahmaputra River,",
+                "bold": true
+              },
+              {
+                "text": " with a vision of restoring its connection to the Shitalakshya River."
+              }
+            ]
+          },
+          {
+            "index": 35,
+            "kind": "paragraph",
+            "text": "Approximately 125 bighas are allocated for the proposed river corridor within the current master plan.",
+            "runs": [
+              {
+                "text": "Approximately "
+              },
+              {
+                "text": "125 bighas",
+                "bold": true
+              },
+              {
+                "text": " are allocated for the proposed river corridor within the current master plan."
+              }
+            ]
+          },
+          {
+            "index": 36,
+            "kind": "paragraph",
+            "text": "This initiative represents more than an attractive landscape feature. It expresses our commitment to restoring natural heritage and strengthening the environmental identity of the township."
+          },
+          {
+            "index": 37,
+            "kind": "paragraph",
+            "text": "Its realization will require appropriate hydrological studies, environmental assessments, land and water management planning, and regulatory approvals."
+          },
+          {
+            "index": 38,
+            "kind": "paragraph",
+            "text": "Water bodies will also require careful attention to water quality, drainage, public safety and ecological maintenance."
+          },
+          {
+            "index": 39,
+            "kind": "emphasis",
+            "text": "Our aspiration is to create a township where the presence of water contributes to natural beauty, environmental well-being and a peaceful way of life."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 40,
+          "kind": "heading",
+          "text": "Community Farming: Reconnecting People with the Land",
+          "badge": "d."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 41,
+            "kind": "subheading",
+            "text": "Growing Together. Learning Together. Living Sustainably.",
+            "runs": [
+              {
+                "text": "Growing Together. Learning Together. Living Sustainably.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 42,
+            "kind": "paragraph",
+            "text": "Community farming is another important element of our green lifestyle vision."
+          },
+          {
+            "index": 43,
+            "kind": "paragraph",
+            "text": "Designated spaces are proposed within different residential sectors for community gardening and appropriate small-scale farming activities."
+          },
+          {
+            "index": 44,
+            "kind": "paragraph",
+            "text": "These spaces may allow interested residents to participate in growing vegetables, herbs, flowers and other suitable plants under organized community arrangements."
+          },
+          {
+            "index": 45,
+            "kind": "paragraph",
+            "text": "Community farming can provide opportunities for recreation, environmental education, social interaction and practical learning."
+          },
+          {
+            "index": 46,
+            "kind": "paragraph",
+            "text": "Children may gain firsthand experience of how food is grown."
+          },
+          {
+            "index": 47,
+            "kind": "paragraph",
+            "text": "Families may enjoy gardening together."
+          },
+          {
+            "index": 48,
+            "kind": "paragraph",
+            "text": "Senior citizens may find meaningful opportunities for outdoor engagement."
+          },
+          {
+            "index": 49,
+            "kind": "paragraph",
+            "text": "Community gardening can also encourage awareness of soil health, composting, water conservation and responsible food production."
+          },
+          {
+            "index": 50,
+            "kind": "paragraph",
+            "text": "The detailed organization of these facilities will consider land availability, water use, hygiene, safety and professional maintenance."
+          },
+          {
+            "index": 51,
+            "kind": "emphasis",
+            "text": "Our objective is to help residents maintain a meaningful connection with the land, even while enjoying the conveniences of modern township living."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "physical-and-mental-well-being": {
+    "heroImage": "/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Physical & Mental Well-Being"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "Sports and Physical Fitness: An Active Lifestyle for All",
+          "badge": "a."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/stadium PREMIUM PLUS_1.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "subheading",
+            "text": "From Neighbourhood Playgrounds to Major Sports Complexes",
+            "runs": [
+              {
+                "text": "From Neighbourhood Playgrounds to Major Sports Complexes",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "Sports also develop discipline, teamwork, confidence, leadership and positive social relationships."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "For these reasons, sports and recreation are fundamental components of the Anondo Bhubon lifestyle philosophy."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "Our master plan provides for playgrounds and recreational spaces within residential blocks and sectors."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "Schools and colleges within the residential sectors are planned with substantial football grounds, encouraging students to participate in regular physical activity."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "At the township level, approximately 70 bighas are allocated for two major sports complexes.",
+            "runs": [
+              {
+                "text": "At the township level, approximately "
+              },
+              {
+                "text": "70 bighas",
+                "bold": true
+              },
+              {
+                "text": " are allocated for two major sports complexes."
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "The individual areas and facilities of these complexes will be determined according to the requirements of the respective sports."
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "Our broader vision includes cricket, football and other appropriate indoor and outdoor sports, with the possibility of facilities capable of hosting major national or international sporting events, subject to technical feasibility, infrastructure requirements and applicable approvals."
+          },
+          {
+            "index": 11,
+            "kind": "paragraph",
+            "text": "Additional recreational facilities may support badminton, swimming, fitness training and other activities according to community demand and detailed planning."
+          },
+          {
+            "index": 12,
+            "kind": "paragraph",
+            "text": "The objective is not simply to provide stadiums or playgrounds."
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "It is to establish a culture in which physical activity becomes a natural part of everyday life."
+          },
+          {
+            "index": 14,
+            "kind": "card-item",
+            "text": "Children should have opportunities to play."
+          },
+          {
+            "index": 15,
+            "kind": "card-item",
+            "text": "Young people should have opportunities to develop their sporting talents."
+          },
+          {
+            "index": 16,
+            "kind": "card-item",
+            "text": "Adults should have convenient facilities for exercise and recreation."
+          },
+          {
+            "index": 17,
+            "kind": "card-item",
+            "text": "Senior citizens should have suitable environments for gentle physical activity."
+          },
+          {
+            "index": 18,
+            "kind": "emphasis",
+            "text": "At Anondo Bhubon, we want sports and physical fitness to become part of the community's identity."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 19,
+          "kind": "heading",
+          "text": "Mental Well-Being: Spaces for Peace, Meditation and Relaxation",
+          "badge": "b."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 20,
+            "kind": "subheading",
+            "text": "A Healthy Mind Is as Important as a Healthy Body",
+            "runs": [
+              {
+                "text": "A Healthy Mind Is as Important as a Healthy Body",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 21,
+            "kind": "paragraph",
+            "text": "Modern life often brings professional pressure, social responsibilities and mental fatigue."
+          },
+          {
+            "index": 22,
+            "kind": "paragraph",
+            "text": "A healthy community must therefore provide opportunities not only for physical activity but also for mental relaxation and emotional well-being."
+          },
+          {
+            "index": 23,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon envisions designated spaces for meditation, yoga, relaxation and quiet contemplation."
+          },
+          {
+            "index": 24,
+            "kind": "paragraph",
+            "text": "These environments may be incorporated into suitable parks, forest walkways, landscaped gardens and dedicated wellness zones."
+          },
+          {
+            "index": 25,
+            "kind": "paragraph",
+            "text": "They are intended to provide peaceful settings where residents can temporarily step away from busy routines and reconnect with themselves and their surroundings."
+          },
+          {
+            "index": 26,
+            "kind": "paragraph",
+            "text": "A shaded garden, a quiet lakeside seating area or a peaceful walking path can offer valuable opportunities for rest and reflection."
+          },
+          {
+            "index": 27,
+            "kind": "paragraph",
+            "text": "Suitable spaces may also support organized yoga, meditation, breathing exercises and community wellness activities."
+          },
+          {
+            "index": 28,
+            "kind": "paragraph",
+            "text": "These facilities will be planned with attention to accessibility, comfort, privacy and environmental quality."
+          },
+          {
+            "index": 29,
+            "kind": "emphasis",
+            "text": "Our aspiration is to create a township that supports not only physical fitness but also peace of mind, emotional balance and personal happiness."
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 30,
+          "kind": "heading",
+          "text": "The Neighbourhood Block: Everyday Convenience and Community Life",
+          "badge": "c."
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 5.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 31,
+            "kind": "subheading",
+            "text": "Everything Essential, Closer to Home",
+            "runs": [
+              {
+                "text": "Everything Essential, Closer to Home",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 32,
+            "kind": "paragraph",
+            "text": "A successful community begins at the neighbourhood level."
+          },
+          {
+            "index": 33,
+            "kind": "paragraph",
+            "text": "At Anondo Bhubon, each residential block is envisioned as a functional and socially connected neighbourhood, with essential facilities located within convenient reach of residents."
+          },
+          {
+            "index": 34,
+            "kind": "paragraph",
+            "text": "The block-level planning concept includes community gathering spaces incorporating suitable facilities such as:"
+          },
+          {
+            "index": 35,
+            "kind": "list-item",
+            "text": "A food court or neighbourhood dining area."
+          },
+          {
+            "index": 36,
+            "kind": "list-item",
+            "text": "A mosque and prayer facilities."
+          },
+          {
+            "index": 37,
+            "kind": "list-item",
+            "text": "Small shopping and convenience stores."
+          },
+          {
+            "index": 38,
+            "kind": "list-item",
+            "text": "Children's playgrounds."
+          },
+          {
+            "index": 39,
+            "kind": "list-item",
+            "text": "Landscaped parks and community seating."
+          },
+          {
+            "index": 40,
+            "kind": "list-item",
+            "text": "An elementary school."
+          },
+          {
+            "index": 41,
+            "kind": "list-item",
+            "text": "Space for essential utilities and service infrastructure."
+          },
+          {
+            "index": 42,
+            "kind": "paragraph",
+            "text": "These facilities are intended to make everyday life more convenient while encouraging interaction among residents."
+          },
+          {
+            "index": 43,
+            "kind": "paragraph",
+            "text": "Parents may accompany their children to nearby playgrounds."
+          },
+          {
+            "index": 44,
+            "kind": "paragraph",
+            "text": "Families may visit local shops for daily necessities."
+          },
+          {
+            "index": 45,
+            "kind": "paragraph",
+            "text": "Neighbours may meet at community gathering spaces."
+          },
+          {
+            "index": 46,
+            "kind": "paragraph",
+            "text": "Residents may participate in religious, social and recreational activities without needing to travel across the entire township."
+          },
+          {
+            "index": 47,
+            "kind": "paragraph",
+            "text": "The precise size and arrangement of these facilities will depend on block-level planning and population requirements."
+          },
+          {
+            "index": 48,
+            "kind": "emphasis",
+            "text": "Our vision is to create neighbourhoods where convenience, friendship and community spirit become part of everyday life."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "education-and-lifelong-learning": {
+    "heroImage": "/FINAL RENDERS/UNIVERSITY 3.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Education, Professional Development and Lifelong Learning"
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 2,
+          "kind": "heading",
+          "text": "A Township Where People Can Learn and Grow",
+          "badge": "08"
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/UNIVERSITY LIBRARY.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "Education is essential to individual opportunity and social progress."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "Anondo Bhubon's educational framework begins with elementary schools within residential blocks and extends to high schools and colleges within sectors."
+          },
+          {
+            "index": 5,
+            "kind": "paragraph",
+            "text": "The wider master plan also reserves land for an additional educational campus and a proposed university."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "These institutions are intended to be developed progressively according to actual educational demand."
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "The educational vision extends beyond conventional academic institutions."
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "Through the planned Anondo Cyber Valley, professional training, digital education and opportunities for technological innovation will become important elements of the township's economic and social development.",
+            "runs": [
+              {
+                "text": "Through the planned "
+              },
+              {
+                "text": "Anondo Cyber Valley",
+                "bold": true
+              },
+              {
+                "text": ", professional training, digital education and opportunities for technological innovation will become important elements of the township's economic and social development."
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "A proposed AI and Digital Technology Institute may help young people and professionals develop skills relevant to emerging industries."
+          },
+          {
+            "index": 10,
+            "kind": "paragraph",
+            "text": "The township is envisioned as an environment where education, professional development, research and entrepreneurship reinforce one another."
+          },
+          {
+            "index": 11,
+            "kind": "emphasis",
+            "text": "We want Anondo Bhubon to be a place where learning continues throughout life and knowledge creates opportunity."
+          }
+        ]
+      }
+    ],
+    "closing": []
+  },
+  "vision-for-generations": {
+    "heroImage": "/FINAL RENDERS/River view PREMIUM PLUS 2.jpg",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "A Vision for Generations"
+      }
+    ],
+    "sections": [
+      {
+        "badge": "09",
+        "topBand": {
+          "src": "/FINAL RENDERS/Masterplan/Bhubon Full Masterplan.jpg",
+          "ratio": 2.14,
+          "mobileRatio": 1.3,
+          "parallax": false,
+          "position": "70% 50%"
+        },
+        "blocks": [
+          {
+            "index": 2,
+            "kind": "paragraph",
+            "text": "We envision Anondo Bhubon as a place where children will grow up with fond memories, where families will build their futures, where entrepreneurs will pursue their dreams and where senior citizens will enjoy peaceful and dignified lives."
+          },
+          {
+            "index": 3,
+            "kind": "paragraph",
+            "text": "We want the township to become a model of environmentally responsible and people-centred urban development in Bangladesh."
+          },
+          {
+            "index": 4,
+            "kind": "paragraph",
+            "text": "Our aspiration is not merely to create attractive residential plots or impressive commercial buildings."
+          },
+          {
+            "index": 5,
+            "kind": "emphasis",
+            "text": "It is to create a complete living environment where nature is respected, health is valued, opportunity is encouraged and happiness becomes part of everyday life."
+          },
+          {
+            "index": 6,
+            "kind": "paragraph",
+            "text": "Because at Anondo Bhubon, we believe that the greatest achievement of development is not how much we build, but how much better people can live."
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 7,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON"
+      },
+      {
+        "index": 8,
+        "kind": "closing-title",
+        "text": "Healthy People. Healthy Nature. Happy Communities.",
+        "runs": [
+          {
+            "text": "Healthy People. Healthy Nature. Happy Communities.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "kind": "closing-italic",
+        "text": "A Greener Environment. A Healthier Lifestyle. A More Meaningful Future.",
+        "runs": [
+          {
+            "text": "A Greener Environment. A Healthier Lifestyle. A More Meaningful Future.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "kind": "closing-bold",
+        "text": "More Than a Plot. A Complete Future.",
+        "runs": [
+          {
+            "text": "More Than a Plot. A Complete Future.",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "kind": "closing-org",
+        "text": "ANONDO REAL ESTATE GROUP",
+        "runs": [
+          {
+            "text": "ANONDO REAL ESTATE GROUP",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "kind": "closing-tagline",
+        "text": "Where Nature, Opportunity and Modern Living Come Together.",
+        "runs": [
+          {
+            "text": "Where Nature, Opportunity and Modern Living Come Together.",
+            "italic": true
+          }
+        ]
+      }
+    ]
+  }
+}
