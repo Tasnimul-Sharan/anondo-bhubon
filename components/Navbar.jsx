@@ -32,8 +32,8 @@ const menuItems = [
     submenu: [
       // { name: "Our Company", path: "/about#our-company" },
       { name: "Brand Story", path: "/brand-story" },
-      // { name: "Our Core Values", path: "/about#core-values" },
-      // { name: "Vision & Mission", path: "/about#vision-and-mission" },
+      // { name: "Our Vision & Mission", path: "/vision-mission" },
+      // { name: "Our Core Values", path: "/core-values" },
     ],
   },
   {
@@ -44,7 +44,7 @@ const menuItems = [
         name: title,
         path: `/masterplan/${slug}`,
       })),
-      { name: "Master Plan Overview", path: "/masterplan" },
+      // { name: "Master Plan Overview", path: "/masterplan" },
     ],
   },
   {
@@ -52,11 +52,11 @@ const menuItems = [
     name: "Lifestyle",
     wide: true,
     submenu: [
-      {
-        name: lifestyleOverview.title,
-        path: lifestyleOverview.path,
-        featured: "top",
-      },
+      // {
+      //   name: lifestyleOverview.title,
+      //   path: lifestyleOverview.path,
+      //   featured: "top",
+      // },
       ...lifestylePreviews.map(({ slug, number, title }) => ({
         number,
         name: title,
@@ -69,39 +69,39 @@ const menuItems = [
       },
     ],
   },
-  {
-    name: "NRB Services",
-    path: "/nrb",
-  },
+  // {
+  //   name: "NRB Services",
+  //   path: "/nrb",
+  // },
   {
     name: "Certifications",
     path: "/certification",
   },
-  // {
-  //   name: "Corporate",
-  //   submenu: [
-  //     {
-  //       name: "Client Portal",
-  //       path: "/login",
-  //     },
-  //     {
-  //       name: "Career Opportunities",
-  //       path: "/career-opportunities",
-  //     },
-  //     {
-  //       name: "Payment Procedures",
-  //       path: "/payment-procedures",
-  //     },
-  //     {
-  //       name: "Terms and Conditions",
-  //       path: "/terms-and-conditions",
-  //     },
-  //     {
-  //       name: "Privacy Policy",
-  //       path: "/privacy-policy",
-  //     },
-  //   ],
-  // },
+  {
+    name: "Policies",
+    submenu: [
+      // {
+      //   name: "Client Portal",
+      //   path: "/login",
+      // },
+      // {
+      //   name: "Career Opportunities",
+      //   path: "/career-opportunities",
+      // },
+      {
+        name: "Payment Procedures",
+        path: "/payment-procedures",
+      },
+      {
+        name: "Terms and Conditions",
+        path: "/terms-and-conditions",
+      },
+      {
+        name: "Privacy Policy",
+        path: "/privacy-policy",
+      },
+    ],
+  },
   {
     name: "Gallery",
     path: "/gallery",
@@ -236,7 +236,8 @@ function DesktopDropdown({ item }) {
         }
       }}
       onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setIsOpen(false);
+        if (!event.currentTarget.contains(event.relatedTarget))
+          setIsOpen(false);
       }}
       onKeyDown={(event) => {
         if (event.key === "Escape") {
@@ -256,7 +257,9 @@ function DesktopDropdown({ item }) {
           if (event.key === "ArrowDown") {
             event.preventDefault();
             setIsOpen(true);
-            requestAnimationFrame(() => submenuRef.current?.querySelector("a")?.focus());
+            requestAnimationFrame(() =>
+              submenuRef.current?.querySelector("a")?.focus(),
+            );
           }
         }}
         className="flex items-center gap-1.5 whitespace-nowrap py-7 text-sm font-semibold text-primary transition-colors hover:text-secondary focus-visible:ring-2 focus-visible:ring-secondary 2xl:text-base"
@@ -691,7 +694,9 @@ export default function Navbar() {
                         <button
                           type="button"
                           onClick={() => {
-                            setOpenMobileSubmenu((current) => current === item.id ? null : item.id);
+                            setOpenMobileSubmenu((current) =>
+                              current === item.id ? null : item.id,
+                            );
                           }}
                           aria-expanded={openMobileSubmenu === item.id}
                           aria-controls={`mobile-${item.id}`}
@@ -737,10 +742,15 @@ export default function Navbar() {
                                         {subItem.number}
                                       </span>
                                     )}
-                                    <span className="min-w-0">{subItem.name}</span>
+                                    <span className="min-w-0">
+                                      {subItem.name}
+                                    </span>
                                   </span>
 
-                                  <FiChevronRight aria-hidden="true" className="mt-0.5 shrink-0" />
+                                  <FiChevronRight
+                                    aria-hidden="true"
+                                    className="mt-0.5 shrink-0"
+                                  />
                                 </Link>
                               </li>
                             ))}

@@ -1,0 +1,805 @@
+{
+  "vision-mission": {
+    "sourceFile": "VISION_MISSION_CORE_VALUES_FOUNDERS_PHILOSOPHY.docx",
+    "heroImage": "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "title",
+        "text": "Our Vision & Mission",
+        "runs": [
+          {
+            "text": "Our Vision & Mission",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "lead",
+        "text": "A Complete Township for Life, Enterprise and Future Generations",
+        "runs": [
+          {
+            "text": "A Complete Township for Life, Enterprise and Future Generations",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "kind": "lead",
+        "text": "Where Nature, Opportunity and Modern Living Come Together.",
+        "runs": [
+          {
+            "text": "Where Nature, Opportunity and Modern Living Come Together.",
+            "italic": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 4,
+          "kind": "heading",
+          "text": "1. OUR VISION",
+          "runs": [
+            {
+              "text": "1. OUR VISION",
+              "bold": true
+            }
+          ]
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/Masterplan/Bhubon Full Masterplan.jpg",
+          "ratio": 2.14,
+          "mobileRatio": 1.3,
+          "parallax": false,
+          "position": "70% 50%"
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 5,
+            "kind": "subheading",
+            "text": "Creating a Benchmark for Sustainable Township Development in Bangladesh",
+            "runs": [
+              {
+                "text": "Creating a Benchmark for Sustainable Township Development in Bangladesh",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 6,
+            "kind": "emphasis",
+            "text": "To establish Anondo Bhubon as a model of comprehensive, environmentally sustainable, economically vibrant and people-centred township development in Bangladesh—where nature, modern living, technology and enterprise coexist harmoniously, creating a better quality of life and lasting opportunities for generations to come.",
+            "runs": [
+              {
+                "text": "To establish Anondo Bhubon as a model of comprehensive, environmentally sustainable, economically vibrant and people-centred township development in Bangladesh—where nature, modern living, technology and enterprise coexist harmoniously, creating a better quality of life and lasting opportunities for generations to come.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "kind": "paragraph",
+            "text": "We envision a township that goes beyond conventional urban development.",
+            "runs": [
+              {
+                "text": "We envision a township that goes beyond conventional urban development."
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "kind": "paragraph",
+            "text": "A township where families enjoy a healthy and secure living environment; businesses flourish; entrepreneurs create employment; education and technology empower young people; and communities thrive within a carefully planned natural setting.",
+            "runs": [
+              {
+                "text": "A township where families enjoy a healthy and secure living environment; businesses flourish; entrepreneurs create employment; education and technology empower young people; and communities thrive within a carefully planned natural setting."
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "kind": "paragraph",
+            "text": "Our ultimate aspiration is to demonstrate that Bangladesh can develop modern, internationally competitive communities without sacrificing environmental sustainability, social responsibility or the well-being of future generations.",
+            "runs": [
+              {
+                "text": "Our ultimate aspiration is to demonstrate that Bangladesh can develop modern, internationally competitive communities without sacrificing environmental sustainability, social responsibility or the well-being of future generations."
+              }
+            ]
+          },
+          {
+            "index": 10,
+            "kind": "emphasis",
+            "text": "Our Vision is not merely to build a township, but to establish a lasting benchmark for how future townships in Bangladesh can be planned, developed and sustained.",
+            "runs": [
+              {
+                "text": "Our Vision is not merely to build a township, but to establish a lasting benchmark for how future townships in Bangladesh can be planned, developed and sustained.",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": {
+          "index": 11,
+          "kind": "heading",
+          "text": "2. OUR MISSION",
+          "runs": [
+            {
+              "text": "2. OUR MISSION",
+              "bold": true
+            }
+          ]
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/River view PREMIUM PLUS 2.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/MEGA MALL 6.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 12,
+            "kind": "subheading",
+            "text": "Transforming a Vision into a Living Reality",
+            "runs": [
+              {
+                "text": "Transforming a Vision into a Living Reality",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 13,
+            "kind": "paragraph",
+            "text": "Our mission is to plan, develop and progressively establish Anondo Bhubon as a complete, green, sustainable and economically productive integrated township through responsible development, modern infrastructure, environmental stewardship and professional management.",
+            "runs": [
+              {
+                "text": "Our mission is to plan, develop and progressively establish Anondo Bhubon as a complete, green, sustainable and economically productive integrated township through responsible development, modern infrastructure, environmental stewardship and professional management."
+              }
+            ]
+          },
+          {
+            "index": 14,
+            "kind": "paragraph",
+            "text": "We are committed to:",
+            "runs": [
+              {
+                "text": "We are committed to:"
+              }
+            ]
+          },
+          {
+            "index": 15,
+            "kind": "card-heading",
+            "text": "Developing Diverse Residential Communities",
+            "runs": [
+              {
+                "text": "Developing Diverse Residential Communities",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 16,
+            "kind": "card-body",
+            "text": "Creating thoughtfully planned residential environments through our five established sectors—Premium Plus, Premium, Executive, General and Economy—alongside luxury villa communities and modern condominium developments.",
+            "runs": [
+              {
+                "text": "Creating thoughtfully planned residential environments through our five established sectors—Premium Plus, Premium, Executive, General and Economy—alongside luxury villa communities and modern condominium developments."
+              }
+            ]
+          },
+          {
+            "index": 17,
+            "kind": "card-heading",
+            "text": "Preserving and Restoring the Natural Environment",
+            "runs": [
+              {
+                "text": "Preserving and Restoring the Natural Environment",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 18,
+            "kind": "card-body",
+            "text": "Giving the highest priority to greenery, ecological conservation, water management and environmental sustainability, including the planned restoration of the Old Brahmaputra River and development of interconnected forest walkways, parks and waterways.",
+            "runs": [
+              {
+                "text": "Giving the highest priority to greenery, ecological conservation, water management and environmental sustainability, including the planned restoration of the Old Brahmaputra River and development of interconnected forest walkways, parks and waterways."
+              }
+            ]
+          },
+          {
+            "index": 19,
+            "kind": "card-heading",
+            "text": "Creating Employment and Economic Opportunities",
+            "runs": [
+              {
+                "text": "Creating Employment and Economic Opportunities",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 20,
+            "kind": "card-body",
+            "text": "Establishing modern commercial centres, Digital Valley, technology-based enterprises and environmentally compatible industries that encourage entrepreneurship, investment, innovation and sustainable employment.",
+            "runs": [
+              {
+                "text": "Establishing modern commercial centres, Digital Valley, technology-based enterprises and environmentally compatible industries that encourage entrepreneurship, investment, innovation and sustainable employment."
+              }
+            ]
+          },
+          {
+            "index": 21,
+            "kind": "card-heading",
+            "text": "Providing a Complete Urban Lifestyle",
+            "runs": [
+              {
+                "text": "Providing a Complete Urban Lifestyle",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 22,
+            "kind": "card-body",
+            "text": "Integrating education, healthcare, shopping, sports, recreation, cultural facilities, security, transportation and essential civic services within a connected township.",
+            "runs": [
+              {
+                "text": "Integrating education, healthcare, shopping, sports, recreation, cultural facilities, security, transportation and essential civic services within a connected township."
+              }
+            ]
+          },
+          {
+            "index": 23,
+            "kind": "card-heading",
+            "text": "Developing Modern and Resilient Infrastructure",
+            "runs": [
+              {
+                "text": "Developing Modern and Resilient Infrastructure",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 24,
+            "kind": "card-body",
+            "text": "Providing planned roads, dependable utilities, digital connectivity, effective drainage, sustainable energy systems and infrastructure capable of supporting long-term development.",
+            "runs": [
+              {
+                "text": "Providing planned roads, dependable utilities, digital connectivity, effective drainage, sustainable energy systems and infrastructure capable of supporting long-term development."
+              }
+            ]
+          },
+          {
+            "index": 25,
+            "kind": "card-heading",
+            "text": "Upholding Trust, Integrity and Accountability",
+            "runs": [
+              {
+                "text": "Upholding Trust, Integrity and Accountability",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 26,
+            "kind": "card-body",
+            "text": "Conducting every stage of development and every relationship with clients, investors, employees and stakeholders with honesty, transparency, responsibility and respect.",
+            "runs": [
+              {
+                "text": "Conducting every stage of development and every relationship with clients, investors, employees and stakeholders with honesty, transparency, responsibility and respect."
+              }
+            ]
+          },
+          {
+            "index": 27,
+            "kind": "card-heading",
+            "text": "Building for Future Generations",
+            "runs": [
+              {
+                "text": "Building for Future Generations",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 28,
+            "kind": "card-body",
+            "text": "Creating a township that can evolve responsibly over time, maintaining its environmental quality, economic vitality and community well-being for generations to come.",
+            "runs": [
+              {
+                "text": "Creating a township that can evolve responsibly over time, maintaining its environmental quality, economic vitality and community well-being for generations to come."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 165,
+        "kind": "closing-manifesto",
+        "text": "ANONDO BHUBON\nA Complete Township for Life, Enterprise and Future Generations.",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "A Complete Township for Life, Enterprise and Future Generations.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 166,
+        "kind": "closing-org",
+        "text": "Anondo Real Estate Group",
+        "runs": [
+          {
+            "text": "Anondo Real Estate Group",
+            "bold": true
+          }
+        ]
+      }
+    ]
+  },
+  "core-values": {
+    "sourceFile": "VISION_MISSION_CORE_VALUES_FOUNDERS_PHILOSOPHY.docx",
+    "heroImage": "/forest-walkway.png",
+    "introduction": [
+      {
+        "index": 0,
+        "kind": "eyebrow",
+        "text": "ANONDO BHUBON",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          }
+        ]
+      },
+      {
+        "index": 29,
+        "kind": "title",
+        "text": "OUR CORE VALUES",
+        "runs": [
+          {
+            "text": "OUR CORE VALUES",
+            "bold": true
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "heading": {
+          "index": 30,
+          "kind": "heading",
+          "text": "The Principles That Define Anondo Bhubon",
+          "runs": [
+            {
+              "text": "The Principles That Define Anondo Bhubon",
+              "bold": true
+            }
+          ],
+          "badge": "01"
+        },
+        "topBand": {
+          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "bottomBand": {
+          "src": "/FINAL RENDERS/SECTOR CENTRAL AMENITIES 1.png",
+          "ratio": 1.6,
+          "mobileRatio": 1.2,
+          "parallax": true
+        },
+        "blocks": [
+          {
+            "index": 31,
+            "kind": "paragraph",
+            "text": "Our values are not simply statements of intention. They represent the standards by which we intend to plan, develop, manage and evaluate Anondo Bhubon.",
+            "runs": [
+              {
+                "text": "Our values are not simply statements of intention. They represent the standards by which we intend to plan, develop, manage and evaluate Anondo Bhubon."
+              }
+            ]
+          },
+          {
+            "index": 32,
+            "kind": "card-heading",
+            "text": "1. Trust & Integrity",
+            "runs": [
+              {
+                "text": "1. Trust & Integrity",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 33,
+            "kind": "card-body",
+            "text": "Trust is our greatest asset, and integrity is the foundation upon which it is built.",
+            "runs": [
+              {
+                "text": "Trust is our greatest asset, and integrity is the foundation upon which it is built.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 34,
+            "kind": "card-body",
+            "text": "We believe in truthful communication, transparent dealings, responsible commitments and the consistent protection of our clients' confidence.",
+            "runs": [
+              {
+                "text": "We believe in truthful communication, transparent dealings, responsible commitments and the consistent protection of our clients' confidence."
+              }
+            ]
+          },
+          {
+            "index": 35,
+            "kind": "card-body",
+            "text": "We will not compromise our integrity for short-term commercial gains.",
+            "runs": [
+              {
+                "text": "We will not compromise our integrity for short-term commercial gains."
+              }
+            ]
+          },
+          {
+            "index": 36,
+            "kind": "card-heading",
+            "text": "2. Environmental Responsibility",
+            "runs": [
+              {
+                "text": "2. Environmental Responsibility",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 37,
+            "kind": "card-body",
+            "text": "Nature is not an obstacle to development; it is an essential part of sustainable progress.",
+            "runs": [
+              {
+                "text": "Nature is not an obstacle to development; it is an essential part of sustainable progress.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 38,
+            "kind": "card-body",
+            "text": "We place environmental protection, ecological restoration, greenery and responsible resource management at the centre of our development philosophy.",
+            "runs": [
+              {
+                "text": "We place environmental protection, ecological restoration, greenery and responsible resource management at the centre of our development philosophy."
+              }
+            ]
+          },
+          {
+            "index": 39,
+            "kind": "card-heading",
+            "text": "3. People-Centred Development",
+            "runs": [
+              {
+                "text": "3. People-Centred Development",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 40,
+            "kind": "card-body",
+            "text": "People are the purpose of our development.",
+            "runs": [
+              {
+                "text": "People are the purpose of our development.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 41,
+            "kind": "card-body",
+            "text": "Every planning decision should contribute to a healthier, safer, more comfortable and fulfilling life for the people who live, work and participate in the township.",
+            "runs": [
+              {
+                "text": "Every planning decision should contribute to a healthier, safer, more comfortable and fulfilling life for the people who live, work and participate in the township."
+              }
+            ]
+          },
+          {
+            "index": 42,
+            "kind": "card-heading",
+            "text": "4. Sincerity & Dedication",
+            "runs": [
+              {
+                "text": "4. Sincerity & Dedication",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 43,
+            "kind": "card-body",
+            "text": "We believe that meaningful achievements require genuine commitment, disciplined effort, professional excellence and perseverance.",
+            "runs": [
+              {
+                "text": "We believe that meaningful achievements require genuine commitment, disciplined effort, professional excellence and perseverance."
+              }
+            ]
+          },
+          {
+            "index": 44,
+            "kind": "card-body",
+            "text": "We seek to fulfil our responsibilities with sincerity and dedication, even when challenges arise.",
+            "runs": [
+              {
+                "text": "We seek to fulfil our responsibilities with sincerity and dedication, even when challenges arise."
+              }
+            ]
+          },
+          {
+            "index": 45,
+            "kind": "card-heading",
+            "text": "5. Accountability & Ownership",
+            "runs": [
+              {
+                "text": "5. Accountability & Ownership",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 46,
+            "kind": "card-body",
+            "text": "Every commitment creates a responsibility.",
+            "runs": [
+              {
+                "text": "Every commitment creates a responsibility.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 47,
+            "kind": "card-body",
+            "text": "We believe in taking ownership of our decisions, acknowledging shortcomings, addressing problems and remaining accountable to clients, communities and stakeholders.",
+            "runs": [
+              {
+                "text": "We believe in taking ownership of our decisions, acknowledging shortcomings, addressing problems and remaining accountable to clients, communities and stakeholders."
+              }
+            ]
+          },
+          {
+            "index": 48,
+            "kind": "card-heading",
+            "text": "6. Innovation & Continuous Improvement",
+            "runs": [
+              {
+                "text": "6. Innovation & Continuous Improvement",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 49,
+            "kind": "card-body",
+            "text": "We embrace modern technology, innovative planning, professional knowledge and continuous learning.",
+            "runs": [
+              {
+                "text": "We embrace modern technology, innovative planning, professional knowledge and continuous learning."
+              }
+            ]
+          },
+          {
+            "index": 50,
+            "kind": "card-body",
+            "text": "Our objective is not simply to follow established standards, but to improve our practices and pursue higher standards of development.",
+            "runs": [
+              {
+                "text": "Our objective is not simply to follow established standards, but to improve our practices and pursue higher standards of development."
+              }
+            ]
+          },
+          {
+            "index": 51,
+            "kind": "card-heading",
+            "text": "7. Inclusiveness & Social Responsibility",
+            "runs": [
+              {
+                "text": "7. Inclusiveness & Social Responsibility",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 52,
+            "kind": "card-body",
+            "text": "We believe that a successful township should provide opportunities for people from different economic, professional and social backgrounds.",
+            "runs": [
+              {
+                "text": "We believe that a successful township should provide opportunities for people from different economic, professional and social backgrounds."
+              }
+            ]
+          },
+          {
+            "index": 53,
+            "kind": "card-body",
+            "text": "Our five residential sectors, diverse employment opportunities and community facilities reflect this commitment.",
+            "runs": [
+              {
+                "text": "Our five residential sectors, diverse employment opportunities and community facilities reflect this commitment."
+              }
+            ]
+          },
+          {
+            "index": 54,
+            "kind": "card-heading",
+            "text": "8. Quality & Professional Excellence",
+            "runs": [
+              {
+                "text": "8. Quality & Professional Excellence",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 55,
+            "kind": "card-body",
+            "text": "We are committed to thoughtful planning, appropriate engineering, quality construction, reliable infrastructure and professional management.",
+            "runs": [
+              {
+                "text": "We are committed to thoughtful planning, appropriate engineering, quality construction, reliable infrastructure and professional management."
+              }
+            ]
+          },
+          {
+            "index": 56,
+            "kind": "card-body",
+            "text": "Quality must be reflected not only in buildings but also in services, environmental performance and everyday community life.",
+            "runs": [
+              {
+                "text": "Quality must be reflected not only in buildings but also in services, environmental performance and everyday community life."
+              }
+            ]
+          },
+          {
+            "index": 57,
+            "kind": "card-heading",
+            "text": "9. Sustainability & Long-Term Thinking",
+            "runs": [
+              {
+                "text": "9. Sustainability & Long-Term Thinking",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 58,
+            "kind": "card-body",
+            "text": "We build for generations, not merely for immediate commercial returns.",
+            "runs": [
+              {
+                "text": "We build for generations, not merely for immediate commercial returns.",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 59,
+            "kind": "card-body",
+            "text": "Our decisions should consider long-term environmental, social, economic and institutional consequences.",
+            "runs": [
+              {
+                "text": "Our decisions should consider long-term environmental, social, economic and institutional consequences."
+              }
+            ]
+          },
+          {
+            "index": 60,
+            "kind": "card-heading",
+            "text": "10. Respect, Dignity & Community",
+            "runs": [
+              {
+                "text": "10. Respect, Dignity & Community",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "index": 61,
+            "kind": "card-body",
+            "text": "We believe every individual deserves respect and dignity.",
+            "runs": [
+              {
+                "text": "We believe every individual deserves respect and dignity."
+              }
+            ]
+          },
+          {
+            "index": 62,
+            "kind": "card-body",
+            "text": "We seek to encourage mutual understanding, community participation, responsible citizenship and a shared sense of belonging.",
+            "runs": [
+              {
+                "text": "We seek to encourage mutual understanding, community participation, responsible citizenship and a shared sense of belonging."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "closing": [
+      {
+        "index": 165,
+        "kind": "closing-manifesto",
+        "text": "ANONDO BHUBON\nA Complete Township for Life, Enterprise and Future Generations.",
+        "runs": [
+          {
+            "text": "ANONDO BHUBON",
+            "bold": true
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "text": "A Complete Township for Life, Enterprise and Future Generations.",
+            "italic": true
+          }
+        ]
+      },
+      {
+        "index": 166,
+        "kind": "closing-org",
+        "text": "Anondo Real Estate Group",
+        "runs": [
+          {
+            "text": "Anondo Real Estate Group",
+            "bold": true
+          }
+        ]
+      }
+    ]
+  }
+}

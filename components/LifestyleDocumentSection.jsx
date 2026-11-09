@@ -144,6 +144,20 @@ function DocumentBlocks({ blocks }) {
     if (block.kind === "card-item") {
       if (groups.at(-1)?.kind === "cards") groups.at(-1).blocks.push(block);
       else groups.push({ kind: "cards", blocks: [block] });
+    } else if (block.kind === "card-heading") {
+      if (groups.at(-1)?.kind !== "card-groups") {
+        groups.push({ kind: "card-groups", cards: [] });
+      }
+      groups.at(-1).cards.push({ heading: block, bodies: [] });
+    } else if (block.kind === "card-body") {
+      if (
+        groups.at(-1)?.kind === "card-groups" &&
+        groups.at(-1).cards.length > 0
+      ) {
+        groups.at(-1).cards.at(-1).bodies.push(block);
+      } else {
+        groups.push({ kind: "single", block, isLead: false });
+      }
     } else if (block.kind === "list-item") {
       if (groups.at(-1)?.kind === "list") groups.at(-1).blocks.push(block);
       else groups.push({ kind: "list", blocks: [block] });
@@ -157,6 +171,62 @@ function DocumentBlocks({ blocks }) {
   return (
     <div className="space-y-6">
       {groups.map((group) => {
+        if (group.kind === "card-groups") {
+          const isOddTotal = group.cards.length % 2 === 1;
+          return (
+            <div
+              key={group.cards[0].heading.index}
+              className="grid gap-5 pt-2 sm:grid-cols-2"
+            >
+              {group.cards.map((card, idx) => {
+                const spanFull = isOddTotal && idx === group.cards.length - 1;
+                const numbered = card.heading.text.match(/^(\d+\.)(\s+)(.*)$/);
+                return (
+                  <div
+                    key={card.heading.index}
+                    data-lifestyle-reveal
+                    className={`group relative flex flex-col overflow-hidden border border-primary/10 bg-white p-6 shadow-[0_12px_34px_rgba(27,35,75,0.06)] transition duration-300 hover:-translate-y-1 hover:border-secondary/50 hover:shadow-[0_20px_48px_rgba(27,35,75,0.12)] sm:p-7 ${
+                      spanFull ? "sm:col-span-2" : ""
+                    }`}
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="absolute inset-x-0 top-0 h-[3px] w-12 bg-secondary transition-all duration-300 group-hover:w-full"
+                    />
+                    {numbered ? (
+                      <h4
+                        data-source-text={card.heading.index}
+                        className="flex items-start gap-3.5 text-xl font-semibold leading-snug tracking-[-0.02em] text-primary"
+                      >
+                        <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center border border-secondary/60 bg-[#F7F5F0] text-xs font-bold tabular-nums text-primary transition-colors duration-300 group-hover:border-secondary group-hover:bg-secondary group-hover:text-white">
+                          {numbered[1]}
+                        </span>
+                        {numbered[2]}
+                        <span className="min-w-0 pt-0.5">{numbered[3]}</span>
+                      </h4>
+                    ) : (
+                      <SourceText
+                        block={card.heading}
+                        as="h4"
+                        className="text-xl font-semibold leading-snug tracking-[-0.02em] text-primary"
+                      />
+                    )}
+                    <div className="mt-4 space-y-3 border-t border-primary/10 pt-4">
+                      {card.bodies.map((body) => (
+                        <SourceText
+                          key={body.index}
+                          block={body}
+                          className="text-base leading-8 text-[#4A5063] sm:text-[16.5px]"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+
         if (group.kind === "cards") {
           const isOddTotal = group.blocks.length % 2 === 1;
           return (
@@ -481,7 +551,7 @@ export default function LifestyleDocumentSection({ documentContent, slug }) {
                 <SourceText
                   key={block.index}
                   block={block}
-                  className="text-sm font-bold tracking-[0.3em] text-[#F7A55A]"
+                  className="text-sm font-bold tracking-[0.3em] text-[#F7A55A] [&_strong]:text-current"
                 />
               ))}
             </div>
@@ -490,7 +560,7 @@ export default function LifestyleDocumentSection({ documentContent, slug }) {
               <SourceText
                 block={title}
                 as="h1"
-                className="mt-7 max-w-5xl text-[clamp(2.2rem,5.2vw,4.85rem)] font-semibold leading-[1.05] tracking-[-0.045em] text-white"
+                className="mt-7 max-w-5xl text-[clamp(2.2rem,5.2vw,4.85rem)] font-semibold leading-[1.05] tracking-[-0.045em] text-white [&_strong]:text-current"
               />
             )}
 
@@ -502,8 +572,8 @@ export default function LifestyleDocumentSection({ documentContent, slug }) {
                     block={block}
                     className={
                       index === 0
-                        ? "max-w-xl text-lg font-medium leading-8 text-white/90 sm:text-xl sm:leading-9"
-                        : "max-w-md text-base leading-8 text-white/75 sm:text-lg md:justify-self-end"
+                        ? "max-w-xl text-lg font-medium leading-8 text-white/90 sm:text-xl sm:leading-9 [&_strong]:text-current"
+                        : "max-w-md text-base leading-8 text-white/75 sm:text-lg md:justify-self-end [&_strong]:text-current"
                     }
                   />
                 ))}
@@ -521,6 +591,10 @@ export default function LifestyleDocumentSection({ documentContent, slug }) {
         const headingId = hasHeading
           ? `lifestyle-section-${section.heading.index}`
           : undefined;
+        const numberedHeading =
+          !badgeLabel && hasHeading
+            ? section.heading.text.match(/^(\d+\.)(\s+)(.*)$/)
+            : null;
 
         return (
           <div
@@ -546,21 +620,37 @@ export default function LifestyleDocumentSection({ documentContent, slug }) {
                   <div className="lg:sticky lg:top-44">
                     <Reveal>
                       <Rule />
-                      <div className="mt-6 flex items-start gap-4 lg:block">
-                        {badgeLabel && (
-                          <div className="lg:mb-6">
-                            <ChapterBadge label={badgeLabel} />
-                          </div>
-                        )}
-                        {hasHeading && (
-                          <SourceText
-                            block={section.heading}
-                            as="h2"
-                            id={headingId}
-                            className="min-w-0 pt-1 text-3xl font-semibold leading-[1.12] tracking-[-0.035em] text-[#17203A] sm:text-4xl lg:pt-0 lg:text-[2.35rem]"
-                          />
-                        )}
-                      </div>
+                      {numberedHeading ? (
+                        <h2
+                          id={headingId}
+                          data-source-text={section.heading.index}
+                          className="mt-6 flex items-start gap-4 text-3xl font-semibold leading-[1.12] tracking-[-0.035em] text-[#17203A] sm:text-4xl lg:block lg:text-[2.35rem]"
+                        >
+                          <span className="lg:mb-6 lg:block">
+                            <ChapterBadge label={numberedHeading[1]} />
+                          </span>
+                          {numberedHeading[2]}
+                          <span className="block min-w-0 pt-1 lg:pt-0">
+                            {numberedHeading[3]}
+                          </span>
+                        </h2>
+                      ) : (
+                        <div className="mt-6 flex items-start gap-4 lg:block">
+                          {badgeLabel && (
+                            <div className="lg:mb-6">
+                              <ChapterBadge label={badgeLabel} />
+                            </div>
+                          )}
+                          {hasHeading && (
+                            <SourceText
+                              block={section.heading}
+                              as="h2"
+                              id={headingId}
+                              className="min-w-0 pt-1 text-3xl font-semibold leading-[1.12] tracking-[-0.035em] text-[#17203A] sm:text-4xl lg:pt-0 lg:text-[2.35rem]"
+                            />
+                          )}
+                        </div>
+                      )}
                     </Reveal>
 
                     <span
@@ -608,62 +698,90 @@ export default function LifestyleDocumentSection({ documentContent, slug }) {
           <div className="pointer-events-none absolute -right-24 bottom-0 -z-10 h-[420px] w-[420px] rounded-full bg-secondary/15 blur-[130px]" />
 
           <div className="site-shell">
-            <Reveal>
-              <div className="flex items-center gap-4">
-                <span aria-hidden="true" className="h-px w-14 bg-[#F7A55A]" />
-                {closing[0] && (
+            {closing[0]?.kind === "closing-manifesto" ? (
+              <div className="grid gap-12 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.65fr)] lg:items-end lg:gap-20">
+                <Reveal>
+                  <Rule light />
                   <SourceText
                     block={closing[0]}
-                    className="text-sm font-bold tracking-[0.32em] text-[#F7A55A]"
+                    className="mt-7 max-w-4xl text-xl leading-8 text-white/85 sm:text-2xl sm:leading-9 [&_strong]:mb-3 [&_strong]:block [&_strong]:text-3xl [&_strong]:font-semibold [&_strong]:not-italic [&_strong]:tracking-[0.08em] [&_strong]:text-[#F7A55A] sm:[&_strong]:text-4xl"
                   />
+                </Reveal>
+                {closing[1] && (
+                  <Reveal
+                    delay={0.14}
+                    className="border-t border-white/25 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0"
+                  >
+                    <Rule light />
+                    <SourceText
+                      block={closing[1]}
+                      className="mt-6 text-xl font-semibold tracking-[0.06em] text-white sm:text-2xl [&_strong]:text-white"
+                    />
+                  </Reveal>
                 )}
               </div>
-            </Reveal>
-
-            <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.65fr)] lg:items-end lg:gap-20">
-              <div className="space-y-6">
-                {closing.slice(1, 4).map((block, index) => {
-                  const classMap = {
-                    "closing-title":
-                      "max-w-4xl text-3xl font-semibold leading-[1.15] tracking-[-0.035em] text-white sm:text-5xl [&_strong]:text-white",
-                    "closing-italic":
-                      "max-w-2xl text-lg leading-8 text-white/80 sm:text-xl sm:leading-9",
-                    "closing-bold":
-                      "text-xl font-semibold tracking-[-0.01em] text-[#F7A55A] sm:text-2xl [&_strong]:text-[#F7A55A]",
-                  };
-                  return (
-                    <Reveal key={block.index} delay={0.05 + index * 0.07}>
+            ) : (
+              <>
+                <Reveal>
+                  <div className="flex items-center gap-4">
+                    <span aria-hidden="true" className="h-px w-14 bg-[#F7A55A]" />
+                    {closing[0] && (
                       <SourceText
-                        block={block}
-                        className={classMap[block.kind] || "text-lg text-white/85"}
+                        block={closing[0]}
+                        className="text-sm font-bold tracking-[0.32em] text-[#F7A55A] [&_strong]:text-current"
                       />
-                    </Reveal>
-                  );
-                })}
-              </div>
-
-              {closing.length > 4 && (
-                <Reveal
-                  delay={0.22}
-                  className="border-t border-white/25 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0"
-                >
-                  <Rule light />
-                  <div className="mt-6 space-y-3">
-                    {closing.slice(4).map((block) => (
-                      <SourceText
-                        key={block.index}
-                        block={block}
-                        className={
-                          block.kind === "closing-org"
-                            ? "text-xl font-semibold tracking-[0.06em] text-white [&_strong]:text-white"
-                            : "text-base leading-7 text-white/75"
-                        }
-                      />
-                    ))}
+                    )}
                   </div>
                 </Reveal>
-              )}
-            </div>
+
+                <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.65fr)] lg:items-end lg:gap-20">
+                  <div className="space-y-6">
+                    {closing.slice(1, 4).map((block, index) => {
+                      const classMap = {
+                        "closing-title":
+                          "max-w-4xl text-3xl font-semibold leading-[1.15] tracking-[-0.035em] text-white sm:text-5xl [&_strong]:text-white",
+                        "closing-italic":
+                          "max-w-2xl text-lg leading-8 text-white/80 sm:text-xl sm:leading-9",
+                        "closing-bold":
+                          "text-xl font-semibold tracking-[-0.01em] text-[#F7A55A] sm:text-2xl [&_strong]:text-[#F7A55A]",
+                      };
+                      return (
+                        <Reveal key={block.index} delay={0.05 + index * 0.07}>
+                          <SourceText
+                            block={block}
+                            className={
+                              classMap[block.kind] || "text-lg text-white/85"
+                            }
+                          />
+                        </Reveal>
+                      );
+                    })}
+                  </div>
+
+                  {closing.length > 4 && (
+                    <Reveal
+                      delay={0.22}
+                      className="border-t border-white/25 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0"
+                    >
+                      <Rule light />
+                      <div className="mt-6 space-y-3">
+                        {closing.slice(4).map((block) => (
+                          <SourceText
+                            key={block.index}
+                            block={block}
+                            className={
+                              block.kind === "closing-org"
+                                ? "text-xl font-semibold tracking-[0.06em] text-white [&_strong]:text-white"
+                                : "text-base leading-7 text-white/75"
+                            }
+                          />
+                        ))}
+                      </div>
+                    </Reveal>
+                  )}
+                </div>
+              </>
+            )}
           </div>
         </footer>
       )}

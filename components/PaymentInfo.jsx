@@ -53,7 +53,7 @@ export default function PaymentInfo() {
               Payment Procedures
             </span>
 
-            <h1 className="mt-6 text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl">
+            {/* <h1 className="mt-6 text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl">
               Bank account details for Anondo Cityscapers Ltd.
             </h1>
 
@@ -62,10 +62,10 @@ export default function PaymentInfo() {
               money exchange support. Please verify the account details,
               reference information, and receipt preservation requirements
               before sending any payment.
-            </p>
+            </p> */}
           </div>
 
-          <div className="min-w-0 rounded-lg border border-border_color bg-white p-5 shadow-soft sm:p-6">
+          {/* <div className="min-w-0 rounded-lg border border-border_color bg-white p-5 shadow-soft sm:p-6">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-secondary">
               Payment Checklist
             </p>
@@ -80,10 +80,10 @@ export default function PaymentInfo() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        {/* <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {cityscapersBanks.map((bank) => (
             <article
               key={bank.sl}
@@ -134,6 +134,24 @@ export default function PaymentInfo() {
             </article>
           ))}
         </div>
+
+        <p className="mt-5 flex items-start gap-2 rounded-lg border border-secondary/35 bg-white px-5 py-4 text-sm font-semibold leading-6 text-primary shadow-soft">
+          <span aria-hidden="true" className="text-base font-bold text-secondary">
+            *
+          </span>
+          <span>
+            Prior to making any bank transfer, please contact our official
+            hotline (
+            <a
+              href="tel:+8801331115500"
+              className="font-bold text-secondary underline-offset-4 hover:underline"
+            >
+              +880 1331-115500
+            </a>
+            ) to obtain your booking reference and re-confirm the account
+            details.
+          </span>
+        </p> */}
 
         <PaymentInstructions />
       </div>
