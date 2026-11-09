@@ -17,10 +17,10 @@
       {
         "index": 1,
         "kind": "title",
-        "text": "Our Vision & Mission",
+        "text": "Our Vision, Mission, Core Values & Development Philosophy",
         "runs": [
           {
-            "text": "Our Vision & Mission",
+            "text": "Our Vision, Mission, Core Values & Development Philosophy",
             "bold": true
           }
         ]
@@ -198,7 +198,7 @@
           },
           {
             "index": 15,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Developing Diverse Residential Communities",
             "runs": [
               {
@@ -209,7 +209,7 @@
           },
           {
             "index": 16,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Creating thoughtfully planned residential environments through our five established sectors—Premium Plus, Premium, Executive, General and Economy—alongside luxury villa communities and modern condominium developments.",
             "runs": [
               {
@@ -219,7 +219,7 @@
           },
           {
             "index": 17,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Preserving and Restoring the Natural Environment",
             "runs": [
               {
@@ -230,7 +230,7 @@
           },
           {
             "index": 18,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Giving the highest priority to greenery, ecological conservation, water management and environmental sustainability, including the planned restoration of the Old Brahmaputra River and development of interconnected forest walkways, parks and waterways.",
             "runs": [
               {
@@ -240,7 +240,7 @@
           },
           {
             "index": 19,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Creating Employment and Economic Opportunities",
             "runs": [
               {
@@ -251,7 +251,7 @@
           },
           {
             "index": 20,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Establishing modern commercial centres, Digital Valley, technology-based enterprises and environmentally compatible industries that encourage entrepreneurship, investment, innovation and sustainable employment.",
             "runs": [
               {
@@ -261,7 +261,7 @@
           },
           {
             "index": 21,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Providing a Complete Urban Lifestyle",
             "runs": [
               {
@@ -272,7 +272,7 @@
           },
           {
             "index": 22,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Integrating education, healthcare, shopping, sports, recreation, cultural facilities, security, transportation and essential civic services within a connected township.",
             "runs": [
               {
@@ -282,7 +282,7 @@
           },
           {
             "index": 23,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Developing Modern and Resilient Infrastructure",
             "runs": [
               {
@@ -293,7 +293,7 @@
           },
           {
             "index": 24,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Providing planned roads, dependable utilities, digital connectivity, effective drainage, sustainable energy systems and infrastructure capable of supporting long-term development.",
             "runs": [
               {
@@ -303,7 +303,7 @@
           },
           {
             "index": 25,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Upholding Trust, Integrity and Accountability",
             "runs": [
               {
@@ -314,7 +314,7 @@
           },
           {
             "index": 26,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Conducting every stage of development and every relationship with clients, investors, employees and stakeholders with honesty, transparency, responsibility and respect.",
             "runs": [
               {
@@ -324,7 +324,7 @@
           },
           {
             "index": 27,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "Building for Future Generations",
             "runs": [
               {
@@ -335,7 +335,7 @@
           },
           {
             "index": 28,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Creating a township that can evolve responsibly over time, maintaining its environmental quality, economic vitality and community well-being for generations to come.",
             "runs": [
               {
@@ -396,10 +396,10 @@
       {
         "index": 29,
         "kind": "title",
-        "text": "OUR CORE VALUES",
+        "text": "3. OUR CORE VALUES",
         "runs": [
           {
-            "text": "OUR CORE VALUES",
+            "text": "3. OUR CORE VALUES",
             "bold": true
           }
         ]
@@ -417,7 +417,7 @@
               "bold": true
             }
           ],
-          "badge": "01"
+          "badge": "03"
         },
         "topBand": {
           "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
@@ -444,7 +444,7 @@
           },
           {
             "index": 32,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "1. Trust & Integrity",
             "runs": [
               {
@@ -455,7 +455,7 @@
           },
           {
             "index": 33,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Trust is our greatest asset, and integrity is the foundation upon which it is built.",
             "runs": [
               {
@@ -466,7 +466,7 @@
           },
           {
             "index": 34,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We believe in truthful communication, transparent dealings, responsible commitments and the consistent protection of our clients' confidence.",
             "runs": [
               {
@@ -476,7 +476,7 @@
           },
           {
             "index": 35,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We will not compromise our integrity for short-term commercial gains.",
             "runs": [
               {
@@ -486,7 +486,7 @@
           },
           {
             "index": 36,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "2. Environmental Responsibility",
             "runs": [
               {
@@ -497,7 +497,7 @@
           },
           {
             "index": 37,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Nature is not an obstacle to development; it is an essential part of sustainable progress.",
             "runs": [
               {
@@ -508,7 +508,7 @@
           },
           {
             "index": 38,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We place environmental protection, ecological restoration, greenery and responsible resource management at the centre of our development philosophy.",
             "runs": [
               {
@@ -518,7 +518,7 @@
           },
           {
             "index": 39,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "3. People-Centred Development",
             "runs": [
               {
@@ -529,7 +529,7 @@
           },
           {
             "index": 40,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "People are the purpose of our development.",
             "runs": [
               {
@@ -540,7 +540,7 @@
           },
           {
             "index": 41,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Every planning decision should contribute to a healthier, safer, more comfortable and fulfilling life for the people who live, work and participate in the township.",
             "runs": [
               {
@@ -550,7 +550,7 @@
           },
           {
             "index": 42,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "4. Sincerity & Dedication",
             "runs": [
               {
@@ -561,7 +561,7 @@
           },
           {
             "index": 43,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We believe that meaningful achievements require genuine commitment, disciplined effort, professional excellence and perseverance.",
             "runs": [
               {
@@ -571,7 +571,7 @@
           },
           {
             "index": 44,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We seek to fulfil our responsibilities with sincerity and dedication, even when challenges arise.",
             "runs": [
               {
@@ -581,7 +581,7 @@
           },
           {
             "index": 45,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "5. Accountability & Ownership",
             "runs": [
               {
@@ -592,7 +592,7 @@
           },
           {
             "index": 46,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Every commitment creates a responsibility.",
             "runs": [
               {
@@ -603,7 +603,7 @@
           },
           {
             "index": 47,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We believe in taking ownership of our decisions, acknowledging shortcomings, addressing problems and remaining accountable to clients, communities and stakeholders.",
             "runs": [
               {
@@ -613,7 +613,7 @@
           },
           {
             "index": 48,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "6. Innovation & Continuous Improvement",
             "runs": [
               {
@@ -624,7 +624,7 @@
           },
           {
             "index": 49,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We embrace modern technology, innovative planning, professional knowledge and continuous learning.",
             "runs": [
               {
@@ -634,7 +634,7 @@
           },
           {
             "index": 50,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Our objective is not simply to follow established standards, but to improve our practices and pursue higher standards of development.",
             "runs": [
               {
@@ -644,7 +644,7 @@
           },
           {
             "index": 51,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "7. Inclusiveness & Social Responsibility",
             "runs": [
               {
@@ -655,7 +655,7 @@
           },
           {
             "index": 52,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We believe that a successful township should provide opportunities for people from different economic, professional and social backgrounds.",
             "runs": [
               {
@@ -665,7 +665,7 @@
           },
           {
             "index": 53,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Our five residential sectors, diverse employment opportunities and community facilities reflect this commitment.",
             "runs": [
               {
@@ -675,7 +675,7 @@
           },
           {
             "index": 54,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "8. Quality & Professional Excellence",
             "runs": [
               {
@@ -686,7 +686,7 @@
           },
           {
             "index": 55,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We are committed to thoughtful planning, appropriate engineering, quality construction, reliable infrastructure and professional management.",
             "runs": [
               {
@@ -696,7 +696,7 @@
           },
           {
             "index": 56,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Quality must be reflected not only in buildings but also in services, environmental performance and everyday community life.",
             "runs": [
               {
@@ -706,7 +706,7 @@
           },
           {
             "index": 57,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "9. Sustainability & Long-Term Thinking",
             "runs": [
               {
@@ -717,7 +717,7 @@
           },
           {
             "index": 58,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We build for generations, not merely for immediate commercial returns.",
             "runs": [
               {
@@ -728,7 +728,7 @@
           },
           {
             "index": 59,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "Our decisions should consider long-term environmental, social, economic and institutional consequences.",
             "runs": [
               {
@@ -738,7 +738,7 @@
           },
           {
             "index": 60,
-            "kind": "card-heading",
+            "kind": "commit-heading",
             "text": "10. Respect, Dignity & Community",
             "runs": [
               {
@@ -749,7 +749,7 @@
           },
           {
             "index": 61,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We believe every individual deserves respect and dignity.",
             "runs": [
               {
@@ -759,7 +759,7 @@
           },
           {
             "index": 62,
-            "kind": "card-body",
+            "kind": "commit-body",
             "text": "We seek to encourage mutual understanding, community participation, responsible citizenship and a shared sense of belonging.",
             "runs": [
               {

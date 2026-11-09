@@ -144,6 +144,13 @@ function DocumentBlocks({ blocks }) {
     if (block.kind === "card-item") {
       if (groups.at(-1)?.kind === "cards") groups.at(-1).blocks.push(block);
       else groups.push({ kind: "cards", blocks: [block] });
+    } else if (block.kind === "commit-heading") {
+      if (groups.at(-1)?.kind !== "commitments") {
+        groups.push({ kind: "commitments", items: [] });
+      }
+      groups.at(-1).items.push({ heading: block, bodies: [] });
+    } else if (block.kind === "commit-body") {
+      groups.at(-1).items.at(-1).bodies.push(block);
     } else if (block.kind === "card-heading") {
       if (groups.at(-1)?.kind !== "card-groups") {
         groups.push({ kind: "card-groups", cards: [] });
@@ -171,6 +178,64 @@ function DocumentBlocks({ blocks }) {
   return (
     <div className="space-y-6">
       {groups.map((group) => {
+        if (group.kind === "commitments") {
+          return (
+            <div
+              key={group.items[0].heading.index}
+              className="divide-y divide-primary/10 border-y border-primary/10"
+            >
+              {group.items.map((item) => {
+                const numbered = item.heading.text.match(/^(\d+\.)(\s+)(.*)$/);
+                return (
+                  <div
+                    key={item.heading.index}
+                    data-lifestyle-reveal
+                    className="flex gap-5 py-7 sm:gap-6 sm:py-8"
+                  >
+                    {numbered ? (
+                      <span
+                        aria-hidden="true"
+                        className="w-10 shrink-0 text-2xl font-semibold leading-none tabular-nums text-secondary sm:w-12 sm:text-3xl"
+                      >
+                        {numbered[1]}
+                      </span>
+                    ) : (
+                      <span
+                        aria-hidden="true"
+                        className="mt-[0.65rem] h-2.5 w-2.5 shrink-0 bg-secondary sm:mt-3"
+                      />
+                    )}
+                    <div className="min-w-0">
+                      {numbered ? (
+                        <h4
+                          data-source-text={item.heading.index}
+                          className="text-xl font-semibold leading-snug tracking-[-0.02em] text-primary sm:text-[1.65rem]"
+                        >
+                          <span className="sr-only">{numbered[1]} </span>
+                          {numbered[3]}
+                        </h4>
+                      ) : (
+                        <SourceText
+                          block={item.heading}
+                          as="h4"
+                          className="text-xl font-semibold leading-snug tracking-[-0.02em] text-primary sm:text-[1.65rem]"
+                        />
+                      )}
+                      {item.bodies.map((body, bodyIndex) => (
+                        <SourceText
+                          key={body.index}
+                          block={body}
+                          className={`${bodyIndex === 0 ? "mt-3" : "mt-4"} text-base leading-8 text-[#4A5063] sm:text-[17px] sm:leading-9`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+
         if (group.kind === "card-groups") {
           const isOddTotal = group.cards.length % 2 === 1;
           return (

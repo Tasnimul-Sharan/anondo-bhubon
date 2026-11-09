@@ -32,8 +32,8 @@ const menuItems = [
     submenu: [
       // { name: "Our Company", path: "/about#our-company" },
       { name: "Brand Story", path: "/brand-story" },
-      // { name: "Our Vision & Mission", path: "/vision-mission" },
-      // { name: "Our Core Values", path: "/core-values" },
+      { name: "Our Vision & Mission", path: "/vision-mission" },
+      { name: "Our Core Values", path: "/core-values" },
     ],
   },
   {
