@@ -387,13 +387,13 @@
           "badge": "03"
         },
         "topBand": {
-          "src": "/anondo-bhubon/ELEMENTARY SCHOOL 1.png",
+          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
           "ratio": 1.6,
           "mobileRatio": 1.2,
           "parallax": true
         },
         "bottomBand": {
-          "src": "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
+          "src": "/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png",
           "ratio": 1.6,
           "mobileRatio": 1.2,
           "parallax": true

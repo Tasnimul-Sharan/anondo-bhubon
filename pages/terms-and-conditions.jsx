@@ -8,7 +8,7 @@ import { finalRenderAssets } from "@/data/finalRendersData";
 const seo = {
   title: "Terms and Conditions | Anondo Bhubon",
   description:
-    "Read the Anondo Bhubon terms and conditions for property inquiries, booking procedures, payment responsibilities, ownership documentation, and website usage guidelines.",
+    "Read the Anondo Bhubon terms and conditions for plot prices, payment method, inclusive and exclusive costs, land usage ratio, and allotment terms.",
   keywords: [
     "Anondo Bhubon terms and conditions",
     "property booking terms Bangladesh",

@@ -27,15 +27,18 @@ const menuItems = [
     path: "/",
   },
   {
-    id: "who-we-are",
-    name: "Who We Are",
-    submenu: [
-      // { name: "Our Company", path: "/about#our-company" },
-      { name: "Brand Story", path: "/brand-story" },
-      // { name: "Our Vision & Mission", path: "/vision-mission" },
-      // { name: "Our Core Values", path: "/core-values" },
-    ],
+    name: "Brand Story",
+    path: "/brand-story",
   },
+  // {
+  //   id: "who-we-are",
+  //   name: "Who We Are",
+  //   submenu: [
+  //     // { name: "Our Company", path: "/about#our-company" },
+  //     // { name: "Our Vision & Mission", path: "/vision-mission" },
+  //     // { name: "Our Core Values", path: "/core-values" },
+  //   ],
+  // },
   {
     id: "master-plan",
     name: "Master Plan",
@@ -78,7 +81,7 @@ const menuItems = [
     path: "/certification",
   },
   {
-    name: "Policies",
+    name: "Purchase & Policies",
     submenu: [
       // {
       //   name: "Client Portal",
@@ -96,10 +99,10 @@ const menuItems = [
         name: "Terms and Conditions",
         path: "/terms-and-conditions",
       },
-      {
-        name: "Privacy Policy",
-        path: "/privacy-policy",
-      },
+      // {
+      //   name: "Privacy Policy",
+      //   path: "/privacy-policy",
+      // },
     ],
   },
   {
