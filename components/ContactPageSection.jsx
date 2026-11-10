@@ -37,8 +37,8 @@ const contactCards = [
   {
     icon: <FaEnvelope />,
     title: "Email Support",
-    text: "info@anondocityscapers.com",
-    href: "mailto:info@anondocityscapers.com",
+    text: "info@anondobhubon.com",
+    href: "mailto:info@anondobhubon.com",
   },
 ];
 

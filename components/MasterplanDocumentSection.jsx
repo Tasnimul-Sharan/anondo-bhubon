@@ -123,15 +123,22 @@ function Allocation({ block }) {
 
 function ListBlock({ blocks }) {
   return (
-    <ul className="grid gap-4 sm:grid-cols-2">
+    <ul className="divide-y divide-primary/10 border-y border-primary/10">
       {blocks.map((block) => (
         <li
           key={block.index}
           data-plan-reveal
-          className="group relative flex gap-4 border border-primary/10 bg-white p-5 shadow-[0_10px_30px_rgba(27,35,75,0.05)] transition duration-300 hover:-translate-y-1 hover:border-secondary/50 hover:shadow-[0_18px_45px_rgba(27,35,75,0.11)]"
+          className="flex items-start gap-5 py-5 sm:gap-6 sm:py-6"
         >
-          <span aria-hidden="true" className="mt-2.5 h-2 w-2 shrink-0 bg-secondary transition duration-300 group-hover:scale-150" />
-          <SourceText block={block} as="span" className="block text-base font-medium leading-7 text-[#20263A]" />
+          <span
+            aria-hidden="true"
+            className="mt-2.5 h-2.5 w-2.5 shrink-0 bg-secondary sm:mt-3"
+          />
+          <SourceText
+            block={block}
+            as="span"
+            className="block text-base font-medium leading-8 text-[#20263A] sm:text-lg sm:leading-8"
+          />
         </li>
       ))}
     </ul>

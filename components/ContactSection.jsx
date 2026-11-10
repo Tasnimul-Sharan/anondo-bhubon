@@ -121,8 +121,8 @@ export default function ContactSection() {
               <ContactItem
                 icon={<FaEnvelope />}
                 label="Email"
-                value="info@anondocityscapers.com"
-                href="mailto:info@anondocityscapers.com"
+                value="info@anondobhubon.com"
+                href="mailto:info@anondobhubon.com"
               />
 
               <div className="rounded-2xl border border-primary/10 bg-primary/5 p-5">
