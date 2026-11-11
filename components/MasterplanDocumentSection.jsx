@@ -105,19 +105,9 @@ const SUBGROUP_GALLERIES = {
         title: "Premium 1 — Block B Layout",
       },
       {
-        src: "/anondo bhubon New/PREMIUM 1/PREMIUM 1 BLOCK C.jpg",
-        label: "Residential Block",
-        title: "Premium 1 — Block C Layout",
-      },
-      {
-        src: "/anondo bhubon New/PREMIUM 1/FOREST WALK TOP.jpg",
+        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/FOREST WALK PREMIUM 1  (1)xx.jpg",
         label: "Green Corridor",
-        title: "Forest Walk — Top Master Layout",
-      },
-      {
-        src: "/anondo bhubon New/PREMIUM 1/FOREST WALK 2.jpg",
-        label: "Green Corridor",
-        title: "Forest Walk — Landscape View",
+        title: "Forest Walk — Premium Sector",
       },
       {
         src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM PREMIUM 1 (1)x.jpg",
@@ -230,11 +220,7 @@ function getSubgroupGallery(headingText = "") {
 // crops vertically, so plans/maps keep `parallax: false` to stay fully visible.
 const band = (src, ratio = 1.6, extra = {}) => ({ src, ratio, mobileRatio: 1.2, parallax: true, ...extra });
 const pageBands = {
-  "residential-development": [
-    null,
-    band(finalRenderAssets.exclusiveBlock, 1.6),
-    band(finalRenderAssets.riverPremiumPlus, 1.6),
-  ],
+  "residential-development": [],
   "development-phasing": [
     band(finalRenderAssets.masterplan, 2.14, { parallax: false, mobileRatio: 1.3, position: "70% 50%" }),
     band(finalRenderAssets.amenities, 1.6),
