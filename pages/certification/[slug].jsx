@@ -10,14 +10,14 @@ export default function CertificationDetailsPage({ notice }) {
     description: notice.description,
     keywords: [
       "Anondo Bhubon certification",
+      "Anondo Real Estate Group official document",
       notice.title,
       notice.category,
-      "Anondo Bhubon official document",
-      "Purbachal township certification documents",
+      "sustainable integrated township Purbachal approvals",
     ],
     path: `/certification/${notice.slug}`,
     image: notice.image,
-    imageAlt: `${notice.title} official document`,
+    imageAlt: `${notice.title} — Anondo Bhubon official certification document`,
     pageType: "Article",
     breadcrumb: [
       { name: "Certification", path: "/certification" },

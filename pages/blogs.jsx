@@ -4,20 +4,22 @@ import HeroSection from "@/components/HeroSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Blogs and Updates | Anondo Bhubon Real Estate Insights",
+  title:
+    "Blogs & Insights | Sustainable Integrated Township Living Near Purbachal | Anondo Bhubon",
   description:
-    "Read Anondo Bhubon blogs and updates about Purbachal investment, land verification, sustainable township planning, modern living, and eco-friendly residential development in Bangladesh.",
+    "Read Anondo Bhubon articles and insights on green and sustainable township planning near Purbachal, 50-bigha Forest Walkways, Old Brahmaputra–Shitalakshya river restoration, Anondo Digital Valley, and long-term residential and commercial investment in Bangladesh.",
   keywords: [
     "Anondo Bhubon blogs",
-    "Purbachal investment",
-    "Bangladesh real estate updates",
-    "land verification Bangladesh",
-    "eco-friendly township blog",
-    "modern living Bangladesh",
+    "Anondo Real Estate Group insights",
+    "Purbachal integrated township investment",
+    "green sustainable urban planning Bangladesh",
+    "Anondo Digital Valley articles",
+    "Forest Walkways and eco-conscious living Dhaka",
   ],
   path: "/blogs",
   image: finalRenderAssets.riverside,
-  imageAlt: "Anondo Bhubon blog and real estate updates",
+  imageAlt:
+    "Anondo Bhubon blogs and insights on green, sustainable township living near Purbachal",
   pageType: "CollectionPage",
   breadcrumb: [{ name: "Blogs", path: "/blogs" }],
   jsonLd: {

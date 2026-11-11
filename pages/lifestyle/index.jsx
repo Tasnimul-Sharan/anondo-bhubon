@@ -6,17 +6,21 @@ import { lifestyleOverview } from "@/data/lifestylePreviewData";
 const documentContent = documents.philosophy;
 
 const seo = {
-  title: `${lifestyleOverview.title} | Anondo Bhubon Lifestyle`,
-  description: documentContent.sections[0].blocks[0].text,
+  title: `${lifestyleOverview.title} | Green, Sustainable & People-Centred Living | Anondo Bhubon`,
+  description:
+    "Discover the Anondo Bhubon lifestyle philosophy near Purbachal: a people-centred, green, and sustainable integrated township featuring 50-bigha Forest Walkways, a 125-bigha river and lake network, 70-bigha sports complexes, schools, hospitals, and Anondo Digital Valley so families can live, work, learn, and thrive together.",
   keywords: [
     "Anondo Bhubon lifestyle",
     "Anondo Bhubon lifestyle philosophy",
     "healthy sustainable township Bangladesh",
     "green living near Purbachal",
+    "50-bigha Forest Walkways lifestyle",
+    "integrated community living Dhaka",
   ],
   path: "/lifestyle",
   image: documentContent.heroImage,
-  imageAlt: "Anondo Bhubon eco-conscious township lifestyle",
+  imageAlt:
+    "Anondo Bhubon lifestyle philosophy — green, healthy, and community-centred living near Purbachal",
   breadcrumb: [{ name: lifestyleOverview.title, path: "/lifestyle" }],
 };
 

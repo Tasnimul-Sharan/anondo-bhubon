@@ -55,9 +55,9 @@ export default function MasterplanSection() {
           </div>
 
           <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            Every 100 bighas form a block, while four blocks create a sector.
-            This modular planning approach allows the township to grow through
-            connected lifestyle zones.
+            Thoughtfully organized residential blocks combine to create each
+            sector. This modular planning approach allows the township to grow
+            through connected lifestyle zones.
           </p>
         </div>
 

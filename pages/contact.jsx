@@ -7,20 +7,22 @@ import HeroSection from "@/components/HeroSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Contact Anondo Bhubon | Brochure, Pricing and Site Visit Inquiry",
+  title:
+    "Contact Anondo Bhubon | Brochure, Master Plan & Site Visit Inquiry Near Purbachal",
   description:
-    "Contact Anondo Bhubon for brochure access, pricing, site visit scheduling, residence availability, investment information, and advisor support for the eco-conscious township near Purbachal.",
+    "Contact Anondo Bhubon by Anondo Real Estate Group for master plan consultations, pricing across our five residential categories (Premium Plus, Premium, Executive, General, Economy), villas, condominiums, commercial spaces in Anondo Digital Valley, and site visits near Purbachal.",
   keywords: [
     "Contact Anondo Bhubon",
-    "Anondo Bhubon pricing",
-    "Anondo Bhubon brochure",
-    "Purbachal township inquiry",
-    "Bangladesh real estate contact",
-    "site visit Anondo Bhubon",
+    "Anondo Real Estate Group contact",
+    "Anondo Bhubon brochure and pricing",
+    "Purbachal integrated township site visit",
+    "villas and residential plots inquiry Dhaka",
+    "Anondo Digital Valley commercial inquiry",
   ],
   path: "/contact",
   image: finalRenderAssets.forestWalk,
-  imageAlt: "Contact Anondo Bhubon for township information",
+  imageAlt:
+    "Contact Anondo Bhubon for integrated township consultations and site visits near Purbachal",
   pageType: "ContactPage",
   breadcrumb: [{ name: "Contact", path: "/contact" }],
   jsonLd: {

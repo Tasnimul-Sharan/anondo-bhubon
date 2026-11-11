@@ -6,19 +6,21 @@ import PaymentInfo from "@/components/PaymentInfo";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Payment Procedures | Anondo Bhubon Booking and Installment Guide",
+  title:
+    "Payment Procedures | Booking & Installment Guide | Anondo Bhubon Township",
   description:
-    "Review Anondo Bhubon payment procedures, booking guidance, installment information, bank transfer steps, and secure payment support for residential ownership inquiries.",
+    "Review official Anondo Bhubon payment procedures, bank transfer instructions, booking guidelines, and installment steps across our five residential categories (Premium Plus, Premium, Executive, General, Economy), villas, and condominiums near Purbachal.",
   keywords: [
     "Anondo Bhubon payment procedure",
-    "property booking payment Bangladesh",
-    "housing installment guide",
-    "Purbachal township payment",
-    "real estate payment procedure Bangladesh",
+    "Anondo Real Estate Group payment guide",
+    "residential plot booking payment Purbachal",
+    "township installment procedure Bangladesh",
+    "secure real estate bank transfer Dhaka",
   ],
   path: "/payment-procedures",
   image: finalRenderAssets.mosque,
-  imageAlt: "Anondo Bhubon payment procedures",
+  imageAlt:
+    "Anondo Bhubon official payment procedures and residential booking guide",
   pageType: "WebPage",
   breadcrumb: [{ name: "Payment Procedures", path: "/payment-procedures" }],
   jsonLd: {

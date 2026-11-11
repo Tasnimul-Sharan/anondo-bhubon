@@ -4,20 +4,24 @@ import MasterplanPageSection from "@/components/MasterplanPageSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Masterplan | Anondo Bhubon Township Plan and Block Visuals",
+  title:
+    "Masterplan | Anondo Bhubon Integrated Township Master Plan Near Purbachal",
   description:
-    "Explore the Anondo Bhubon masterplan gallery with full map views, premium blocks, exclusive blocks, forest walk visuals, sector center plans, and township planning renders.",
+    "Explore the Anondo Bhubon master plan near Purbachal: 5 residential categories (Premium Plus, Premium, Executive, General, Economy), villas, condominiums, an Old Brahmaputra–Shitalakshya river corridor and two lakes, Forest Walkways, a commercial/digital/industrial zone with Anondo Digital Valley and a Mega Commercial Centre, schools, hospitals, sports complexes, and wide principal avenues.",
   keywords: [
     "Anondo Bhubon masterplan",
-    "Anondo Bhubon block plan",
-    "township masterplan Bangladesh",
-    "Purbachal masterplan project",
-    "premium block masterplan",
-    "exclusive block masterplan",
+    "integrated township master plan Purbachal",
+    "Premium Plus Executive residential sectors",
+    "Forest Walkways masterplan",
+    "Old Brahmaputra river corridor",
+    "Anondo Digital Valley",
+    "Mega Commercial Centre",
+    "sports complex Purbachal",
   ],
   path: "/masterplan",
   image: finalRenderAssets.masterplan,
-  imageAlt: "Anondo Bhubon masterplan full top map",
+  imageAlt:
+    "Anondo Bhubon integrated township master plan near Purbachal showing residential sectors, river corridor, lakes, and commercial zones",
   pageType: "ImageGallery",
   breadcrumb: [{ name: "Masterplan", path: "/masterplan" }],
 };

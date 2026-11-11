@@ -34,9 +34,9 @@ const menuItems = [
   //   id: "who-we-are",
   //   name: "Who We Are",
   //   submenu: [
-  //     // { name: "Our Company", path: "/about#our-company" },
-  //     // { name: "Our Vision & Mission", path: "/vision-mission" },
-  //     // { name: "Our Core Values", path: "/core-values" },
+  //     { name: "Our Company", path: "/our-company" },
+  //     { name: "Our Vision & Mission", path: "/vision-mission" },
+  //     { name: "Our Core Values", path: "/core-values" },
   //   ],
   // },
   {
@@ -599,10 +599,10 @@ export default function Navbar() {
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden xl:block">
+            <div className="hidden shrink-0 xl:block">
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-[#202D72] px-5 py-3.5 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-[0_12px_30px_rgba(32,45,114,0.18)] transition duration-300 hover:bg-[#F48220]"
+                className="group inline-flex shrink-0 items-center gap-3 whitespace-nowrap bg-[#202D72] px-5 py-3.5 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-[0_12px_30px_rgba(32,45,114,0.18)] transition duration-300 hover:bg-[#F48220]"
               >
                 <span>Get in Touch</span>
 

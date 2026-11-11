@@ -56,7 +56,7 @@ function buildSchema({
       },
       image,
       description:
-        "Anondo Bhubon is an eco-conscious township concept near Purbachal New Town with green infrastructure, residential planning, and smart urban amenities.",
+        "Anondo Bhubon by Anondo Real Estate Group is a complete, green, and sustainable integrated township near Purbachal where residential communities, commercial centres, Anondo Digital Valley, technology-based industries, education, healthcare, sports, and nature coexist in harmony.",
       areaServed: {
         "@type": "Country",
         name: "Bangladesh",
@@ -136,7 +136,8 @@ export default function AdvancedSEO({
     ? "noindex, nofollow"
     : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
   const safeImageAlt =
-    imageAlt || `${SITE_NAME} eco-conscious township in Bangladesh`;
+    imageAlt ||
+    `${SITE_NAME} — A Complete, Green and Sustainable Integrated Township Near Purbachal`;
 
   const schema = buildSchema({
     title,

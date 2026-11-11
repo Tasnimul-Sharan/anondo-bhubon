@@ -71,30 +71,23 @@
           {
             "index": 6,
             "kind": "paragraph",
-            "text": "Across approximately 3,783 bighas, our residential master plan brings together five distinct residential sectors, two villa communities and a modern condominium district.",
+            "text": "Our residential master plan brings together five distinct residential sectors, two villa communities and a modern condominium district.",
             "runs": [
               {
-                "text": "Across approximately "
-              },
-              {
-                "text": "3,783 bighas",
-                "bold": true
-              },
-              {
-                "text": ", our residential master plan brings together five distinct residential sectors, two villa communities and a modern condominium district."
+                "text": "Our residential master plan brings together five distinct residential sectors, two villa communities and a modern condominium district."
               }
             ]
           },
           {
             "index": 7,
             "kind": "paragraph",
-            "text": "Each community has its own character and lifestyle positioning, yet all are connected to the wider 5,191.56-bigha integrated township, with access to its commercial centres, educational institutions, healthcare facilities, employment opportunities, sports and recreation.",
+            "text": "Each community has its own character and lifestyle positioning, yet all are connected to the wider integrated township, with access to its commercial centres, educational institutions, healthcare facilities, employment opportunities, sports and recreation.",
             "runs": [
               {
                 "text": "Each community has its own character and lifestyle positioning, yet all are connected to the wider "
               },
               {
-                "text": "5,191.56-bigha integrated township",
+                "text": "integrated township",
                 "bold": true
               },
               {
@@ -151,17 +144,6 @@
             ]
           },
           {
-            "index": 12,
-            "kind": "allocation",
-            "text": "600 Bighas",
-            "runs": [
-              {
-                "text": "600 Bighas",
-                "bold": true
-              }
-            ]
-          },
-          {
             "index": 13,
             "kind": "paragraph",
             "text": "Premium Plus represents a distinguished residential environment for families seeking spacious, elegant and thoughtfully planned neighbourhoods."
@@ -169,7 +151,7 @@
           {
             "index": 14,
             "kind": "paragraph",
-            "text": "With its established five-katha plot concept, landscaped streets, green spaces and community facilities, the sector is envisioned to offer a refined lifestyle combining privacy, comfort and accessibility."
+            "text": "With its thoughtfully planned plot concept, landscaped streets, green spaces and community facilities, the sector is envisioned to offer a refined lifestyle combining privacy, comfort and accessibility."
           },
           {
             "index": 15,
@@ -192,17 +174,6 @@
             "runs": [
               {
                 "text": "Premium — Comfort, Elegance and Community",
-                "bold": true
-              }
-            ]
-          },
-          {
-            "index": 17,
-            "kind": "allocation",
-            "text": "600 Bighas",
-            "runs": [
-              {
-                "text": "600 Bighas",
                 "bold": true
               }
             ]
@@ -243,17 +214,6 @@
             ]
           },
           {
-            "index": 22,
-            "kind": "allocation",
-            "text": "800 Bighas",
-            "runs": [
-              {
-                "text": "800 Bighas",
-                "bold": true
-              }
-            ]
-          },
-          {
             "index": 23,
             "kind": "paragraph",
             "text": "The Executive Sector is envisioned as a vibrant residential community for professionals, entrepreneurs and families seeking an organized, comfortable and well-connected environment."
@@ -284,17 +244,6 @@
             "runs": [
               {
                 "text": "General — A Community Where Families Flourish",
-                "bold": true
-              }
-            ]
-          },
-          {
-            "index": 27,
-            "kind": "allocation",
-            "text": "800 Bighas",
-            "runs": [
-              {
-                "text": "800 Bighas",
                 "bold": true
               }
             ]
@@ -341,17 +290,6 @@
             ]
           },
           {
-            "index": 32,
-            "kind": "allocation",
-            "text": "288 Bighas",
-            "runs": [
-              {
-                "text": "288 Bighas",
-                "bold": true
-              }
-            ]
-          },
-          {
             "index": 33,
             "kind": "paragraph",
             "text": "The Economy Sector reflects our commitment to creating more accessible residential opportunities within a modern integrated township."
@@ -393,10 +331,10 @@
           {
             "index": 37,
             "kind": "allocation",
-            "text": "400 Bighas — Two Distinct Villa Districts",
+            "text": "Two Distinct Villa Districts",
             "runs": [
               {
-                "text": "400 Bighas — Two Distinct Villa Districts",
+                "text": "Two Distinct Villa Districts",
                 "bold": true
               }
             ]
@@ -409,10 +347,10 @@
           {
             "index": 39,
             "kind": "subheading",
-            "text": "Small Villa District — 300 Bighas",
+            "text": "Small Villa District",
             "runs": [
               {
-                "text": "Small Villa District — 300 Bighas",
+                "text": "Small Villa District",
                 "bold": true
               }
             ]
@@ -425,10 +363,10 @@
           {
             "index": 41,
             "kind": "subheading",
-            "text": "Large Villa District — 100 Bighas",
+            "text": "Large Villa District",
             "runs": [
               {
-                "text": "Large Villa District — 100 Bighas",
+                "text": "Large Villa District",
                 "bold": true
               }
             ]
@@ -461,10 +399,10 @@
           {
             "index": 45,
             "kind": "allocation",
-            "text": "295 Bighas — A Contemporary Vertical Community",
+            "text": "A Contemporary Vertical Community",
             "runs": [
               {
-                "text": "295 Bighas — A Contemporary Vertical Community",
+                "text": "A Contemporary Vertical Community",
                 "bold": true
               }
             ]
@@ -1416,13 +1354,13 @@
           {
             "index": 12,
             "kind": "paragraph",
-            "text": "The revised master plan allocates approximately 255.56 bighas for three principal avenues, forming the primary transportation framework of the township.",
+            "text": "The revised master plan incorporates three principal avenues, forming the primary transportation framework of the township.",
             "runs": [
               {
-                "text": "The revised master plan allocates approximately "
+                "text": "The revised master plan incorporates "
               },
               {
-                "text": "255.56 bighas for three principal avenues",
+                "text": "three principal avenues",
                 "bold": true
               },
               {
@@ -1433,7 +1371,7 @@
           {
             "index": 13,
             "kind": "paragraph",
-            "text": "These avenues will be supported by a hierarchy of arterial, collector and internal neighbourhood roads, including planned 120-foot, 80-foot and 60-foot road corridors, where appropriate to the approved road network.",
+            "text": "These avenues will be supported by a hierarchy of arterial, collector and internal neighbourhood roads, including wide planned road corridors, where appropriate to the approved road network.",
             "runs": [
               {
                 "text": "These avenues will be supported by a hierarchy of arterial, collector and internal "
@@ -1442,10 +1380,10 @@
                 "text": "neighbourhood"
               },
               {
-                "text": " roads, including planned "
+                "text": " roads, including "
               },
               {
-                "text": "120-foot, 80-foot and 60-foot road corridors",
+                "text": "wide planned road corridors",
                 "bold": true
               },
               {
@@ -1516,21 +1454,14 @@
           {
             "index": 24,
             "kind": "paragraph",
-            "text": "Two bus terminals, with a combined land allocation of approximately 12 bighas, are planned as important components of the transportation network.",
+            "text": "Two bus terminals are planned as important components of the transportation network.",
             "runs": [
               {
                 "text": "Two bus terminals",
                 "bold": true
               },
               {
-                "text": ", with a combined land allocation of approximately "
-              },
-              {
-                "text": "12 bighas",
-                "bold": true
-              },
-              {
-                "text": ", are planned as important components of the transportation network."
+                "text": " are planned as important components of the transportation network."
               }
             ]
           },
@@ -2084,10 +2015,10 @@
           {
             "index": 21,
             "kind": "subheading",
-            "text": "Dedicated School and College Campus — 15 Bighas",
+            "text": "Dedicated School and College Campus",
             "runs": [
               {
-                "text": "Dedicated School and College Campus — 15 Bighas",
+                "text": "Dedicated School and College Campus",
                 "bold": true
               }
             ]
@@ -2095,15 +2026,15 @@
           {
             "index": 22,
             "kind": "paragraph",
-            "text": "An additional 15-bigha campus is reserved for a separate school and college, offering opportunities for a specialized or internationally oriented educational institution, subject to future demand and institutional planning."
+            "text": "An additional dedicated campus is reserved for a separate school and college, offering opportunities for a specialized or internationally oriented educational institution, subject to future demand and institutional planning."
           },
           {
             "index": 23,
             "kind": "subheading",
-            "text": "University — 50 Bighas",
+            "text": "University",
             "runs": [
               {
-                "text": "University — 50 Bighas",
+                "text": "University",
                 "bold": true
               }
             ]
@@ -2111,7 +2042,7 @@
           {
             "index": 24,
             "kind": "paragraph",
-            "text": "A dedicated 50-bigha university site forms an important part of our long-term educational vision."
+            "text": "A dedicated university site forms an important part of our long-term educational vision."
           },
           {
             "index": 25,
@@ -2181,10 +2112,10 @@
           {
             "index": 33,
             "kind": "allocation",
-            "text": "Two Planned Hospitals | 30 Bighas",
+            "text": "Two Planned Hospitals",
             "runs": [
               {
-                "text": "Two Planned Hospitals | 30 Bighas",
+                "text": "Two Planned Hospitals",
                 "bold": true
               }
             ]
@@ -2197,7 +2128,7 @@
           {
             "index": 35,
             "kind": "paragraph",
-            "text": "Anondo Bhubon's revised master plan provides for two hospitals, each occupying approximately 15 bighas, strategically intended to serve different parts of the township and surrounding communities.",
+            "text": "Anondo Bhubon's revised master plan provides for two hospitals, strategically intended to serve different parts of the township and surrounding communities.",
             "runs": [
               {
                 "text": "Anondo "
@@ -2209,7 +2140,7 @@
                 "text": " revised master plan provides for "
               },
               {
-                "text": "two hospitals, each occupying approximately 15 bighas",
+                "text": "two hospitals",
                 "bold": true
               },
               {
@@ -2266,10 +2197,10 @@
           {
             "index": 43,
             "kind": "allocation",
-            "text": "Two Major Sports Complexes | 70 Bighas",
+            "text": "Two Major Sports Complexes",
             "runs": [
               {
-                "text": "Two Major Sports Complexes | 70 Bighas",
+                "text": "Two Major Sports Complexes",
                 "bold": true
               }
             ]
@@ -2287,13 +2218,13 @@
           {
             "index": 46,
             "kind": "paragraph",
-            "text": "The revised master plan allocates 70 bighas for two major sports complexes, each planned on approximately 35 bighas.",
+            "text": "The revised master plan provides for two major sports complexes within the township.",
             "runs": [
               {
-                "text": "The revised master plan allocates "
+                "text": "The revised master plan provides for "
               },
               {
-                "text": "70 bighas for two major sports ",
+                "text": "two major sports ",
                 "bold": true
               },
               {
@@ -2301,10 +2232,7 @@
                 "bold": true
               },
               {
-                "text": ","
-              },
-              {
-                "text": " each planned on approximately 35 bighas."
+                "text": " within the township."
               }
             ]
           },
@@ -2452,14 +2380,14 @@
           {
             "index": 63,
             "kind": "list-item",
-            "text": "Public Transportation: Two planned bus terminals, with a combined allocation of 12 bighas, supporting organized transportation and township connectivity.",
+            "text": "Public Transportation: Two planned bus terminals supporting organized transportation and township connectivity.",
             "runs": [
               {
                 "text": "Public Transportation:",
                 "bold": true
               },
               {
-                "text": " Two planned bus terminals, with a combined allocation of 12 bighas, supporting organized transportation and township connectivity."
+                "text": " Two planned bus terminals supporting organized transportation and township connectivity."
               }
             ]
           },
@@ -2794,17 +2722,17 @@
           {
             "index": 6,
             "kind": "paragraph",
-            "text": "The revised master plan allocates approximately 791 bighas to four complementary economic development districts: the General Commercial District, Anondo Digital Valley, the Mega Commercial Centre and the Industrial District.",
+            "text": "The revised master plan brings together four complementary economic development districts: the General Commercial District, Anondo Digital Valley, the Mega Commercial Centre and the Industrial District.",
             "runs": [
               {
-                "text": "The revised master plan allocates approximately "
+                "text": "The revised master plan brings together "
               },
               {
-                "text": "791 bighas",
+                "text": "four complementary economic development districts",
                 "bold": true
               },
               {
-                "text": " to four complementary economic development districts: the General Commercial District, Anondo Digital Valley, the Mega Commercial Centre and the Industrial District."
+                "text": ": the General Commercial District, Anondo Digital Valley, the Mega Commercial Centre and the Industrial District."
               }
             ]
           },
@@ -2831,10 +2759,10 @@
           {
             "index": 9,
             "kind": "allocation",
-            "text": "296 Bighas | The Business and Commercial Heart of Anondo Bhubon",
+            "text": "The Business and Commercial Heart of Anondo Bhubon",
             "runs": [
               {
-                "text": "296 Bighas | The Business and Commercial Heart of Anondo ",
+                "text": "The Business and Commercial Heart of Anondo ",
                 "bold": true
               },
               {
@@ -2887,10 +2815,10 @@
           {
             "index": 15,
             "kind": "allocation",
-            "text": "230 Bighas | A Destination for Technology, Innovation and Digital Enterprise",
+            "text": "A Destination for Technology, Innovation and Digital Enterprise",
             "runs": [
               {
-                "text": "230 Bighas | A Destination for Technology, Innovation and Digital Enterprise",
+                "text": "A Destination for Technology, Innovation and Digital Enterprise",
                 "bold": true
               }
             ]
@@ -2966,10 +2894,10 @@
           {
             "index": 24,
             "kind": "allocation",
-            "text": "55 Bighas | A Landmark Destination for Commerce, Leisure and Community Life",
+            "text": "A Landmark Destination for Commerce, Leisure and Community Life",
             "runs": [
               {
-                "text": "55 Bighas | A Landmark Destination for Commerce, Leisure and Community Life",
+                "text": "A Landmark Destination for Commerce, Leisure and Community Life",
                 "bold": true
               }
             ]
@@ -2982,12 +2910,12 @@
           {
             "index": 26,
             "kind": "paragraph",
-            "text": "Planned within approximately 55 bighas, the development concept combines a major commercial building with landscaped public spaces, water features, pedestrian promenades, recreation and entertainment facilities."
+            "text": "The development concept combines a major commercial building with landscaped public spaces, water features, pedestrian promenades, recreation and entertainment facilities."
           },
           {
             "index": 27,
             "kind": "paragraph",
-            "text": "With an initial conceptual building footprint of approximately 85,000 square feet, the centre is intended to accommodate shopping, dining, entertainment, business activities and family recreation."
+            "text": "With a spacious conceptual building footprint, the centre is intended to accommodate shopping, dining, entertainment, business activities and family recreation."
           },
           {
             "index": 28,
@@ -3028,10 +2956,10 @@
           {
             "index": 32,
             "kind": "allocation",
-            "text": "210 Bighas | Environmentally Responsible Industry and Future Technology",
+            "text": "Environmentally Responsible Industry and Future Technology",
             "runs": [
               {
-                "text": "210 Bighas | Environmentally Responsible Industry and Future Technology",
+                "text": "Environmentally Responsible Industry and Future Technology",
                 "bold": true
               }
             ]
@@ -3281,17 +3209,17 @@
           {
             "index": 7,
             "kind": "paragraph",
-            "text": "Across approximately 5,191.56 bighas, the Green–Blue Environmental Master Plan forms the ecological foundation of the entire township.",
+            "text": "The Green–Blue Environmental Master Plan forms the ecological foundation of the entire township.",
             "runs": [
               {
-                "text": "Across approximately "
+                "text": "The "
               },
               {
-                "text": "5,191.56 bighas",
+                "text": "Green–Blue Environmental Master Plan",
                 "bold": true
               },
               {
-                "text": ", the Green–Blue Environmental Master Plan forms the ecological foundation of the entire township."
+                "text": " forms the ecological foundation of the entire township."
               }
             ]
           },
@@ -3377,17 +3305,14 @@
           {
             "index": 12,
             "kind": "paragraph",
-            "text": "Approximately 125 bighas have been allocated for the proposed river corridor.",
+            "text": "Dedicated land has been allocated for the proposed river corridor.",
             "runs": [
               {
-                "text": "Approximately "
-              },
-              {
-                "text": "125 bighas",
+                "text": "Dedicated land",
                 "bold": true
               },
               {
-                "text": " have been allocated for the proposed river corridor."
+                "text": " has been allocated for the proposed river corridor."
               }
             ]
           },
@@ -3440,17 +3365,14 @@
           {
             "index": 19,
             "kind": "paragraph",
-            "text": "Approximately 50 bighas are specifically allocated to these green corridors, complementing the landscaped open spaces and neighbourhood greenery provided throughout the residential sectors.",
+            "text": "Dedicated land is specifically allocated to these green corridors, complementing the landscaped open spaces and neighbourhood greenery provided throughout the residential sectors.",
             "runs": [
               {
-                "text": "Approximately "
-              },
-              {
-                "text": "50 bighas",
+                "text": "Dedicated land",
                 "bold": true
               },
               {
-                "text": " are specifically allocated to these green corridors, complementing the landscaped open spaces and "
+                "text": " is specifically allocated to these green corridors, complementing the landscaped open spaces and "
               },
               {
                 "text": "neighbourhood"
@@ -3507,13 +3429,13 @@
           {
             "index": 24,
             "kind": "paragraph",
-            "text": "A dedicated 10-bigha lake, together with the proposed river corridor and interconnected water features, will form an important part of Anondo Bhubon's blue infrastructure.",
+            "text": "A dedicated lake, together with the proposed river corridor and interconnected water features, will form an important part of Anondo Bhubon's blue infrastructure.",
             "runs": [
               {
-                "text": "A dedicated "
+                "text": "A "
               },
               {
-                "text": "10-bigha lake",
+                "text": "dedicated lake",
                 "bold": true
               },
               {
@@ -3818,166 +3740,6 @@
             ]
           }
         ]
-      },
-      {
-        "heading": {
-          "index": 53,
-          "kind": "paragraph",
-          "text": "Environmental master plan at a glance",
-          "runs": [
-            {
-              "text": "Environmental master plan ",
-              "bold": true
-            },
-            {
-              "text": "at a glance",
-              "bold": true
-            }
-          ]
-        },
-        "blocks": [
-          {
-            "index": 54,
-            "kind": "paragraph",
-            "text": "125",
-            "runs": [
-              {
-                "text": "125",
-                "bold": true
-              }
-            ]
-          },
-          {
-            "index": 55,
-            "kind": "paragraph",
-            "text": "Bighas — River Corridor"
-          },
-          {
-            "index": 56,
-            "kind": "paragraph",
-            "text": "50",
-            "runs": [
-              {
-                "text": "50",
-                "bold": true
-              }
-            ]
-          },
-          {
-            "index": 57,
-            "kind": "paragraph",
-            "text": "Bighas — Forest Walkways"
-          },
-          {
-            "index": 58,
-            "kind": "paragraph",
-            "text": "10",
-            "runs": [
-              {
-                "text": "10",
-                "bold": true
-              }
-            ]
-          },
-          {
-            "index": 59,
-            "kind": "paragraph",
-            "text": "Bighas — Lake"
-          },
-          {
-            "index": 60,
-            "kind": "paragraph",
-            "text": "These 185 bighas represent the separately designated river corridor, lake and forest walkways. They do not include the additional parks, landscaped roads, school playgrounds, residential open spaces and other greenery already incorporated into the individual sectors."
-          }
-        ],
-        "layout": "metrics"
-      },
-      {
-        "heading": {
-          "index": 61,
-          "kind": "paragraph",
-          "text": "Suggested visual placement",
-          "runs": [
-            {
-              "text": "Suggested visual placement",
-              "bold": true
-            }
-          ]
-        },
-        "blocks": [
-          {
-            "index": 62,
-            "kind": "subheading",
-            "text": "Why Teesta master plan crucial for Bangladesh's interest"
-          },
-          {
-            "index": 63,
-            "kind": "paragraph",
-            "text": "Page 1 — The Green–Blue Vision"
-          },
-          {
-            "index": 64,
-            "kind": "paragraph",
-            "text": "A master-plan aerial perspective showing the proposed river corridor, lake, forest walkways and their relationship with the township."
-          },
-          {
-            "index": 65,
-            "kind": "subheading",
-            "text": "Bangkok set to welcome a colossal forest park in the city centre"
-          },
-          {
-            "index": 66,
-            "kind": "paragraph",
-            "text": "Page 2 — Forest Walkways and Waterfront Living"
-          },
-          {
-            "index": 67,
-            "kind": "paragraph",
-            "text": "Forest walkway perspectives, riverfront promenades, pedestrian bridges and waterside recreation."
-          },
-          {
-            "index": 68,
-            "kind": "subheading",
-            "text": "Sünger Şehir | KÜRE Ansiklopedi"
-          },
-          {
-            "index": 69,
-            "kind": "paragraph",
-            "text": "Page 3 — Sustainability and Ecological Management"
-          },
-          {
-            "index": 70,
-            "kind": "paragraph",
-            "text": "Illustrations of the lake, water-sensitive landscaping, neighbourhood greenery and environmental infrastructure."
-          }
-        ],
-        "notes": true
-      },
-      {
-        "heading": {
-          "index": 71,
-          "kind": "paragraph",
-          "text": "One important planning recommendation",
-          "runs": [
-            {
-              "text": "One important planning recommendation",
-              "bold": true
-            }
-          ]
-        },
-        "blocks": [
-          {
-            "index": 72,
-            "kind": "paragraph",
-            "text": "I recommend that the technical master plan establish measurable environmental performance standards for tree canopy, accessible green space, water quality, wastewater treatment, flood resilience and long-term maintenance. These should be finalized after appropriate engineering and environmental studies rather than presented as unverified commitments in the prospectus."
-          },
-          {
-            "index": 73,
-            "kind": "paragraph",
-            "text": "This chapter can serve as the environmental identity of Anondo Bhubon without making the brochure excessively lengthy."
-          }
-        ],
-        "notes": true
       }
     ],
     "closing": []

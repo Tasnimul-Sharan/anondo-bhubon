@@ -13,31 +13,34 @@ import VideoSection from "@/components/NRB/VideoSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "NRB Property Support | Anondo Bhubon for Non-Resident Bangladeshis",
+  title:
+    "NRB Property & Investment Support | Green Integrated Township Near Purbachal | Anondo Bhubon",
   description:
-    "Anondo Bhubon supports NRB buyers and investors with property guidance, document assistance, booking support, remote communication, and secure township investment information.",
+    "Anondo Bhubon by Anondo Real Estate Group supports Non-Resident Bangladeshis (NRBs) looking to invest in a complete, green, and sustainable integrated township near Purbachal—offering 5 residential categories, villas, condominiums, transparent documentation, and dedicated remote booking assistance.",
   keywords: [
-    "NRB property Bangladesh",
-    "Anondo Bhubon NRB",
-    "Non Resident Bangladeshi real estate",
-    "Purbachal property investment",
-    "Bangladesh township investment",
-    "NRB housing support",
+    "NRB property investment Bangladesh",
+    "Anondo Bhubon NRB support",
+    "Anondo Real Estate Group NRB",
+    "Non Resident Bangladeshi real estate Purbachal",
+    "green sustainable township investment Dhaka",
+    "villas and residential plots for NRBs",
   ],
   path: "/nrb",
   image: finalRenderAssets.billboard,
-  imageAlt: "NRB property support for Anondo Bhubon",
+  imageAlt:
+    "NRB property investment and dedicated support at Anondo Bhubon Integrated Township",
   pageType: "WebPage",
   breadcrumb: [{ name: "NRB", path: "/nrb" }],
   jsonLd: {
     "@type": "Service",
     "@id": "https://www.anondobhubon.com/nrb",
-    name: "NRB Property Support",
+    name: "NRB Property & Township Investment Support",
     provider: {
       "@id": "https://www.anondobhubon.com/#organization",
     },
     areaServed: "Bangladesh",
-    serviceType: "Real estate guidance for Non-Resident Bangladeshis",
+    serviceType:
+      "Dedicated real estate guidance and booking support for Non-Resident Bangladeshis at Anondo Bhubon integrated township",
   },
 };
 

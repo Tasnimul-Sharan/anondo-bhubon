@@ -50,7 +50,7 @@ export default function BlogDetailsPage() {
   const title = `${post.title} | Anondo Bhubon Blog`;
   const description =
     post.description ||
-    "Read Anondo Bhubon updates and insights on Purbachal investment, land planning, sustainable township design, and modern residential living in Bangladesh.";
+    "Read Anondo Bhubon updates and insights on green, sustainable integrated township design near Purbachal, Anondo Digital Valley, Forest Walkways, and modern community living in Bangladesh.";
 
   return (
     <div>
@@ -59,10 +59,10 @@ export default function BlogDetailsPage() {
         description={description}
         keywords={[
           "Anondo Bhubon",
+          "Anondo Real Estate Group",
           "Anondo Bhubon blog",
-          "Purbachal real estate",
-          "Bangladesh property investment",
-          "eco-friendly township",
+          "integrated township near Purbachal",
+          "green and sustainable township Bangladesh",
           ...tags,
         ]}
         path={path}

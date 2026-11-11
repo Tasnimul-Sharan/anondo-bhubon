@@ -5,20 +5,22 @@ import { noticeData } from "@/data/noticeData";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Certification | Anondo Bhubon Certificates and Official Documents",
+  title:
+    "Certifications & Official Documents | Regulatory & Environmental Approvals | Anondo Bhubon",
   description:
-    "Explore Anondo Bhubon certificates and official project documents, including the Non-Encumbrance Certificate and environmental approval documentation.",
+    "Review Anondo Bhubon's official certificates, Non-Encumbrance Certificate (NEC), and environmental assessment documentation—reflecting Anondo Real Estate Group's commitment to trust, integrity, regulatory compliance, and responsible township development near Purbachal.",
   keywords: [
     "Anondo Bhubon certification",
-    "Anondo Bhubon official documents",
+    "Anondo Real Estate Group official documents",
     "Anondo Bhubon NEC certificate",
-    "Anondo Bhubon EIA documentation",
-    "Purbachal township certificates",
-    "Anondo Bhubon project documents",
+    "Anondo Bhubon EIA environmental documentation",
+    "Purbachal integrated township approvals",
+    "verified real estate project Bangladesh",
   ],
   path: "/certification",
   image: noticeData[0]?.image || finalRenderAssets.masterplan,
-  imageAlt: "Anondo Bhubon certificates and official documents",
+  imageAlt:
+    "Anondo Bhubon official certifications, regulatory approvals, and environmental documents",
   pageType: "CollectionPage",
   breadcrumb: [{ name: "Certification", path: "/certification" }],
   jsonLd: {

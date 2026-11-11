@@ -6,18 +6,18 @@ import PrivacyPolicyPageSection from "@/components/PrivacyPolicyPageSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Privacy Policy | Anondo Bhubon",
+  title: "Privacy Policy | Data Protection & Transparency | Anondo Bhubon",
   description:
-    "Read the Anondo Bhubon privacy policy to understand how inquiry details, contact information, application data, and website usage information may be collected, used, and protected.",
+    "Read the Anondo Bhubon privacy policy by Anondo Real Estate Group to understand how client inquiries, booking applications, contact details, and website interactions are securely handled with trust, integrity, and accountability.",
   keywords: [
     "Anondo Bhubon privacy policy",
+    "Anondo Real Estate Group data protection",
     "real estate privacy policy Bangladesh",
-    "property inquiry data policy",
-    "Anondo Bhubon data protection",
+    "property inquiry confidentiality",
   ],
   path: "/privacy-policy",
   image: finalRenderAssets.masterplanSide,
-  imageAlt: "Anondo Bhubon privacy policy",
+  imageAlt: "Anondo Bhubon privacy policy and data protection standards",
   pageType: "WebPage",
   breadcrumb: [{ name: "Privacy Policy", path: "/privacy-policy" }],
 };

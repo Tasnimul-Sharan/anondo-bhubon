@@ -5,17 +5,22 @@ import documents from "@/data/whoWeAreDocuments.json";
 const documentContent = documents["core-values"];
 
 const seo = {
-  title: "Our Core Values | Anondo Bhubon",
-  description: documentContent.sections[0].blocks[0].text,
+  title:
+    "Our Core Values | Trust, Integrity & Responsible Development | Anondo Bhubon",
+  description:
+    "At Anondo Real Estate Group, trust, integrity, sincerity, dedication, and accountability are our capital. Learn how these core values guide the planning, environmental stewardship, and progressive implementation of the Anondo Bhubon integrated township near Purbachal.",
   keywords: [
     "Anondo Bhubon core values",
     "Anondo Real Estate Group values",
-    "trust and integrity real estate Bangladesh",
-    "sustainable township principles",
+    "trust integrity sincerity dedication accountability",
+    "responsible real estate development Bangladesh",
+    "sustainable township governance Purbachal",
+    "people-centred township planning",
   ],
   path: "/core-values",
   image: documentContent.heroImage,
-  imageAlt: "Anondo Bhubon core values and guiding principles",
+  imageAlt:
+    "Anondo Bhubon core values — trust, integrity, sincerity, dedication, and accountability",
   pageType: "AboutPage",
   breadcrumb: [{ name: "Our Core Values", path: "/core-values" }],
 };

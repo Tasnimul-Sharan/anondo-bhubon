@@ -50,18 +50,18 @@ export default function ProjectDetailsPage() {
     typeof project.description === "string"
       ? project.description
       : projectData.description ||
-        `${projectTitle} by ${SITE_NAME}. Explore project overview, master plan, amenities, location advantages, gallery, and investment opportunities.`;
+        `${projectTitle} at ${SITE_NAME} by Anondo Real Estate Group—part of a complete, green, and sustainable integrated township near Purbachal featuring five residential categories, villas, condominiums, 50-bigha Forest Walkways, a 125-bigha river and lake network, and a 791-bigha economic zone.`;
   const heroImage =
     project.banner || projectData.image || finalRenderAssets.hero;
   const path = `/projects/${project.slug}`;
   const tags = [
     projectTitle,
     "Anondo Bhubon",
-    "real estate project Bangladesh",
-    "housing project Bangladesh",
-    "township project Bangladesh",
-    "Purbachal real estate",
-    "eco-friendly township",
+    "Anondo Real Estate Group",
+    "integrated township near Purbachal",
+    "green sustainable township Bangladesh",
+    "Anondo Digital Valley",
+    "Forest Walkways Purbachal",
     "property investment Bangladesh",
     ...(projectData.postTags || []),
     ...(project.keywords || []),

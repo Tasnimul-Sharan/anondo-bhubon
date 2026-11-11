@@ -10,7 +10,7 @@ import { PiMapPinBold } from "react-icons/pi";
 
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
+  { name: "Our Company", href: "/our-company" },
   { name: "NRB", href: "/nrb" },
   { name: "Certification", href: "/certification" },
   { name: "Gallery", href: "/gallery" },

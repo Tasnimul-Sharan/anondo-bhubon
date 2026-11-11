@@ -6,18 +6,21 @@ import TermsAndConditions from "@/components/TermsAndConditions";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Terms and Conditions | Anondo Bhubon",
+  title:
+    "Terms and Conditions | Plot Allotment & Ownership Guidelines | Anondo Bhubon",
   description:
-    "Read the Anondo Bhubon terms and conditions for plot prices, payment method, inclusive and exclusive costs, land usage ratio, and allotment terms.",
+    "Read the official Anondo Bhubon terms and conditions by Anondo Real Estate Group covering residential plot and villa allotment across our five residential categories, payment schedules, inclusive and exclusive charges, and integrated township governance near Purbachal.",
   keywords: [
     "Anondo Bhubon terms and conditions",
-    "property booking terms Bangladesh",
-    "housing project terms",
-    "real estate ownership terms Bangladesh",
+    "Anondo Real Estate Group allotment terms",
+    "property booking terms Purbachal",
+    "integrated township ownership rules Bangladesh",
+    "residential plot terms Dhaka",
   ],
   path: "/terms-and-conditions",
   image: finalRenderAssets.amenities,
-  imageAlt: "Anondo Bhubon terms and conditions",
+  imageAlt:
+    "Anondo Bhubon terms and conditions for residential allotment and ownership",
   pageType: "WebPage",
   breadcrumb: [{ name: "Terms and Conditions", path: "/terms-and-conditions" }],
 };

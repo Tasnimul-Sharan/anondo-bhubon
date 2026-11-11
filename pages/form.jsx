@@ -4,19 +4,20 @@ import HeroSection from "@/components/HeroSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Application Form | Anondo Bhubon Booking and Ownership Documents",
+  title:
+    "Application Form | Residential & Commercial Booking Documents | Anondo Bhubon",
   description:
-    "Access Anondo Bhubon application forms and required documents for residence booking, ownership inquiry, and advisor-assisted submission for the eco-conscious township near Purbachal.",
+    "Download official Anondo Bhubon application forms and booking documents for residential plots across our five categories (Premium Plus, Premium, Executive, General, Economy), villas, condominiums, and commercial spaces in our green integrated township near Purbachal.",
   keywords: [
     "Anondo Bhubon application form",
     "Anondo Bhubon booking form",
-    "residential application Bangladesh",
-    "Purbachal township booking",
-    "real estate application form",
+    "Anondo Real Estate Group application",
+    "Purbachal integrated township booking",
+    "residential plot and villa application Bangladesh",
   ],
   path: "/form",
   image: finalRenderAssets.masterplan,
-  imageAlt: "Anondo Bhubon application and booking form",
+  imageAlt: "Anondo Bhubon official application and booking forms",
   pageType: "WebPage",
   breadcrumb: [{ name: "Application Form", path: "/form" }],
 };

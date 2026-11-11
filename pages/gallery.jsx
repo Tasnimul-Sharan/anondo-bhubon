@@ -4,20 +4,22 @@ import HeroSection from "@/components/HeroSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title: "Gallery | Anondo Bhubon Masterplan, Lifestyle and Township Visuals",
+  title:
+    "Gallery | Master Plan, Forest Walkways, Villas & Waterfront Visuals | Anondo Bhubon",
   description:
-    "Explore the Anondo Bhubon gallery featuring masterplan visuals, green infrastructure, residential lifestyle, park amenities, water systems, and township design references.",
+    "Explore the Anondo Bhubon visual gallery showcasing our complete, green, and sustainable integrated township near Purbachal—featuring 50-bigha Forest Walkways, the 125-bigha Old Brahmaputra–Shitalakshya river corridor and lakes, villa communities, condominiums, Anondo Digital Valley, and the 55-bigha Mega Commercial Centre.",
   keywords: [
     "Anondo Bhubon gallery",
-    "Anondo Bhubon images",
-    "township masterplan gallery",
-    "Purbachal project photos",
-    "eco-friendly township visuals",
-    "green infrastructure images",
+    "Anondo Bhubon masterplan visuals",
+    "Forest Walkways township images",
+    "Old Brahmaputra waterfront visuals",
+    "villas and condominiums Purbachal photos",
+    "green sustainable township Bangladesh",
   ],
   path: "/gallery",
   image: finalRenderAssets.riverside,
-  imageAlt: "Anondo Bhubon township gallery",
+  imageAlt:
+    "Anondo Bhubon integrated township gallery featuring waterfront, Forest Walkways, and residential communities",
   pageType: "ImageGallery",
   breadcrumb: [{ name: "Gallery", path: "/gallery" }],
 };
