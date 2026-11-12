@@ -368,10 +368,10 @@
       {
         "index": 166,
         "kind": "closing-org",
-        "text": "Anondo Real Estate Group",
+        "text": "Anondo Group",
         "runs": [
           {
-            "text": "Anondo Real Estate Group",
+            "text": "Anondo Group",
             "bold": true
           }
         ]
@@ -792,10 +792,10 @@
       {
         "index": 166,
         "kind": "closing-org",
-        "text": "Anondo Real Estate Group",
+        "text": "Anondo Group",
         "runs": [
           {
-            "text": "Anondo Real Estate Group",
+            "text": "Anondo Group",
             "bold": true
           }
         ]

@@ -9,10 +9,10 @@ const seo = {
   title:
     "Terms and Conditions | Plot Allotment & Ownership Guidelines | Anondo Bhubon",
   description:
-    "Read the official Anondo Bhubon terms and conditions by Anondo Real Estate Group covering residential plot and villa allotment across our five residential categories, payment schedules, inclusive and exclusive charges, and integrated township governance near Purbachal.",
+    "Read the official Anondo Bhubon terms and conditions by Anondo Group covering residential plot and villa allotment across our five residential categories, payment schedules, inclusive and exclusive charges, and integrated township governance near Purbachal.",
   keywords: [
     "Anondo Bhubon terms and conditions",
-    "Anondo Real Estate Group allotment terms",
+    "Anondo Group allotment terms",
     "property booking terms Purbachal",
     "integrated township ownership rules Bangladesh",
     "residential plot terms Dhaka",

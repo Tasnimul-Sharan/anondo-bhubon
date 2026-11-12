@@ -8,10 +8,10 @@ import { finalRenderAssets } from "@/data/finalRendersData";
 const seo = {
   title: "Privacy Policy | Data Protection & Transparency | Anondo Bhubon",
   description:
-    "Read the Anondo Bhubon privacy policy by Anondo Real Estate Group to understand how client inquiries, booking applications, contact details, and website interactions are securely handled with trust, integrity, and accountability.",
+    "Read the Anondo Bhubon privacy policy by Anondo Group to understand how client inquiries, booking applications, contact details, and website interactions are securely handled with trust, integrity, and accountability.",
   keywords: [
     "Anondo Bhubon privacy policy",
-    "Anondo Real Estate Group data protection",
+    "Anondo Group data protection",
     "real estate privacy policy Bangladesh",
     "property inquiry confidentiality",
   ],

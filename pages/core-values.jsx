@@ -8,10 +8,10 @@ const seo = {
   title:
     "Our Core Values | Trust, Integrity & Responsible Development | Anondo Bhubon",
   description:
-    "At Anondo Real Estate Group, trust, integrity, sincerity, dedication, and accountability are our capital. Learn how these core values guide the planning, environmental stewardship, and progressive implementation of the Anondo Bhubon integrated township near Purbachal.",
+    "At Anondo Group, trust, integrity, sincerity, dedication, and accountability are our capital. Learn how these core values guide the planning, environmental stewardship, and progressive implementation of the Anondo Bhubon integrated township near Purbachal.",
   keywords: [
     "Anondo Bhubon core values",
-    "Anondo Real Estate Group values",
+    "Anondo Group values",
     "trust integrity sincerity dedication accountability",
     "responsible real estate development Bangladesh",
     "sustainable township governance Purbachal",

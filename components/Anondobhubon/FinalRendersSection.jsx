@@ -13,10 +13,8 @@ import {
   FiX,
 } from "react-icons/fi";
 
-import {
-  finalRenderHighlights,
-  finalRenderImages,
-} from "@/data/finalRendersData";
+import { finalRenderHighlights } from "@/data/finalRendersData";
+import { galleryContent as content } from "@/data/homeContent";
 
 const homepageRenders = finalRenderHighlights.slice(0, 12);
 
@@ -118,20 +116,18 @@ export default function FinalRendersSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Township Visual Gallery
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              A closer look at the vision of Anondo Bhubon.
+              {content.title}
             </h2>
           </div>
 
           <div className="max-w-xl lg:justify-self-end">
             <p className="text-[15px] font-medium leading-7 text-[#616779] lg:text-right">
-              Explore selected township renders, masterplans, landscaped
-              environments and lifestyle visuals from our complete collection
-              of {finalRenderImages.length} images.
+              {content.intro}
             </p>
 
             <div className="mt-6 flex lg:justify-end">
@@ -259,11 +255,11 @@ export default function FinalRendersSection() {
         <div className="mt-10 flex flex-col gap-5 border border-[#2C3A83]/10 bg-white p-6 shadow-[0_14px_45px_rgba(27,35,75,0.06)] sm:flex-row sm:items-center sm:justify-between sm:p-7">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
-              Complete Visual Library
+              {content.ctaLabel}
             </p>
 
             <p className="mt-2 text-base font-semibold text-[#20263A]">
-              Discover all masterplans, residences and lifestyle renders.
+              {content.ctaText}
             </p>
           </div>
 

@@ -41,12 +41,12 @@ export default function HeroSection() {
             <span className="h-2 w-2 rounded-full bg-[#F48220] shadow-[0_0_0_5px_rgba(244,130,32,0.16)]" />
 
             <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/70 sm:text-[11px]">
-              Future Smart City
+              Anondo Group
             </p>
           </div>
 
           <p className="hidden text-right text-[10px] font-bold uppercase tracking-[0.24em] text-white/45 sm:block">
-            Near Purbachal New Town
+            Near Purbachal
           </p>
         </div>
 
@@ -56,20 +56,27 @@ export default function HeroSection() {
               <FaLeaf className="shrink-0 text-sm text-[#F7A55A]" />
 
               <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/85 sm:text-[11px] sm:tracking-[0.24em]">
-                Bangladesh&apos;s Eco-Conscious Township
+                More Than a Township. A Vision for a Better Tomorrow.
               </p>
             </div>
             <h1 className="mt-6 whitespace-nowrap text-[clamp(2.65rem,6.2vw,6.9rem)] font-semibold leading-[0.94] tracking-[-0.06em] text-white">
               Anondo <span className="text-[#F7A55A]">Bhubon</span>
             </h1>
-            <h2 className="mt-5 max-w-4xl text-xl font-medium leading-[1.2] tracking-[-0.025em] text-white/95 sm:text-2xl lg:text-[2.15rem]">
-              A new horizon in eco-friendly urban living.
+            <h2 className="mt-5 max-w-4xl text-2xl font-medium leading-[1.15] tracking-[-0.03em] text-white/95 sm:text-3xl lg:text-[2.6rem]">
+              A Dream to Build a{" "}
+              <span className="text-[#F7A55A]">Better Way of Living</span>
             </h2>
 
-            <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/70 sm:text-base sm:leading-8">
-              Discover a thoughtfully planned township where nature, wellness,
-              connectivity and modern living come together in harmony.
-            </p>
+            <div className="mt-5 flex max-w-2xl items-start gap-4">
+              <span
+                aria-hidden="true"
+                className="mt-1 h-12 w-[3px] shrink-0 bg-[#F48220] sm:h-14"
+              />
+              <p className="text-sm font-medium leading-7 text-white/80 sm:text-lg sm:leading-8">
+                A Complete, Green and Sustainable Integrated Township for
+                Generations
+              </p>
+            </div>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
@@ -98,16 +105,16 @@ export default function HeroSection() {
         <div className="flex flex-col gap-3 border-t border-white/15 pt-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
-              Strategic Location
+              Anondo Bhubon
             </p>
 
             <p className="mt-1 text-sm font-semibold text-white/85">
-              East of River Sitalakhya · Near Purbachal New Town
+              A Complete Township for Life, Enterprise and Future Generations
             </p>
           </div>
 
-          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
-            Nature · Wellness · Connectivity
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">
+            Where Nature, Opportunity and Modern Living Come Together.
           </p>
         </div>
       </div>

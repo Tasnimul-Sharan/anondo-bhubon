@@ -78,10 +78,10 @@ const masterplanSeoBySlug = {
     title:
       "Development Phasing | Progressive Implementation & Long-Term Stewardship | Anondo Bhubon",
     description:
-      "Learn how Anondo Real Estate Group is implementing Anondo Bhubon through disciplined, progressive development phases—guided by trust, integrity, sincerity, dedication, and accountability to build a lasting green and sustainable township legacy for generations.",
+      "Learn how Anondo Group is implementing Anondo Bhubon through disciplined, progressive development phases—guided by trust, integrity, sincerity, dedication, and accountability to build a lasting green and sustainable township legacy for generations.",
     keywords: [
       "Anondo Bhubon development phasing",
-      "Anondo Real Estate Group implementation",
+      "Anondo Group implementation",
       "phased township development Bangladesh",
       "sustainable real estate stewardship Purbachal",
       "integrated master plan execution",
@@ -99,7 +99,7 @@ export default function MasterplanPreviewPage({ preview, documentContent }) {
     keywords: customSeo.keywords || [
       "Anondo Bhubon master plan",
       preview.title,
-      "Anondo Real Estate Group",
+      "Anondo Group",
       "integrated township near Purbachal",
     ],
     path: `/masterplan/${preview.slug}`,
@@ -133,6 +133,7 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const preview = masterplanPreviews.find(({ slug }) => slug === params.slug);
   if (!preview) return { notFound: true };
-  const { default: documents } = await import("@/data/masterplanDocuments.json");
+  const { default: documents } =
+    await import("@/data/masterplanDocuments.json");
   return { props: { preview, documentContent: documents[preview.slug] } };
 }

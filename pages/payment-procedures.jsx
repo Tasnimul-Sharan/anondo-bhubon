@@ -12,7 +12,7 @@ const seo = {
     "Review official Anondo Bhubon payment procedures, bank transfer instructions, booking guidelines, and installment steps across our five residential categories (Premium Plus, Premium, Executive, General, Economy), villas, and condominiums near Purbachal.",
   keywords: [
     "Anondo Bhubon payment procedure",
-    "Anondo Real Estate Group payment guide",
+    "Anondo Group payment guide",
     "residential plot booking payment Purbachal",
     "township installment procedure Bangladesh",
     "secure real estate bank transfer Dhaka",

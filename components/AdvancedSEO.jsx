@@ -56,7 +56,7 @@ function buildSchema({
       },
       image,
       description:
-        "Anondo Bhubon by Anondo Real Estate Group is a complete, green, and sustainable integrated township near Purbachal where residential communities, commercial centres, Anondo Digital Valley, technology-based industries, education, healthcare, sports, and nature coexist in harmony.",
+        "Anondo Bhubon by Anondo Group is a complete, green, and sustainable integrated township near Purbachal where residential communities, commercial centres, Anondo Digital Valley, technology-based industries, education, healthcare, sports, and nature coexist in harmony.",
       areaServed: {
         "@type": "Country",
         name: "Bangladesh",

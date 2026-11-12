@@ -10,7 +10,7 @@ export default function CertificationDetailsPage({ notice }) {
     description: notice.description,
     keywords: [
       "Anondo Bhubon certification",
-      "Anondo Real Estate Group official document",
+      "Anondo Group official document",
       notice.title,
       notice.category,
       "sustainable integrated township Purbachal approvals",
@@ -29,7 +29,9 @@ export default function CertificationDetailsPage({ notice }) {
       "@id": `https://www.anondobhubon.com/certification/${notice.slug}#article`,
       headline: notice.title,
       description: notice.description,
-      image: notice.images.map((image) => `https://www.anondobhubon.com${image}`),
+      image: notice.images.map(
+        (image) => `https://www.anondobhubon.com${image}`,
+      ),
       datePublished: notice.isoDate,
       dateModified: notice.isoDate,
       author: {

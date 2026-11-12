@@ -50,14 +50,14 @@ export default function ProjectDetailsPage() {
     typeof project.description === "string"
       ? project.description
       : projectData.description ||
-        `${projectTitle} at ${SITE_NAME} by Anondo Real Estate Group—part of a complete, green, and sustainable integrated township near Purbachal featuring five residential categories, villas, condominiums, 50-bigha Forest Walkways, a 125-bigha river and lake network, and a 791-bigha economic zone.`;
+        `${projectTitle} at ${SITE_NAME} by Anondo Group—part of a complete, green, and sustainable integrated township near Purbachal featuring five residential categories, villas, condominiums, 50-bigha Forest Walkways, a 125-bigha river and lake network, and a 791-bigha economic zone.`;
   const heroImage =
     project.banner || projectData.image || finalRenderAssets.hero;
   const path = `/projects/${project.slug}`;
   const tags = [
     projectTitle,
     "Anondo Bhubon",
-    "Anondo Real Estate Group",
+    "Anondo Group",
     "integrated township near Purbachal",
     "green sustainable township Bangladesh",
     "Anondo Digital Valley",

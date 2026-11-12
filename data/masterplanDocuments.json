@@ -690,10 +690,10 @@
       {
         "index": 73,
         "kind": "paragraph",
-        "text": "Anondo Real Estate Group",
+        "text": "Anondo Group",
         "runs": [
           {
-            "text": "Anondo Real Estate Group",
+            "text": "Anondo Group",
             "bold": true
           }
         ]
@@ -1220,10 +1220,10 @@
       {
         "index": 65,
         "kind": "paragraph",
-        "text": "ANONDO REAL ESTATE GROUP",
+        "text": "Anondo Group",
         "runs": [
           {
-            "text": "ANONDO REAL ESTATE GROUP",
+            "text": "Anondo Group",
             "bold": true
           }
         ]
@@ -1829,10 +1829,10 @@
       {
         "index": 74,
         "kind": "paragraph",
-        "text": "Anondo Real Estate Group",
+        "text": "Anondo Group",
         "runs": [
           {
-            "text": "Anondo Real Estate Group",
+            "text": "Anondo Group",
             "bold": true
           }
         ]
@@ -2646,10 +2646,10 @@
       {
         "index": 97,
         "kind": "paragraph",
-        "text": "ANONDO REAL ESTATE GROUP",
+        "text": "Anondo Group",
         "runs": [
           {
-            "text": "ANONDO REAL ESTATE GROUP",
+            "text": "Anondo Group",
             "bold": true
           }
         ]
@@ -3119,13 +3119,13 @@
       {
         "index": 53,
         "kind": "paragraph",
-        "text": "*Anondo Real Estate Group",
+        "text": "*Anondo Group",
         "runs": [
           {
             "text": "*"
           },
           {
-            "text": "Anondo Real Estate Group",
+            "text": "Anondo Group",
             "italic": true
           }
         ]
@@ -3731,10 +3731,10 @@
           {
             "index": 52,
             "kind": "paragraph",
-            "text": "Anondo Real Estate Group",
+            "text": "Anondo Group",
             "runs": [
               {
-                "text": "Anondo Real Estate Group",
+                "text": "Anondo Group",
                 "bold": true
               }
             ]

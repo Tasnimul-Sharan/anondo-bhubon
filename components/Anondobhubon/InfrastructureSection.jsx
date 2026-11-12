@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { infrastructure } from "@/data/anondoBhubonData";
+import { natureContent as content, natureItems } from "@/data/homeContent";
 
 export default function InfrastructureSection() {
   return (
@@ -38,25 +38,23 @@ export default function InfrastructureSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Green and Blue Infrastructure
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              Infrastructure designed around nature, mobility and resilience.
+              {content.title}
             </h2>
           </div>
 
           <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            Artificial rivers, canals, lakes, shaded walkways and planned road
-            networks work together as environmental systems and everyday
-            lifestyle amenities.
+            {content.intro}
           </p>
         </div>
 
         {/* Infrastructure Grid */}
         <div className="grid gap-6 md:grid-cols-2">
-          {infrastructure.map((item, index) => {
+          {natureItems.map((item, index) => {
             const isLargeCard = index === 2;
 
             return (
@@ -95,7 +93,7 @@ export default function InfrastructureSection() {
                   {/* Category */}
                   <div className="absolute bottom-5 left-5">
                     <p className="border border-white/20 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83] backdrop-blur-md">
-                      Infrastructure Layer
+                      {item.tag}
                     </p>
                   </div>
                 </div>

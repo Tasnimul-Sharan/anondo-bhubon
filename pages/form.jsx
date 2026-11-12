@@ -11,7 +11,7 @@ const seo = {
   keywords: [
     "Anondo Bhubon application form",
     "Anondo Bhubon booking form",
-    "Anondo Real Estate Group application",
+    "Anondo Group application",
     "Purbachal integrated township booking",
     "residential plot and villa application Bangladesh",
   ],

@@ -9,7 +9,7 @@ import {
   FaTree,
 } from "react-icons/fa";
 
-import { benefits } from "@/data/anondoBhubonData";
+import { promiseContent as content, promises as benefits } from "@/data/homeContent";
 
 const benefitIcons = [
   FaLeaf,
@@ -46,7 +46,7 @@ export default function BenefitsSection() {
 
         {/* Large Background Text */}
         <div className="absolute -bottom-14 right-0 select-none text-[150px] font-black uppercase leading-none tracking-[-0.08em] text-[#2C3A83]/[0.035] sm:text-[220px] lg:text-[310px]">
-          Value
+          Promise
         </div>
       </div>
 
@@ -58,19 +58,17 @@ export default function BenefitsSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Core Features and Benefits
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              Designed for sustainable living and enduring value.
+              {content.title}
             </h2>
           </div>
 
           <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            An integrated township combining environmental planning,
-            infrastructure, security, mobility and community facilities within
-            one thoughtfully developed destination.
+            {content.intro}
           </p>
         </div>
 
@@ -97,63 +95,46 @@ export default function BenefitsSection() {
                 <span className="h-2 w-2 rounded-full bg-[#F48220] shadow-[0_0_0_5px_rgba(244,130,32,0.15)]" />
 
                 <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/80">
-                  Advisory Support
+                  {content.panelBadge}
                 </span>
               </div>
 
               <p className="mt-10 text-xs font-bold uppercase tracking-[0.24em] text-[#F7A55A]">
-                Invest With Confidence
+                {content.panelKicker}
               </p>
 
-              <h3 className="mt-4 text-3xl font-semibold leading-[1.12] tracking-[-0.03em] text-white sm:text-4xl">
-                Explore availability, pricing and investment potential.
+              <h3 className="mt-4 text-2xl font-semibold leading-[1.2] tracking-[-0.025em] text-white sm:text-[1.75rem]">
+                {content.panelTitle}
               </h3>
 
               <p className="mt-5 text-[15px] font-medium leading-7 text-white/65">
-                Speak with a dedicated advisor to understand residence options,
-                development phases, sector planning and long-term ownership
-                opportunities.
+                {content.panelText}
               </p>
 
-              {/* Statistics */}
-              <div className="mt-9 grid grid-cols-2 border-y border-white/15">
-                <div className="border-r border-white/15 py-5 pr-5">
-                  <p className="text-3xl font-semibold tracking-[-0.04em] text-white">
-                    {String(benefits.length).padStart(2, "0")}
-                  </p>
-
-                  <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
-                    Core Benefits
-                  </p>
-                </div>
-
-                <div className="py-5 pl-5">
-                  <p className="text-3xl font-semibold tracking-[-0.04em] text-white">
-                    24/7
-                  </p>
-
-                  <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
-                    Client Support
-                  </p>
-                </div>
+              {/* Values */}
+              <div className="mt-9 flex flex-wrap gap-2.5 border-y border-white/15 py-5">
+                {["Trust", "Integrity", "Sincerity", "Dedication", "Accountability"].map((value) => (
+                  <span
+                    key={value}
+                    className="border border-white/15 bg-white/[0.07] px-3.5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white/80"
+                  >
+                    {value}
+                  </span>
+                ))}
               </div>
 
               {/* Advisory Features */}
               <div className="mt-8 space-y-4">
-                {[
-                  "Project pricing and availability",
-                  "Residence and investment options",
-                  "Private consultation and site visit",
-                ].map((item) => (
+                {content.panelPoints.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 border-b border-white/10 pb-4 last:border-b-0 last:pb-0"
+                    className="flex items-start gap-3 border-b border-white/10 pb-4 last:border-b-0 last:pb-0"
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center border border-[#F48220]/35 bg-[#F48220]/10">
                       <span className="h-1.5 w-1.5 bg-[#F48220]" />
                     </span>
 
-                    <p className="text-sm font-semibold text-white/75">
+                    <p className="text-sm font-semibold leading-7 text-white/75">
                       {item}
                     </p>
                   </div>
@@ -165,7 +146,7 @@ export default function BenefitsSection() {
                 href="#contact"
                 className="group mt-9 flex w-full items-center justify-between bg-[#F48220] px-5 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition duration-300 hover:bg-white hover:text-[#2C3A83]"
               >
-                <span>Request Advisor Pricing</span>
+                <span>{content.ctaLabel}</span>
 
                 <span className="flex h-9 w-9 items-center justify-center bg-white/15 transition duration-300 group-hover:bg-[#2C3A83]/10">
                   <FaArrowRight className="text-xs transition duration-300 group-hover:translate-x-1" />

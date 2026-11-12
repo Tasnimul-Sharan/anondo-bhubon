@@ -1,11 +1,5 @@
 import Image from "next/image";
-import { planItems } from "@/data/anondoBhubonData";
-
-const planningStats = [
-  { value: "100", label: "Bigha per block" },
-  { value: "400", label: "Bigha per sector" },
-  { value: "6", label: "Planning layers" },
-];
+import { masterplanContent as content, planItems } from "@/data/homeContent";
 
 export default function MasterplanSection() {
   const featuredPlan = planItems[0];
@@ -45,19 +39,17 @@ export default function MasterplanSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Master Plan Framework
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              A smart township structured around water, nature and civic life.
+              {content.title}
             </h2>
           </div>
 
           <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            Thoughtfully organized residential blocks combine to create each
-            sector. This modular planning approach allows the township to grow
-            through connected lifestyle zones.
+            {content.intro}
           </p>
         </div>
 
@@ -77,11 +69,11 @@ export default function MasterplanSection() {
             {/* Top Label */}
             <div className="absolute left-5 top-5 border border-[#2C3A83]/10 bg-white/95 px-4 py-3 shadow-sm backdrop-blur-md sm:left-7 sm:top-7">
               <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
-                Primary Layout
+                {content.featuredLabel}
               </p>
 
               <p className="mt-1 text-sm font-semibold text-[#20263A]">
-                Overall Township Plan
+                Complete Integrated Township
               </p>
             </div>
 
@@ -95,7 +87,7 @@ export default function MasterplanSection() {
           <div className="grid border-t border-[#2C3A83]/10 lg:grid-cols-[1.25fr_0.75fr]">
             <div className="p-6 sm:p-8 lg:p-10">
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
-                Masterplan Overview
+                Anondo Bhubon
               </p>
 
               <h3 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#20263A] sm:text-4xl">
@@ -135,17 +127,16 @@ export default function MasterplanSection() {
         <div className="mb-7 mt-14 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
-              Connected Planning Layers
+              {content.layersEyebrow}
             </p>
 
             <h3 className="mt-2 text-2xl font-semibold tracking-[-0.025em] text-[#20263A] sm:text-3xl">
-              The systems shaping the township.
+              {content.layersTitle}
             </h3>
           </div>
 
           <p className="max-w-lg text-sm font-medium leading-7 text-[#616779] sm:text-right">
-            Each planning layer supports mobility, environment, services and
-            everyday community life.
+            {content.layersIntro}
           </p>
         </div>
 
@@ -190,7 +181,7 @@ export default function MasterplanSection() {
 
                   <div className="relative z-10">
                     <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
-                      Planning Layer
+                      Residential Communities
                     </p>
 
                     <h3 className="mt-3 text-xl font-semibold leading-tight tracking-[-0.025em] text-[#20263A] sm:text-2xl">

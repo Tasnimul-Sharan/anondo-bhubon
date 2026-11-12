@@ -8,10 +8,10 @@ const seo = {
   title:
     "Certifications & Official Documents | Regulatory & Environmental Approvals | Anondo Bhubon",
   description:
-    "Review Anondo Bhubon's official certificates, Non-Encumbrance Certificate (NEC), and environmental assessment documentation—reflecting Anondo Real Estate Group's commitment to trust, integrity, regulatory compliance, and responsible township development near Purbachal.",
+    "Review Anondo Bhubon's official certificates, Non-Encumbrance Certificate (NEC), and environmental assessment documentation—reflecting Anondo Group's commitment to trust, integrity, regulatory compliance, and responsible township development near Purbachal.",
   keywords: [
     "Anondo Bhubon certification",
-    "Anondo Real Estate Group official documents",
+    "Anondo Group official documents",
     "Anondo Bhubon NEC certificate",
     "Anondo Bhubon EIA environmental documentation",
     "Purbachal integrated township approvals",

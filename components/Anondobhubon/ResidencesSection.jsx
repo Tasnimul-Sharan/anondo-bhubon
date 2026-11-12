@@ -1,5 +1,9 @@
 import Image from "next/image";
-import { residences } from "@/data/anondoBhubonData";
+import {
+  residences,
+  residencesContent as content,
+  residencesFooter,
+} from "@/data/homeContent";
 
 export default function ResidencesSection() {
   return (
@@ -37,19 +41,17 @@ export default function ResidencesSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Residential Components
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              Refined homes designed around privacy and modern family life.
+              {content.title}
             </h2>
           </div>
 
           <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            Luxury villas, mid-rise apartments and condominiums are planned as
-            distinct residential neighbourhoods with access to parks, canals,
-            civic amenities and connected mobility.
+            {content.intro}
           </p>
         </div>
 
@@ -89,7 +91,7 @@ export default function ResidencesSection() {
                       {/* Category */}
                       <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8">
                         <p className="border border-white/20 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-[#2C3A83] backdrop-blur-md">
-                          Signature Residence
+                          {home.tag}
                         </p>
                       </div>
                     </div>
@@ -112,7 +114,7 @@ export default function ResidencesSection() {
                               <span className="h-2 w-2 rounded-full bg-[#F48220] shadow-[0_0_0_5px_rgba(244,130,32,0.15)]" />
 
                               <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/80">
-                                Premium Living
+                                {home.tag}
                               </span>
                             </div>
 
@@ -125,7 +127,7 @@ export default function ResidencesSection() {
                             </h3>
 
                             <p className="mt-5 max-w-3xl text-[15px] font-medium leading-7 text-white/70">
-                              {home.audience}
+                              {home.text}
                             </p>
                           </div>
 
@@ -133,21 +135,21 @@ export default function ResidencesSection() {
                           <div className="grid min-w-full grid-cols-2 border-y border-white/15 lg:min-w-[360px]">
                             <div className="border-r border-white/15 py-5 pr-5">
                               <p className="text-xl font-semibold text-white">
-                                Private
+                                Landscaped
                               </p>
 
                               <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/40">
-                                Community
+                                Open Spaces
                               </p>
                             </div>
 
                             <div className="py-5 pl-5">
                               <p className="text-xl font-semibold text-white">
-                                Refined
+                                Community
                               </p>
 
                               <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/40">
-                                Lifestyle
+                                Facilities
                               </p>
                             </div>
                           </div>
@@ -192,7 +194,7 @@ export default function ResidencesSection() {
 
                       <div className="absolute bottom-5 left-5">
                         <p className="border border-white/20 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83] backdrop-blur-md">
-                          Residence Type
+                          {home.tag}
                         </p>
                       </div>
                     </div>
@@ -213,7 +215,7 @@ export default function ResidencesSection() {
                         </h3>
 
                         <p className="mt-4 text-sm font-medium leading-7 text-[#616779]">
-                          {home.audience}
+                          {home.text}
                         </p>
                       </div>
 
@@ -238,6 +240,18 @@ export default function ResidencesSection() {
               </article>
             );
           })}
+        </div>
+
+        {/* Closing Statement */}
+        <div className="relative mt-10 overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_14px_45px_rgba(27,35,75,0.07)]">
+          <span
+            aria-hidden="true"
+            className="absolute inset-y-0 left-0 w-1.5 bg-[#F48220]"
+          />
+
+          <p className="px-7 py-7 pl-9 text-lg font-semibold leading-8 tracking-[-0.015em] text-[#20263A] sm:text-xl sm:leading-9">
+            {residencesFooter}
+          </p>
         </div>
       </div>
     </section>

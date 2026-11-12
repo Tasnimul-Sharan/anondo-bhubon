@@ -1,4 +1,4 @@
-import { timeline } from "@/data/anondoBhubonData";
+import { legacyContent as content, legacyItems } from "@/data/homeContent";
 
 export default function TimelineSection() {
   return (
@@ -31,23 +31,21 @@ export default function TimelineSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Implementation Timeline
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              A structured journey from groundwork to smart-city living.
+              {content.title}
             </h2>
           </div>
 
-          <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            Development progresses through carefully sequenced phases,
-            beginning with core infrastructure and moving toward residences,
-            business zones, civic facilities and full township integration.
+          <p className="max-w-xl text-[15px] font-medium leading-7 text-[#4A5063] lg:justify-self-end lg:text-right">
+            {content.intro}
           </p>
         </div>
 
-        {/* Timeline */}
+        {/* Legacy Cards */}
         <div className="relative">
           {/* Desktop Connector */}
           <div className="absolute left-[7%] right-[7%] top-[38px] hidden h-px bg-[#2C3A83]/15 lg:block">
@@ -55,9 +53,9 @@ export default function TimelineSection() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {timeline.map((item, index) => (
+            {legacyItems.map((item, index) => (
               <article
-                key={`${item.phase}-${index}`}
+                key={item.label}
                 className="group relative flex h-full min-h-[360px] flex-col overflow-hidden border border-[#2C3A83]/10 bg-white p-6 shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_26px_70px_rgba(27,35,75,0.15)] sm:p-7"
               >
                 {/* Top Accent */}
@@ -69,27 +67,23 @@ export default function TimelineSection() {
                 </span>
 
                 <div className="relative z-10">
-                  {/* Timeline Marker */}
+                  {/* Marker */}
                   <div className="mb-8 flex items-center justify-between">
                     <div className="flex h-[76px] w-[76px] items-center justify-center border-[8px] border-[#F4F2ED] bg-[#202D72] text-lg font-bold text-white shadow-[0_10px_28px_rgba(32,45,114,0.22)] transition duration-300 group-hover:bg-[#F48220]">
                       {String(index + 1).padStart(2, "0")}
                     </div>
 
                     <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]/35">
-                      Phase
+                      Legacy
                     </span>
                   </div>
 
                   <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
-                    {item.phase}
+                    {item.label}
                   </p>
 
-                  <h3 className="mt-3 text-2xl font-semibold leading-tight tracking-[-0.025em] text-[#20263A]">
-                    {item.dates}
-                  </h3>
-
-                  <p className="mt-5 text-sm font-medium leading-7 text-[#616779]">
-                    {item.scope}
+                  <p className="mt-4 text-[15px] font-semibold leading-7 tracking-[-0.01em] text-[#20263A]">
+                    {item.text}
                   </p>
                 </div>
 
@@ -97,7 +91,7 @@ export default function TimelineSection() {
                 <div className="relative z-10 mt-auto pt-8">
                   <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-5">
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
-                      Development Phase
+                      Anondo Bhubon
                     </p>
 
                     <span className="flex items-center gap-3">
@@ -114,16 +108,19 @@ export default function TimelineSection() {
           </div>
         </div>
 
-        {/* Bottom Summary */}
+        {/* Closing Statement */}
         <div className="mt-10 flex flex-col gap-5 border border-[#2C3A83]/10 bg-[#202D72] p-6 text-white shadow-[0_20px_60px_rgba(30,39,91,0.18)] sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F7A55A]">
-              Integrated Development Strategy
+              {content.bottomLabel}
             </p>
 
-            <p className="mt-3 max-w-3xl text-lg font-semibold leading-8 text-white">
-              Each phase builds upon the previous one, ensuring infrastructure,
-              residences and services grow together as one connected township.
+            <p className="mt-3 max-w-3xl text-lg font-semibold leading-8 text-white sm:text-xl">
+              {content.bottomText}
+            </p>
+
+            <p className="mt-2 max-w-3xl text-sm font-medium leading-7 text-white/65">
+              {content.bottomNote}
             </p>
           </div>
 
@@ -131,7 +128,7 @@ export default function TimelineSection() {
             href="#contact"
             className="inline-flex shrink-0 items-center justify-center bg-[#F48220] px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:bg-white hover:text-[#202D72]"
           >
-            Explore Investment
+            {content.cta}
           </a>
         </div>
       </div>

@@ -1,51 +1,9 @@
-import {
-  FaBuilding,
-  FaMapMarkerAlt,
-  FaPlaneDeparture,
-  FaRoad,
-  FaTrain,
-  FaWater,
-} from "react-icons/fa";
+import { FaBus, FaHelicopter, FaMapMarkerAlt, FaRoad } from "react-icons/fa";
 
-import { finalRenderAssets } from "@/data/finalRendersData";
+import { connectivityContent as content } from "@/data/homeContent";
 import FramedImage from "./FramedImage";
 
-const accessStats = [
-  {
-    value: "30 min",
-    label: "Hazrat Shahjalal International Airport",
-    icon: FaPlaneDeparture,
-  },
-  {
-    value: "10 min",
-    label: "MRT-1 Depot Station",
-    icon: FaTrain,
-  },
-  {
-    value: "Direct",
-    label: "Dhaka Bypass & Purbachal Expressway",
-    icon: FaRoad,
-  },
-];
-
-const locationItems = [
-  {
-    text: "Close to Bangladesh Hi-Tech Park",
-    icon: FaBuilding,
-  },
-  {
-    text: "Near Purbachal Central Business District",
-    icon: FaMapMarkerAlt,
-  },
-  {
-    text: "Connected to Bashundhara Residential Zone",
-    icon: FaRoad,
-  },
-  {
-    text: "Buffered by the River Sitalakhya and open green land",
-    icon: FaWater,
-  },
-];
+const itemIcons = [FaRoad, FaBus, FaHelicopter];
 
 export default function LocationAdvantageSection() {
   return (
@@ -80,19 +38,17 @@ export default function LocationAdvantageSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Location Advantage
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              Connected to the city, surrounded by calm.
+              {content.title}
             </h2>
           </div>
 
-          <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            Anondo Bhubon combines direct access to Purbachal’s growth corridor
-            with the privacy, open air and natural character of a river-edge
-            destination.
+          <p className="max-w-xl text-[15px] font-medium leading-7 text-[#4A5063] lg:justify-self-end lg:text-right">
+            {content.intro}
           </p>
         </div>
 
@@ -116,34 +72,32 @@ export default function LocationAdvantageSection() {
                 <span className="h-2 w-2 rounded-full bg-[#F48220] shadow-[0_0_0_5px_rgba(244,130,32,0.15)]" />
 
                 <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/80">
-                  Strategic Placement
+                  {content.panelBadge}
                 </span>
               </div>
 
               <p className="mt-10 text-[11px] font-bold uppercase tracking-[0.26em] text-[#F7A55A]">
-                Purbachal Growth Corridor
+                {content.panelKicker}
               </p>
 
               <h3 className="mt-4 text-3xl font-semibold leading-[1.12] tracking-[-0.03em] text-white sm:text-4xl">
-                A river-edge address with strong urban connectivity.
+                {content.panelTitle}
               </h3>
 
-              <p className="mt-5 text-[15px] font-medium leading-7 text-white/65">
-                Located near key business, technology and residential zones,
-                Anondo Bhubon offers a balanced setting for living, investment
-                and long-term growth.
+              <p className="mt-5 text-[15px] font-medium leading-7 text-white/75">
+                {content.panelText}
               </p>
 
-              {/* Location Features */}
+              {/* Connectivity Items */}
               <div className="mt-9">
-                {locationItems.map((item, index) => {
-                  const Icon = item.icon;
+                {content.items.map((text, index) => {
+                  const Icon = itemIcons[index % itemIcons.length];
 
                   return (
                     <div
-                      key={item.text}
-                      className={`group flex items-center gap-4 py-5 ${
-                        index !== locationItems.length - 1
+                      key={text}
+                      className={`group flex items-start gap-4 py-5 ${
+                        index !== content.items.length - 1
                           ? "border-b border-white/15"
                           : ""
                       }`}
@@ -152,8 +106,8 @@ export default function LocationAdvantageSection() {
                         <Icon />
                       </span>
 
-                      <p className="text-sm font-semibold leading-6 text-white/72">
-                        {item.text}
+                      <p className="text-sm font-semibold leading-7 text-white/80">
+                        {text}
                       </p>
                     </div>
                   );
@@ -168,16 +122,12 @@ export default function LocationAdvantageSection() {
                   </span>
 
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/40">
-                      Project Location
+                    <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/50">
+                      {content.footerLabel}
                     </p>
 
                     <p className="mt-2 text-base font-semibold text-white">
-                      East bank of River Sitalakhya
-                    </p>
-
-                    <p className="mt-1 text-sm font-medium text-white/55">
-                      Near Purbachal New Town
+                      {content.footerValue}
                     </p>
                   </div>
                 </div>
@@ -187,12 +137,12 @@ export default function LocationAdvantageSection() {
 
           {/* Right Visual Area */}
           <div className="flex flex-col gap-6">
-            {/* Location Image */}
+            {/* Image */}
             <div className="relative overflow-hidden border border-[#2C3A83]/10 bg-white p-3 shadow-[0_20px_65px_rgba(27,35,75,0.1)] sm:p-4">
               <div className="relative overflow-hidden">
                 <FramedImage
-                  src={finalRenderAssets.location}
-                  alt="River-edge residential view at Anondo Bhubon"
+                  src={content.image}
+                  alt="Anondo Bhubon avenues, arterial roads and neighbourhood streets"
                   className="aspect-[7/5]"
                   imageClassName="object-cover transition duration-700 hover:scale-[1.03]"
                   style={{ aspectRatio: "7 / 5" }}
@@ -200,58 +150,53 @@ export default function LocationAdvantageSection() {
                   sizes="(min-width: 1024px) 58vw, 100vw"
                 />
 
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#17203A]/55 via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#17203A]/65 via-transparent to-transparent" />
 
                 <div className="absolute left-5 top-5 flex items-center gap-3 border border-white/20 bg-[#17203A]/35 px-4 py-2.5 backdrop-blur-md sm:left-7 sm:top-7">
                   <span className="h-2 w-2 rounded-full bg-[#F48220]" />
 
                   <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white">
-                    River-Edge Living
+                    {content.imageTag}
                   </p>
                 </div>
 
                 <div className="absolute bottom-5 left-5 right-5 sm:bottom-7 sm:left-7 sm:right-7">
                   <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
-                    Anondo Bhubon
+                    {content.imageEyebrow}
                   </p>
 
                   <h3 className="mt-2 max-w-xl text-2xl font-semibold leading-tight tracking-[-0.025em] text-white sm:text-3xl">
-                    Where urban connectivity meets a natural landscape.
+                    {content.imageCaption}
                   </h3>
                 </div>
               </div>
             </div>
 
-            {/* Access Statistics */}
-            <div className="grid border border-[#2C3A83]/10 bg-white shadow-[0_14px_45px_rgba(27,35,75,0.07)] sm:grid-cols-3">
-              {accessStats.map((item, index) => {
-                const Icon = item.icon;
+            {/* Quote */}
+            <div className="relative overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_14px_45px_rgba(27,35,75,0.07)]">
+              <span
+                aria-hidden="true"
+                className="absolute inset-y-0 left-0 w-1.5 bg-[#F48220]"
+              />
 
-                return (
-                  <article
-                    key={item.label}
-                    className={`group relative overflow-hidden p-6 transition duration-300 hover:bg-[#F7F7FA] ${
-                      index !== accessStats.length - 1
+              <p className="px-7 py-7 pl-9 text-lg font-semibold leading-8 tracking-[-0.015em] text-[#20263A] sm:text-xl sm:leading-9">
+                {content.quote}
+              </p>
+
+              <div className="grid border-t border-[#2C3A83]/10 sm:grid-cols-3">
+                {content.qualities.map((quality, index) => (
+                  <div
+                    key={quality}
+                    className={`px-7 py-4 text-[11px] font-bold uppercase tracking-[0.22em] text-[#2C3A83] transition duration-300 hover:bg-[#F7F7FA] ${
+                      index !== content.qualities.length - 1
                         ? "border-b border-[#2C3A83]/10 sm:border-b-0 sm:border-r"
                         : ""
                     }`}
                   >
-                    {/* <div className="absolute right-0 top-0 h-1 w-12 bg-[#F48220] transition-all duration-300 group-hover:w-full" /> */}
-
-                    <span className="flex h-11 w-11 items-center justify-center bg-[#EEF0F8] text-sm text-[#2C3A83] transition duration-300 group-hover:bg-[#202D72] group-hover:text-white">
-                      <Icon />
-                    </span>
-
-                    <p className="mt-6 text-3xl font-semibold tracking-[-0.04em] text-[#20263A]">
-                      {item.value}
-                    </p>
-
-                    <p className="mt-3 text-sm font-medium leading-6 text-[#616779]">
-                      {item.label}
-                    </p>
-                  </article>
-                );
-              })}
+                    {quality}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

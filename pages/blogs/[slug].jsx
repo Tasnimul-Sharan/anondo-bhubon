@@ -59,7 +59,7 @@ export default function BlogDetailsPage() {
         description={description}
         keywords={[
           "Anondo Bhubon",
-          "Anondo Real Estate Group",
+          "Anondo Group",
           "Anondo Bhubon blog",
           "integrated township near Purbachal",
           "green and sustainable township Bangladesh",

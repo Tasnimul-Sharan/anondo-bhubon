@@ -6,11 +6,11 @@ const seo = {
   title:
     "Brand Story | The Dream That Inspired Anondo Bhubon Integrated Township",
   description:
-    "Discover the story behind Anondo Bhubon—born from a dream to build a better way of living in Bangladesh. Inspired by global urban planning in Singapore, Japan, the USA, and Australia, Anondo Real Estate Group is creating a complete, green, and sustainable integrated township near Purbachal for generations.",
+    "Discover the story behind Anondo Bhubon—born from a dream to build a better way of living in Bangladesh. Inspired by global urban planning in Singapore, Japan, the USA, and Australia, Anondo Group is creating a complete, green, and sustainable integrated township near Purbachal for generations.",
   keywords: [
     "Anondo Bhubon brand story",
     "The Dream That Inspired Anondo Bhubon",
-    "Anondo Real Estate Group",
+    "Anondo Group",
     "complete green sustainable township Bangladesh",
     "integrated township near Purbachal",
     "people-centred urban planning Bangladesh",

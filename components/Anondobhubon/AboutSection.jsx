@@ -1,23 +1,10 @@
 "use client";
 
-import { pillars } from "@/data/anondoBhubonData";
+import { aboutContent } from "@/data/homeContent";
 import { finalRenderAssets } from "@/data/finalRendersData";
 import FramedImage from "./FramedImage";
 
-const locationStats = [
-  {
-    value: "5 min",
-    label: "From Kanchan Bridge",
-  },
-  {
-    value: "30 min",
-    label: "From Hazrat Shahjalal International Airport",
-  },
-  {
-    value: "10 min",
-    label: "From MRT-1 Depot Station",
-  },
-];
+const { pillars, cardPoints } = aboutContent;
 
 export default function AboutSection() {
   return (
@@ -69,19 +56,16 @@ export default function AboutSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                About Anondo Bhubon
+                {aboutContent.eyebrow}
               </p>
             </div>
 
             <h2 className="max-w-3xl text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.5rem]">
-              Sustainable living, inspired by nature.
+              {aboutContent.title}
             </h2>
 
-            <p className="mt-6 max-w-2xl text-[15px] font-medium leading-8 text-[#616779]">
-              Anondo Bhubon is more than a residential project. It is a
-              thoughtfully planned lifestyle destination where green
-              infrastructure, wellness, security and modern urban access come
-              together.
+            <p className="mt-6 max-w-2xl text-base font-medium leading-8 text-[#4A5063] sm:text-[17px] sm:leading-9">
+              {aboutContent.lead}
             </p>
 
             {/* Corporate Statement */}
@@ -90,12 +74,11 @@ export default function AboutSection() {
 
               <div className="pl-3">
                 <p className="inline-flex bg-[#F48220]/10 px-3 py-1.5 text-sm font-bold uppercase tracking-[0.2em] text-[#F48220]">
-                  Our Vision
+                  {aboutContent.visionLabel}
                 </p>
 
                 <p className="mt-3 text-xl font-semibold leading-8 tracking-[-0.02em] text-[#20263A] sm:text-2xl">
-                  We are not just offering homes. We are shaping a healthier
-                  way to live, connect, move and grow.
+                  {aboutContent.vision}
                 </p>
               </div>
             </div>
@@ -156,11 +139,12 @@ export default function AboutSection() {
 
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
-                      Green Community
+                      Nature at the Heart
                     </p>
 
                     <p className="mt-2 text-xl font-semibold leading-tight text-white">
-                      Open spaces for everyday wellbeing.
+                      Wherever people live, work or travel, they should feel
+                      connected to nature.
                     </p>
                   </div>
                 </div>
@@ -189,36 +173,36 @@ export default function AboutSection() {
 
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
-                      Nature-Led Lifestyle
+                      A Better Tomorrow
                     </p>
 
                     <p className="mt-2 text-xl font-semibold leading-tight text-white">
-                      Calm views within a connected township.
+                      We want greenery and water to become defining features of
+                      everyday township life.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Location Card */}
+            {/* Everyday Life Card */}
             <div className="mt-7 overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_16px_50px_rgba(27,35,75,0.08)] sm:mt-12">
               <div className="flex flex-col gap-5 border-b border-[#2C3A83]/10 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
                 <div>
                   <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#F48220]">
-                    Location Advantage
+                    {aboutContent.cardLabel}
                   </p>
 
-                  <p className="mt-3 max-w-md text-sm font-medium leading-7 text-[#616779]">
-                    Minutes from key access points, yet surrounded by water,
-                    greenery and the calm edge of Purbachal.
+                  <p className="mt-3 max-w-md text-sm font-medium leading-7 text-[#4A5063]">
+                    {aboutContent.cardIntro}
                   </p>
                 </div>
 
                 <a
-                  href="#location"
+                  href="#masterplan"
                   className="group inline-flex shrink-0 items-center justify-center gap-3 bg-[#202D72] px-5 py-4 text-xs font-bold uppercase tracking-[0.15em] text-white transition duration-300 hover:bg-[#F48220]"
                 >
-                  <span>Explore Location</span>
+                  <span>Explore Township</span>
 
                   <span className="transition duration-300 group-hover:translate-x-1">
                     →
@@ -226,25 +210,25 @@ export default function AboutSection() {
                 </a>
               </div>
 
-              {/* Location Stats */}
+              {/* Who the township serves */}
               <div className="grid sm:grid-cols-3">
-                {locationStats.map((item, index) => (
+                {cardPoints.map((item, index) => (
                   <article
                     key={item.label}
                     className={`group relative p-5 transition duration-300 hover:bg-[#F7F7FA] sm:p-6 ${
-                      index !== locationStats.length - 1
+                      index !== cardPoints.length - 1
                         ? "border-b border-[#2C3A83]/10 sm:border-b-0 sm:border-r"
                         : ""
                     }`}
                   >
-                    {/* <div className="absolute left-0 top-0 h-1 w-10 bg-[#F48220] transition-all duration-300 group-hover:w-full" /> */}
+                    <span className="mb-3 block h-[3px] w-8 bg-[#F48220] transition-all duration-300 group-hover:w-14" />
 
-                    <p className="text-2xl font-semibold tracking-[-0.04em] text-[#20263A]">
-                      {item.value}
+                    <p className="text-base font-semibold leading-6 tracking-[-0.02em] text-[#20263A]">
+                      {item.label}
                     </p>
 
                     <p className="mt-2 text-xs font-medium leading-6 text-[#616779]">
-                      {item.label}
+                      {item.text}
                     </p>
                   </article>
                 ))}

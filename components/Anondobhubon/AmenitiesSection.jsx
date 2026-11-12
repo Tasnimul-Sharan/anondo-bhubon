@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { amenities } from "@/data/anondoBhubonData";
+import { lifestyleContent as content, lifestyleItems } from "@/data/homeContent";
 
 export default function AmenitiesSection() {
   return (
@@ -44,25 +44,23 @@ export default function AmenitiesSection() {
               <span className="h-px w-12 bg-[#F48220]" />
 
               <p className="text-sm font-bold uppercase tracking-[0.28em] text-[#F48220]">
-                Urban Amenities and Facilities
+                {content.eyebrow}
               </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-[#17203A] sm:text-5xl lg:text-[3.65rem]">
-              Everyday spaces shaped around wellness and community.
+              {content.title}
             </h2>
           </div>
 
           <p className="max-w-xl text-[15px] font-medium leading-7 text-[#616779] lg:justify-self-end lg:text-right">
-            From clubhouses and sports courts to riverside walks, meditation
-            decks, landscaped gardens and family spaces, every facility is
-            designed to enrich daily life.
+            {content.intro}
           </p>
         </div>
 
         {/* Amenities Grid */}
         <div className="grid gap-6 md:grid-cols-2">
-          {amenities.map((item, index) => (
+          {lifestyleItems.map((item, index) => (
             <article
               key={`${item.title}-${index}`}
               className="group flex h-full flex-col overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_24px_65px_rgba(27,35,75,0.14)]"
@@ -88,7 +86,7 @@ export default function AmenitiesSection() {
                 {/* Category */}
                 <div className="absolute bottom-5 left-5">
                   <p className="border border-white/20 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83] backdrop-blur-md">
-                    Lifestyle Facility
+                    {item.tag}
                   </p>
                 </div>
               </div>
@@ -109,8 +107,7 @@ export default function AmenitiesSection() {
                   </h3>
 
                   <p className="mt-4 text-sm font-medium leading-7 text-[#616779]">
-                    {item.description ||
-                      "A planned township facility designed to support comfort, convenience, recreation and community life."}
+                    {item.description}
                   </p>
                 </div>
 
@@ -118,7 +115,7 @@ export default function AmenitiesSection() {
                 <div className="relative z-10 mt-auto pt-8">
                   <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-5">
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
-                      Community Lifestyle
+                      Anondo Bhubon
                     </p>
 
                     <span className="flex items-center gap-3">

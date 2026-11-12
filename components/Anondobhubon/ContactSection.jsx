@@ -639,13 +639,12 @@ export default function ContactSection() {
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold leading-[1.08] tracking-[-0.035em] text-[#17203A] sm:text-5xl lg:text-[3.7rem]">
-              Your next distinguished address begins here.
+              Where Nature, Opportunity and Modern Living Come Together.
             </h2>
           </div>
 
           <p className="max-w-md text-[15px] font-medium leading-7 text-[#5E6476] lg:text-right">
-            Connect with our relationship team to explore residences, investment
-            opportunities, project planning and private site visits.
+            Every family that chooses Anondo places its confidence in us. We must honour that trust through responsible planning, accurate communication, quality development and continuous service.
           </p>
         </div>
 
@@ -678,45 +677,43 @@ export default function ContactSection() {
                 {/* Main Content */}
                 <div className="mt-10">
                   <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#F7A55A]">
-                    Future Smart City
+                    Our Promise
                   </p>
 
                   <h3 className="mt-4 max-w-lg text-3xl font-semibold leading-[1.12] tracking-[-0.025em] text-white sm:text-4xl">
-                    Discover a thoughtfully planned lifestyle destination.
+                    A Complete Township for Life, Enterprise and Future Generations
                   </h3>
 
                   <p className="mt-5 max-w-lg text-[15px] font-medium leading-7 text-white/65">
-                    Receive personalised guidance about available residences,
-                    development planning, ownership opportunities and
-                    appointment scheduling.
+                    We are not merely developing a township. We are creating a legacy of green, sustainable living, economic opportunity and community well-being for generations to come.
                   </p>
                 </div>
 
                 {/* Project Highlights */}
                 <div className="mt-9 grid grid-cols-3 border-y border-white/15">
                   <div className="py-5 pr-3">
-                    <p className="text-xl font-semibold text-white">Premium</p>
+                    <p className="text-xl font-semibold text-white">Living</p>
 
                     <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.17em] text-white/40">
-                      Residences
+                      Community
                     </p>
                   </div>
 
                   <div className="border-l border-white/15 px-3 py-5">
-                    <p className="text-xl font-semibold text-white">Planned</p>
+                    <p className="text-xl font-semibold text-white">Enterprise</p>
 
                     <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.17em] text-white/40">
-                      Township
+                      Opportunity
                     </p>
                   </div>
 
                   <div className="border-l border-white/15 py-5 pl-3">
                     <p className="text-xl font-semibold text-white">
-                      Connected
+                      Future
                     </p>
 
                     <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.17em] text-white/40">
-                      Location
+                      Generations
                     </p>
                   </div>
                 </div>

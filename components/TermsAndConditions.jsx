@@ -20,10 +20,10 @@ const paymentMethodItems = [
   },
   {
     label: "Remaining Balance:",
-    value: "Can be paid in monthly installments as per the payment schedule.",
+    value: "To be paid by equal monthly installments (EMI) as per the payment schedule.",
   },
   {
-    label: "Full Payment Discount:",
+    label: "Discount For at a time payment:",
     value: "5% discount will be given for one time payment.",
   },
 ];
@@ -46,7 +46,7 @@ const costAndUsageSections = [
 const numberedTerms = [
   {
     num: "1.",
-    text: "Once price is fixed, it will not be changed.",
+    text: "Once the price is fixed, it will not be changed.",
   },
   {
     num: "2.",

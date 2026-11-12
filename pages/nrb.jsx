@@ -16,11 +16,11 @@ const seo = {
   title:
     "NRB Property & Investment Support | Green Integrated Township Near Purbachal | Anondo Bhubon",
   description:
-    "Anondo Bhubon by Anondo Real Estate Group supports Non-Resident Bangladeshis (NRBs) looking to invest in a complete, green, and sustainable integrated township near Purbachal—offering 5 residential categories, villas, condominiums, transparent documentation, and dedicated remote booking assistance.",
+    "Anondo Bhubon by Anondo Group supports Non-Resident Bangladeshis (NRBs) looking to invest in a complete, green, and sustainable integrated township near Purbachal—offering 5 residential categories, villas, condominiums, transparent documentation, and dedicated remote booking assistance.",
   keywords: [
     "NRB property investment Bangladesh",
     "Anondo Bhubon NRB support",
-    "Anondo Real Estate Group NRB",
+    "Anondo Group NRB",
     "Non Resident Bangladeshi real estate Purbachal",
     "green sustainable township investment Dhaka",
     "villas and residential plots for NRBs",

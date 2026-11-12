@@ -15,11 +15,11 @@ const lifestyleSeoBySlug = {
   },
   "our-commitment": {
     description:
-      "Explore Anondo Bhubon's commitment to healthy people, healthy nature, and happy communities—preserving ecological heritage through a 125-bigha Old Brahmaputra–Shitalakshya river corridor, two lakes, 50-bigha Forest Walkways, and people-first urban planning by Anondo Real Estate Group.",
+      "Explore Anondo Bhubon's commitment to healthy people, healthy nature, and happy communities—preserving ecological heritage through a 125-bigha Old Brahmaputra–Shitalakshya river corridor, two lakes, 50-bigha Forest Walkways, and people-first urban planning by Anondo Group.",
     keywords: [
       "Anondo Bhubon commitment",
       "healthy people healthy nature happy communities",
-      "Anondo Real Estate Group sustainability",
+      "Anondo Group sustainability",
       "green township near Purbachal",
     ],
   },
@@ -85,10 +85,10 @@ const lifestyleSeoBySlug = {
   },
   "vision-for-generations": {
     description:
-      "Built on trust, integrity, sincerity, dedication, and accountability, Anondo Bhubon by Anondo Real Estate Group is a lasting legacy of green, sustainable living, economic opportunity, and community well-being near Purbachal for generations to come.",
+      "Built on trust, integrity, sincerity, dedication, and accountability, Anondo Bhubon by Anondo Group is a lasting legacy of green, sustainable living, economic opportunity, and community well-being near Purbachal for generations to come.",
     keywords: [
       "Anondo Bhubon legacy for generations",
-      "Anondo Real Estate Group sustainable township",
+      "Anondo Group sustainable township",
       "future-ready integrated township Bangladesh",
       "green living legacy Purbachal",
     ],
@@ -104,7 +104,7 @@ export default function LifestyleSubPage({ preview, documentContent }) {
     keywords: customSeo.keywords || [
       "Anondo Bhubon lifestyle",
       preview.title,
-      "Anondo Real Estate Group",
+      "Anondo Group",
       "green sustainable township near Purbachal",
     ],
     path: `/lifestyle/${preview.slug}`,

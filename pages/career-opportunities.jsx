@@ -6,13 +6,12 @@ import HeroSection from "@/components/HeroSection";
 import { finalRenderAssets } from "@/data/finalRendersData";
 
 const seo = {
-  title:
-    "Career Opportunities | Join Anondo Real Estate Group & Anondo Bhubon",
+  title: "Career Opportunities | Join Anondo Group & Anondo Bhubon",
   description:
-    "Build your career with Anondo Real Estate Group on Anondo Bhubon—a complete, green, and sustainable integrated township near Purbachal. Explore openings across urban planning, engineering, real estate development, sales, digital innovation, and community management.",
+    "Build your career with Anondo Group on Anondo Bhubon—a complete, green, and sustainable integrated township near Purbachal. Explore openings across urban planning, engineering, real estate development, sales, digital innovation, and community management.",
   keywords: [
     "Anondo Bhubon careers",
-    "Anondo Real Estate Group jobs",
+    "Anondo Group jobs",
     "integrated township jobs Bangladesh",
     "real estate development careers Dhaka",
     "Purbachal township project jobs",
@@ -20,8 +19,7 @@ const seo = {
   ],
   path: "/career-opportunities",
   image: finalRenderAssets.amenities,
-  imageAlt:
-    "Career opportunities at Anondo Bhubon and Anondo Real Estate Group",
+  imageAlt: "Career opportunities at Anondo Bhubon and Anondo Group",
   pageType: "CollectionPage",
   breadcrumb: [{ name: "Career Opportunities", path: "/career-opportunities" }],
   jsonLd: {

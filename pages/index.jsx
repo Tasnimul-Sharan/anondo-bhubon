@@ -18,10 +18,10 @@ const seo = {
   title:
     "Anondo Bhubon | Complete, Green & Sustainable Integrated Township Near Purbachal",
   description:
-    "Anondo Bhubon by Anondo Real Estate Group is a complete, green, and sustainable integrated township near Purbachal featuring five residential categories, villas, condominiums, 50-bigha Forest Walkways, a 125-bigha river and lake corridor, Anondo Digital Valley, a 55-bigha Mega Commercial Centre, educational institutions, hospitals, and sports complexes.",
+    "Anondo Bhubon by Anondo Group is a complete, green, and sustainable integrated township near Purbachal featuring five residential categories, villas, condominiums, 50-bigha Forest Walkways, a 125-bigha river and lake corridor, Anondo Digital Valley, a 55-bigha Mega Commercial Centre, educational institutions, hospitals, and sports complexes.",
   keywords: [
     "Anondo Bhubon",
-    "Anondo Real Estate Group",
+    "Anondo Group",
     "integrated township near Purbachal",
     "green and sustainable township Bangladesh",
     "Anondo Digital Valley",
@@ -49,10 +49,11 @@ const homepageSchema = [
     url: "https://www.anondobhubon.com/",
     image: `https://www.anondobhubon.com${finalRenderAssets.hero}`,
     description:
-      "A comprehensive, green, and economically vibrant integrated township near Purbachal developed by Anondo Real Estate Group, bringing together diverse residential communities, commercial centres, Anondo Digital Valley, technology-based industries, educational institutions, healthcare facilities, sports complexes, and ecological infrastructure.",
+      "A comprehensive, green, and economically vibrant integrated township near Purbachal developed by Anondo Group, bringing together diverse residential communities, commercial centres, Anondo Digital Valley, technology-based industries, educational institutions, healthcare facilities, sports complexes, and ecological infrastructure.",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Near Purbachal, Shitalakshya & Old Brahmaputra Corridor",
+      addressLocality:
+        "Near Purbachal, Shitalakshya & Old Brahmaputra Corridor",
       addressRegion: "Dhaka",
       addressCountry: "BD",
     },
@@ -108,7 +109,7 @@ const homepageSchema = [
         name: "What is the vision behind Anondo Bhubon?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Envisioned by Anondo Real Estate Group, Anondo Bhubon is designed not merely as a housing project, but as a complete, green, and sustainable integrated township near Purbachal where residential life, enterprise, technology, education, healthcare, sports, and nature coexist in harmony.",
+          text: "Envisioned by Anondo Group, Anondo Bhubon is designed not merely as a housing project, but as a complete, green, and sustainable integrated township near Purbachal where residential life, enterprise, technology, education, healthcare, sports, and nature coexist in harmony.",
         },
       },
       {
@@ -155,13 +156,13 @@ export default function Home() {
       <main className="overflow-hidden">
         <HeroSection />
         <AboutSection />
-        <LocationAdvantageSection />
         <MasterplanSection />
-        <FinalRendersSection />
         <ResidencesSection />
         <InfrastructureSection />
         <AmenitiesSection />
         <EconomicZonesSection />
+        <LocationAdvantageSection />
+        <FinalRendersSection />
         <BenefitsSection />
         <TimelineSection />
         {/* <LifestyleSection /> */}

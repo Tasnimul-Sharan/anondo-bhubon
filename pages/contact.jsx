@@ -10,10 +10,10 @@ const seo = {
   title:
     "Contact Anondo Bhubon | Brochure, Master Plan & Site Visit Inquiry Near Purbachal",
   description:
-    "Contact Anondo Bhubon by Anondo Real Estate Group for master plan consultations, pricing across our five residential categories (Premium Plus, Premium, Executive, General, Economy), villas, condominiums, commercial spaces in Anondo Digital Valley, and site visits near Purbachal.",
+    "Contact Anondo Bhubon by Anondo Group for master plan consultations, pricing across our five residential categories (Premium Plus, Premium, Executive, General, Economy), villas, condominiums, commercial spaces in Anondo Digital Valley, and site visits near Purbachal.",
   keywords: [
     "Contact Anondo Bhubon",
-    "Anondo Real Estate Group contact",
+    "Anondo Group contact",
     "Anondo Bhubon brochure and pricing",
     "Purbachal integrated township site visit",
     "villas and residential plots inquiry Dhaka",

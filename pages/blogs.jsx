@@ -10,7 +10,7 @@ const seo = {
     "Read Anondo Bhubon articles and insights on green and sustainable township planning near Purbachal, 50-bigha Forest Walkways, Old Brahmaputra–Shitalakshya river restoration, Anondo Digital Valley, and long-term residential and commercial investment in Bangladesh.",
   keywords: [
     "Anondo Bhubon blogs",
-    "Anondo Real Estate Group insights",
+    "Anondo Group insights",
     "Purbachal integrated township investment",
     "green sustainable urban planning Bangladesh",
     "Anondo Digital Valley articles",
