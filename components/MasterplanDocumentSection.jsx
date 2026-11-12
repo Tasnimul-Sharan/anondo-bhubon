@@ -8,7 +8,9 @@ import {
   FiArrowRight,
   FiChevronLeft,
   FiChevronRight,
+  FiLoader,
   FiMaximize2,
+  FiRefreshCw,
   FiX,
 } from "react-icons/fi";
 import { ANIMATIONS_ENABLED, useNoMotion } from "@/Hooks/useNoMotion";
@@ -23,18 +25,8 @@ const SUBGROUP_GALLERIES = {
       {
         src: "/anondo bhubon New/PREMIUM PLUS/premium-plus-sector.jpg",
         label: "Sector Master Plan",
-        title: "Premium Plus Sector",
+        title: "Premium Plus Sector — Master Plan",
         isMap: true,
-      },
-      {
-        src: "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (1)x.jpg",
-        label: "Courtyard Living",
-        title: "Courtyard Plot — Perspective 01",
-      },
-      {
-        src: "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (2)x.jpg",
-        label: "Courtyard Living",
-        title: "Courtyard Plot — Perspective 02",
       },
       {
         src: "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (3)x.jpg",
@@ -45,11 +37,6 @@ const SUBGROUP_GALLERIES = {
         src: "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (4)x.jpg",
         label: "Courtyard Living",
         title: "Courtyard Plot — Perspective 04",
-      },
-      {
-        src: "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (5)x.jpg",
-        label: "Courtyard Living",
-        title: "Courtyard Plot — Aerial View",
       },
       {
         src: "/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (1)x.jpg",
@@ -95,14 +82,14 @@ const SUBGROUP_GALLERIES = {
         title: "Premium 1 — Sector Central Hub",
       },
       {
-        src: "/anondo bhubon New/PREMIUM 1/PREMIUM 1 BLOCK A.jpg",
+        src: "/anondo bhubon New/PREMIUM 1/PREMIUM 1 BLOCK A-1.jpeg",
         label: "Residential Block",
-        title: "Premium 1 — Block A Layout",
+        title: "Premium 1 — Block A",
       },
       {
-        src: "/anondo bhubon New/PREMIUM 1/PREMIUM 1 BLOCK B.jpg",
+        src: "/anondo bhubon New/PREMIUM 1/PREMIUM 1 BLOCK A-2.jpeg",
         label: "Residential Block",
-        title: "Premium 1 — Block B Layout",
+        title: "Premium 1 — Block B",
       },
       {
         src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/FOREST WALK PREMIUM 1  (1)xx.jpg",
@@ -110,24 +97,9 @@ const SUBGROUP_GALLERIES = {
         title: "Forest Walk — Premium Sector",
       },
       {
-        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM PREMIUM 1 (1)x.jpg",
+        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/Community Space.jpg",
         label: "Sports & Recreation",
-        title: "Stadium — Premium Sector",
-      },
-      {
-        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (3)x.jpg",
-        label: "Central Amenities",
-        title: "Central Amenities — Shopping Courtyard",
-      },
-      {
-        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (5)x.jpg",
-        label: "Central Amenities",
-        title: "Central Amenities — Corner Mall",
-      },
-      {
-        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL MOSQUE PREMIUM 1 (1)x.jpg",
-        label: "Central Mosque",
-        title: "Central Mosque — Premium Sector",
+        title: "Community Space — Premium Sector",
       },
     ],
   },
@@ -147,39 +119,14 @@ const SUBGROUP_GALLERIES = {
         isMap: true,
       },
       {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 CENTER P.jpg",
-        label: "3D Aerial Perspective",
-        title: "Executive Sector — Central Hub Perspective",
+        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM EXCLUSIVE 1 (1)x.jpg",
+        label: "Sports & Recreation",
+        title: "Stadium — Executive Sector",
       },
       {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 CENTER.jpg",
-        label: "Sector Center",
-        title: "Executive 2 — Sector Central Hub Layout",
-      },
-      {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK A.jpg",
-        label: "Residential Block",
-        title: "Executive 1 — Block A Layout",
-      },
-      {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK B.jpg",
-        label: "Residential Block",
-        title: "Executive 1 — Block B Layout",
-      },
-      {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK C.jpg",
-        label: "Residential Block",
-        title: "Executive 1 — Block C Layout",
-      },
-      {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK D.jpg",
-        label: "Residential Block",
-        title: "Executive 1 — Block D Layout",
-      },
-      {
-        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 BLOCK D.jpg",
-        label: "Residential Block",
-        title: "Executive 2 — Block D Layout",
+        src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (2)x.jpg",
+        label: "Education",
+        title: "High School — Campus View",
       },
     ],
   },
@@ -1029,6 +976,83 @@ function ImageBand({ items, flip }) {
   );
 }
 
+function LightboxPreview({ images, index, reduce }) {
+  const activeSrc = images[index].src;
+  const [imageStatus, setImageStatus] = useState({});
+  const [retries, setRetries] = useState({});
+  const [presentation, setPresentation] = useState({ current: null, previous: null });
+  const ready = imageStatus[activeSrc] === "ready";
+  const failed = imageStatus[activeSrc] === "error";
+  const mountedSources = new Set([
+    activeSrc,
+    images[(index + images.length - 1) % images.length].src,
+    images[(index + 1) % images.length].src,
+    ...Object.keys(imageStatus),
+  ]);
+
+  useEffect(() => {
+    if (!ready) return;
+    setPresentation((current) =>
+      current.current === activeSrc
+        ? current
+        : { current: activeSrc, previous: current.current },
+    );
+  }, [activeSrc, ready]);
+
+  const retryImage = () => {
+    setImageStatus((current) => ({ ...current, [activeSrc]: "loading" }));
+    setRetries((current) => ({ ...current, [activeSrc]: (current[activeSrc] || 0) + 1 }));
+  };
+
+  return (
+    <div className="absolute inset-0" aria-busy={!ready && !failed}>
+      {/* Keep decoded slides mounted until close; preload only adjacent new slides. */}
+      {images.filter((item) => mountedSources.has(item.src)).map((item) => {
+        const visible = item.src === presentation.current;
+        const previous = item.src === presentation.previous;
+        return (
+          <motion.div
+            key={item.src}
+            aria-hidden={!visible}
+            className="pointer-events-none absolute inset-0"
+            style={{ zIndex: visible ? 2 : previous ? 1 : 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: visible ? 1 : 0 }}
+            transition={{ duration: reduce ? 0 : 0.18, ease: "easeOut" }}
+          >
+            <Image
+              key={retries[item.src] || 0}
+              src={item.src}
+              alt={item.title}
+              fill
+              loading="eager"
+              fetchPriority={item.src === activeSrc ? "high" : "low"}
+              sizes="(min-width: 1328px) 1280px, (min-width: 640px) calc(100vw - 48px), calc(100vw - 32px)"
+              className="object-contain"
+              onLoad={() => setImageStatus((current) => ({ ...current, [item.src]: "ready" }))}
+              onError={() => setImageStatus((current) => ({ ...current, [item.src]: "error" }))}
+            />
+          </motion.div>
+        );
+      })}
+      {!ready && !failed && (
+        <div role="status" className="pointer-events-none absolute inset-x-0 top-4 z-10 flex justify-center text-white">
+          <FiLoader aria-hidden="true" className="h-5 w-5 animate-spin motion-reduce:animate-none" />
+          <span className="sr-only">Loading image</span>
+        </div>
+      )}
+      {failed && (
+        <div role="alert" className="absolute inset-x-4 bottom-4 z-10 flex items-center justify-center gap-3 bg-primary/95 p-3 text-sm text-white">
+          <span>This image could not be loaded.</span>
+          <button type="button" onClick={retryImage} aria-label="Retry image" title="Retry image" className="flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition hover:bg-white/15">
+            <FiRefreshCw aria-hidden="true" />
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function MasterplanDocumentSection({ documentContent, slug }) {
   const { introduction, sections, closing } = documentContent;
   const articleRef = useRef(null);
@@ -1039,6 +1063,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
   const bands = pageBands[slug] || [];
   const subgroupImages = pageSubgroupImages[slug];
   const [lightbox, setLightbox] = useState(null);
+  const isLightboxOpen = Boolean(lightbox);
 
   const activeLightboxImage =
     lightbox && lightbox.images[lightbox.index]
@@ -1046,9 +1071,12 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
       : null;
 
   useEffect(() => {
-    if (!lightbox) return;
+    if (!isLightboxOpen) return;
 
     const handleKeyDown = (event) => {
+      if (["Escape", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+        event.preventDefault();
+      }
       if (event.key === "Escape") {
         setLightbox(null);
       } else if (event.key === "ArrowLeft") {
@@ -1084,7 +1112,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [lightbox]);
+  }, [isLightboxOpen]);
 
   const showPrevLightboxImage = () => {
     setLightbox((current) => {
@@ -1425,13 +1453,11 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
 
             {/* Main Preview Image */}
             <div className="relative h-[60vh] overflow-hidden border border-white/10 bg-black/30 shadow-[0_35px_100px_rgba(0,0,0,0.45)] sm:h-[70vh]">
-              <Image
-                src={activeLightboxImage.src}
-                alt={activeLightboxImage.title}
-                fill
-                priority
-                sizes="100vw"
-                className="object-contain"
+              <LightboxPreview
+                key={lightbox.groupTitle}
+                images={lightbox.images}
+                index={lightbox.index}
+                reduce={reduce}
               />
 
               {lightbox.images.length > 1 && (
@@ -1440,7 +1466,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
                     type="button"
                     onClick={showPrevLightboxImage}
                     aria-label="View previous image"
-                    className="absolute left-3 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center bg-white/90 text-2xl text-[#202D72] shadow-lg transition hover:bg-secondary hover:text-white sm:left-5 sm:h-14 sm:w-14"
+                    className="absolute left-3 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center bg-white/90 text-2xl text-[#202D72] shadow-lg transition hover:bg-secondary hover:text-white sm:left-5 sm:h-14 sm:w-14"
                   >
                     <FiChevronLeft />
                   </button>
@@ -1449,7 +1475,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
                     type="button"
                     onClick={showNextLightboxImage}
                     aria-label="View next image"
-                    className="absolute right-3 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center bg-white/90 text-2xl text-[#202D72] shadow-lg transition hover:bg-secondary hover:text-white sm:right-5 sm:h-14 sm:w-14"
+                    className="absolute right-3 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center bg-white/90 text-2xl text-[#202D72] shadow-lg transition hover:bg-secondary hover:text-white sm:right-5 sm:h-14 sm:w-14"
                   >
                     <FiChevronRight />
                   </button>
