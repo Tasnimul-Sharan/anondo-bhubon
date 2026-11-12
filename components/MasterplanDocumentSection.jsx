@@ -187,7 +187,7 @@ const SUBGROUP_GALLERIES = {
     eyebrow: "General Sector",
     images: [
       {
-        src: "/anondo bhubon New/GENERAL/General-Sector-1.jpg",
+        src: "/anondo bhubon New/GENERAL/General-Sector-1.png",
         label: "Sector Master Plan",
         title: "General Sector 1",
         isMap: true,
@@ -232,22 +232,168 @@ const pageBands = {
     band("/road/road.jpg", 1.78),
   ],
   "education-healthcare": [
-    band(finalRenderAssets.university, 1.6),
-    band(finalRenderAssets.stadium, 1.6),
-    band(finalRenderAssets.mosque, 1.6),
+    band("/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (2)x.jpg", 5773 / 2790, {
+      afterSection: 4,
+      mobileRatio: 5773 / 2790,
+      parallax: false,
+      alt: "Connected township streets, pedestrian paths and public transport facilities",
+    }),
+    band("/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 3x.jpg", 4883 / 3299, {
+      afterSection: 5,
+      mobileRatio: 4883 / 3299,
+      parallax: false,
+      alt: "Families enjoying the landscaped community lake",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/RIVER SIDE 1x.jpg", 4749 / 3392, {
+      afterSection: 6,
+      mobileRatio: 4749 / 3392,
+      parallax: false,
+      alt: "Riverside walking and leisure spaces beside the township's commercial centre",
+    }),
+    band("/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (5)x.jpg", 5841 / 5645, {
+      afterSection: 7,
+      mobileRatio: 5841 / 5645,
+      parallax: false,
+      alt: "Families gathering in a green residential courtyard",
+    }),
   ],
   "commercial-development": [
-    band(finalRenderAssets.megaMall_Hub, 1.6),
-    band(finalRenderAssets.shopping, 1.6),
-    band(finalRenderAssets.billboard, 2.07, { mobileRatio: 1.4 }),
+    band("/anondo bhubon New/Commercial/Commercial-Sector.png", 2440 / 2747, {
+      afterSection: 0,
+      mobileRatio: 2440 / 2747,
+      parallax: false,
+      alt: "Anondo Bhubon Commercial Sector master layout",
+    }),
+    band("/anondo bhubon New/Commercial/Commercial-IT-Sector.png", 1162 / 1197, {
+      afterSection: 0,
+      mobileRatio: 1162 / 1197,
+      parallax: false,
+      alt: "Anondo Bhubon Commercial IT Sector master layout",
+    }),
+    band("/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg", 4749 / 3392, {
+      afterSection: 1,
+      mobileRatio: 4749 / 3392,
+      parallax: false,
+      alt: "Premium Sector corner mall with shops and landscaped public spaces",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (2)x.jpg", 5773 / 2790, {
+      afterSection: 2,
+      mobileRatio: 5773 / 2790,
+      parallax: false,
+      alt: "CBD office towers and connected commercial streets for Anondo Digital Valley",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/MEGA MALL 6x.jpg", 4749 / 3392, {
+      afterSection: 3,
+      mobileRatio: 4749 / 3392,
+      parallax: false,
+      alt: "Anondo Bhubon Mega Mall and surrounding commercial towers at dusk",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (1)x (1).jpg", 5808 / 4147, {
+      afterSection: 4,
+      mobileRatio: 5808 / 4147,
+      parallax: false,
+      alt: "CBD waterfront development with office towers and landscaped connections",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (3)x.jpg", 5808 / 4147, {
+      afterSection: 5,
+      mobileRatio: 5808 / 4147,
+      parallax: false,
+      alt: "Aerial view of the CBD with connected towers and waterfront spaces",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/MEGA MALL 4x.jpg", 4749 / 3392, {
+      afterSection: 6,
+      mobileRatio: 4749 / 3392,
+      parallax: false,
+      alt: "Anondo Bhubon Mega Mall beside the waterfront and commercial district",
+    }),
   ],
   "green-blue-master-plan": [
-    band(finalRenderAssets.forestWalk, 1.6),
-    band(finalRenderAssets.lake, 1.6),
-    band(finalRenderAssets.farming, 1.6),
+    band("/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (1)x.jpg", 4155 / 2968, {
+      afterSection: 1,
+      mobileRatio: 4155 / 2968,
+      parallax: false,
+      alt: "Premium Plus riverfront with landscaped banks and pedestrian bridges",
+    }),
+    band("/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/FOREST WALK PREMIUM 1  (1)xx.jpg", 4749 / 3392, {
+      afterSection: 2,
+      mobileRatio: 4749 / 3392,
+      parallax: false,
+      alt: "Shaded forest walkway in the Premium Sector",
+    }),
+    band("/bhubon-old/Lake.jpg", 1192 / 756, {
+      afterSection: 3,
+      mobileRatio: 1192 / 756,
+      parallax: false,
+      alt: "Lake with landscaped walking paths and waterfront neighbourhoods",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (1)x (1).jpg", 5808 / 4147, {
+      afterSection: 4,
+      mobileRatio: 5808 / 4147,
+      parallax: false,
+      alt: "CBD waterfront with landscaped public spaces and green corridors",
+    }),
+    band("/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (2)x.jpg", 4155 / 2968, {
+      afterSection: 5,
+      mobileRatio: 4155 / 2968,
+      parallax: false,
+      alt: "Integrated waterway and pedestrian connections in Premium Plus",
+    }),
+    band("/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (5)x.jpg", 5841 / 5645, {
+      afterSection: 6,
+      mobileRatio: 5841 / 5645,
+      parallax: false,
+      alt: "Families enjoying a landscaped residential courtyard in Premium Plus",
+    }),
+    band("/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (3)x.jpg", 6776 / 4838, {
+      afterSection: 7,
+      mobileRatio: 6776 / 4838,
+      parallax: false,
+      alt: "Premium Plus courtyard homes with green roofs and landscaped open spaces",
+    }),
   ],
 };
 const BAND_AFTER = [1, 3, 5];
+
+const pageSubgroupImages = {
+  "education-healthcare": {
+    "Elementary Schools Within Residential Blocks": {
+      src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM PREMIUM 1 (1)x.jpg",
+      width: 4749,
+      height: 3392,
+      alt: "Premium Sector neighbourhood with a stadium and central amenities",
+    },
+    "High Schools and Colleges Within Residential Sectors": {
+      src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (1)x.jpg",
+      width: 4749,
+      height: 3392,
+      alt: "Anondo Bhubon high school with landscaped grounds and pedestrian access",
+    },
+    "Dedicated School and College Campus": {
+      src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (2)x.jpg",
+      width: 4912,
+      height: 3277,
+      alt: "School campus with learning buildings, sports grounds and rooftop play areas",
+    },
+    University: {
+      src: "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 3x.jpg",
+      width: 4749,
+      height: 3392,
+      alt: "Anondo Bhubon university building and landscaped campus",
+    },
+    "Technology and Professional Skills Development": {
+      src: "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 2x.jpg",
+      width: 4749,
+      height: 3392,
+      alt: "University campus entrance and learning facilities",
+    },
+    "Sports Within Residential Communities": {
+      src: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM EXCLUSIVE 1 (1)x.jpg",
+      width: 4525,
+      height: 2954,
+      alt: "Football stadium and spectator seating within a residential neighbourhood",
+    },
+  },
+};
 
 const ease = [0.22, 1, 0.36, 1];
 
@@ -636,11 +782,50 @@ function SubGroup({ heading, blocks, onOpenLightbox }) {
   );
 }
 
+function IllustratedSubGroup({ heading, blocks, image }) {
+  return (
+    <section
+      data-plan-subsection={heading.index}
+      aria-labelledby={`plan-subsection-${heading.index}`}
+      className="border-t border-border_color pt-8 sm:pt-10 lg:pt-12"
+    >
+      <div className="grid gap-6 lg:grid-cols-12 lg:gap-12">
+        <Reveal className="min-w-0 lg:col-span-4">
+          <Rule />
+          <SourceText
+            block={heading}
+            as="h3"
+            id={`plan-subsection-${heading.index}`}
+            className="mt-5 text-2xl font-semibold leading-tight text-primary sm:text-3xl"
+          />
+        </Reveal>
+        <div data-plan-reveal className="min-w-0 space-y-5 lg:col-span-8">
+          <DocumentBlocks blocks={blocks} nested />
+        </div>
+      </div>
+      <div
+        data-plan-image
+        className="relative mt-8 w-full overflow-hidden bg-off_white sm:mt-10"
+        style={{ aspectRatio: `${image.width} / ${image.height}` }}
+      >
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          sizes="(min-width: 1536px) 1280px, (min-width: 1024px) calc(100vw - 96px), calc(100vw - 48px)"
+          className="object-contain"
+        />
+      </div>
+    </section>
+  );
+}
+
 function DocumentBlocks({
   blocks,
   nested = false,
   onOpenLightbox,
   compactSubgroups = false,
+  subgroupImages,
 }) {
   const items = [];
   let group = null;
@@ -664,6 +849,7 @@ function DocumentBlocks({
     if (
       compactSubgroups &&
       item.kind === "sub" &&
+      !subgroupImages?.[item.heading.text] &&
       !(item.heading.gallery || getSubgroupGallery(item.heading.text))
     ) {
       if (renderedGroups.at(-1)?.kind === "sub-grid") {
@@ -708,6 +894,17 @@ function DocumentBlocks({
           );
         }
         if (item.kind === "sub") {
+          const image = subgroupImages?.[item.heading.text];
+          if (image) {
+            return (
+              <IllustratedSubGroup
+                key={item.heading.index}
+                heading={item.heading}
+                blocks={item.blocks}
+                image={image}
+              />
+            );
+          }
           return (
             <SubGroup
               key={item.heading.index}
@@ -771,39 +968,61 @@ function SectionHeading({ block }) {
   );
 }
 
-function ImageBand({ item, flip }) {
+function ImageBand({ items, flip }) {
+  const list = Array.isArray(items) ? items : [items];
+  const isSideBySide = list.length > 1;
+
   return (
     <div className="bg-white py-6 sm:py-10 lg:py-14">
       <div className="mx-auto max-w-[1440px] sm:px-6 lg:px-8">
-        <div className="relative">
-          <div
-            data-image-outline
-            aria-hidden="true"
-            className={`pointer-events-none absolute -bottom-4 hidden h-full w-full border border-secondary/60 lg:block ${
-              flip ? "-left-4" : "-right-4"
-            }`}
-          />
-          <div
-            data-plan-image
-            className="group relative aspect-[var(--ar-m)] w-full overflow-hidden bg-slate-200 shadow-[0_28px_70px_rgba(27,35,75,0.22)] sm:aspect-[var(--ar)]"
-            style={{ "--ar": item.ratio, "--ar-m": item.mobileRatio }}
-          >
-            <div
-              data-parallax={item.parallax ? "" : undefined}
-              className={`absolute inset-x-0 ${item.parallax ? "-inset-y-[7%]" : "inset-y-0"}`}
-            >
-              <Image
-                src={item.src}
-                alt=""
-                fill
-                quality={85}
-                sizes="(min-width: 1536px) 1376px, 100vw"
-                className="object-cover transition duration-[1400ms] ease-out group-hover:scale-[1.04]"
-                style={{ objectPosition: item.position || "center" }}
-              />
-            </div>
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1330]/30 via-transparent to-transparent" />
-          </div>
+        <div
+          className={
+            isSideBySide
+              ? "grid gap-6 md:grid-cols-2 lg:gap-8"
+              : ""
+          }
+        >
+          {list.map((item, idx) => {
+            const outlineLeft = isSideBySide ? idx % 2 === 0 : flip;
+            return (
+              <div key={item.src} className="relative h-full">
+                <div
+                  data-image-outline
+                  aria-hidden="true"
+                  className={`pointer-events-none absolute -bottom-4 hidden h-full w-full border border-secondary/60 lg:block ${
+                    outlineLeft ? "-left-4" : "-right-4"
+                  }`}
+                />
+                <div
+                  data-plan-image
+                  className={`group relative aspect-[var(--ar-m)] w-full overflow-hidden bg-slate-200 shadow-[0_28px_70px_rgba(27,35,75,0.22)] sm:aspect-[var(--ar)] ${
+                    isSideBySide ? "md:h-full" : ""
+                  }`}
+                  style={{ "--ar": item.ratio, "--ar-m": item.mobileRatio }}
+                >
+                  <div
+                    data-parallax={item.parallax ? "" : undefined}
+                    className={`absolute inset-x-0 ${item.parallax ? "-inset-y-[7%]" : "inset-y-0"}`}
+                  >
+                    <Image
+                      src={item.src}
+                      alt={item.alt || ""}
+                      fill
+                      quality={85}
+                      sizes={
+                        isSideBySide
+                          ? "(min-width: 1536px) 672px, (min-width: 768px) 50vw, 100vw"
+                          : "(min-width: 1536px) 1376px, 100vw"
+                      }
+                      className="object-cover transition duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                      style={{ objectPosition: item.position || "center" }}
+                    />
+                  </div>
+                  <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1330]/30 via-transparent to-transparent" />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -818,6 +1037,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 28, mass: 0.3 });
   const heroImage = finalRenderAssets[documentContent.image];
   const bands = pageBands[slug] || [];
+  const subgroupImages = pageSubgroupImages[slug];
   const [lightbox, setLightbox] = useState(null);
 
   const activeLightboxImage =
@@ -1071,15 +1291,19 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
       {/* Chapters */}
       {sections.map((section, sectionIndex) => {
         const flip = sectionIndex % 2 === 1;
-        const bandIndex = BAND_AFTER.indexOf(sectionIndex);
-        const bandItem = bandIndex >= 0 ? bands[bandIndex] : null;
+        const sectionBands = bands.filter(
+          (item, index) => (item?.afterSection ?? BAND_AFTER[index]) === sectionIndex,
+        );
         const metrics = section.layout === "metrics";
         const hasGallerySubgroup = section.blocks.some(
           (b) =>
             b.kind === "subheading" &&
             Boolean(b.gallery || getSubgroupGallery(b.text))
         );
-        const fullWidthSection = metrics || hasGallerySubgroup;
+        const hasIllustratedSubgroup = section.blocks.some(
+          (block) => block.kind === "subheading" && subgroupImages?.[block.text],
+        );
+        const fullWidthSection = metrics || hasGallerySubgroup || hasIllustratedSubgroup;
 
         return (
           <div key={section.heading.index}>
@@ -1120,7 +1344,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
                 <div
                   className={
                     fullWidthSection
-                      ? "mt-12 space-y-10"
+                      ? `mt-12 space-y-10 ${hasIllustratedSubgroup ? "[&>p]:max-w-4xl" : ""}`
                       : "space-y-6 lg:col-span-7 lg:pt-2"
                   }
                 >
@@ -1143,6 +1367,7 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
                         <DocumentBlocks
                           blocks={section.blocks.slice(6)}
                           onOpenLightbox={setLightbox}
+                          subgroupImages={subgroupImages}
                         />
                       </div>
                     </>
@@ -1151,12 +1376,15 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
                       blocks={section.blocks}
                       onOpenLightbox={setLightbox}
                       compactSubgroups={hasGallerySubgroup}
+                      subgroupImages={subgroupImages}
                     />
                   )}
                 </div>
               </div>
             </section>
-            {bandItem && <ImageBand item={bandItem} flip={flip} />}
+            {sectionBands.length > 0 && (
+              <ImageBand items={sectionBands} flip={flip} />
+            )}
           </div>
         );
       })}
