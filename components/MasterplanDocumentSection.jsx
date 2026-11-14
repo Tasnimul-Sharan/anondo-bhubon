@@ -49,6 +49,16 @@ const SUBGROUP_GALLERIES = {
         title: "River View Premium Plus — View 02",
       },
       {
+        src: "/anondo bhubon New/PREMIUM PLUS/premium-plus-sports-field-community-gardens.jpeg",
+        label: "Sports & Green Spaces",
+        title: "Sports Field & Community Gardens",
+      },
+      {
+        src: "/anondo bhubon New/PREMIUM PLUS/premium-plus-community-facilities-aerial-layout.jpeg",
+        label: "Community Amenities",
+        title: "Community Facilities — Aerial Layout",
+      },
+      {
         src: "/anondo bhubon New/PREMIUM PLUS/STADIUM PREMIUM PLUSx.jpg",
         label: "Sports & Recreation",
         title: "Stadium — Premium Plus Sector",
@@ -144,6 +154,11 @@ const SUBGROUP_GALLERIES = {
         label: "Sector Master Plan",
         title: "General Sector 2",
         isMap: true,
+      },
+      {
+        src: "/anondo bhubon New/GENERAL/general-sector-central-hub-aerial-layout.jpg",
+        label: "Sector Central Hub",
+        title: "General Sector — Central Hub & Community Amenities",
       },
     ],
   },

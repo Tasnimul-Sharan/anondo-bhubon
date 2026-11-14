@@ -1,8 +1,12 @@
 import AdvancedSEO from "@/components/AdvancedSEO";
 import LifestyleDocumentSection from "@/components/LifestyleDocumentSection";
 import documents from "@/data/whoWeAreDocuments.json";
+import { withLifestyleVisuals } from "@/data/lifestyleVisuals";
 
-const documentContent = documents["vision-mission"];
+const documentContent = withLifestyleVisuals(
+  "vision-mission",
+  documents["vision-mission"],
+);
 
 const seo = {
   title:

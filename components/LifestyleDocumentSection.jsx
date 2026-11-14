@@ -93,7 +93,65 @@ function ChapterBadge({ label }) {
   );
 }
 
+function LifestyleImageGallery({ images, flip }) {
+  return (
+    <div data-lifestyle-gallery className="py-6 sm:py-10 lg:py-14">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-6 lg:px-8">
+        <div className="grid items-stretch gap-5 md:grid-cols-2 lg:gap-8">
+          {images.map((image, index) => {
+            const fullWidth =
+              image.fullWidth ?? (images.length % 2 === 1 && index === 0);
+
+            return (
+              <figure
+                key={image.src}
+                className={`relative min-w-0 ${fullWidth ? "md:col-span-2" : "flex flex-col"}`}
+              >
+                {fullWidth && (
+                  <div
+                    data-image-outline
+                    aria-hidden="true"
+                    className={`pointer-events-none absolute -bottom-3 hidden h-full w-full border border-secondary/60 lg:block ${
+                      flip ? "-left-3" : "-right-3"
+                    }`}
+                  />
+                )}
+                <div
+                  data-lifestyle-image
+                  className={`relative overflow-hidden border border-primary/10 bg-white ${
+                    fullWidth ? "" : "h-full"
+                  }`}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    quality={75}
+                    sizes={
+                      fullWidth
+                        ? "(min-width: 1440px) 1376px, (min-width: 1024px) calc(100vw - 64px), (min-width: 640px) calc(100vw - 48px), calc(100vw - 40px)"
+                        : "(min-width: 1440px) 672px, (min-width: 1024px) calc((100vw - 96px) / 2), (min-width: 768px) calc((100vw - 68px) / 2), (min-width: 640px) calc(100vw - 48px), calc(100vw - 40px)"
+                    }
+                    className={`block w-full ${
+                      fullWidth ? "h-auto" : "h-full object-cover"
+                    }`}
+                  />
+                </div>
+              </figure>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ImageBand({ item, flip = false }) {
+  if (Array.isArray(item)) {
+    return <LifestyleImageGallery images={item} flip={flip} />;
+  }
+
   return (
     <div className="py-6 sm:py-10 lg:py-14">
       <div className="mx-auto max-w-[1440px] sm:px-6 lg:px-8">

@@ -226,7 +226,7 @@ export default function OurCompanySection() {
             {companies.map((company, index) => (
               <article
                 key={company.name}
-                className="group border border-primary/12 border-l-[3px] border-l-secondary bg-white p-6 shadow-[0_14px_40px_rgba(23,32,58,0.05)] transition duration-300 hover:border-primary/25 hover:shadow-[0_20px_50px_rgba(23,32,58,0.09)] sm:p-8 lg:p-10"
+                className="group border border-primary/12 border-l-[3px] border-l-secondary bg-white p-6 shadow-[0_14px_40px_rgba(23,32,58,0.05)] transition duration-300 hover:border-primary/80 hover:shadow-[0_20px_50px_rgba(23,32,58,0.09)] sm:p-8 lg:p-10"
               >
                 <div className="grid gap-7 lg:grid-cols-[260px_1fr] lg:items-center lg:gap-10">
                   {/* Company Logo Box */}

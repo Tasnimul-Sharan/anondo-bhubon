@@ -17,10 +17,10 @@
       {
         "index": 1,
         "kind": "title",
-        "text": "Our Vision, Mission, Core Values & Development Philosophy",
+        "text": "Our Vision & Mission",
         "runs": [
           {
-            "text": "Our Vision, Mission, Core Values & Development Philosophy",
+            "text": "Our Vision & Mission",
             "bold": true
           }
         ]
@@ -396,10 +396,10 @@
       {
         "index": 29,
         "kind": "title",
-        "text": "3. OUR CORE VALUES",
+        "text": "OUR CORE VALUES",
         "runs": [
           {
-            "text": "3. OUR CORE VALUES",
+            "text": "OUR CORE VALUES",
             "bold": true
           }
         ]

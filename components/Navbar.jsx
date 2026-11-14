@@ -30,15 +30,15 @@ const menuItems = [
     name: "Brand Story",
     path: "/brand-story",
   },
-  // {
-  //   id: "who-we-are",
-  //   name: "Who We Are",
-  //   submenu: [
-  //     { name: "Our Company", path: "/our-company" },
-  //     { name: "Our Vision & Mission", path: "/vision-mission" },
-  //     { name: "Our Core Values", path: "/core-values" },
-  //   ],
-  // },
+  {
+    id: "who-we-are",
+    name: "Who We Are",
+    submenu: [
+      { name: "Our Company", path: "/our-company" },
+      { name: "Our Vision & Mission", path: "/vision-mission" },
+      { name: "Our Core Values", path: "/core-values" },
+    ],
+  },
   {
     id: "master-plan",
     name: "Master Plan",

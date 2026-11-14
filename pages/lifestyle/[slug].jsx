@@ -1,6 +1,7 @@
 import AdvancedSEO from "@/components/AdvancedSEO";
 import LifestyleDocumentSection from "@/components/LifestyleDocumentSection";
 import { lifestylePreviews } from "@/data/lifestylePreviewData";
+import { withLifestyleVisuals } from "@/data/lifestyleVisuals";
 
 const lifestyleSeoBySlug = {
   "a-day-in-the-life": {
@@ -142,7 +143,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       preview,
-      documentContent: documents[preview.slug],
+      documentContent: withLifestyleVisuals(preview.slug, documents[preview.slug]),
     },
   };
 }

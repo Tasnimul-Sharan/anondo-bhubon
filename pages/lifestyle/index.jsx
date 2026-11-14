@@ -2,8 +2,9 @@ import AdvancedSEO from "@/components/AdvancedSEO";
 import LifestyleDocumentSection from "@/components/LifestyleDocumentSection";
 import documents from "@/data/lifestyleDocuments.json";
 import { lifestyleOverview } from "@/data/lifestylePreviewData";
+import { withLifestyleVisuals } from "@/data/lifestyleVisuals";
 
-const documentContent = documents.philosophy;
+const documentContent = withLifestyleVisuals("philosophy", documents.philosophy);
 
 const seo = {
   title: `${lifestyleOverview.title} | Green, Sustainable & People-Centred Living | Anondo Bhubon`,
