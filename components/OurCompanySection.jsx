@@ -164,30 +164,18 @@ export default function OurCompanySection() {
               </div>
             </div>
 
-            {/* Right Group Identity & Core Strength Card */}
+            {/* Right Core Strength Card */}
             <div className="border border-primary/12 border-t-[3px] border-t-secondary bg-[#FAF9F6] p-7 shadow-[0_18px_50px_rgba(23,32,58,0.06)] sm:p-10">
-              <div className="flex items-center justify-center border border-primary/10 bg-white px-6 py-6">
-                <div className="relative h-36 w-56 sm:h-40 sm:w-64">
-                  <Image
-                    src="/companies/anondo-group-logo-1.png"
-                    alt="Anondo Group"
-                    fill
-                    className="object-contain"
-                    sizes="260px"
-                  />
-                </div>
-              </div>
-
-              <div className="mt-7">
-                <h3 className="text-xl font-semibold tracking-[-0.015em] text-[#17203A]">
+              <div>
+                <h3 className="text-xl font-semibold tracking-[-0.015em] text-[#17203A] sm:text-2xl">
                   Our Core Strength
                 </h3>
 
-                <ul className="mt-4 divide-y divide-primary/10 border-y border-primary/10">
+                <ul className="mt-5 divide-y divide-primary/10 border-y border-primary/10">
                   {coreStrengths.map((strength) => (
                     <li
                       key={strength}
-                      className="flex items-center gap-3.5 py-3.5 text-sm font-medium text-[#2C3347] sm:text-base"
+                      className="flex items-center gap-3.5 py-4 text-sm font-medium text-[#2C3347] sm:text-base"
                     >
                       <span
                         aria-hidden="true"
@@ -198,7 +186,7 @@ export default function OurCompanySection() {
                   ))}
                 </ul>
 
-                <p className="mt-5 text-sm font-medium text-[#6B7280]">
+                <p className="mt-6 text-sm font-medium text-[#6B7280]">
                   Building trusted brands under one unified vision.
                 </p>
               </div>
