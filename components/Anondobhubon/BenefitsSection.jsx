@@ -155,57 +155,34 @@ export default function BenefitsSection() {
             </div>
           </aside>
 
-          {/* Benefits Grid */}
-          <div className="grid gap-5 sm:grid-cols-2">
-            {benefits.map((benefit, index) => {
-              const Icon = benefitIcons[index % benefitIcons.length];
+          {/* Benefits List */}
+          <div className="border border-[#2C3A83]/12 border-t-[3px] border-t-[#F48220] bg-white shadow-[0_18px_50px_rgba(27,35,75,0.06)]">
+            <div className="divide-y divide-[#2C3A83]/10">
+              {benefits.map((benefit, index) => {
+                const Icon = benefitIcons[index % benefitIcons.length];
 
-              return (
-                <article
-                  key={`${benefit}-${index}`}
-                  className="group relative min-h-[230px] overflow-hidden border border-[#2C3A83]/10 bg-white p-6 shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_24px_65px_rgba(27,35,75,0.14)] sm:p-7"
-                >
-                  {/* Card Accent */}
-                  <div className="absolute right-0 top-0 h-1 w-16 bg-[#F48220] transition-all duration-500 group-hover:w-full" />
+                return (
+                  <article
+                    key={`${benefit}-${index}`}
+                    className="flex items-start gap-4 p-6 sm:items-center sm:gap-6 sm:px-8 sm:py-7"
+                  >
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-[#EEF0F8] text-[#2C3A83]">
+                      <Icon className="text-lg" />
+                    </span>
 
-                  {/* Decorative Number */}
-                  <span className="pointer-events-none absolute -bottom-5 -right-1 select-none text-[100px] font-black leading-none tracking-[-0.08em] text-[#2C3A83]/[0.035]">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  <div className="relative z-10 flex h-full flex-col">
-                    {/* Top Row */}
-                    <div className="flex items-start justify-between gap-5">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-[#EEF0F8] text-[#2C3A83] transition duration-300 group-hover:bg-[#2C3A83] group-hover:text-white">
-                        <Icon className="text-lg" />
-                      </span>
-
-                      <span className="text-xs font-bold tracking-[0.18em] text-[#2C3A83]/30 transition duration-300 group-hover:text-[#F48220]">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                    </div>
-
-                    {/* Benefit Content */}
-                    <div className="mt-7">
-                      <p className="text-base font-semibold leading-7 text-[#20263A]">
+                    <div className="min-w-0 flex-1">
+                      <p className="text-base font-semibold leading-7 text-[#20263A] sm:text-lg sm:leading-8">
                         {benefit}
                       </p>
                     </div>
 
-                    {/* Footer */}
-                    <div className="mt-auto pt-8">
-                      <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-5">
-                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
-                          Anondo Bhubon
-                        </p>
-
-                        <FaArrowRight className="text-xs text-[#2C3A83]/30 transition duration-300 group-hover:translate-x-1 group-hover:text-[#F48220]" />
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
+                    <span className="shrink-0 text-sm font-bold tabular-nums tracking-[0.16em] text-[#F48220]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

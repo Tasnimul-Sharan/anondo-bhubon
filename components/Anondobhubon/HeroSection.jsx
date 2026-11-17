@@ -41,7 +41,7 @@ export default function HeroSection() {
             <span className="h-2 w-2 rounded-full bg-[#F48220] shadow-[0_0_0_5px_rgba(244,130,32,0.16)]" />
 
             <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/70 sm:text-[11px]">
-              Anondo Group
+              A project of Anondo Cityscapers
             </p>
           </div>
 

@@ -45,64 +45,39 @@ export default function TimelineSection() {
           </p>
         </div>
 
-        {/* Legacy Cards */}
-        <div className="relative">
-          {/* Desktop Connector */}
-          <div className="absolute left-[7%] right-[7%] top-[38px] hidden h-px bg-[#2C3A83]/15 lg:block">
-            <div className="absolute inset-y-0 left-0 w-1/3 bg-[#F48220]/40" />
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {/* Legacy Columns */}
+        <div className="border border-[#2C3A83]/12 border-t-[3px] border-t-[#F48220] bg-white shadow-[0_18px_50px_rgba(27,35,75,0.06)]">
+          <div className="divide-y divide-[#2C3A83]/10 md:grid md:grid-cols-2 md:divide-y-0 lg:grid-cols-4 lg:divide-x">
             {legacyItems.map((item, index) => (
               <article
                 key={item.label}
-                className="group relative flex h-full min-h-[360px] flex-col overflow-hidden border border-[#2C3A83]/10 bg-white p-6 shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_26px_70px_rgba(27,35,75,0.15)] sm:p-7"
+                className={`relative flex flex-col p-7 sm:p-8 ${
+                  index < 2 ? "md:border-b md:border-[#2C3A83]/10 lg:border-b-0" : ""
+                } ${index % 2 === 0 ? "md:border-r md:border-[#2C3A83]/10 lg:border-r-0" : ""}`}
               >
-                {/* Top Accent */}
-                <div className="absolute left-0 top-0 h-1 w-16 bg-[#F48220] transition-all duration-500 group-hover:w-full" />
+                <div className="flex items-center justify-between border-b border-[#2C3A83]/10 pb-5">
+                  <span className="inline-flex h-11 w-11 items-center justify-center bg-[#202D72] text-sm font-bold tabular-nums text-white">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
 
-                {/* Large Decorative Number */}
-                <span className="pointer-events-none absolute -bottom-4 -right-1 select-none text-[110px] font-black leading-none tracking-[-0.08em] text-[#2C3A83]/[0.035]">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]/45">
+                    Legacy
+                  </span>
+                </div>
 
-                <div className="relative z-10">
-                  {/* Marker */}
-                  <div className="mb-8 flex items-center justify-between">
-                    <div className="flex h-[76px] w-[76px] items-center justify-center border-[8px] border-[#F4F2ED] bg-[#202D72] text-lg font-bold text-white shadow-[0_10px_28px_rgba(32,45,114,0.22)] transition duration-300 group-hover:bg-[#F48220]">
-                      {String(index + 1).padStart(2, "0")}
-                    </div>
-
-                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]/35">
-                      Legacy
-                    </span>
-                  </div>
-
-                  <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#F48220]">
+                <div className="mt-6 flex items-center gap-2.5">
+                  <span
+                    aria-hidden="true"
+                    className="h-2 w-2 shrink-0 bg-[#F48220]"
+                  />
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#F48220]">
                     {item.label}
                   </p>
-
-                  <p className="mt-4 text-[15px] font-semibold leading-7 tracking-[-0.01em] text-[#20263A]">
-                    {item.text}
-                  </p>
                 </div>
 
-                {/* Footer */}
-                <div className="relative z-10 mt-auto pt-8">
-                  <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-5">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
-                      Anondo Bhubon
-                    </p>
-
-                    <span className="flex items-center gap-3">
-                      <span className="h-px w-8 bg-[#2C3A83]/20 transition-all duration-300 group-hover:w-12 group-hover:bg-[#F48220]" />
-
-                      <span className="text-lg leading-none text-[#2C3A83]/35 transition duration-300 group-hover:translate-x-1 group-hover:text-[#F48220]">
-                        →
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                <p className="mt-4 text-[15px] font-medium leading-7 text-[#20263A] sm:text-base sm:leading-8">
+                  {item.text}
+                </p>
               </article>
             ))}
           </div>

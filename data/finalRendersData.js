@@ -1,10 +1,7 @@
-const finalRender = (src, label) => ({
+﻿const createRender = (src, label, title) => ({
   src,
   label,
-  title: (src.split("/").pop() || "Final Render")
-    .replace(/\.(png|jpe?g)$/i, "")
-    .replace(/\s+/g, " ")
-    .trim(),
+  title,
 });
 
 export const finalRenderAssets = {
@@ -34,138 +31,321 @@ export const finalRenderAssets = {
   farming2: "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 3.png",
 };
 
-export const newPremiumPlusRenders = [
-  finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS.jpg", "Courtyard"),
-  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 2.jpg", "Courtyard"),
-  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS 7x.jpg", "Courtyard"),
-  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS4.jpg", "Courtyard"),
-  // finalRender("/FINAL RENDERS/Courtyard plot PREMIUM PLUS5.jpg", "Courtyard"),
-  finalRender("/FINAL RENDERS/River view PREMIUM PLUS.jpg", "River View"),
-  finalRender("/FINAL RENDERS/stadium PREMIUM PLUS_1.jpg", "Stadium"),
-  // finalRender("/FINAL RENDERS/stadium PREMIUM PLUS2.jpg", "Stadium"),
+export const finalRenderHighlights = [
+  createRender(
+    "/anondo bhubon site/anondo bhubon site office.jpg",
+    "Site Office",
+    "Anondo Bhubon Site Office",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/RIVER SIDE 1x.jpg",
+    "Waterfront",
+    "Riverside Waterfront Promenade",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/FOREST WALK PREMIUM 1  (1)xx.jpg",
+    "Forest Walk",
+    "Premium Sector Forest Walkway",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/STADIUM PREMIUM PLUSx.jpg",
+    "Sports & Recreation",
+    "Premium Plus Cricket Stadium",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/MEGA MALL 6x.jpg",
+    "Mega Commercial Centre",
+    "Mega Mall Waterfront View",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL MOSQUE PREMIUM 1 (2)x.jpg",
+    "Mosque",
+    "Central Mosque Grand Facade",
+  ),
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 1.jpg",
+    "Site View",
+    "Anondo Bhubon Project Site",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (3)x.jpg",
+    "Downtown CBD",
+    "CBD Downtown Commercial Towers",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 3x.jpg",
+    "University & Education",
+    "Anondo Bhubon University Campus",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (2)x.jpg",
+    "River View",
+    "Premium Plus River View",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (3)x.jpg",
+    "Premium Plus Sector",
+    "Premium Plus Courtyard Plots",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg",
+    "Lake & Waterfront",
+    "Block Community Lake View",
+  ),
 ];
 
 export const finalRenderImages = [
-  finalRender(
+  // On-Site Photography
+  createRender(
     "/anondo bhubon site/anondo bhubon site office.jpg",
     "Site Office",
+    "Anondo Bhubon Site Office",
   ),
-  finalRender("/anondo bhubon site/anondo bhubon site 1.jpg", "Site View"),
-  finalRender("/anondo bhubon site/anondo bhubon site 2.jpg", "Site View"),
-  finalRender("/anondo bhubon site/anondo bhubon site 3.jpg", "Site View"),
-  finalRender("/anondo bhubon site/anondo bhubon site 4.jpg", "Site View"),
-  finalRender("/anondo bhubon site/anondo bhubon site 5.jpg", "Site View"),
-  finalRender(
-    "/FINAL RENDERS/Masterplan/Bhubon Full Masterplan.jpg",
-    "Masterplan",
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 1.jpg",
+    "Site View",
+    "Anondo Bhubon Project Site",
   ),
-  finalRender("/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg", "Masterplan"),
-  ...newPremiumPlusRenders,
-  finalRender("/FINAL RENDERS/BLOCK COMMUNITY LAKE 1.png", "Lake"),
-  finalRender("/FINAL RENDERS/BLOCK COMMUNITY LAKE 3.png", "Lake"),
-  finalRender("/FINAL RENDERS/DOWNTOWN CBD (1).jpg", "Downtown"),
-  finalRender("/FINAL RENDERS/DOWNTOWN CBD (1).png", "Downtown"),
-  finalRender("/FINAL RENDERS/DOWNTOWN CBD (3).jpg", "Downtown"),
-  finalRender("/FINAL RENDERS/DOWNTOWN CBD UPSCALED.png", "Downtown"),
-  finalRender("/FINAL RENDERS/River view PREMIUM PLUS 2.jpg", "River View"),
-  finalRender("/FINAL RENDERS/LOCAL BLOCK MOSQUE 4.png", "Mosque"),
-  // finalRender("/FINAL RENDERS/LOCAL BLOCK SMALL MOSQUE 2.jpg", "Mosque"),
-  finalRender("/FINAL RENDERS/MEGA MALL 1.png", "Commercial"),
-  // finalRender("/FINAL RENDERS/MEGA MALL 3.png", "Commercial"),
-  // finalRender("/FINAL RENDERS/MEGA MALL 4.png", "Commercial"),
-  // finalRender("/FINAL RENDERS/MEGA MALL 5.png", "Commercial"),
-  finalRender("/FINAL RENDERS/MEGA MALL 6.png", "Commercial"),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL AMENITIES 1.png",
-    "Amenities",
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 2.jpg",
+    "Site View",
+    "Project Site Green Plains",
   ),
-  // finalRender(
-  //   "/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL AMENITIES 2.png",
-  //   "Amenities",
-  // ),
-  // finalRender("/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 1.png", "Mosque"),
-  finalRender("/FINAL RENDERS/PREMIUM 1 SECTOR CENTRAL MOSQUE 2.png", "Mosque"),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 1.jpg",
-    "Community Farming",
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 3.jpg",
+    "Site View",
+    "Project Site Natural Lake",
   ),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 3.png",
-    "Community Farming",
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 4.jpg",
+    "Site View",
+    "Site Office Aerial View",
   ),
-  // finalRender(
-  //   "/FINAL RENDERS/PREMIUM 1 SECTOR- BLOCK C- COMMUNITY FARMING 7.png",
-  //   "Community Farming",
-  // ),
-  finalRender(
-    "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 1.jpg",
-    "Forest Walk",
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 5.jpg",
+    "Site View",
+    "Project Site Water Corridor",
   ),
-  // finalRender(
-  //   "/FINAL RENDERS/PREMIUM 1 SECTOR- FOREST WALK 2.png",
-  //   "Forest Walk",
-  // ),
-  // finalRender("/FINAL RENDERS/RIVER SIDE 1.png", "Riverside"),
-  // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 1.png", "Amenities"),
-  // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 2.png", "Amenities"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 3.png", "Amenities"),
-  // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 4.png", "Amenities"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 5.png", "Amenities"),
-  // finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 6.jpg", "Amenities"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL AMENITIES 7.png", "Amenities"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 1.png", "Education"),
-  // finalRender("/FINAL RENDERS/SECTOR CENTRAL HIGH SCHOOL 2.png", "Education"),
-  // finalRender("/FINAL RENDERS/SECTOR CENTRAL STADIUM 1.png", "Sports"),
-  finalRender("/FINAL RENDERS/SECTOR CENTRAL STADIUM 2.png", "Sports"),
-  // finalRender("/FINAL RENDERS/UNIVERSITY 1.png", "Education"),
-  finalRender("/FINAL RENDERS/UNIVERSITY 2.png", "Education"),
-  // finalRender("/FINAL RENDERS/UNIVERSITY 3.png", "Education"),
-  // finalRender("/FINAL RENDERS/UNIVERSITY 4.png", "Education"),
-  finalRender("/FINAL RENDERS/UNIVERSITY LIBRARY.png", "Education"),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK A.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK B.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK C.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 1 BLOCK D.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 BLOCK D.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER P.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender("/FINAL RENDERS/Masterplan/EXCLUSIVE 2 CENTER.jpg", "Masterplan"),
-  // finalRender("/FINAL RENDERS/Masterplan/FOREST WALK 2.jpg", "Masterplan"),
-  // finalRender("/FINAL RENDERS/Masterplan/FOREST WALK TOP.jpg", "Masterplan"),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/FULL TOP MAP V2 SIDE.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender("/FINAL RENDERS/Masterplan/FULL TOP MAP V2.jpg", "Masterplan"),
-  // finalRender("/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK A.jpg", "Masterplan"),
-  // finalRender("/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK B.jpg", "Masterplan"),
-  // finalRender("/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK C.jpg", "Masterplan"),
-  // finalRender(
-  //   "/FINAL RENDERS/Masterplan/PREMIUM 1 BLOCK CENTER.jpg",
-  //   "Masterplan",
-  // ),
-  // finalRender("/FINAL RENDERS/Billboards/1RX AI UPSCALED.png", "Billboard"),
-  finalRender("/FINAL RENDERS/Billboards/6RX AI UPSCALED.png", "Billboard"),
-  // finalRender("/FINAL RENDERS/Billboards/7RX AI UPSCALED.jpeg", "Billboard"),
-];
+  createRender(
+    "/anondo bhubon site/anondo bhubon site 6.jpg",
+    "Site View",
+    "Anondo Bhubon Estate Horizon",
+  ),
 
-export const finalRenderHighlights = finalRenderImages.filter(
-  (image) => image.label !== "Billboard",
-);
+  // Waterfront, CBD & Commercial Hub
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/RIVER SIDE 1x.jpg",
+    "Waterfront",
+    "Riverside Waterfront Promenade",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (1)x (1).jpg",
+    "Downtown CBD",
+    "CBD Downtown Waterfront Skyline",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (2)x.jpg",
+    "Downtown CBD",
+    "CBD Downtown Central Avenue",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (3)x.jpg",
+    "Downtown CBD",
+    "CBD Downtown Commercial Towers",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/MEGA MALL 1x.jpg",
+    "Mega Commercial Centre",
+    "Mega Mall Grand Entrance",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/MEGA MALL 3x.jpg",
+    "Mega Commercial Centre",
+    "Mega Mall Retail Plaza",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/MEGA MALL 6x.jpg",
+    "Mega Commercial Centre",
+    "Mega Mall Waterfront View",
+  ),
+
+  // University & Education
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 2x.jpg",
+    "University & Education",
+    "University Academic Building",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 3x.jpg",
+    "University & Education",
+    "Anondo Bhubon University Campus",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 4x.jpg",
+    "University & Education",
+    "University Campus Sports Ground",
+  ),
+  createRender(
+    "/anondo bhubon New/CBD FACILITIES/UNIVERSITY LIBRARYx.jpg",
+    "University & Education",
+    "Anondo Bhubon University Library",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (1)x.jpg",
+    "Education",
+    "Central Sector High School",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (2)x.jpg",
+    "Education",
+    "High School Campus & Field",
+  ),
+
+  // Premium Plus Enclaves & River View
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (3)x.jpg",
+    "Premium Plus Sector",
+    "Premium Plus Courtyard Plots",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (4)x.jpg",
+    "Premium Plus Sector",
+    "Courtyard Plot Green Lawn",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (1)x.jpg",
+    "River View",
+    "River View Canal Bridge",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (2)x.jpg",
+    "River View",
+    "Premium Plus River View",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM PLUS/STADIUM PREMIUM PLUSx.jpg",
+    "Sports & Recreation",
+    "Premium Plus Cricket Stadium",
+  ),
+
+  // 20-Bigha Central Sector Amenities
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/FOREST WALK PREMIUM 1  (1)xx.jpg",
+    "Forest Walk",
+    "Premium Sector Forest Walkway",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL MOSQUE PREMIUM 1 (2)x.jpg",
+    "Mosque",
+    "Central Mosque Grand Facade",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg",
+    "Central Amenities",
+    "Central Amenities Terrace Court",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (5)x.jpg",
+    "Central Amenities",
+    "Central Amenities Corner Mall",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/Community Space.jpg",
+    "Community & Sports",
+    "Central Community Sports Space",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM EXCLUSIVE 1 (1)x.jpg",
+    "Sports",
+    "Exclusive Sector Sports Stadium",
+  ),
+  createRender(
+    "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM PREMIUM 1 (2)x.jpg",
+    "Sports",
+    "Premium Sector Stadium Complex",
+  ),
+
+  // Block Community Gathering & Green Networks
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg",
+    "Lake & Waterfront",
+    "Block Community Lake View",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 3x.jpg",
+    "Lake & Waterfront",
+    "Community Lake Waterfront Park",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY FARMING (1)x.1.jpg",
+    "Community Farming",
+    "Block Community Farming Garden",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY FARMING (2)x.jpg",
+    "Community Farming",
+    "Community Farming Aerial View",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY MOSQUE 2x.jpg",
+    "Mosque",
+    "Block Community Mosque Courtyard",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY MOSQUE 4x.jpg",
+    "Mosque",
+    "Community Mosque Canal View",
+  ),
+
+  // Sector Masterplan Layouts
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 CENTER P.jpg",
+    "Masterplan",
+    "Exclusive Sector Central Hub",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM 1/TOP PREMIUM.jpg",
+    "Masterplan",
+    "Premium Sector Masterplan View",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM 1/FOREST WALK TOP.jpg",
+    "Masterplan",
+    "Forest Walkway Masterplan Layout",
+  ),
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK A.jpg",
+    "Masterplan",
+    "Exclusive Sector Block A Plan",
+  ),
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK B.jpg",
+    "Masterplan",
+    "Exclusive Sector Block B Plan",
+  ),
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK C.jpg",
+    "Masterplan",
+    "Exclusive Sector Block C Plan",
+  ),
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK D.jpg",
+    "Masterplan",
+    "Exclusive Sector Block D Plan",
+  ),
+  createRender(
+    "/anondo bhubon New/PREMIUM 1/PREMIUM 1 CENTER.jpg",
+    "Masterplan",
+    "Premium Sector Central Plan",
+  ),
+  createRender(
+    "/anondo bhubon New/GENERAL/General-Sector-2.png",
+    "Masterplan",
+    "General Sector Masterplan Layout",
+  ),
+  createRender(
+    "/anondo bhubon New/Commercial/Commercial-Sector.png",
+    "Commercial Sector",
+    "Commercial Sector Masterplan Layout",
+  ),
+];

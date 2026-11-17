@@ -125,55 +125,35 @@ export default function EconomicZonesSection() {
           </article>
 
           {/* Investment Path Cards */}
-          <div className="grid gap-5">
+          <div className="grid gap-6">
             {economyItems.map((item, index) => (
               <article
                 key={item.name}
-                className="group relative overflow-hidden border border-[#2C3A83]/10 bg-white p-6 shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_24px_65px_rgba(27,35,75,0.14)] sm:p-7"
+                className="relative flex flex-col justify-between border border-[#2C3A83]/12 border-l-[3px] border-l-[#F48220] bg-white p-6 shadow-[0_14px_45px_rgba(27,35,75,0.06)] sm:p-8"
               >
-                {/* Top Accent */}
-                <div className="absolute right-0 top-0 h-1 w-16 bg-[#F48220] transition-all duration-500 group-hover:w-full" />
-
-                {/* Background Number */}
-                <span className="pointer-events-none absolute -bottom-5 -right-1 select-none text-[105px] font-black leading-none tracking-[-0.08em] text-[#2C3A83]/[0.035]">
-                  {String(index + 2).padStart(2, "0")}
-                </span>
-
-                <div className="relative z-10 flex h-full flex-col">
-                  <div className="flex items-start justify-between gap-5">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-[#EEF0F8] text-sm font-bold text-[#2C3A83] transition duration-300 group-hover:bg-[#2C3A83] group-hover:text-white">
+                <div>
+                  <div className="flex items-center justify-between gap-4 border-b border-[#2C3A83]/10 pb-5">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center bg-[#202D72] text-sm font-bold tabular-nums text-white">
                       {String(index + 2).padStart(2, "0")}
                     </span>
 
-                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F48220]">
+                    <span className="inline-flex items-center gap-2 bg-[#F48220]/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-[#F48220]">
+                      <span
+                        aria-hidden="true"
+                        className="h-1.5 w-1.5 bg-[#F48220]"
+                      />
                       {item.tag}
                     </span>
                   </div>
 
-                  <div className="mt-7">
+                  <div className="mt-6">
                     <h3 className="text-2xl font-semibold leading-tight tracking-[-0.025em] text-[#20263A]">
                       {item.name}
                     </h3>
 
-                    <p className="mt-4 text-sm font-medium leading-7 text-[#616779]">
+                    <p className="mt-4 text-[15px] font-medium leading-7 text-[#4A5063] sm:text-base sm:leading-8">
                       {item.text}
                     </p>
-                  </div>
-
-                  <div className="mt-auto pt-8">
-                    <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-5">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
-                        Anondo Bhubon
-                      </p>
-
-                      <span className="flex items-center gap-3">
-                        <span className="h-px w-8 bg-[#2C3A83]/20 transition-all duration-300 group-hover:w-12 group-hover:bg-[#F48220]" />
-
-                        <span className="text-lg leading-none text-[#2C3A83]/40 transition duration-300 group-hover:translate-x-1 group-hover:text-[#F48220]">
-                          →
-                        </span>
-                      </span>
-                    </div>
                   </div>
                 </div>
               </article>

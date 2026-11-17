@@ -28,17 +28,18 @@ export default function GalleryPageSection() {
       <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-primary">
-            Final Render Gallery
+            Township Visual Gallery
           </p>
 
           <h2 className="mt-3 text-3xl font-bold tracking-[-0.03em] text-gray-900 md:text-4xl">
-            {finalRenderImages.length} curated visuals from the final renders.
+            {finalRenderImages.length} curated visuals of Anondo Bhubon.
           </h2>
         </div>
 
         <p className="max-w-lg text-sm leading-7 text-gray-600">
-          Explore the latest township renders, masterplan visuals, amenities,
-          commercial zones, education anchors and billboard visuals.
+          Explore on-site aerial photography alongside architectural renders,
+          waterfront corridors, master plan layouts, residential enclaves,
+          civic amenities, commercial districts, and educational campuses.
         </p>
       </div>
 
@@ -65,8 +66,8 @@ export default function GalleryPageSection() {
               {item.label}
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-5">
-              <h3 className="text-base font-bold leading-tight text-white">
+            <div className="bottom-0 left-0 right-0 absolute bg-gradient-to-t from-black/85 via-black/40 to-transparent p-5 sm:p-6">
+              <h3 className="text-base font-semibold leading-snug text-white sm:text-lg">
                 {item.title}
               </h3>
             </div>

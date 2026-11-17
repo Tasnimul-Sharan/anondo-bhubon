@@ -160,6 +160,11 @@ const SUBGROUP_GALLERIES = {
         label: "Sector Central Hub",
         title: "General Sector — Central Hub & Community Amenities",
       },
+      {
+        src: "/anondo bhubon New/GENERAL/General-Sector-School.jpg",
+        label: "Education",
+        title: "General Sector School",
+      },
     ],
   },
 };
@@ -182,7 +187,32 @@ function getSubgroupGallery(headingText = "") {
 // crops vertically, so plans/maps keep `parallax: false` to stay fully visible.
 const band = (src, ratio = 1.6, extra = {}) => ({ src, ratio, mobileRatio: 1.2, parallax: true, ...extra });
 const pageBands = {
-  "residential-development": [],
+  "residential-development": [
+    band("/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 CENTER P.jpg", 3072 / 2073, {
+      afterSection: 3,
+      mobileRatio: 3072 / 2073,
+      parallax: false,
+      alt: "Modern high-rise condominium towers with green courtyards and community facilities",
+    }),
+    band("/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (5)x.jpg", 4886 / 3296, {
+      afterSection: 4,
+      mobileRatio: 4886 / 3296,
+      parallax: false,
+      alt: "Neighbourhood streets, local commercial amenities and pedestrian-friendly community life",
+    }),
+    band("/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg", 4877 / 3302, {
+      afterSection: 5,
+      mobileRatio: 4877 / 3302,
+      parallax: false,
+      alt: "Landscaped community lake, shaded walking paths and green residential surroundings",
+    }),
+    band("/anondo bhubon New/CBD FACILITIES/MEGA MALL 6x.jpg", 4749 / 3392, {
+      afterSection: 6,
+      mobileRatio: 4749 / 3392,
+      parallax: false,
+      alt: "Mega Commercial Centre, business district and waterfront connected to the township",
+    }),
+  ],
   "development-phasing": [
     band(finalRenderAssets.masterplan, 2.14, { parallax: false, mobileRatio: 1.3, position: "70% 50%" }),
     band(finalRenderAssets.amenities, 1.6),

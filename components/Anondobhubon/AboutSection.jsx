@@ -84,25 +84,23 @@ export default function AboutSection() {
             </div>
 
             {/* Pillars */}
-            <div className="mt-8 space-y-4">
+            <div className="mt-8 divide-y divide-[#2C3A83]/10 border border-[#2C3A83]/12 border-l-[3px] border-l-[#F48220] bg-white shadow-[0_14px_40px_rgba(27,35,75,0.06)]">
               {pillars.map((pillar, index) => (
                 <article
                   key={`${pillar.title}-${index}`}
-                  className="group relative overflow-hidden border border-[#2C3A83]/10 bg-white p-5 shadow-[0_10px_30px_rgba(27,35,75,0.05)] transition duration-300 hover:-translate-y-1 hover:border-[#F48220]/45 hover:shadow-[0_18px_45px_rgba(27,35,75,0.11)] sm:p-6"
+                  className="p-5 sm:p-6"
                 >
-                  {/* <div className="absolute right-0 top-0 h-1 w-12 bg-[#F48220] transition-all duration-300 group-hover:w-full" /> */}
-
                   <div className="flex gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-[#EEF0F8] text-xs font-bold text-[#2C3A83] transition duration-300 group-hover:bg-[#202D72] group-hover:text-white">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-[#202D72] text-xs font-bold tabular-nums text-white">
                       {String(index + 1).padStart(2, "0")}
-                    </div>
+                    </span>
 
                     <div>
                       <h3 className="text-lg font-semibold leading-tight tracking-[-0.015em] text-[#20263A]">
                         {pillar.title}
                       </h3>
 
-                      <p className="mt-2 text-sm font-medium leading-7 text-[#616779]">
+                      <p className="mt-2 text-sm font-medium leading-7 text-[#4A5063]">
                         {pillar.text}
                       </p>
                     </div>
@@ -211,23 +209,27 @@ export default function AboutSection() {
               </div>
 
               {/* Who the township serves */}
-              <div className="grid sm:grid-cols-3">
+              <div className="divide-y divide-[#2C3A83]/10 sm:grid sm:grid-cols-3 sm:divide-x sm:divide-y-0">
                 {cardPoints.map((item, index) => (
                   <article
                     key={item.label}
-                    className={`group relative p-5 transition duration-300 hover:bg-[#F7F7FA] sm:p-6 ${
-                      index !== cardPoints.length - 1
-                        ? "border-b border-[#2C3A83]/10 sm:border-b-0 sm:border-r"
-                        : ""
-                    }`}
+                    className="p-5 sm:p-6"
                   >
-                    <span className="mb-3 block h-[3px] w-8 bg-[#F48220] transition-all duration-300 group-hover:w-14" />
+                    <div className="flex items-center gap-2.5">
+                      <span
+                        aria-hidden="true"
+                        className="h-2 w-2 shrink-0 bg-[#F48220]"
+                      />
+                      <span className="text-xs font-bold tabular-nums tracking-[0.16em] text-[#F48220]">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                    </div>
 
-                    <p className="text-base font-semibold leading-6 tracking-[-0.02em] text-[#20263A]">
+                    <p className="mt-3 text-base font-semibold leading-6 tracking-[-0.02em] text-[#20263A]">
                       {item.label}
                     </p>
 
-                    <p className="mt-2 text-xs font-medium leading-6 text-[#616779]">
+                    <p className="mt-2 text-sm font-medium leading-6 text-[#4A5063]">
                       {item.text}
                     </p>
                   </article>

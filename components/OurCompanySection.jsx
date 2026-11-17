@@ -42,7 +42,23 @@ const companies = [
     image: "/companies/housing.png",
   },
   {
+    name: "Anondo Cityscapers",
+    link: "https://www.anondocityscapers.com/",
+    email: "info@anondocityscapers.com",
+    phone: [
+      "01331115500",
+      "01331115511",
+      "01313775333",
+      "01313775334",
+      "01313775335",
+    ],
+    corporateAddress:
+      "Printers Building, 11–12th Floor, 5 Rajuk Avenue, Motijheel, 1000 Dhaka",
+    image: "/companies/cityscapers.png",
+  },
+  {
     name: "Anondo Bhubon.",
+    subtitle: "A project of Anondo Cityscapers",
     link: "https://www.anondobhubon.com/",
     email: "info@anondobhubon.com",
     phone: ["+8801313775333", "+8801313775334", "+8801313775335"],
@@ -164,18 +180,30 @@ export default function OurCompanySection() {
               </div>
             </div>
 
-            {/* Right Core Strength Card */}
+            {/* Right Group Identity & Core Strength Card */}
             <div className="border border-primary/12 border-t-[3px] border-t-secondary bg-[#FAF9F6] p-7 shadow-[0_18px_50px_rgba(23,32,58,0.06)] sm:p-10">
-              <div>
-                <h3 className="text-xl font-semibold tracking-[-0.015em] text-[#17203A] sm:text-2xl">
+              <div className="flex items-center justify-center border border-primary/10 bg-white px-6 py-6">
+                <div className="relative h-36 w-56 sm:h-40 sm:w-64">
+                  <Image
+                    src="/companies/anondo-group-logo-1.png"
+                    alt="Anondo Group"
+                    fill
+                    className="object-contain"
+                    sizes="260px"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-7">
+                <h3 className="text-xl font-semibold tracking-[-0.015em] text-[#17203A]">
                   Our Core Strength
                 </h3>
 
-                <ul className="mt-5 divide-y divide-primary/10 border-y border-primary/10">
+                <ul className="mt-4 divide-y divide-primary/10 border-y border-primary/10">
                   {coreStrengths.map((strength) => (
                     <li
                       key={strength}
-                      className="flex items-center gap-3.5 py-4 text-sm font-medium text-[#2C3347] sm:text-base"
+                      className="flex items-center gap-3.5 py-3.5 text-sm font-medium text-[#2C3347] sm:text-base"
                     >
                       <span
                         aria-hidden="true"
@@ -186,7 +214,7 @@ export default function OurCompanySection() {
                   ))}
                 </ul>
 
-                <p className="mt-6 text-sm font-medium text-[#6B7280]">
+                <p className="mt-5 text-sm font-medium text-[#6B7280]">
                   Building trusted brands under one unified vision.
                 </p>
               </div>
@@ -247,9 +275,22 @@ export default function OurCompanySection() {
                         <span className="text-sm font-bold tabular-nums tracking-[0.18em] text-secondary">
                           {String(index + 1).padStart(2, "0")}
                         </span>
-                        <h3 className="text-2xl font-semibold tracking-[-0.02em] text-[#17203A] sm:text-[26px]">
-                          {company.name}
-                        </h3>
+                        <div>
+                          <div className="flex flex-wrap items-center gap-3">
+                            <h3 className="text-2xl font-semibold tracking-[-0.02em] text-[#17203A] sm:text-[26px]">
+                              {company.name}
+                            </h3>
+                            {company.subtitle && (
+                              <span className="inline-flex items-center gap-2 border border-secondary/30 bg-secondary/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-secondary">
+                                <span
+                                  aria-hidden="true"
+                                  className="h-1.5 w-1.5 bg-secondary"
+                                />
+                                {company.subtitle}
+                              </span>
+                            )}
+                          </div>
+                        </div>
                       </div>
 
                       <a
@@ -308,22 +349,28 @@ export default function OurCompanySection() {
                       </div>
 
                       {/* Project Address */}
-                      <div className="flex items-start gap-3.5">
-                        <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center bg-secondary/12 text-secondary">
-                          <FiMapPin className="text-sm" />
-                        </span>
-                        <div className="min-w-0">
-                          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#6B7280]">
-                            Project Address
-                          </p>
-                          <p className="mt-1 text-base leading-7 text-[#2C3347]">
-                            {company.projectAddress}
-                          </p>
+                      {company.projectAddress && (
+                        <div className="flex items-start gap-3.5">
+                          <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center bg-secondary/12 text-secondary">
+                            <FiMapPin className="text-sm" />
+                          </span>
+                          <div className="min-w-0">
+                            <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#6B7280]">
+                              Project Address
+                            </p>
+                            <p className="mt-1 text-base leading-7 text-[#2C3347]">
+                              {company.projectAddress}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      )}
 
                       {/* Corporate Office */}
-                      <div className="flex items-start gap-3.5">
+                      <div
+                        className={`flex items-start gap-3.5 ${
+                          !company.projectAddress ? "sm:col-span-2" : ""
+                        }`}
+                      >
                         <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center bg-secondary/12 text-secondary">
                           <HiOutlineOfficeBuilding className="text-base" />
                         </span>
