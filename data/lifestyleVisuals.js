@@ -14,12 +14,12 @@ const visuals = {
     "A shaded pedestrian walkway beneath a canopy of trees at Anondo Bhubon",
   ),
   courtyard: image(
-    `${premiumPlus}/COURTYARD PLOT (1)x.jpg`, 6776, 4838,
-    "Landscaped residential courtyard with footpaths and seating",
+    `${premiumPlus}/COURTYARD PLOT (3)x.jpg`, 6776, 4838,
+    "Landscaped residential courtyard with footpaths and green rooftops",
   ),
   courtyardAerial: image(
-    `${premiumPlus}/COURTYARD PLOT (2)x.jpg`, 4124, 2990,
-    "Aerial view of a landscaped courtyard between residential buildings",
+    `${premiumPlus}/COURTYARD PLOT (4)x.jpg`, 6776, 4838,
+    "Shaded courtyard garden and walking paths between residential buildings",
   ),
   greenNeighbourhood: image(
     `${premiumPlus}/COURTYARD PLOT (3)x.jpg`, 6776, 4838,
@@ -46,7 +46,7 @@ const visuals = {
     "Community football field with a running track and spectator seating",
   ),
   stadiumExclusive2: image(
-    `${central}/STADIUM EXCLUSIVE 1 (2)x.jpg`, 4752, 3389,
+    `${central}/STADIUM PREMIUM 1 (2)x.jpg`, 4749, 3392,
     "Community stadium and athletic complex surrounded by residential blocks at Anondo Bhubon",
   ),
   communitySpace: image(
@@ -54,7 +54,7 @@ const visuals = {
     "Central community facilities with a sports field, mosque and landscaped streets",
   ),
   shoppingCourtyard: image(
-    `${central}/CENTRAL AMENITIES PREMIUM 1 (3)x.jpg`, 4893, 3290,
+    `${central}/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg`, 4749, 3392,
     "Pedestrian shopping courtyard with planted terraces and gathering spaces",
   ),
   centralAmenities4: image(
@@ -66,16 +66,20 @@ const visuals = {
     "Landscaped central amenities plaza and neighbourhood walkways in Premium 1",
   ),
   centralMosque: image(
-    `${central}/CENTRAL MOSQUE PREMIUM 1 (1)x.jpg`, 4749, 3392,
-    "Central mosque reflected in a tranquil water court surrounded by residences",
+    `${central}/CENTRAL MOSQUE PREMIUM 1 (2)x.jpg`, 4749, 3392,
+    "Central mosque and landscaped plaza surrounded by residences",
   ),
   school: image(
-    `${central}/HIGH SCHOOL (2)x.jpg`, 4912, 3277,
+    `${central}/HIGH SCHOOL (1)x.jpg`, 4749, 3392,
     "School entrance and pedestrian frontage within the residential community",
   ),
   schoolCampus: image(
     `${central}/HIGH SCHOOL (2)x.jpg`, 4912, 3277,
     "School campus with classroom buildings, landscaped grounds and sports fields",
+  ),
+  generalSchool: image(
+    `${newRenders}/GENERAL/General-Sector-School.jpg`, 2560, 1440,
+    "General Sector school with rooftop gardens and central playground",
   ),
   lake: image(
     `${community}/COMMUNITY LAKE 1x.jpg`, 4877, 3302,
@@ -86,12 +90,16 @@ const visuals = {
     "Shaded lakeside walking and gathering spaces within the neighbourhood",
   ),
   farming: image(
-    `${community}/COMMUNITY FARMING (1)x.jpg`, 7776, 5526,
+    `${community}/COMMUNITY FARMING (1)x.1.jpg`, 4890, 3293,
     "Community vegetable gardens and greenhouses beside residential buildings",
   ),
   farmingAerial: image(
     `${community}/COMMUNITY FARMING (2)x.jpg`, 4742, 3395,
     "Aerial view of community growing beds, greenhouses and garden pathways",
+  ),
+  communityMosque: image(
+    `${community}/COMMUNITY MOSQUE 2x.jpg`, 4886, 3296,
+    "Neighbourhood mosque courtyard and waterfront footbridge",
   ),
   businessDistrict: image(
     `${cbd}/CBD DOWNTOWN (1)x (1).jpg`, 5808, 4147,

@@ -48,8 +48,8 @@ export default function AboutSection() {
   </div>
 </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-0 relative z-10">
-        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center xl:gap-16">
+      <div className="relative z-10 mx-auto w-full max-w-[1380px] px-6 xl:px-0">
+        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center xl:gap-14">
           {/* Content */}
           <div>
             <div className="mb-5 flex items-center gap-4">
@@ -112,79 +112,42 @@ export default function AboutSection() {
 
           {/* Visual Area */}
           <div>
-            {/* Two Image Layout */}
-            <div className="grid gap-5 sm:grid-cols-2">
-              {/* First Image */}
-              <div className="group overflow-hidden border border-[#2C3A83]/10 bg-white p-3 shadow-[0_18px_50px_rgba(27,35,75,0.1)]">
-                <div className="relative overflow-hidden">
-                  <FramedImage
-                    src={finalRenderAssets.courtyardPremiumPlus}
-                    alt="Courtyard green residential living at Anondo Bhubon"
-                    className="aspect-[4/5]"
-                    imageClassName="object-cover transition duration-700 group-hover:scale-[1.04]"
-                    style={{ aspectRatio: "4 / 5" }}
-                    imageStyle={{ objectFit: "cover" }}
-                    sizes="(min-width: 1024px) 28vw, 100vw"
-                  />
+            {/* Single Featured Image */}
+            <div className="group overflow-hidden border border-[#2C3A83]/12 bg-white p-3 shadow-[0_18px_50px_rgba(27,35,75,0.08)]">
+              <div className="relative overflow-hidden">
+                <FramedImage
+                  src="/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (1)x.jpg"
+                  alt="River view residential landscape at Anondo Bhubon"
+                  className="aspect-[16/10]"
+                  imageClassName="object-cover transition duration-700 group-hover:scale-[1.03]"
+                  style={{ aspectRatio: "16 / 10" }}
+                  imageStyle={{ objectFit: "cover" }}
+                  sizes="(min-width: 1024px) 52vw, 100vw"
+                />
 
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#17203A]/70 via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#17203A]/80 via-[#17203A]/15 to-transparent" />
 
-                  <div className="absolute left-4 top-4 border border-white/20 bg-white/90 px-3 py-2 backdrop-blur-md">
-                    <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]">
-                      Courtyard Living
-                    </p>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
-                      Nature at the Heart
-                    </p>
-
-                    <p className="mt-2 text-xl font-semibold leading-tight text-white">
-                      Wherever people live, work or travel, they should feel
-                      connected to nature.
-                    </p>
-                  </div>
+                <div className="absolute left-4 top-4 border border-white/20 bg-white/95 px-3.5 py-2 backdrop-blur-md">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]">
+                    River-Edge Living
+                  </p>
                 </div>
-              </div>
 
-              {/* Second Image */}
-              <div className="group overflow-hidden border border-[#2C3A83]/10 bg-white p-3 shadow-[0_18px_50px_rgba(27,35,75,0.1)] sm:translate-y-8">
-                <div className="relative overflow-hidden">
-                  <FramedImage
-                    src={finalRenderAssets.riverPremiumPlus}
-                    alt="River view residential landscape at Anondo Bhubon"
-                    className="aspect-[4/5]"
-                    imageClassName="object-cover transition duration-700 group-hover:scale-[1.04]"
-                    style={{ aspectRatio: "4 / 5" }}
-                    imageStyle={{ objectFit: "cover" }}
-                    sizes="(min-width: 1024px) 28vw, 100vw"
-                  />
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-7">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
+                    A Better Tomorrow
+                  </p>
 
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#17203A]/70 via-transparent to-transparent" />
-
-                  <div className="absolute left-4 top-4 border border-white/20 bg-white/90 px-3 py-2 backdrop-blur-md">
-                    <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]">
-                      River-Edge Living
-                    </p>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F7A55A]">
-                      A Better Tomorrow
-                    </p>
-
-                    <p className="mt-2 text-xl font-semibold leading-tight text-white">
-                      We want greenery and water to become defining features of
-                      everyday township life.
-                    </p>
-                  </div>
+                  <p className="mt-2 max-w-2xl text-xl font-semibold leading-snug text-white sm:text-2xl">
+                    We want greenery and water to become defining features of
+                    everyday township life.
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Everyday Life Card */}
-            <div className="mt-7 overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_16px_50px_rgba(27,35,75,0.08)] sm:mt-12">
+            <div className="mt-6 overflow-hidden border border-[#2C3A83]/12 bg-white shadow-[0_16px_50px_rgba(27,35,75,0.06)]">
               <div className="flex flex-col gap-5 border-b border-[#2C3A83]/10 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
                 <div>
                   <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#F48220]">
@@ -235,6 +198,28 @@ export default function AboutSection() {
                   </article>
                 ))}
               </div>
+            </div>
+
+            {/* Bottom Statement Card (from unused first image) */}
+            <div className="relative mt-6 overflow-hidden border border-[#2C3A83]/12 border-l-[3px] border-l-[#F48220] bg-white p-6 shadow-[0_14px_40px_rgba(27,35,75,0.06)] sm:p-7">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="inline-flex items-center gap-2 bg-[#F48220]/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-[#F48220]">
+                  <span
+                    aria-hidden="true"
+                    className="h-1.5 w-1.5 bg-[#F48220]"
+                  />
+                  Nature at the Heart
+                </p>
+
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#2C3A83]/45">
+                  Courtyard Living
+                </span>
+              </div>
+
+              <p className="mt-4 text-lg font-semibold leading-8 tracking-[-0.015em] text-[#20263A] sm:text-xl">
+                Wherever people live, work or travel, they should feel
+                connected to nature.
+              </p>
             </div>
           </div>
         </div>

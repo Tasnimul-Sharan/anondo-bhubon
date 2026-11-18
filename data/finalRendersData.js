@@ -1,4 +1,4 @@
-﻿const createRender = (src, label, title) => ({
+const createRender = (src, label, title) => ({
   src,
   label,
   title,

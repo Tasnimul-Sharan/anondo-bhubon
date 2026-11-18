@@ -138,6 +138,21 @@ const SUBGROUP_GALLERIES = {
         label: "Education",
         title: "High School — Campus View",
       },
+      {
+        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 COMMERCIAL TOWERS.jpeg",
+        label: "Commercial & Residential",
+        title: "Exclusive 2 — Commercial Towers",
+      },
+      {
+        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 COMMERCIAL HUB.jpeg",
+        label: "Commercial Hub",
+        title: "Exclusive 2 — Commercial Hub",
+      },
+      {
+        src: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 BLOCK D ZONE.jpeg",
+        label: "Residential Block",
+        title: "Exclusive 2 — Block D Zone",
+      },
     ],
   },
   General: {
