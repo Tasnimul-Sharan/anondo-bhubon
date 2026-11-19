@@ -203,6 +203,11 @@ export const finalRenderImages = [
 
   // Premium Plus Enclaves & River View
   createRender(
+    "/anondo bhubon New/PREMIUM PLUS/COURTYARD RESIDENCES WATERFRONT STREET.jpg",
+    "Premium Plus Sector",
+    "Courtyard Residences & Waterfront Street",
+  ),
+  createRender(
     "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (3)x.jpg",
     "Premium Plus Sector",
     "Premium Plus Courtyard Plots",
@@ -266,6 +271,16 @@ export const finalRenderImages = [
   ),
 
   // Block Community Gathering & Green Networks
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY PARK WALKWAY.jpg",
+    "Parks & Open Spaces",
+    "Community Park & Garden Walkway",
+  ),
+  createRender(
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/NEIGHBOURHOOD ROAD WALKWAY.jpg",
+    "Connectivity & Roads",
+    "Neighbourhood Road & Pedestrian Footpath",
+  ),
   createRender(
     "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg",
     "Lake & Waterfront",

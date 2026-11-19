@@ -10,191 +10,309 @@ function image(src, width, height, alt) {
 
 const visuals = {
   forest: image(
-    `${central}/FOREST WALK PREMIUM 1  (1)xx.jpg`, 4749, 3392,
+    `${central}/FOREST WALK PREMIUM 1  (1)xx.jpg`,
+    4749,
+    3392,
     "A shaded pedestrian walkway beneath a canopy of trees at Anondo Bhubon",
   ),
   courtyard: image(
-    `${premiumPlus}/COURTYARD PLOT (3)x.jpg`, 6776, 4838,
+    `${premiumPlus}/COURTYARD PLOT (3)x.jpg`,
+    6776,
+    4838,
     "Landscaped residential courtyard with footpaths and green rooftops",
   ),
   courtyardAerial: image(
-    `${premiumPlus}/COURTYARD PLOT (4)x.jpg`, 6776, 4838,
+    `${premiumPlus}/COURTYARD PLOT (4)x.jpg`,
+    6776,
+    4838,
     "Shaded courtyard garden and walking paths between residential buildings",
   ),
   greenNeighbourhood: image(
-    `${premiumPlus}/COURTYARD PLOT (3)x.jpg`, 6776, 4838,
+    `${premiumPlus}/COURTYARD PLOT (3)x.jpg`,
+    6776,
+    4838,
     "Green rooftops, planted courtyards and tree-lined streets in Premium Plus",
   ),
   courtyardGarden: image(
-    `${premiumPlus}/COURTYARD PLOT (4)x.jpg`, 6776, 4838,
+    `${premiumPlus}/COURTYARD PLOT (4)x.jpg`,
+    6776,
+    4838,
     "A shared garden and walking paths framed by residential buildings",
   ),
   river: image(
-    `${premiumPlus}/RIVER VIEW PREMIUM PLUS (1)x.jpg`, 4155, 2968,
+    `${premiumPlus}/RIVER VIEW PREMIUM PLUS (1)x.jpg`,
+    4155,
+    2968,
     "Residential waterfront with landscaped banks and arched pedestrian bridges",
   ),
   riverEvening: image(
-    `${premiumPlus}/RIVER VIEW PREMIUM PLUS (2)x.jpg`, 4155, 2968,
+    `${premiumPlus}/RIVER VIEW PREMIUM PLUS (2)x.jpg`,
+    4155,
+    2968,
     "Evening view of the waterway and green promenades through Premium Plus",
   ),
   cricket: image(
-    `${premiumPlus}/STADIUM PREMIUM PLUSx.jpg`, 6776, 4838,
+    `${premiumPlus}/STADIUM PREMIUM PLUSx.jpg`,
+    6776,
+    4838,
     "Cricket stadium and landscaped surroundings in Premium Plus",
   ),
   football: image(
-    `${central}/STADIUM EXCLUSIVE 1 (1)x.jpg`, 4525, 2954,
+    `${central}/STADIUM EXCLUSIVE 1 (1)x.jpg`,
+    4525,
+    2954,
     "Community football field with a running track and spectator seating",
   ),
   stadiumExclusive2: image(
-    `${central}/STADIUM PREMIUM 1 (2)x.jpg`, 4749, 3392,
+    `${central}/STADIUM PREMIUM 1 (2)x.jpg`,
+    4749,
+    3392,
     "Community stadium and athletic complex surrounded by residential blocks at Anondo Bhubon",
   ),
   communitySpace: image(
-    `${central}/Community Space.jpg`, 4749, 3392,
+    `${central}/Community Space.jpg`,
+    4749,
+    3392,
     "Central community facilities with a sports field, mosque and landscaped streets",
   ),
   shoppingCourtyard: image(
-    `${central}/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg`, 4749, 3392,
+    `${central}/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg`,
+    4749,
+    3392,
     "Pedestrian shopping courtyard with planted terraces and gathering spaces",
   ),
   centralAmenities4: image(
-    `${central}/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg`, 4749, 3392,
+    `${central}/CENTRAL AMENITIES PREMIUM 1 (4)x.jpg`,
+    4749,
+    3392,
     "Central amenities hub and community gathering spaces in Premium 1",
   ),
   centralAmenities5: image(
-    `${central}/CENTRAL AMENITIES PREMIUM 1 (5)x.jpg`, 4886, 3296,
+    `${central}/CENTRAL AMENITIES PREMIUM 1 (5)x.jpg`,
+    4886,
+    3296,
     "Landscaped central amenities plaza and neighbourhood walkways in Premium 1",
   ),
   centralMosque: image(
-    `${central}/CENTRAL MOSQUE PREMIUM 1 (2)x.jpg`, 4749, 3392,
+    `${central}/CENTRAL MOSQUE PREMIUM 1 (2)x.jpg`,
+    4749,
+    3392,
     "Central mosque and landscaped plaza surrounded by residences",
   ),
   school: image(
-    `${central}/HIGH SCHOOL (1)x.jpg`, 4749, 3392,
+    `${central}/HIGH SCHOOL (1)x.jpg`,
+    4749,
+    3392,
     "School entrance and pedestrian frontage within the residential community",
   ),
   schoolCampus: image(
-    `${central}/HIGH SCHOOL (2)x.jpg`, 4912, 3277,
+    `${central}/HIGH SCHOOL (2)x.jpg`,
+    4912,
+    3277,
     "School campus with classroom buildings, landscaped grounds and sports fields",
   ),
   generalSchool: image(
-    `${newRenders}/GENERAL/General-Sector-School.jpg`, 2560, 1440,
+    `${newRenders}/GENERAL/General-Sector-School.jpg`,
+    2560,
+    1440,
     "General Sector school with rooftop gardens and central playground",
   ),
   lake: image(
-    `${community}/COMMUNITY LAKE 1x.jpg`, 4877, 3302,
+    `${community}/COMMUNITY LAKE 1x.jpg`,
+    4877,
+    3302,
     "Tree-lined paths along a community lake surrounded by residences",
   ),
   lakeside: image(
-    `${community}/COMMUNITY LAKE 3x.jpg`, 4883, 3299,
+    `${community}/COMMUNITY LAKE 3x.jpg`,
+    4883,
+    3299,
     "Shaded lakeside walking and gathering spaces within the neighbourhood",
   ),
   farming: image(
-    `${community}/COMMUNITY FARMING (1)x.1.jpg`, 4890, 3293,
+    `${community}/COMMUNITY FARMING (1)x.1.jpg`,
+    4890,
+    3293,
     "Community vegetable gardens and greenhouses beside residential buildings",
   ),
   farmingAerial: image(
-    `${community}/COMMUNITY FARMING (2)x.jpg`, 4742, 3395,
+    `${community}/COMMUNITY FARMING (2)x.jpg`,
+    4742,
+    3395,
     "Aerial view of community growing beds, greenhouses and garden pathways",
   ),
   communityMosque: image(
-    `${community}/COMMUNITY MOSQUE 2x.jpg`, 4886, 3296,
+    `${community}/COMMUNITY MOSQUE 2x.jpg`,
+    4886,
+    3296,
     "Neighbourhood mosque courtyard and waterfront footbridge",
   ),
   businessDistrict: image(
-    `${cbd}/CBD DOWNTOWN (1)x (1).jpg`, 5808, 4147,
+    `${cbd}/CBD DOWNTOWN (1)x (1).jpg`,
+    5808,
+    4147,
     "Waterfront business district with office towers and tree-lined streets",
   ),
   downtown: image(
-    `${cbd}/CBD DOWNTOWN (2)x.jpg`, 5773, 2790,
+    `${cbd}/CBD DOWNTOWN (2)x.jpg`,
+    5773,
+    2790,
     "A landscaped boulevard connecting offices and commercial destinations",
   ),
   businessAerial: image(
-    `${cbd}/CBD DOWNTOWN (3)x.jpg`, 5808, 4147,
+    `${cbd}/CBD DOWNTOWN (3)x.jpg`,
+    5808,
+    4147,
     "Aerial view of the commercial district and its connected streets",
   ),
   mall: image(
-    `${cbd}/MEGA MALL 6x.jpg`, 4749, 3392,
+    `${cbd}/MEGA MALL 6x.jpg`,
+    4749,
+    3392,
     "Mega mall and office buildings beside a landscaped urban boulevard",
   ),
   promenade: image(
-    `${cbd}/RIVER SIDE 1x.jpg`, 4749, 3392,
+    `${cbd}/RIVER SIDE 1x.jpg`,
+    4749,
+    3392,
     "Waterfront promenade with seating and views across the township",
   ),
   university: image(
-    `${cbd}/UNIVERSITY 3x.jpg`, 4749, 3392,
+    `${cbd}/UNIVERSITY 3x.jpg`,
+    4749,
+    3392,
     "Anondo Bhubon university entrance with landscaped pedestrian approaches",
   ),
   universityCampus: image(
-    `${cbd}/UNIVERSITY 2x.jpg`, 4749, 3392,
+    `${cbd}/UNIVERSITY 2x.jpg`,
+    4749,
+    3392,
     "University campus buildings and landscaped arrival spaces",
   ),
   library: image(
-    `${cbd}/UNIVERSITY LIBRARYx.jpg`, 4749, 3392,
+    `${cbd}/UNIVERSITY LIBRARYx.jpg`,
+    4749,
+    3392,
     "University library and planted courtyard for learning and gathering",
   ),
   relaxation: image(
-    "/bhubon-old/RELAXATION ZONE.jpg", 1624, 968,
+    "/bhubon-old/RELAXATION ZONE.jpg",
+    1624,
+    968,
     "Relaxation garden with hammocks, trees and a pool",
   ),
   meditationSpace: image(
-    "/bhubon-old/MEDITATION SPACE.jpg", 1536, 1024,
+    "/bhubon-old/MEDITATION SPACE.jpg",
+    1536,
+    1024,
     "Quiet meditation space with mats overlooking a planted garden",
   ),
   meditationArea: image(
-    "/bhubon-old/MEDITATION AREA.jpg", 1536, 1024,
+    "/bhubon-old/MEDITATION AREA.jpg",
+    1536,
+    1024,
     "Open-air meditation deck shaded by trees in a green landscape",
+  ),
+  communityParkWalkway: image(
+    `${community}/COMMUNITY PARK WALKWAY.jpg`,
+    1024,
+    686,
+    "Community park with brick pedestrian walkways, circular garden path and benches",
+  ),
+  neighbourhoodRoad: image(
+    `${community}/NEIGHBOURHOOD ROAD WALKWAY.jpg`,
+    1024,
+    686,
+    "Internal neighbourhood road with brick pedestrian footpath and landscaped park",
+  ),
+  courtyardWaterfrontStreet: image(
+    `${premiumPlus}/Home_Area_Walkway_Street_View.jpg`,
+    1024,
+    571,
+    "Sunset courtyard residences, pocket park and waterfront street",
   ),
 };
 
 const lifestyleVisuals = {
   philosophy: {
     hero: visuals.river,
-    sections: [{
-      topBand: [visuals.lakeside],
-      bottomBand: [visuals.forest, visuals.courtyard, visuals.cricket, visuals.farming],
-    }],
+    sections: [
+      {
+        topBand: [visuals.lakeside],
+        bottomBand: [
+          visuals.forest,
+          visuals.courtyard,
+          visuals.cricket,
+          visuals.farming,
+        ],
+      },
+    ],
   },
   "a-day-in-the-life": {
     hero: visuals.lake,
-    sections: [{
-      topBand: [visuals.forest],
-      bottomBand: [
-        { ...visuals.lake, fullWidth: true },
-        { ...visuals.stadiumExclusive2, fullWidth: true },
-        { ...visuals.school, fullWidth: true },
-        visuals.centralAmenities4,
-        visuals.centralAmenities5,
-      ],
-    }],
+    sections: [
+      {
+        topBand: [visuals.courtyardWaterfrontStreet],
+        bottomBand: [
+          { ...visuals.lake, fullWidth: true },
+          { ...visuals.stadiumExclusive2, fullWidth: true },
+          { ...visuals.school, fullWidth: true },
+          visuals.centralAmenities4,
+          visuals.centralAmenities5,
+        ],
+      },
+    ],
   },
   "our-commitment": {
     hero: visuals.riverEvening,
-    sections: [{
-      topBand: [visuals.greenNeighbourhood],
-      bottomBand: [visuals.forest, visuals.lakeside, visuals.farming, visuals.courtyardGarden],
-    }],
+    sections: [
+      {
+        topBand: [visuals.greenNeighbourhood],
+        bottomBand: [
+          visuals.communityParkWalkway,
+          visuals.forest,
+          visuals.lakeside,
+          visuals.farming,
+        ],
+      },
+    ],
   },
   "healthy-lifestyle-for-every-generation": {
-    hero: visuals.courtyard,
-    sections: [{
-      topBand: [visuals.lakeside],
-      bottomBand: [visuals.schoolCampus, visuals.football, visuals.forest, visuals.courtyardGarden],
-    }],
+    hero: visuals.courtyardWaterfrontStreet,
+    sections: [
+      {
+        topBand: [visuals.lakeside],
+        bottomBand: [
+          visuals.schoolCampus,
+          visuals.football,
+          visuals.forest,
+          visuals.courtyardGarden,
+        ],
+      },
+    ],
   },
   "green-township-at-every-level": {
     hero: visuals.greenNeighbourhood,
-    sections: [{
-      topBand: [visuals.courtyardAerial],
-      bottomBand: [visuals.forest, visuals.lake, visuals.communitySpace, visuals.farming],
-    }],
+    sections: [
+      {
+        topBand: [visuals.communityParkWalkway],
+        bottomBand: [
+          visuals.forest,
+          visuals.lake,
+          visuals.communitySpace,
+          visuals.farming,
+        ],
+      },
+    ],
   },
   "living-and-working": {
     hero: visuals.downtown,
-    sections: [{
-      topBand: [visuals.businessDistrict],
-      bottomBand: [visuals.businessAerial, visuals.mall, visuals.promenade],
-    }],
+    sections: [
+      {
+        topBand: [visuals.businessDistrict],
+        bottomBand: [visuals.businessAerial, visuals.mall, visuals.promenade],
+      },
+    ],
   },
   "living-in-harmony-with-nature": {
     hero: visuals.river,
@@ -209,23 +327,42 @@ const lifestyleVisuals = {
     hero: visuals.cricket,
     sections: [
       { bottomBand: [visuals.football, visuals.communitySpace] },
-      { bottomBand: [visuals.relaxation, visuals.meditationSpace, visuals.meditationArea] },
+      {
+        bottomBand: [
+          visuals.relaxation,
+          visuals.meditationSpace,
+          visuals.meditationArea,
+        ],
+      },
       { bottomBand: [visuals.lakeside, visuals.shoppingCourtyard] },
     ],
   },
   "education-and-lifelong-learning": {
     hero: visuals.university,
-    sections: [{
-      topBand: [visuals.school],
-      bottomBand: [visuals.schoolCampus, visuals.universityCampus, visuals.library],
-    }],
+    sections: [
+      {
+        topBand: [visuals.school],
+        bottomBand: [
+          visuals.schoolCampus,
+          visuals.universityCampus,
+          visuals.library,
+        ],
+      },
+    ],
   },
   "vision-for-generations": {
     hero: visuals.riverEvening,
-    sections: [{
-      topBand: [visuals.courtyardGarden],
-      bottomBand: [visuals.lakeside, visuals.forest, visuals.schoolCampus, visuals.greenNeighbourhood],
-    }],
+    sections: [
+      {
+        topBand: [visuals.courtyardGarden],
+        bottomBand: [
+          visuals.lakeside,
+          visuals.forest,
+          visuals.schoolCampus,
+          visuals.greenNeighbourhood,
+        ],
+      },
+    ],
   },
   "vision-mission": {
     hero: visuals.river,

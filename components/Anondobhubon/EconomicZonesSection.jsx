@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { economyContent as content, economyItems } from "@/data/homeContent";
-import { finalRenderAssets } from "@/data/finalRendersData";
 
 export default function EconomicZonesSection() {
   return (
@@ -52,7 +51,7 @@ export default function EconomicZonesSection() {
           {/* Main Feature Card */}
           <article className="group relative min-h-[610px] overflow-hidden bg-[#202D72] shadow-[0_32px_90px_rgba(28,36,82,0.24)]">
             <Image
-              src={finalRenderAssets.megaMall_Hub}
+              src="/anondo bhubon New/CBD FACILITIES/MEGA MALL 6x.jpg"
               alt="Commercial and economic hub at Anondo Bhubon"
               fill
               priority

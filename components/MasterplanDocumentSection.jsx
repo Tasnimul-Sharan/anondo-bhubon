@@ -49,6 +49,11 @@ const SUBGROUP_GALLERIES = {
         title: "River View Premium Plus — View 02",
       },
       {
+        src: "/anondo bhubon New/PREMIUM PLUS/COURTYARD RESIDENCES WATERFRONT STREET.jpg",
+        label: "Courtyard & Waterfront",
+        title: "Courtyard Residences & Waterfront Street",
+      },
+      {
         src: "/anondo bhubon New/PREMIUM PLUS/premium-plus-sports-field-community-gardens.jpeg",
         label: "Sports & Green Spaces",
         title: "Sports Field & Community Gardens",
@@ -209,11 +214,11 @@ const pageBands = {
       parallax: false,
       alt: "Modern high-rise condominium towers with green courtyards and community facilities",
     }),
-    band("/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/CENTRAL AMENITIES PREMIUM 1 (5)x.jpg", 4886 / 3296, {
+    band("/anondo bhubon New/PREMIUM PLUS/COURTYARD RESIDENCES WATERFRONT STREET.jpg", 1024 / 571, {
       afterSection: 4,
-      mobileRatio: 4886 / 3296,
+      mobileRatio: 1024 / 571,
       parallax: false,
-      alt: "Neighbourhood streets, local commercial amenities and pedestrian-friendly community life",
+      alt: "Sunset courtyard residences, pocket park and waterfront street",
     }),
     band("/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg", 4877 / 3302, {
       afterSection: 5,
@@ -236,7 +241,11 @@ const pageBands = {
   "transportation-utilities": [
     band("/road/road-network-plan.jpg", 1.6, { parallax: false }),
     band("/road/pedestrian-network-plan.jpg", 1.6, { parallax: false }),
-    band("/road/road.jpg", 1.78),
+    band("/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/NEIGHBOURHOOD ROAD WALKWAY.jpg", 1024 / 686, {
+      mobileRatio: 1024 / 686,
+      parallax: false,
+      alt: "Internal neighbourhood road, directional lanes and brick pedestrian footpath",
+    }),
   ],
   "education-healthcare": [
     band("/anondo bhubon New/CBD FACILITIES/CBD DOWNTOWN (2)x.jpg", 5773 / 2790, {

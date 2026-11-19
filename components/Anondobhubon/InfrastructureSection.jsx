@@ -52,110 +52,74 @@ export default function InfrastructureSection() {
           </p>
         </div>
 
-        {/* Infrastructure Grid */}
+        {/* 2-Column Image Card Grid (Title Only, No Description) */}
         <div className="grid gap-6 md:grid-cols-2">
-          {natureItems.map((item, index) => {
-            const isLargeCard = index === 2;
+          {natureItems.map((item, index) => (
+            <article
+              key={`${item.title}-${index}`}
+              className="group flex h-full flex-col overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_26px_70px_rgba(27,35,75,0.15)]"
+            >
+              {/* Image */}
+              <div className="relative aspect-[16/10] overflow-hidden bg-[#E8EAF1]">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  priority={index < 2}
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition duration-700 group-hover:scale-[1.05]"
+                />
 
-            return (
-              <article
-                key={`${item.title}-${index}`}
-                className={`group flex h-full flex-col overflow-hidden border border-[#2C3A83]/10 bg-white shadow-[0_14px_45px_rgba(27,35,75,0.07)] transition duration-500 hover:-translate-y-1.5 hover:border-[#F48220]/55 hover:shadow-[0_26px_70px_rgba(27,35,75,0.15)] ${
-                  isLargeCard ? "md:col-span-2" : ""
-                }`}
-              >
-                {/* Image */}
-                <div
-                  className={`relative overflow-hidden bg-[#E8EAF1] ${
-                    isLargeCard
-                      ? "aspect-[16/9] sm:aspect-[16/7]"
-                      : "aspect-[16/10]"
-                  }`}
-                >
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    priority={index === 0}
-                    sizes={
-                      isLargeCard ? "100vw" : "(min-width: 768px) 50vw, 100vw"
-                    }
-                    className="object-cover transition duration-700 group-hover:scale-[1.05]"
-                  />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#17203A]/60 via-[#17203A]/5 to-transparent" />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#17203A]/60 via-[#17203A]/5 to-transparent" />
-
-                  {/* Number */}
-                  <div className="absolute left-5 top-5 flex h-11 w-11 items-center justify-center bg-[#202D72] text-sm font-bold text-white shadow-[0_10px_25px_rgba(22,31,77,0.25)] transition duration-300 group-hover:bg-[#F48220]">
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
-
-                  {/* Category */}
-                  <div className="absolute bottom-5 left-5">
-                    <p className="border border-white/20 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83] backdrop-blur-md">
-                      {item.tag}
-                    </p>
-                  </div>
+                {/* Number */}
+                <div className="absolute left-5 top-5 flex h-11 w-11 items-center justify-center bg-[#202D72] text-sm font-bold text-white shadow-[0_10px_25px_rgba(22,31,77,0.25)] transition duration-300 group-hover:bg-[#F48220]">
+                  {String(index + 1).padStart(2, "0")}
                 </div>
 
-                {/* Content */}
-                <div
-                  className={`relative flex flex-1 flex-col p-6 sm:p-7 ${
-                    isLargeCard ? "lg:px-9 lg:py-8" : ""
-                  }`}
-                >
-                  <span
-                    className={`pointer-events-none absolute -bottom-4 -right-1 select-none font-black leading-none tracking-[-0.08em] text-[#2C3A83]/[0.035] ${
-                      isLargeCard ? "text-[130px]" : "text-[100px]"
-                    }`}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                {/* Category */}
+                <div className="absolute bottom-5 left-5">
+                  <p className="border border-white/20 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#2C3A83] backdrop-blur-md">
+                    {item.tag}
+                  </p>
+                </div>
+              </div>
 
-                  <div className="relative z-10">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
-                      Anondo Bhubon
+              {/* Content (Title Only) */}
+              <div className="relative flex flex-1 flex-col justify-between p-6 sm:p-7">
+                <span className="pointer-events-none absolute -bottom-4 -right-1 select-none text-[100px] font-black leading-none tracking-[-0.08em] text-[#2C3A83]/[0.035]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <div className="relative z-10">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F48220]">
+                    Anondo Bhubon
+                  </p>
+
+                  <h3 className="mt-2.5 text-2xl font-semibold leading-tight tracking-[-0.025em] text-[#20263A] sm:text-[1.75rem]">
+                    {item.title}
+                  </h3>
+                </div>
+
+                {/* Footer */}
+                <div className="relative z-10 mt-6">
+                  <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-4">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
+                      Sustainable Planning
                     </p>
 
-                    <h3
-                      className={`mt-3 font-semibold leading-tight tracking-[-0.025em] text-[#20263A] ${
-                        isLargeCard
-                          ? "text-3xl sm:text-4xl"
-                          : "text-2xl sm:text-[1.75rem]"
-                      }`}
-                    >
-                      {item.title}
-                    </h3>
+                    <span className="flex items-center gap-3">
+                      <span className="h-px w-8 bg-[#2C3A83]/20 transition-all duration-300 group-hover:w-12 group-hover:bg-[#F48220]" />
 
-                    <p
-                      className={`mt-4 font-medium leading-7 text-[#616779] ${
-                        isLargeCard ? "max-w-4xl text-[15px]" : "text-sm"
-                      }`}
-                    >
-                      {item.text}
-                    </p>
-                  </div>
-
-                  {/* Footer */}
-                  <div className="relative z-10 mt-auto pt-8">
-                    <div className="flex items-center justify-between border-t border-[#2C3A83]/10 pt-5">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#6F7587]">
-                        Sustainable Planning
-                      </p>
-
-                      <span className="flex items-center gap-3">
-                        <span className="h-px w-8 bg-[#2C3A83]/20 transition-all duration-300 group-hover:w-12 group-hover:bg-[#F48220]" />
-
-                        <span className="text-lg leading-none text-[#2C3A83]/40 transition duration-300 group-hover:translate-x-1 group-hover:text-[#F48220]">
-                          →
-                        </span>
+                      <span className="text-lg leading-none text-[#2C3A83]/40 transition duration-300 group-hover:translate-x-1 group-hover:text-[#F48220]">
+                        →
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
-              </article>
-            );
-          })}
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

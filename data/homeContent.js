@@ -59,7 +59,8 @@ export const connectivityContent = {
   ],
   footerLabel: "Project Location",
   footerValue: "Near Purbachal",
-  image: "/road/road.jpg",
+  image:
+    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/NEIGHBOURHOOD ROAD WALKWAY.jpg",
   imageTag: "Mobility",
   imageEyebrow: "Anondo Bhubon",
   imageCaption:
@@ -89,12 +90,12 @@ export const planItems = [
   },
   {
     title: "Premium Plus, Premium, Executive, General and Economy",
-    image: finalRenderAssets.masterplanSide,
+    image: "/anondo bhubon New/PREMIUM 1/TOP PREMIUM.jpg",
     text: "We believe a successful township must accommodate people with different aspirations, professional backgrounds and economic circumstances.",
   },
   {
     title: "Planned for Everyday Life",
-    image: "/FINAL RENDERS/Masterplan/TOP PREMIUM.jpg",
+    image: "/anondo bhubon New/PREMIUM 1/PREMIUM 1 CENTER.jpg",
     text: "Every residential sector is planned with provisions for schools, playgrounds, neighborhood commercial facilities, internal roads, community gathering spaces and greenery.",
   },
 ];
@@ -120,19 +121,20 @@ export const residences = [
   {
     title: "Villa Communities",
     tag: "Privacy & Space",
-    image: "/villa/luxury-villas.jpg",
+    image:
+      "/anondo bhubon New/PREMIUM PLUS/COURTYARD RESIDENCES WATERFRONT STREET.jpg",
     text: "Within this allocation, a good quantity of land is designated for small and large villa developments, offering distinctive residential environments for families seeking privacy, space and refined living.",
   },
   {
-    title: "Every Residential Sector",
+    title: "Neighborhood Communities",
     tag: "Planned for Daily Life",
-    image: finalRenderAssets.courtyardPremiumPlus,
+    image: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (1)x.jpg",
     text: "Elementary schools are incorporated at block level, while high schools and colleges with substantial playground facilities are provided for within the residential sectors.",
   },
   {
     title: "Modern Condominium District",
     tag: "Condominium District",
-    image: "/villa/condominiums.jpg",
+    image: "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 COMMERCIAL TOWERS.jpeg",
     text: "A condominium district envisioned with modern high-rise residential buildings, landscaped open spaces, community facilities and convenient commercial amenities.",
   },
 ];
@@ -151,20 +153,37 @@ export const natureItems = [
   {
     title: "Revival of the Old Brahmaputra River",
     tag: "River & Lakes",
-    image: finalRenderAssets.lake,
-    text: "One of our most meaningful environmental ambitions is the proposed revival of the historic Old Brahmaputra River, with the objective of reconnecting its watercourse to the Shitalakshya River, subject to appropriate hydrological studies, environmental assessments and regulatory approvals.",
+    image: "/anondo bhubon New/PREMIUM PLUS/RIVER VIEW PREMIUM PLUS (1)x.jpg",
+  },
+  {
+    title: "Community Lake",
+    tag: "Lake & Waterfront",
+    image:
+      "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg",
   },
   {
     title: "Forest Walkways",
     tag: "Green Corridors",
-    image: finalRenderAssets.forestWalk,
-    text: "We envision a network of green corridors distributed across different parts of the township. They are intended to support biodiversity, provide shaded pedestrian environments, improve the local microclimate and contribute to healthier surroundings.",
+    image:
+      "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/FOREST WALK PREMIUM 1  (1)xx.jpg",
   },
   {
-    title: "Wherever people live, work or travel, they should feel connected to nature.",
+    title: "Community Farming",
     tag: "Greenery & Water",
-    image: finalRenderAssets.farming,
-    text: "We want greenery and water to become defining features of everyday township life—not isolated attractions.",
+    image:
+      "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY FARMING (1)x.jpg",
+  },
+  {
+    title: "Community Mosque",
+    tag: "Community Life",
+    image:
+      "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY MOSQUE 4x.jpg",
+  },
+  {
+    title: "Community Space",
+    tag: "Community & Sports",
+    image:
+      "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/Community Space.jpg",
   },
 ];
 
@@ -186,49 +205,50 @@ export const lifestyleItems = [
   {
     title: "Sports Facilities",
     tag: "Sports",
-    image: finalRenderAssets.stadium,
+    image: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/STADIUM EXCLUSIVE 1 (1)x.jpg",
     description:
       "Our long-term vision includes international-standard cricket and football facilities, sports training centres and a range of indoor and outdoor sporting amenities, subject to detailed feasibility and design.",
   },
   {
     title: "Playgrounds and Recreational Spaces",
     tag: "Recreation",
-    image: "/bhubon-old/KID’S PLAYGROUND.jpg",
+    image: "/anondo bhubon New/PREMIUM PLUS/premium-plus-sports-field-community-gardens.jpeg",
     description:
       "We believe children should have opportunities to play, young people should be encouraged to develop sporting talent and citizens of every age should enjoy active lifestyles.",
   },
   {
     title: "Parks and Open Spaces",
     tag: "Green Networks",
-    image: "/bhubon-old/COMMUNAL PARK.jpg",
+    image:
+      "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY PARK WALKWAY.jpg",
     description:
       "These green networks will complement parks, landscaped roads, neighborhood gardens and open spaces, connecting residential communities, business districts and recreational destinations.",
   },
   {
     title: "Lakes and Water Features",
     tag: "Natural Heritage",
-    image: finalRenderAssets.lakeAlternate,
+    image: "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 3x.jpg",
     description:
       "It reflects our commitment to restoring natural heritage, improving ecological connectivity and preserving environmental resources for future generations.",
   },
   {
     title: "A New Landmark for Commerce and Community Life",
     tag: "Mega Commercial Centre",
-    image: finalRenderAssets.shopping,
+    image: "/anondo bhubon New/CBD FACILITIES/MEGA MALL 1x.jpg",
     description:
       "Our vision includes a landmark Mega Commercial Centre, designed to become a major destination for shopping, business, entertainment, recreation and public gathering.",
   },
   {
     title: "Schools and Colleges",
     tag: "Education",
-    image: finalRenderAssets.school,
+    image: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (2)x.jpg",
     description:
       "Education will be integrated throughout Anondo Bhubon's residential communities, with elementary schools at block level and provisions for high schools and colleges within residential sectors.",
   },
   {
     title: "University",
     tag: "Human Development",
-    image: finalRenderAssets.university,
+    image: "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 3x.jpg",
     description:
       "In addition, the master plan includes an international school-and-college campus and a university site.",
   },
