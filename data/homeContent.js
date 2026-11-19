@@ -122,7 +122,7 @@ export const residences = [
     title: "Villa Communities",
     tag: "Privacy & Space",
     image:
-      "/anondo bhubon New/PREMIUM PLUS/COURTYARD RESIDENCES WATERFRONT STREET.jpg",
+      "/anondo bhubon New/PREMIUM PLUS/COURTYARD PLOT (3)x.jpg",
     text: "Within this allocation, a good quantity of land is designated for small and large villa developments, offering distinctive residential environments for families seeking privacy, space and refined living.",
   },
   {

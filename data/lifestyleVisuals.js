@@ -226,7 +226,7 @@ const visuals = {
     "Internal neighbourhood road with brick pedestrian footpath and landscaped park",
   ),
   courtyardWaterfrontStreet: image(
-    `${premiumPlus}/Home_Area_Walkway_Street_View.jpg`,
+    `${premiumPlus}/COURTYARD RESIDENCES WATERFRONT STREET.jpg`,
     1024,
     571,
     "Sunset courtyard residences, pocket park and waterfront street",

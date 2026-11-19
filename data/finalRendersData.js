@@ -1,4 +1,4 @@
-const createRender = (src, label, title) => ({
+﻿const createRender = (src, label, title) => ({
   src,
   label,
   title,
@@ -171,11 +171,6 @@ export const finalRenderImages = [
 
   // University & Education
   createRender(
-    "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 2x.jpg",
-    "University & Education",
-    "University Academic Building",
-  ),
-  createRender(
     "/anondo bhubon New/CBD FACILITIES/UNIVERSITY 3x.jpg",
     "University & Education",
     "Anondo Bhubon University Campus",
@@ -302,11 +297,6 @@ export const finalRenderImages = [
     "Community Farming Aerial View",
   ),
   createRender(
-    "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY MOSQUE 2x.jpg",
-    "Mosque",
-    "Block Community Mosque Courtyard",
-  ),
-  createRender(
     "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY MOSQUE 4x.jpg",
     "Mosque",
     "Community Mosque Canal View",
@@ -323,11 +313,11 @@ export const finalRenderImages = [
     "Masterplan",
     "Premium Sector Masterplan View",
   ),
-  createRender(
-    "/anondo bhubon New/PREMIUM 1/FOREST WALK TOP.jpg",
-    "Masterplan",
-    "Forest Walkway Masterplan Layout",
-  ),
+  // createRender(
+  //   "/anondo bhubon New/PREMIUM 1/FOREST WALK TOP.jpg",
+  //   "Masterplan",
+  //   "Forest Walkway Masterplan Layout",
+  // ),
   createRender(
     "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK A.jpg",
     "Masterplan",
