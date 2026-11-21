@@ -202,6 +202,44 @@ function getSubgroupGallery(headingText = "") {
   return null;
 }
 
+const VILLA_LIGHTBOX_IMAGES = [
+  {
+    src: "/villa/condominiums.jpg",
+    label: "Exclusive Villa Communities",
+    title: "Small Villa District",
+  },
+  {
+    src: "/villa/luxury-villas.jpg",
+    label: "Exclusive Villa Communities",
+    title: "Large Villa District",
+  },
+];
+
+const SUBGROUP_CARD_IMAGES = {
+  "Small Villa District": {
+    src: "/villa/condominiums.jpg",
+    width: 1627,
+    height: 967,
+    badge: "01",
+    label: "Independent Villa Living",
+    title: "Small Villa District",
+    alt: "Thoughtfully landscaped small villa district with independent homes and tree-lined streets",
+    lightboxImages: VILLA_LIGHTBOX_IMAGES,
+    lightboxIndex: 0,
+  },
+  "Large Villa District": {
+    src: "/villa/luxury-villas.jpg",
+    width: 1672,
+    height: 941,
+    badge: "02",
+    label: "Waterfront & Estate Villas",
+    title: "Large Villa District",
+    alt: "Exclusive large villa district with spacious waterfront properties and private gardens",
+    lightboxImages: VILLA_LIGHTBOX_IMAGES,
+    lightboxIndex: 1,
+  },
+};
+
 // Visual only (no words): full-width image bands placed between chapters, per page.
 // `ratio` is the desktop width/height, `mobileRatio` the phone one. Parallax overscan
 // crops vertically, so plans/maps keep `parallax: false` to stay fully visible.
@@ -528,6 +566,71 @@ function getLargeGridSpanClass(index, total) {
 function SubGroup({ heading, blocks, onOpenLightbox }) {
   const gallery = heading.gallery || getSubgroupGallery(heading.text);
   const images = gallery?.images || [];
+  const cardImage = SUBGROUP_CARD_IMAGES[heading.text];
+
+  // Villa districts: large editorial split card (big image + text), alternating sides.
+  if (cardImage && images.length === 0) {
+    const imageRight = cardImage.badge === "02";
+    return (
+      <div
+        data-plan-reveal
+        data-villa-card
+        className="overflow-hidden border border-primary/12 bg-white shadow-[0_24px_70px_rgba(27,35,75,0.10)]"
+      >
+        <div className="h-1.5 w-full bg-[linear-gradient(90deg,#202D72_0%,#2C3A83_55%,#F48220_100%)]" />
+        <div className="grid lg:grid-cols-12">
+          <button
+            type="button"
+            onClick={() =>
+              onOpenLightbox?.({
+                groupTitle: heading.text,
+                images: cardImage.lightboxImages,
+                index: cardImage.lightboxIndex,
+              })
+            }
+            aria-label={`View ${cardImage.title}`}
+            className={`group relative block aspect-[16/10] w-full overflow-hidden bg-[#0B1330] text-left lg:col-span-8 lg:aspect-auto lg:min-h-[560px] xl:min-h-[620px] ${
+              imageRight ? "lg:order-2" : ""
+            }`}
+          >
+            <Image
+              src={cardImage.src}
+              alt={cardImage.alt}
+              fill
+              quality={90}
+              sizes="(min-width: 1024px) 65vw, 100vw"
+              className="object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,19,48,0)_55%,rgba(11,19,48,0.55)_100%)]"
+            />
+            <div className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center bg-[#202D72] text-xs font-bold text-white shadow-[0_10px_25px_rgba(22,31,77,0.28)] transition duration-300 group-hover:bg-secondary sm:left-6 sm:top-6 sm:h-12 sm:w-12 sm:text-sm">
+              {cardImage.badge}
+            </div>
+            <div className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center border border-white/20 bg-white/95 text-lg text-[#202D72] shadow-sm backdrop-blur-md transition duration-300 group-hover:bg-secondary group-hover:text-white sm:right-6 sm:top-6 sm:h-12 sm:w-12 sm:text-xl">
+              <FiMaximize2 />
+            </div>
+            <p className="absolute bottom-4 left-4 bg-white/95 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-[#202D72] shadow-sm sm:bottom-6 sm:left-6 sm:text-[11px]">
+              {cardImage.label}
+            </p>
+          </button>
+
+          <div className="flex flex-col justify-center p-7 sm:p-10 lg:col-span-4 lg:p-10 xl:p-12">
+            <span aria-hidden="true" className="mb-6 block h-[3px] w-12 bg-secondary" />
+            <SourceText
+              block={heading}
+              as="h4"
+              className="text-2xl font-semibold leading-[1.15] tracking-[-0.03em] text-[#17203A] sm:text-3xl lg:text-[2rem]"
+            />
+            <div className="mt-6 space-y-5">
+              <DocumentBlocks blocks={blocks} nested onOpenLightbox={onOpenLightbox} />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (images.length === 0) {
     return (
@@ -1400,7 +1503,10 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
         const hasIllustratedSubgroup = section.blocks.some(
           (block) => block.kind === "subheading" && subgroupImages?.[block.text],
         );
-        const fullWidthSection = metrics || hasGallerySubgroup || hasIllustratedSubgroup;
+        const hasVillaCards = section.blocks.some(
+          (block) => block.kind === "subheading" && SUBGROUP_CARD_IMAGES[block.text],
+        );
+        const fullWidthSection = metrics || hasGallerySubgroup || hasIllustratedSubgroup || hasVillaCards;
 
         return (
           <div key={section.heading.index}>
@@ -1441,7 +1547,9 @@ export default function MasterplanDocumentSection({ documentContent, slug }) {
                 <div
                   className={
                     fullWidthSection
-                      ? `mt-12 space-y-10 ${hasIllustratedSubgroup ? "[&>p]:max-w-4xl" : ""}`
+                      ? `mt-12 space-y-10 ${hasIllustratedSubgroup ? "[&>p]:max-w-4xl" : ""} ${
+                          hasVillaCards ? "[&>div:not([data-villa-card])]:max-w-4xl [&>p]:max-w-4xl" : ""
+                        }`
                       : "space-y-6 lg:col-span-7 lg:pt-2"
                   }
                 >

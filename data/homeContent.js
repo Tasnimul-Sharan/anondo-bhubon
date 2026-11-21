@@ -126,7 +126,7 @@ export const residences = [
     text: "Within this allocation, a good quantity of land is designated for small and large villa developments, offering distinctive residential environments for families seeking privacy, space and refined living.",
   },
   {
-    title: "Neighborhood Communities",
+    title: "Schools and Colleges",
     tag: "Planned for Daily Life",
     image: "/anondo bhubon New/2- 20 BIGHA CENTRAL AMENITIES/HIGH SCHOOL (1)x.jpg",
     text: "Elementary schools are incorporated at block level, while high schools and colleges with substantial playground facilities are provided for within the residential sectors.",

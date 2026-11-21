@@ -274,7 +274,7 @@ export const finalRenderImages = [
   createRender(
     "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/NEIGHBOURHOOD ROAD WALKWAY.jpg",
     "Connectivity & Roads",
-    "Neighbourhood Road & Pedestrian Footpath",
+    "Community Road & Walkway",
   ),
   createRender(
     "/anondo bhubon New/BLOCK- COMMUNITY GATHERING AMENITIES/COMMUNITY LAKE 1x.jpg",
