@@ -304,12 +304,12 @@ export const finalRenderImages = [
 
   // Sector Masterplan Layouts
   createRender(
-    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 CENTER P.jpg",
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 2 CENTRAL HUB AERIAL.jpg",
     "Masterplan",
     "Exclusive Sector Central Hub",
   ),
   createRender(
-    "/anondo bhubon New/PREMIUM 1/TOP PREMIUM.jpg",
+    "/anondo bhubon New/PREMIUM 1/PREMIUM SECTOR MASTERPLAN AERIAL.jpg",
     "Masterplan",
     "Premium Sector Masterplan View",
   ),
@@ -319,19 +319,29 @@ export const finalRenderImages = [
   //   "Forest Walkway Masterplan Layout",
   // ),
   createRender(
-    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK A.jpg",
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK A AERIAL.jpg",
     "Masterplan",
     "Exclusive Sector Block A Plan",
   ),
   createRender(
-    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK B.jpg",
-    "Masterplan",
-    "Exclusive Sector Block B Plan",
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE COMMUNITY PARK BOULEVARD.jpg",
+    "Parks & Open Spaces",
+    "Exclusive Sector Park Boulevard & Community Playground",
   ),
   createRender(
-    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK C.jpg",
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE CRICKET STADIUM CANAL BRIDGE.jpg",
+    "Sports & Recreation",
+    "Exclusive Sector Cricket Stadium & Canal Bridges",
+  ),
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE AERIAL MASTERPLAN OVERVIEW.jpg",
     "Masterplan",
-    "Exclusive Sector Block C Plan",
+    "Exclusive Sector Township Aerial Overview",
+  ),
+  createRender(
+    "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE VILLAS MOSQUE CANAL VIEW.jpg",
+    "Residences & Waterfront",
+    "Exclusive Sector Villas, Mosque & Canal View",
   ),
   createRender(
     "/anondo bhubon New/EXCLUSIVE/EXCLUSIVE 1 BLOCK D.jpg",
@@ -342,15 +352,5 @@ export const finalRenderImages = [
     "/anondo bhubon New/PREMIUM 1/PREMIUM 1 CENTER.jpg",
     "Masterplan",
     "Premium Sector Central Plan",
-  ),
-  createRender(
-    "/anondo bhubon New/GENERAL/General-Sector-2.png",
-    "Masterplan",
-    "General Sector Masterplan Layout",
-  ),
-  createRender(
-    "/anondo bhubon New/Commercial/Commercial-Sector.png",
-    "Commercial Sector",
-    "Commercial Sector Masterplan Layout",
   ),
 ];
